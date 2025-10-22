@@ -2,65 +2,59 @@
 
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect } from 'react';
+import FormSelect from './Inputs/FormSelect';
 
 const locales = [
-  { code: 'pt', name: 'PT', flag: '🇧🇷' },
-  { code: 'en', name: 'EN', flag: '🇺🇸' },
-  { code: 'es', name: 'ES', flag: '🇪🇸' }
+  { code: 'pt', name: 'Português', flag: '🇧🇷' },
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' }
 ];
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
 
   const currentLocale = locales.find(l => l.code === locale) || locales[0];
 
-  const handleLocaleChange = (newLocale: string) => {
-    // Remove current locale from pathname if it exists
-    const pathnameWithoutLocale = pathname.replace(/^\/(pt|en|es)/, '') || '/';
+  useEffect(() => {
+    // Listen for changes in the FormSelect
+    const handleChange = (event: Event) => {
+      const target = event.target as HTMLSelectElement;
+      const selectedValue = target.value;
+      const newLocale = locales.find(l => l.code === selectedValue)?.code;
 
-    // For default locale (pt), don't add prefix
-    const newPath = newLocale === 'pt'
-      ? pathnameWithoutLocale
-      : `/${newLocale}${pathnameWithoutLocale}`;
+      if (newLocale) {
+        // Remove current locale from pathname if it exists
+        const pathnameWithoutLocale = pathname.replace(/^\/(pt|en|es)/, '') || '/';
 
-    router.push(newPath);
-    setIsOpen(false);
-  };
+        // For default locale (pt), don't add prefix
+        const newPath = newLocale === 'pt'
+          ? pathnameWithoutLocale
+          : `/${newLocale}${pathnameWithoutLocale}`;
+
+        router.push(newPath);
+      }
+    };
+
+    const selectElement = document.getElementById('language-switcher');
+    if (selectElement) {
+      selectElement.addEventListener('change', handleChange);
+
+      return () => {
+        selectElement.removeEventListener('change', handleChange);
+      };
+    }
+  }, [pathname, router]);
 
   return (
-    <div className="language-switcher position-relative">
-      <button
-        className="btn btn-outline-primary btn-sm d-flex align-items-center gap-2"
-        onClick={() => setIsOpen(!isOpen)}
-        type="button"
-        aria-expanded={isOpen}
-        aria-label="Language switcher"
-      >
-        <span>{currentLocale.flag}</span>
-        <span>{currentLocale.name}</span>
-        <i className={`fas fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
-      </button>
-
-      {isOpen && (
-        <div className="dropdown-menu show position-absolute top-100 end-0 mt-1 shadow-sm border">
-          {locales.map((loc) => (
-            <button
-              key={loc.code}
-              className={`dropdown-item d-flex align-items-center gap-2 ${loc.code === locale ? 'active' : ''
-                }`}
-              onClick={() => handleLocaleChange(loc.code)}
-              type="button"
-            >
-              <span>{loc.flag}</span>
-              <span>{loc.name}</span>
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
+    <FormSelect
+      id="language-switcher"
+      name="language"
+      className="nice-select"
+      defaultValue={currentLocale.name}
+      items={locales.map(loc => ({ value: loc.code, name: loc.name }))}
+    />
   );
 }
