@@ -1,9 +1,12 @@
 import IndexMain7 from "@/components/layout/main/IndexMain7";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export default function Home7() {
 	return (
-		<PageWrapper headerType={7} footerType={7}>
+		<PageWrapper headerType={7} footerType={7} isHeaderTop={false}>
 			<IndexMain7 />
 		</PageWrapper>
 	);

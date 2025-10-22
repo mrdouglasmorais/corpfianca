@@ -7,15 +7,20 @@ import makePath from "@/libs/makePath";
 import Link from "next/link";
 import { useEffect } from "react";
 
-const BlogDetailsPrimary = ({ setCurrentTitle }) => {
+const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
 	const items = getBlogs();
-	const currentId = useCurrentItem();
+	const currentId = useCurrentItem() || blogId;
 	const { prevId, nextId, currentItem, isPrevItem, isNextItem } =
 		getPreviousNextItem(items, currentId);
-	const { title, id, detailsImg, tags } = currentItem || {};
+	const title = currentItem?.title || "";
+	const id = currentItem?.id || null;
+	const detailsImg = currentItem?.detailsImg || "";
+	const tags = currentItem?.tags || [];
 	useEffect(() => {
-		setCurrentTitle(title);
-	}, [currentId]);
+		if (title) {
+			setCurrentTitle(title);
+		}
+	}, [currentId, title]);
 	return (
 		<section className="tj-post-area section-space">
 			<div className="container">

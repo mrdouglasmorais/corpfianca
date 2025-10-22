@@ -5,9 +5,10 @@ import tjHeroStackAnimation from "@/libs/tjHeroStackAnimation";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import { useRef } from "react";
-// import { gsap, ScrollTrigger, ScrollSmoother, SplitText } from "@/lib/gsap.config.js";
+
 const Hero = () => {
 	const animContainerRef = useRef();
+
 	useGSAP(
 		() => {
 			tjHeroStackAnimation(".tj-hero-section", animContainerRef);
@@ -16,6 +17,7 @@ const Hero = () => {
 			scope: animContainerRef,
 		}
 	);
+
 	return (
 		<div ref={animContainerRef} className="heroStack">
 			<div className="stackOverlay"></div>

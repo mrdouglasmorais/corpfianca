@@ -1,6 +1,9 @@
 import IndexMain9 from "@/components/layout/main/IndexMain9";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export default function Home9() {
 	return (
 		<PageWrapper

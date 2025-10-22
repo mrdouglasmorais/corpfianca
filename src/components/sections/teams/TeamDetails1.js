@@ -6,11 +6,13 @@ import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import { useRef } from "react";
 
-const TeamDetails1 = () => {
+const TeamDetails1 = ({ teamId }) => {
 	const items = getTeamMembers();
-	const currentId = useCurrentItem();
+	const currentId = useCurrentItem() || teamId;
 	const currentItem = items?.find(({ id }) => currentId === id);
-	const { name, desig, imgLarge } = currentItem || {};
+	const name = currentItem?.name || "";
+	const desig = currentItem?.desig || "";
+	const imgLarge = currentItem?.imgLarge || "";
 	const animContainerRef = useRef();
 	useGSAP(() => {
 		tjProgressBar(animContainerRef);

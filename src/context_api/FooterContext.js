@@ -12,6 +12,13 @@ const FooterContextProvider = ({ value, children }) => {
 
 export const useFooterContext = () => {
   const value = useContext(FooterContext);
+  // Se não há contexto disponível (SSR), retorna valores seguros
+  if (typeof window === 'undefined' && !value) {
+    return {
+      isFooterBottom: false,
+      setIsFooterBottom: () => {},
+    };
+  }
   return value;
 };
 export default FooterContextProvider;

@@ -11,10 +11,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import RelatedProducts from "./RelatedProducts";
 
-const ProductDetailsPrimary = ({ setCurrentTitle }) => {
+const ProductDetailsPrimary = ({ setCurrentTitle, productId }) => {
 	const [quantity, setQuantity] = useState(1);
 	const items = getProducts();
-	const currentId = useCurrentItem();
+	const currentId = useCurrentItem() || productId;
 	const { addProductToCart } = useCartContext();
 	const { addProductToWishlist } = useWishlistContext();
 	const {
@@ -24,23 +24,23 @@ const ProductDetailsPrimary = ({ setCurrentTitle }) => {
 		isPrevItem,
 		isNextItem,
 	} = getPreviousNextItem(items, currentId);
-	const {
-		id,
-		title,
-		price,
-		img,
-		status,
-		category,
-		previousPrice,
-		reviews,
-		sizes,
-		colors,
-	} = item;
+	const id = item?.id || null;
+	const title = item?.title || "";
+	const price = item?.price || 0;
+	const img = item?.img || "";
+	const status = item?.status || "";
+	const category = item?.category || "";
+	const previousPrice = item?.previousPrice || 0;
+	const reviews = item?.reviews || [];
+	const sizes = item?.sizes || [];
+	const colors = item?.colors || [];
 	useEffect(() => {
-		setCurrentTitle(title);
-	}, [currentId]);
+		if (title) {
+			setCurrentTitle(title);
+		}
+	}, [currentId, title]);
 	const sliderItems = [
-		item,
+		item || {},
 		...items?.filter(({ id: id1 }) => id1 !== id).slice(0, 3),
 	];
 	return (
@@ -50,7 +50,7 @@ const ProductDetailsPrimary = ({ setCurrentTitle }) => {
 					<div className="col-12">
 						<div className="row section-bottom-space product">
 							<div className="col-xl-6 col-lg-6">
-								<ProductDetailsSlider items={sliderItems} currentItem={item} />
+								<ProductDetailsSlider items={sliderItems} currentItem={item || {}} />
 							</div>
 							<div className="col-xl-6 col-lg-6">
 								<div className="tj-product-details-wrapper">

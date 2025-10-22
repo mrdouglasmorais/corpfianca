@@ -4,7 +4,7 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import PortfolioDetailsPrimary from "@/components/sections/portfolios/PortfolioDetailsPrimary";
 import { useState } from "react";
 
-const PortfolioDetailsMain = () => {
+const PortfolioDetailsMain = ({ portfolioId }) => {
 	const [title, setCurrentTitle] = useState("");
 	return (
 		<main>
@@ -13,7 +13,7 @@ const PortfolioDetailsMain = () => {
 				text={title ? title : "Portfolio details"}
 				breadcrums={[{ name: "Portfolios", path: "/portfolios" }]}
 			/>
-			<PortfolioDetailsPrimary setCurrentTitle={setCurrentTitle} />
+			<PortfolioDetailsPrimary setCurrentTitle={setCurrentTitle} portfolioId={portfolioId} />
 			<Cta1 />
 		</main>
 	);

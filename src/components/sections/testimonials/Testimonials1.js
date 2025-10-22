@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Testimonials1 = () => {
 	const testimonials = getTestimonials()?.slice(0, 3);
 	const { isRtl } = {};
+
 	return (
 		<section className="tj-testimonial-section">
 			<div className="container">

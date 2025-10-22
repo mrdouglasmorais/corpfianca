@@ -11,6 +11,10 @@ const CurrentItemContextProvider = ({ children, currentId }) => {
 };
 export const useCurrentItem = () => {
 	const value = useContext(CurrentItemContext);
+	// Se não há contexto disponível (SSR), retorna null
+	if (typeof window === 'undefined' && !value) {
+		return null;
+	}
 	return value ? value?.currentId : null;
 };
 export default CurrentItemContextProvider;

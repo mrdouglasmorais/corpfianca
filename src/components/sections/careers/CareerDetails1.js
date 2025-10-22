@@ -5,12 +5,16 @@ import getCareers from "@/libs/getCareers";
 import getPreviousNextItem from "@/libs/getPreviousNextItem";
 import Link from "next/link";
 
-const CareerDetails1 = () => {
+const CareerDetails1 = ({ careerId }) => {
 	const items = getCareers();
-	const currentId = useCurrentItem();
+	const currentId = useCurrentItem() || careerId;
 	const { prevId, nextId, currentItem, isPrevItem, isNextItem } =
 		getPreviousNextItem(items, currentId);
-	const { title, iconName, category, need, location } = currentItem || {};
+	const title = currentItem?.title || "";
+	const iconName = currentItem?.iconName || "";
+	const category = currentItem?.category || "";
+	const need = currentItem?.need || "";
+	const location = currentItem?.location || "";
 
 	return (
 		<section className="tj-careers-details section-space">

@@ -7,6 +7,7 @@ import { useRef } from "react";
 
 const About1 = () => {
 	const animContainerRef = useRef();
+
 	useGSAP(
 		() => {
 			borderRadiusAnimation(".tj-about-section");
@@ -26,11 +27,10 @@ const About1 = () => {
 										className="sub-title wow fadeInUp"
 										data-wow-delay="0.1s"
 									>
-										Our company
+										About our company
 									</span>
 									<h2 className="sec-title text-anim">
-										Crafting success tailored solution for each & every
-										challenges
+										Crafting success tailored solution for each & every challenges
 									</h2>
 									<div className="desc wow fadeInUp" data-wow-delay="0.3s">
 										<p>

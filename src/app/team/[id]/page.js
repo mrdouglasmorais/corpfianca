@@ -2,6 +2,10 @@ import TeamDetailsMain from "@/components/layout/main/TeamDetailsMain";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import getTeamMembers from "@/libs/getTeamMembers";
 import { notFound } from "next/navigation";
+
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 const items = getTeamMembers();
 export default async function TeamDetails({ params }) {
 	const { id } = await params;
@@ -16,10 +20,10 @@ export default async function TeamDetails({ params }) {
 			footerType={"inner"}
 			currentItemId={parseInt(id)}
 		>
-			<TeamDetailsMain />
+			<TeamDetailsMain teamId={parseInt(id)} />
 		</PageWrapper>
 	);
 }
-export async function generateStaticParams() {
-	return items?.map(({ id }) => ({ id: id.toString() }));
-}
+// export async function generateStaticParams() {
+// 	return items?.map(({ id }) => ({ id: id.toString() }));
+// }

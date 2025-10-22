@@ -4,7 +4,7 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import ServicesDetailsPrimary from "@/components/sections/services/ServicesDetailsPrimary";
 import { useState } from "react";
 
-const ServiceDetailsMain = () => {
+const ServiceDetailsMain = ({ serviceId }) => {
 	const [title, setCurrentTitle] = useState("");
 	return (
 		<main>
@@ -13,7 +13,7 @@ const ServiceDetailsMain = () => {
 				text={title ? title : "Service details"}
 				breadcrums={[{ name: "Services", path: "/services" }]}
 			/>
-			<ServicesDetailsPrimary setCurrentTitle={setCurrentTitle} />
+			<ServicesDetailsPrimary setCurrentTitle={setCurrentTitle} serviceId={serviceId} />
 			<Cta1 />
 		</main>
 	);

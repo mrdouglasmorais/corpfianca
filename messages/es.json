@@ -1,40 +1,54 @@
 {
-  "homepage": {
-    "title": "CorpFiança - Plataforma Corporativa de Confianza y Soluciones Empresariales",
-    "description": "Su plataforma completa para soluciones corporativas, consultoría empresarial y servicios de confianza para el crecimiento de su negocio."
-  },
-  "header": {
-    "language_switcher": "Idioma",
-    "home": "Inicio",
+  "common": {
+    "welcome": "Bienvenido",
+    "learn_more": "Saber más",
+    "contact_us": "Contáctanos",
     "about": "Acerca de",
     "services": "Servicios",
     "portfolio": "Portafolio",
     "blog": "Blog",
-    "contact": "Contacto",
-    "get_quote": "Solicitar Cotización"
+    "team": "Equipo",
+    "home": "Inicio"
   },
-  "footer": {
-    "copyright": "© 2025 CorpFiança. Todos los derechos reservados.",
-    "contact_us": "Contáctanos",
-    "call_now": "Llama a CorpFiança Ahora",
-    "email": "soporte@corpfianca.com",
-    "phone": "+34 912 345 678"
+  "hero": {
+    "title": "Maximiza el crecimiento calificado de tu",
+    "title_highlight": "consultoría empresarial",
+    "description": "Aprovechamos nuestra experiencia para entregar soluciones empresariales personalizadas que impulsan el crecimiento sostenible y la excelencia operacional para nuestros clientes.",
+    "get_started": "Comenzar ahora",
+    "watch_video": "Ver video"
   },
-  "common": {
-    "learn_more": "Saber Más",
-    "get_started": "Comenzar Ahora",
-    "read_more": "Leer Más",
-    "view_all": "Ver Todos",
-    "contact_us": "Contáctanos",
-    "send_message": "Enviar Mensaje"
+  "about": {
+    "section_title": "Nuestra empresa",
+    "title": "Impulsamos ingresos a través de alianzas estratégicas",
+    "description": "Estamos comprometidos a proporcionar soluciones innovadoras que transforman negocios e impulsan el crecimiento sostenible a través de alianzas estratégicas y tecnología de vanguardia."
+  },
+  "services": {
+    "section_title": "Solución transformadora",
+    "title": "Obtén nuestro servicio exclusivo",
+    "description": "Descubre nuestra amplia gama de soluciones empresariales diseñadas para acelerar el crecimiento y éxito de tu empresa."
+  },
+  "skills": {
+    "title": "Habilidad y experiencia",
+    "description": "En el entorno empresarial dinámico de hoy, la clave del éxito radica en la planificación estratégica y la excelencia operacional."
   },
   "testimonials": {
-    "title": "Lo que dicen nuestros clientes",
-    "description": "Nuestra experiencia con CorpFiança ha sido nada menos que excepcional. Desde el primer día, su equipo demostró una profunda comprensión de nuestra industria e identificó rápidamente áreas clave de mejora.",
-    "clients_worldwide": "Clientes satisfechos en todo el mundo con CorpFiança"
+    "section_title": "Testimonios",
+    "listening_title": "Escuchando a nuestros clientes"
+  },
+  "portfolios": {
+    "section_title": "Portafolio",
+    "title": "Nuestros proyectos más recientes"
+  },
+  "blogs": {
+    "section_title": "Blog",
+    "title": "Últimas perspectivas"
+  },
+  "homepage": {
+    "title": "Soluciones Corporativas y Financieras",
+    "subtitle": "Impulsando el crecimiento de tu negocio",
+    "description": "Ofrecemos soluciones completas en finanzas corporativas, consultoría estratégica y gestión empresarial para maximizar el potencial de tu negocio."
   },
   "brands": {
-    "join_companies": "Únete a las {count}+ empresas beneficiadas por CorpFiança",
-    "join_over_companies": "Únete a más de {count}+ empresas con CorpFiança"
+    "join_companies": "Únete a más de 500 empresas que confían en nosotros"
   }
 }

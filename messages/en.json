@@ -1,40 +1,54 @@
 {
-  "homepage": {
-    "title": "CorpFiança - Corporate Trust Platform and Business Solutions",
-    "description": "Your complete platform for corporate solutions, business consulting and trust services for your business growth."
-  },
-  "header": {
-    "language_switcher": "Language",
-    "home": "Home",
+  "common": {
+    "welcome": "Welcome",
+    "learn_more": "Learn more",
+    "contact_us": "Contact us",
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
     "blog": "Blog",
-    "contact": "Contact",
-    "get_quote": "Get Quote"
+    "team": "Team",
+    "home": "Home"
   },
-  "footer": {
-    "copyright": "© 2025 CorpFiança. All rights reserved.",
-    "contact_us": "Contact Us",
-    "call_now": "Call CorpFiança Now",
-    "email": "support@corpfianca.com",
-    "phone": "+1 (555) 123-4567"
+  "hero": {
+    "title": "Maximise growth qualified business",
+    "title_highlight": "consulting",
+    "description": "We leverage our expertise to deliver tailored business solutions that drive sustainable growth and operational excellence for our clients.",
+    "get_started": "Get started",
+    "watch_video": "Watch video"
   },
-  "common": {
-    "learn_more": "Learn More",
-    "get_started": "Get Started",
-    "read_more": "Read More",
-    "view_all": "View All",
-    "contact_us": "Contact Us",
-    "send_message": "Send Message"
+  "about": {
+    "section_title": "Our company",
+    "title": "We boost revenue strategic partnerships",
+    "description": "We are committed to providing innovative solutions that transform businesses and drive sustainable growth through strategic partnerships and cutting-edge technology."
+  },
+  "services": {
+    "section_title": "Transformative solution",
+    "title": "Get our exclusive service",
+    "description": "Discover our comprehensive range of business solutions designed to accelerate your company's growth and success."
+  },
+  "skills": {
+    "title": "Skill and experience",
+    "description": "In today's dynamic business environment, the key to success lies in strategic planning and operational excellence."
   },
   "testimonials": {
-    "title": "What our clients say",
-    "description": "Our experience with CorpFiança has been nothing short of exceptional. From day one, their team demonstrated a deep understanding of our industry and quickly identified key areas for improvement.",
-    "clients_worldwide": "Happy clients all over the world with CorpFiança"
+    "section_title": "Testimonials",
+    "listening_title": "Listening to our clients"
+  },
+  "portfolios": {
+    "section_title": "Portfolio",
+    "title": "Our latest projects"
+  },
+  "blogs": {
+    "section_title": "Blog",
+    "title": "Latest insights"
+  },
+  "homepage": {
+    "title": "Corporate Finance Solutions",
+    "subtitle": "Driving your business growth",
+    "description": "We offer complete solutions in corporate finance, strategic consulting, and business management to maximize your business potential."
   },
   "brands": {
-    "join_companies": "Join the {count}+ companies benefiting from CorpFiança",
-    "join_over_companies": "Join over {count}+ companies with CorpFiança"
+    "join_companies": "Join over 500 companies that trust us"
   }
 }

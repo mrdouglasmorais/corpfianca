@@ -2,6 +2,10 @@ import CareerDetailsMain from "@/components/layout/main/CareerDetailsMain";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import getCareers from "@/libs/getCareers";
 import { notFound } from "next/navigation";
+
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 const items = getCareers();
 export default async function CareerDetails({ params }) {
 	const { id } = await params;
@@ -16,10 +20,10 @@ export default async function CareerDetails({ params }) {
 			footerType={"inner"}
 			currentItemId={parseInt(id)}
 		>
-			<CareerDetailsMain />
+			<CareerDetailsMain careerId={parseInt(id)} />
 		</PageWrapper>
 	);
 }
-export async function generateStaticParams() {
-	return items?.map(({ id }) => ({ id: id.toString() }));
-}
+// export async function generateStaticParams() {
+// 	return items?.map(({ id }) => ({ id: id.toString() }));
+// }

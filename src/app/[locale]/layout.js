@@ -1,30 +1,42 @@
-import { getTranslations } from 'next-intl/server';
-import "react-range-slider-input/dist/style.css";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/thumbs";
-import "venobox/dist/venobox.min.css";
-import "../assets/css/animate.css";
-import "../assets/css/bootstrap.min.css";
-import "../assets/css/font-awesome-pro.min.css";
-import "../assets/css/glightbox.min.css";
-import "../assets/css/meanmenu.css";
-import "../assets/css/odometer-theme-default.css";
-import "../assets/css/solvior-icons.css";
-import "../globals.css";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { Lato, Libre_Franklin } from "next/font/google";
+import "./globals.css";
 
-export async function generateMetadata({ params: { locale } }) {
-	const t = await getTranslations({ locale, namespace: 'homepage' });
+const lato = Lato({
+	subsets: ["latin"],
+	weight: ["100", "300", "400", "700", "900"],
+	style: ["normal", "italic"],
+	variable: "--font-lato",
+});
 
-	return {
-		title: t('title'),
-		description: t('description'),
-	};
-}
+const libreFranklin = Libre_Franklin({
+	subsets: ["latin"],
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+	style: ["normal", "italic"],
+	variable: "--font-libre-franklin",
+});
 
-export default function LocaleLayout({ children, params: { locale } }) {
-	return children;
+export const metadata = {
+	title: "CorpFinance - Corporate Solutions",
+	description: "Leading corporate finance solutions"
+};
+
+export default async function LocaleLayout({ children, params }) {
+	const locale = (await params).locale;
+	const messages = await getMessages();
+
+	return (
+		<html
+			lang={locale}
+			data-scroll-behavior="smooth"
+			className={`${lato.variable} ${libreFranklin.variable}`}
+		>
+			<body>
+				<NextIntlClientProvider messages={messages}>
+					{children}
+				</NextIntlClientProvider>
+			</body>
+		</html>
+	);
 }
