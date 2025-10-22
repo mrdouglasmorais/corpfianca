@@ -142,7 +142,7 @@ const Footer9 = () => {
 								</div>
 								<div className="copyright-text">
 									<p>
-										© 2025 <Link href="/"> Solvior </Link> All right reserved.
+										© 2025 <Link href="/"> CorpFiança </Link> Todos os direitos reservados.
 									</p>
 								</div>
 							</div>

@@ -221,7 +221,7 @@ const CareerDetails1 = () => {
 										</li>
 										<li>
 											<span className="first-child">Company</span>
-											<span>Solvior</span>
+											<span>CorpFiança</span>
 										</li>
 										<li>
 											<span className="first-child">Website</span>

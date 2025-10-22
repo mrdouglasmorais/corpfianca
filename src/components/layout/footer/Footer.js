@@ -144,7 +144,7 @@ const Footer = ({ footerType, isRtl }) => {
 										© 2025{" "}
 										<Link href="/" target="_blank">
 											{" "}
-											Solvior{" "}
+											CorpFiança{" "}
 										</Link>{" "}
 										All right reserved.
 									</p>

@@ -53,8 +53,8 @@ const Contact1 = () => {
 								<div className="contact-item">
 									<div className="contact-text">
 										<i className="fa-solid fa-envelope"></i>
-										<Link href="mailto:support@solvior.com">
-											support@solvior.com
+										<Link href="mailto:suporte@corpfianca.com">
+											suporte@corpfianca.com
 										</Link>
 									</div>
 									<div className="contact-text">

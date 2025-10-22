@@ -16,7 +16,7 @@ const Footer7 = () => {
 									<div className="infos-item">
 										<div className="infos-item-left">
 											<p>Lets work together?</p>
-											<h3 className="info-title">Call Solvior Now</h3>
+											<h3 className="info-title">Ligue para CorpFiança Agora</h3>
 										</div>
 										<div>
 											{" "}
@@ -188,7 +188,7 @@ const Footer7 = () => {
 							<div className="copyright-content-area">
 								<div className="copyright-text">
 									<p>
-										© 2025 <Link href="/"> Solvior </Link> All right reserved.
+										© 2025 <Link href="/"> CorpFiança </Link> Todos os direitos reservados.
 									</p>
 								</div>
 								<div className="copyright-menu">

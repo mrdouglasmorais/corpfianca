@@ -16,8 +16,8 @@ import "./assets/css/odometer-theme-default.css";
 import "./assets/css/solvior-icons.css";
 import "./globals.css";
 export const metadata = {
-	title: "Solvior - Business Consulting React NextJs Template",
-	description: "Solvior - Business Consulting React NextJs Template",
+	title: "CorpFiança - Plataforma Corporativa de Confiança e Soluções Empresariais",
+	description: "CorpFiança - Sua plataforma completa para soluções corporativas, consultoria empresarial e serviços de confiança para o crescimento do seu negócio.",
 };
 
 const lato = Lato({

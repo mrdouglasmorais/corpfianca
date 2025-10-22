@@ -11,7 +11,7 @@ const Footer4 = () => {
 							<div className="footer-widget footer-info">
 								<div className="footer-logo mb-40">
 									<Link href="/">
-										<img src="/images/logos/primary-logo.png" alt="solvior" />
+										<img src="/images/logos/primary-logo.png" alt="corpfianca" />
 									</Link>
 								</div>
 								<h2 className="title mb-40">
@@ -130,7 +130,7 @@ const Footer4 = () => {
 										© 2025{" "}
 										<Link href="/" target="_blank">
 											{" "}
-											Solvior{" "}
+											CorpFiança{" "}
 										</Link>{" "}
 										All right reserved.
 									</p>

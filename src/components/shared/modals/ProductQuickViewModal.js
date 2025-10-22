@@ -175,7 +175,7 @@ const ProductQuickViewModal = ({ item = {}, totalItemsToShow }) => {
 								<div className="tj-product-details-query-item d-flex align-items-center">
 									<span>Category: </span>{" "}
 									<a
-										href="https://solvior.themejunction.net/product-category/power/"
+										href="https://corpfianca.com/product-category/power/"
 										rel="tag"
 									>
 										Power
@@ -184,7 +184,7 @@ const ProductQuickViewModal = ({ item = {}, totalItemsToShow }) => {
 								<div className="tj-product-details-query-item d-flex align-items-center">
 									<span>Tag:</span>{" "}
 									<a
-										href="https://solvior.themejunction.net/product-tag/portable/"
+										href="https://corpfianca.com/product-tag/portable/"
 										rel="tag"
 									>
 										Portable

@@ -56,8 +56,8 @@ const TeamDetails1 = () => {
 								<ul>
 									<li>
 										<span>Email address</span>
-										<Link href="mailto:support@solvior.com">
-											support@solvior.com
+										<Link href="mailto:suporte@corpfianca.com">
+											suporte@corpfianca.com
 										</Link>
 									</li>
 									<li>

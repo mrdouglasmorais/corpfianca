@@ -43,8 +43,8 @@ const MobileMenu = () => {
 							<div className="contact_item">
 								<span className="subtitle">Email</span>
 								<div className="text">
-									<Link className="link" href="mailto:support@solvior.com">
-										support@solvior.com
+									<Link className="link" href="mailto:suporte@corpfianca.com">
+										suporte@corpfianca.com
 									</Link>
 								</div>
 							</div>

@@ -29,12 +29,12 @@ const Contact2 = () => {
 								>
 									<Link
 										className="video-btn vbox-item"
-										href="milto:support@solvior.com"
+										href="mailto:suporte@corpfianca.com"
 									>
 										<span className="play-btn">
 											<i className="tji-email"></i>
 										</span>
-										<span className="video-text">support@solvior.com</span>
+										<span className="video-text">suporte@corpfianca.com</span>
 									</Link>
 								</div>
 							</div>

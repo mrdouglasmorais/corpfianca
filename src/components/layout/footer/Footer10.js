@@ -14,7 +14,7 @@ const Footer10 = () => {
 							>
 								<div className="footer-logo">
 									<Link href="/">
-										<img src="/images/logos/primary-logo.png" alt="solvior" />
+										<img src="/images/logos/primary-logo.png" alt="corpfianca" />
 									</Link>
 								</div>
 								<p className="desc">
@@ -69,8 +69,8 @@ const Footer10 = () => {
 											<div className="infos-item">
 												<span>Operations - Canada</span>
 												<p>Suite 452 8082 Boner Parge, Elviraton, CA 48998</p>
-												<Link href="mailto:support@solvior.com">
-													support@solvior.com
+												<Link href="mailto:suporte@corpfianca.com">
+													suporte@corpfianca.com
 												</Link>
 											</div>
 										</div>
@@ -125,7 +125,7 @@ const Footer10 = () => {
 								</div>
 								<div className="copyright-text">
 									<p>
-										© 2025 <Link href="/"> Solvior </Link> All right reserved.
+										© 2025 <Link href="/"> CorpFiança </Link> Todos os direitos reservados.
 									</p>
 								</div>
 								<div className="copyright-menu">
