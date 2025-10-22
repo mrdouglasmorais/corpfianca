@@ -16,7 +16,7 @@ const CartPrimary = () => {
 	} = useCartContext();
 
 	const creteAlert = useSweetAlert();
-	const cartProducts = currentProducts;
+	const cartProducts = currentProducts || [];
 	const [updatableProduct, setUpdatableProduct] = useState(null);
 	const [updatableProducts, setUpdatableProducts] = useState(null);
 	const totalPrice = countTotalPrice(cartProducts);

@@ -67,6 +67,15 @@ const WishlistContextProvider = ({ children }) => {
 };
 export const useWishlistContext = () => {
 	const value = useContext(wishlistContext);
+	// Se não há contexto disponível (SSR), retorna valores seguros
+	if (typeof window === 'undefined' && !value) {
+		return {
+			wishlistProducts: [],
+			setWishlistProducts: () => {},
+			addProductToWishlist: () => {},
+			deleteProductFromWishlist: () => {},
+		};
+	}
 	return value;
 };
 export default WishlistContextProvider;

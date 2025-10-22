@@ -8,6 +8,8 @@ import tjImageParallex from "@/libs/tjImageParallex";
 import tjLeftSwipeAnimation from "@/libs/tjLeftSwipeAnimation";
 import tjMagicCursorAnimation from "@/libs/tjMagicCursorAnimation";
 import tjRightSwipeAnimation from "@/libs/tjRightSwipeAnimation";
+// Import Swiper styles globally
+import "@/libs/swiper.config";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
 

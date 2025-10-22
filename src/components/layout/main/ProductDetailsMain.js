@@ -5,7 +5,7 @@ import ProductDetailsPrimary from "@/components/sections/shop/ProductDetailsPrim
 import sliceText from "@/libs/sliceText";
 import { useState } from "react";
 
-const ProductDetailsMain = () => {
+const ProductDetailsMain = ({ productId }) => {
 	const [title, setCurrentTitle] = useState("Shop details");
 	return (
 		<main>
@@ -14,7 +14,7 @@ const ProductDetailsMain = () => {
 				text={title}
 				breadcrums={[{ name: "Products", path: "/shop" }]}
 			/>
-			<ProductDetailsPrimary setCurrentTitle={setCurrentTitle} />
+			<ProductDetailsPrimary setCurrentTitle={setCurrentTitle} productId={productId} />
 			<Cta1 />
 		</main>
 	);

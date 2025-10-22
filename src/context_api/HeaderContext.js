@@ -12,6 +12,13 @@ const HeaderContextProvider = ({value, children}) => {
 
 export const useHeaderContext = ()=>{
 const value = useContext(headerContext)
+// Se não há contexto disponível (SSR), retorna valores seguros
+if (typeof window === 'undefined' && !value) {
+  return {
+    isExpand: false,
+    setIsExpand: () => {},
+  };
+}
 return value
 }
 export default HeaderContextProvider;

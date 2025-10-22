@@ -1,0 +1,54 @@
+{
+  "common": {
+    "welcome": "Bem-vindo",
+    "learn_more": "Saiba mais",
+    "contact_us": "Entre em contato",
+    "about": "Sobre",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "blog": "Blog",
+    "team": "Equipe",
+    "home": "Início"
+  },
+  "hero": {
+    "title": "Maximize o crescimento qualificado da sua",
+    "title_highlight": "consultoria empresarial",
+    "description": "Aproveitamos nossa expertise para entregar soluções empresariais personalizadas que impulsionam o crescimento sustentável e a excelência operacional para nossos clientes.",
+    "get_started": "Começar agora",
+    "watch_video": "Assistir vídeo"
+  },
+  "about": {
+    "section_title": "Nossa empresa",
+    "title": "Impulsionamos receita através de parcerias estratégicas",
+    "description": "Estamos comprometidos em fornecer soluções inovadoras que transformam negócios e impulsionam o crescimento sustentável através de parcerias estratégicas e tecnologia de ponta."
+  },
+  "services": {
+    "section_title": "Solução transformadora",
+    "title": "Obtenha nosso serviço exclusivo",
+    "description": "Descubra nossa ampla gama de soluções empresariais projetadas para acelerar o crescimento e sucesso da sua empresa."
+  },
+  "skills": {
+    "title": "Habilidade e experiência",
+    "description": "No ambiente empresarial dinâmico de hoje, a chave para o sucesso está no planejamento estratégico e na excelência operacional."
+  },
+  "testimonials": {
+    "section_title": "Depoimentos",
+    "listening_title": "Ouvindo nossos clientes"
+  },
+  "portfolios": {
+    "section_title": "Portfólio",
+    "title": "Nossos projetos mais recentes"
+  },
+  "blogs": {
+    "section_title": "Blog",
+    "title": "Últimas insights"
+  },
+  "homepage": {
+    "title": "Soluções Corporativas e Financeiras",
+    "subtitle": "Impulsionando o crescimento de seu negócio",
+    "description": "Oferecemos soluções completas em finanças corporativas, consultoria estratégica e gestão empresarial para maximizar o potencial do seu negócio."
+  },
+  "brands": {
+    "join_companies": "Junte-se a mais de 500 empresas que confiam em nós"
+  }
+}

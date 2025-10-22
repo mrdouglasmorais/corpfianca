@@ -131,6 +131,15 @@ const CartContextProvider = ({ children }) => {
 };
 export const useCartContext = () => {
 	const value = useContext(cartContext);
+	// Se não há contexto disponível (SSR), retorna valores seguros
+	if (typeof window === 'undefined' && !value) {
+		return {
+			cartProducts: [],
+			setCartProducts: () => {},
+			addProductToCart: () => {},
+			deleteProductFromCart: () => {},
+		};
+	}
 	return value;
 };
 export default CartContextProvider;

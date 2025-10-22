@@ -9,10 +9,11 @@ import { useSearchParams } from "next/navigation";
 
 const BlogMain = () => {
 	const allItems = getBlogs();
-	const category = useSearchParams()?.get("category");
-	const tag = useSearchParams()?.get("tag");
-	const author_role = useSearchParams()?.get("author_role");
-	const search = useSearchParams()?.get("search");
+	const searchParams = useSearchParams();
+	const category = searchParams?.get("category") || null;
+	const tag = searchParams?.get("tag") || null;
+	const author_role = searchParams?.get("author_role") || null;
+	const search = searchParams?.get("search") || null;
 	// Filter Items
 	const filteredItems = filterItems(
 		allItems,

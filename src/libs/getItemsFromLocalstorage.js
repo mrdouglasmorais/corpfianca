@@ -1,4 +1,9 @@
 const getItemsFromLocalstorage = (itemName) => {
+  // Verificar se está no lado do cliente
+  if (typeof window === 'undefined' || !localStorage) {
+    return null;
+  }
+
   let itemsFromLocastorage = localStorage.getItem(itemName);
 
   if (itemsFromLocastorage) {

@@ -7,14 +7,20 @@ import Link from "next/link";
 import { useEffect } from "react";
 import CtaSidebar from "../cta/CtaSidebar";
 
-const ServicesDetailsPrimary = ({ setCurrentTitle }) => {
+const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
 	const items = getALlServices();
-	const currentId = useCurrentItem();
+	const currentId = useCurrentItem() || serviceId;
 	const currentItem = items?.find(({ id }) => currentId === id);
-	const { title, titleLarge, id, iconName, img } = currentItem || {};
-	useEffect(() => {
-		setCurrentTitle(title);
-	}, [currentId]);
+
+	const title = currentItem?.title || "";
+	const titleLarge = currentItem?.titleLarge || "";
+	const id = currentItem?.id || null;
+	const iconName = currentItem?.iconName || "";
+	const img = currentItem?.img || "";	useEffect(() => {
+		if (title) {
+			setCurrentTitle(title);
+		}
+	}, [currentId, title]);
 	return (
 		<section className="tj-service-area section-space">
 			<div className="container">

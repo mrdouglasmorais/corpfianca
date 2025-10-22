@@ -1,8 +1,13 @@
 "use client";
-import React, { createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 const commonContext = createContext(null);
 export const useCommonContext = () => {
-  return useContext(commonContext);
+  const value = useContext(commonContext);
+  // Se não há contexto disponível (SSR), retorna valores seguros
+  if (typeof window === 'undefined' && !value) {
+    return {};
+  }
+  return value;
 };
 const CommonContext = ({ children, value }) => {
   return (

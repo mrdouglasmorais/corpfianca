@@ -1,9 +1,11 @@
 "use client";
-import FormSelect from "@/components/shared/Inputs/FormSelect";
+import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
+import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const HeaderTop = ({ type }) => {
+	const t = useTranslations('common');
 	const [curretHeight, setCurrentHeight] = useState(null);
 	const headerTopRef = useRef();
 	useEffect(() => {
@@ -99,17 +101,7 @@ const HeaderTop = ({ type }) => {
 												<Link href="tel:+1009544-7818">+1 (009) 544-7818</Link>
 											</>
 										) : (
-											<FormSelect
-												id={"language"}
-												name={"language"}
-												className="nice-select"
-												defaultValue={"English"}
-												items={[
-													{ value: "1", name: "English" },
-													{ value: "2", name: "Arabic" },
-													{ value: "3", name: "Spanish" },
-												]}
-											/>
+											<LanguageSwitcher />
 										)}
 									</div>
 								</div>

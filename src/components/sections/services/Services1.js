@@ -8,6 +8,7 @@ import { useRef } from "react";
 const Services1 = () => {
 	const animContainerRef = useRef();
 	const services = getALlServices()?.slice(0, 3);
+
 	useGSAP(
 		context => {
 			tjStackAnimation(".service-stack");

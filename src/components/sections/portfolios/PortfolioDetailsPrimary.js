@@ -6,15 +6,20 @@ import getPreviousNextItem from "@/libs/getPreviousNextItem";
 import Link from "next/link";
 import { useEffect } from "react";
 import CtaSidebar from "../cta/CtaSidebar";
-const PortfolioDetailsPrimary = ({ setCurrentTitle }) => {
+const PortfolioDetailsPrimary = ({ setCurrentTitle, portfolioId }) => {
 	const items = getPortfolio();
-	const currentId = useCurrentItem();
+	const currentId = useCurrentItem() || portfolioId;
 	const { prevId, nextId, currentItem, isPrevItem, isNextItem } =
 		getPreviousNextItem(items, currentId);
-	const { title, titleLarge, id, imgLarge } = currentItem || {};
+	const title = currentItem?.title || "";
+	const titleLarge = currentItem?.titleLarge || "";
+	const id = currentItem?.id || null;
+	const imgLarge = currentItem?.imgLarge || "";
 	useEffect(() => {
-		setCurrentTitle(title);
-	}, [currentId]);
+		if (title) {
+			setCurrentTitle(title);
+		}
+	}, [currentId, title]);
 	return (
 		<section className="tj-post-area section-space">
 			<div className="container">

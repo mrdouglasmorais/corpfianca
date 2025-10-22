@@ -1,11 +1,12 @@
 import Link from "next/link";
 
-const ButtonPrimary = ({ className, text, url, type, iconName }) => {
+const ButtonPrimary = ({ className, text, url, type, iconName, onClick }) => {
 	return (
 		<>
-			{type ? (
+			{type || onClick ? (
 				<button
-					type={type ? type : "submit"}
+					type={type ? type : "button"}
+					onClick={onClick}
 					className={`tj-primary-btn ${className ? className : ""}`}
 				>
 					<span className="btn_inner">

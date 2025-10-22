@@ -6,9 +6,11 @@ import { useRef } from "react";
 
 const Skills1 = () => {
 	const animContainerRef = useRef();
+
 	useGSAP(() => {
 		tjProgressBar(animContainerRef);
 	});
+
 	return (
 		<section
 			ref={animContainerRef}

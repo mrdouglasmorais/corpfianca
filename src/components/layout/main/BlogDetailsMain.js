@@ -4,7 +4,7 @@ import Cta1 from "@/components/sections/cta/Cta1";
 import HeroInner from "@/components/sections/heros/HeroInner";
 import sliceText from "@/libs/sliceText";
 import { useState } from "react";
-const BlogDetailsMain = () => {
+const BlogDetailsMain = ({ blogId }) => {
 	const [title, setCurrentTitle] = useState("");
 	return (
 		<main>
@@ -13,7 +13,7 @@ const BlogDetailsMain = () => {
 				text={title ? sliceText(title, 31, true) : "Blog Details"}
 				breadcrums={[{ name: "Blogs", path: "/blogs" }]}
 			/>
-			<BlogDetailsPrimary setCurrentTitle={setCurrentTitle} />
+			<BlogDetailsPrimary setCurrentTitle={setCurrentTitle} blogId={blogId} />
 			<Cta1 />
 		</main>
 	);

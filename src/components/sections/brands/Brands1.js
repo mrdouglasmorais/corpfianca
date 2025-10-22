@@ -11,7 +11,7 @@ const Brands1 = () => {
 							data-wow-delay="0.1s"
 						>
 							<h6 className="sec-title">
-								Junte-se às <span>1000+</span> empresas beneficiadas pela CorpFiança
+								Join over <span>1000+</span> companies that trust us
 							</h6>
 						</div>
 					</div>
