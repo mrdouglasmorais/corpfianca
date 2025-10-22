@@ -6,7 +6,6 @@ import { useEffect } from "react";
 
 export default function Error({ error, reset }) {
 	useEffect(() => {
-		// Log the error to an error reporting service
 		console.error(error);
 	}, [error]);
 
@@ -16,6 +15,7 @@ export default function Error({ error, reset }) {
 				title={"Algo deu errado!"}
 				text={"Ocorreu um erro inesperado. Tente novamente."}
 				onRetry={reset}
+				showCta={false}
 			/>
 		</PageWrapper>
 	);
