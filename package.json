@@ -1,6 +1,28 @@
 {
-	"name": "solvior",
-	"version": "0.1.0",
+	"name": "corpfianca",
+	"version": "1.0.0",
+	"description": "CorpFiança - Plataforma Corporativa de Confiança e Soluções Empresariais",
+	"author": {
+		"name": "Douglas Morais",
+		"email": "douglas.morais@habitvs.io",
+		"url": "https://douglasmorais.dev"
+	},
+	"keywords": [
+		"nextjs",
+		"react",
+		"typescript",
+		"corporate",
+		"business",
+		"finance",
+		"trust",
+		"solutions"
+	],
+	"homepage": "https://corpfianca.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrdouglasmorais/corpfianca.git"
+	},
+	"license": "MIT",
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
