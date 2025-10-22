@@ -1,0 +1,40 @@
+{
+  "homepage": {
+    "title": "CorpFiança - Plataforma Corporativa de Confianza y Soluciones Empresariales",
+    "description": "Su plataforma completa para soluciones corporativas, consultoría empresarial y servicios de confianza para el crecimiento de su negocio."
+  },
+  "header": {
+    "language_switcher": "Idioma",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "get_quote": "Solicitar Cotización"
+  },
+  "footer": {
+    "copyright": "© 2025 CorpFiança. Todos los derechos reservados.",
+    "contact_us": "Contáctanos",
+    "call_now": "Llama a CorpFiança Ahora",
+    "email": "soporte@corpfianca.com",
+    "phone": "+34 912 345 678"
+  },
+  "common": {
+    "learn_more": "Saber Más",
+    "get_started": "Comenzar Ahora",
+    "read_more": "Leer Más",
+    "view_all": "Ver Todos",
+    "contact_us": "Contáctanos",
+    "send_message": "Enviar Mensaje"
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "description": "Nuestra experiencia con CorpFiança ha sido nada menos que excepcional. Desde el primer día, su equipo demostró una profunda comprensión de nuestra industria e identificó rápidamente áreas clave de mejora.",
+    "clients_worldwide": "Clientes satisfechos en todo el mundo con CorpFiança"
+  },
+  "brands": {
+    "join_companies": "Únete a las {count}+ empresas beneficiadas por CorpFiança",
+    "join_over_companies": "Únete a más de {count}+ empresas con CorpFiança"
+  }
+}

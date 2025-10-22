@@ -1,30 +1,12 @@
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import { Lato, Libre_Franklin } from "next/font/google";
-import "react-range-slider-input/dist/style.css";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/thumbs";
-import "venobox/dist/venobox.min.css";
-import "./assets/css/animate.css";
-import "./assets/css/bootstrap.min.css";
-import "./assets/css/font-awesome-pro.min.css";
-import "./assets/css/glightbox.min.css";
-import "./assets/css/meanmenu.css";
-import "./assets/css/odometer-theme-default.css";
-import "./assets/css/solvior-icons.css";
-import "./globals.css";
-export const metadata = {
-	title: "CorpFiança - Plataforma Corporativa de Confiança e Soluções Empresariais",
-	description: "CorpFiança - Sua plataforma completa para soluções corporativas, consultoria empresarial e serviços de confiança para o crescimento do seu negócio.",
-};
 
 const lato = Lato({
 	subsets: ["latin"],
 	weight: ["100", "300", "400", "700", "900"],
 	style: ["normal", "italic"],
-	variable: "--font-lato", // optional: set a CSS variable
+	variable: "--font-lato",
 });
 
 const libreFranklin = Libre_Franklin({
@@ -33,14 +15,22 @@ const libreFranklin = Libre_Franklin({
 	style: ["normal", "italic"],
 	variable: "--font-libre-franklin",
 });
-export default function RootLayout({ children }) {
+
+export default async function RootLayout({ children }) {
+	const locale = await getLocale();
+	const messages = await getMessages();
+
 	return (
 		<html
-			lang="en"
+			lang={locale}
 			data-scroll-behavior="smooth"
 			className={`${lato.variable} ${libreFranklin.variable}`}
 		>
-			<body> {children}</body>
+			<body>
+				<NextIntlClientProvider messages={messages}>
+					{children}
+				</NextIntlClientProvider>
+			</body>
 		</html>
 	);
 }

@@ -1,6 +1,8 @@
 import BrandSlider2 from "@/components/shared/brands/BrandSlider2";
+import { useTranslations } from 'next-intl';
 
 const Brands1 = () => {
+	const t = useTranslations('brands');
 	return (
 		<section className="tj-brand-section-two section-bottom-space">
 			<div className="container">
@@ -11,7 +13,10 @@ const Brands1 = () => {
 							data-wow-delay="0.1s"
 						>
 							<h6 className="sec-title">
-								Junte-se às <span>1000+</span> empresas beneficiadas pela CorpFiança
+								{t.rich('join_companies', {
+									count: '1000',
+									1: (chunks) => <span>{chunks}</span>
+								})}
 							</h6>
 						</div>
 					</div>

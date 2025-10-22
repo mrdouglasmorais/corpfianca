@@ -1,0 +1,304 @@
+{
+  {
+    "homepage": {
+      {
+        "title": "CorpFiança - Plataforma Corporativa de Confiança e Soluções Empresariais",
+        "homepage": {
+          "description": "Sua plataforma completa para soluções corporativas, consultoria empresarial e serviços de confiança para o crescimento do seu negócio.""navigation": {},
+          "title": "CorpFiança - Plataforma Corporativa de Confiança e Soluções Empresariais",
+          "header": {
+            "home": "Início",
+            "language_switcher": "Idioma",
+            "description": "Sua plataforma completa para soluções corporativas, consultoria empresarial e serviços de confiança para o crescimento do seu negócio.""about": "Sobre",
+            "home": "Início",
+          },
+          "about": "Sobre",
+          "services": "Serviços",
+          "services": "Serviços",
+          "header": {
+            "portfolio": "Portfólio",
+            "portfolio": "Portfólio",
+            "blog": "Blog",
+            "language_switcher": "Idioma",
+            "contact": "Contato",
+            "blog": "Blog",
+            "get_quote": "Solicitar Orçamento""home": "Início",
+          },
+          "contact": "Contato",
+          "footer": {
+            "about": "Sobre",
+            "copyright": "© 2025 CorpFiança. Todos os direitos reservados.",
+            "careers": "Carreiras",
+            "contact_us": "Entre em Contato",
+            "services": "Serviços",
+            "call_now": "Ligue para CorpFiança Agora",
+            "team": "Equipe",
+            "email": "suporte@corpfianca.com",
+            "portfolio": "Portfólio",
+            "phone": "+55 (11) 9999-9999""faq": "FAQ",
+          },
+          "blog": "Blog",
+          "common": {
+            "shop": "Loja",
+            "learn_more": "Saiba Mais",
+            "contact": "Contato",
+            "get_started": "Começar Agora",
+            "cart": "Carrinho",
+            "read_more": "Leia Mais",
+            "get_quote": "Solicitar Orçamento""wishlist": "Lista de Desejos",
+            "view_all": "Ver Todos",
+          },
+          "contact_us": "Fale Conosco",
+          "login": "Entrar",
+          "send_message": "Enviar Mensagem""footer": {},
+          "pricing": "Preços""copyright": "© 2025 CorpFiança. Todos os direitos reservados.",
+          "testimonials": {},
+          "title": "O que nossos clientes dizem",
+          "contact_us": "Entre em Contato",
+          "description": "Nossa experiência com a CorpFiança tem sido nada menos que excepcional. Desde o primeiro dia, sua equipe demonstrou um profundo entendimento de nossa indústria e rapidamente identificou áreas-chave para melhoria.",
+          "common": {
+            "clients_worldwide": "Clientes satisfeitos ao redor do mundo com a CorpFiança""call_now": "Ligue para CorpFiança Agora",
+          },
+          "loading": "Carregando...",
+          "brands": {
+            "email": "suporte@corpfianca.com",
+            "join_companies": "Junte-se às <1>{count}+</1> empresas beneficiadas pela CorpFiança",
+            "error": "Erro",
+            "join_over_companies": "Junte-se a mais de <1>{count}+</1> empresas com a CorpFiança""phone": "+55 (11) 9999-9999""success": "Sucesso",
+          }
+        },
+      }      "close": "Fechar",
+      "common": {
+        "open": "Abrir",
+        "learn_more": "Saiba Mais",
+        "save": "Salvar",
+        "get_started": "Começar Agora",
+        "cancel": "Cancelar",
+        "read_more": "Leia Mais",
+        "delete": "Excluir",
+        "view_all": "Ver Todos",
+        "edit": "Editar",
+        "contact_us": "Fale Conosco",
+        "view": "Visualizar",
+        "send_message": "Enviar Mensagem""search": "Buscar",
+      },
+      "filter": "Filtrar",
+      "testimonials": {
+        "sort": "Ordenar",
+        "title": "O que nossos clientes dizem",
+        "next": "Próximo",
+        "description": "Nossa experiência com a CorpFiança tem sido nada menos que excepcional. Desde o primeiro dia, sua equipe demonstrou um profundo entendimento de nossa indústria e rapidamente identificou áreas-chave para melhoria.",
+        "previous": "Anterior",
+        "clients_worldwide": "Clientes satisfeitos ao redor do mundo com a CorpFiança""back": "Voltar",
+      },
+      "submit": "Enviar",
+      "brands": {
+        "download": "Baixar",
+        "join_companies": "Junte-se às {count}+ empresas beneficiadas pela CorpFiança",
+        "upload": "Enviar",
+        "join_over_companies": "Junte-se a mais de {count}+ empresas com a CorpFiança""share": "Compartilhar",
+      }    "copy": "Copiar",
+    }    "print": "Imprimir",
+    "refresh": "Atualizar",
+    "language": "Idioma",
+    "selectLanguage": "Selecionar Idioma"
+  },
+  "hero": {
+    "title": "Transforme sua visão em realidade digital",
+    "subtitle": "Criamos soluções inovadoras que impulsionam o crescimento do seu negócio",
+    "description": "Somos especialistas em desenvolvimento web, design digital e estratégias de marketing que conectam sua marca ao sucesso.",
+    "cta": {
+      "primary": "Começar Agora",
+      "secondary": "Saiba Mais"
+    }
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Conhecendo a Corpfiaca",
+    "description": "Uma empresa dedicada à excelência em soluções digitais",
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Transformar ideias em soluções digitais inovadoras que geram valor real para nossos clientes."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "description": "Ser reconhecida como líder em inovação tecnológica e parceira estratégica de nossos clientes."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "items": {
+        "innovation": "Inovação",
+        "quality": "Qualidade",
+        "transparency": "Transparência",
+        "collaboration": "Colaboração"
+      }
+    }
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções Completas",
+    "description": "Oferecemos uma gama completa de serviços digitais para impulsionar seu negócio",
+    "webDevelopment": {
+      "title": "Desenvolvimento Web",
+      "description": "Criamos websites modernos, responsivos e otimizados para conversão."
+    },
+    "digitalMarketing": {
+      "title": "Marketing Digital",
+      "description": "Estratégias completas para aumentar sua presença online e gerar mais leads."
+    },
+    "uiUxDesign": {
+      "title": "UI/UX Design",
+      "description": "Designs intuitivos e envolventes que proporcionam a melhor experiência do usuário."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Plataformas de venda online otimizadas para maximizar suas vendas."
+    }
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Nossos Trabalhos",
+    "description": "Confira alguns dos projetos que desenvolvemos com excelência",
+    "viewProject": "Ver Projeto",
+    "allProjects": "Todos os Projetos",
+    "categories": {
+      "all": "Todos",
+      "web": "Web",
+      "mobile": "Mobile",
+      "design": "Design",
+      "ecommerce": "E-commerce"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights e Tendências",
+    "description": "Fique por dentro das últimas novidades e tendências do mundo digital",
+    "readMore": "Ler Mais",
+    "readTime": "min de leitura",
+    "publishedOn": "Publicado em",
+    "author": "Autor",
+    "categories": "Categorias",
+    "tags": "Tags",
+    "relatedPosts": "Posts Relacionados",
+    "comments": "Comentários",
+    "leaveComment": "Deixar Comentário"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Fale Conosco",
+    "description": "Estamos prontos para transformar suas ideias em realidade",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    },
+    "info": {
+      "address": "Endereço",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "hours": "Horário de Funcionamento"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Corpfiaca",
+      "description": "Transformando visões em realidade digital com soluções inovadoras e estratégicas."
+    },
+    "quickLinks": {
+      "title": "Links Rápidos",
+      "home": "Início",
+      "about": "Sobre",
+      "services": "Serviços",
+      "portfolio": "Portfólio",
+      "contact": "Contato"
+    },
+    "services": {
+      "title": "Serviços",
+      "webDev": "Desenvolvimento Web",
+      "marketing": "Marketing Digital",
+      "design": "UI/UX Design",
+      "ecommerce": "E-commerce"
+    },
+    "contact": {
+      "title": "Contato",
+      "address": "Rua Example, 123 - São Paulo, SP",
+      "phone": "+55 (11) 99999-9999",
+      "email": "contato@corpfiaca.com"
+    },
+    "social": {
+      "title": "Redes Sociais",
+      "followUs": "Siga-nos"
+    },
+    "bottom": {
+      "copyright": "© 2025 Corpfiaca. Todos os direitos reservados.",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso"
+    }
+  },
+  "team": {
+    "title": "Nossa Equipe",
+    "subtitle": "Conheça os Profissionais",
+    "description": "Uma equipe dedicada e experiente pronta para superar suas expectativas"
+  },
+  "careers": {
+    "title": "Carreiras",
+    "subtitle": "Trabalhe Conosco",
+    "description": "Junte-se à nossa equipe e faça parte de projetos inovadores",
+    "positions": "Vagas Disponíveis",
+    "apply": "Candidatar-se",
+    "requirements": "Requisitos",
+    "benefits": "Benefícios"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "FAQ",
+    "description": "Encontre respostas para as perguntas mais comuns"
+  },
+  "shop": {
+    "title": "Loja",
+    "addToCart": "Adicionar ao Carrinho",
+    "buyNow": "Comprar Agora",
+    "price": "Preço",
+    "inStock": "Em Estoque",
+    "outOfStock": "Fora de Estoque",
+    "quantity": "Quantidade",
+    "total": "Total"
+  },
+  "cart": {
+    "title": "Carrinho de Compras",
+    "empty": "Seu carrinho está vazio",
+    "continueShopping": "Continuar Comprando",
+    "checkout": "Finalizar Compra",
+    "subtotal": "Subtotal",
+    "shipping": "Frete",
+    "total": "Total"
+  },
+  "auth": {
+    "login": {
+      "title": "Entrar",
+      "email": "E-mail",
+      "password": "Senha",
+      "rememberMe": "Lembrar de mim",
+      "forgotPassword": "Esqueceu a senha?",
+      "noAccount": "Não tem conta?",
+      "signUp": "Cadastre-se",
+      "signIn": "Entrar"
+    },
+    "register": {
+      "title": "Cadastrar",
+      "name": "Nome",
+      "email": "E-mail",
+      "password": "Senha",
+      "confirmPassword": "Confirmar Senha",
+      "hasAccount": "Já tem conta?",
+      "signIn": "Entrar",
+      "signUp": "Cadastrar"
+    }
+  }
+}
