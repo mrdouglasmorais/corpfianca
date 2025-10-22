@@ -9,6 +9,6 @@ export default createMiddleware({
 export const config = {
   matcher: [
     '/',
-    '/((?!_next|_vercel|.*\\..*).*)'
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.png$|.*\\.jpg$|.*\\.jpeg$|.*\\.gif$|.*\\.webp$|.*\\.svg$|.*\\.ico$).*)'
   ]
 };

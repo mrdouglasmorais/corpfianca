@@ -24,7 +24,7 @@ export const metadata = {
 
 export default async function LocaleLayout({ children, params }) {
 	const locale = (await params).locale;
-	const messages = await getMessages();
+	const messages = await getMessages({ locale });
 
 	return (
 		<html
