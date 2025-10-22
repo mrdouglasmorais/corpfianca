@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const locales = [
-  { code: 'pt-br', name: 'PT-BR', flag: '🇧🇷' },
+  { code: 'pt', name: 'PT', flag: '🇧🇷' },
   { code: 'en', name: 'EN', flag: '🇺🇸' },
   { code: 'es', name: 'ES', flag: '🇪🇸' }
 ];
@@ -20,10 +20,10 @@ export default function LanguageSwitcher() {
 
   const handleLocaleChange = (newLocale: string) => {
     // Remove current locale from pathname if it exists
-    const pathnameWithoutLocale = pathname.replace(/^\/(pt-br|en|es)/, '') || '/';
+    const pathnameWithoutLocale = pathname.replace(/^\/(pt|en|es)/, '') || '/';
 
-    // For default locale (pt-br), don't add prefix
-    const newPath = newLocale === 'pt-br'
+    // For default locale (pt), don't add prefix
+    const newPath = newLocale === 'pt'
       ? pathnameWithoutLocale
       : `/${newLocale}${pathnameWithoutLocale}`;
 
