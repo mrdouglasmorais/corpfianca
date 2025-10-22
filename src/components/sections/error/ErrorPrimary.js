@@ -1,6 +1,6 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 
-const ErrorPrimary = () => {
+const ErrorPrimary = ({ onRetry }) => {
 	return (
 		<section className="tj-error__area not-found section-space">
 			<div className="container">
@@ -18,7 +18,14 @@ const ErrorPrimary = () => {
 									Page does not exist or some other error occurred. Go to our
 									Home Page
 								</div>
-								<ButtonPrimary text={"Go back to home page"} url={"/"} />
+								{onRetry ? (
+									<div className="d-flex gap-3 justify-content-center">
+										<ButtonPrimary text={"Tentar novamente"} onClick={onRetry} />
+										<ButtonPrimary text={"Ir para início"} url={"/"} />
+									</div>
+								) : (
+									<ButtonPrimary text={"Go back to home page"} url={"/"} />
+								)}
 							</div>
 						</div>
 					</div>
