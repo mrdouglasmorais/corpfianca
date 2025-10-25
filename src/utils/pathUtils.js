@@ -1,4 +1,81 @@
 /**
+ * Route translations mapping
+ */
+const routeTranslations = {
+  pt: {
+    '/contact': '/contato',
+    '/about': '/sobre',
+    '/services': '/servicos',
+    '/team': '/equipe',
+    '/careers': '/carreiras',
+    '/shop': '/loja',
+    '/login': '/entrar',
+    '/password': '/senha',
+    '/pricing-plan': '/planos',
+    '/faq': '/perguntas-frequentes',
+    '/history': '/historia',
+    '/blog-grid': '/noticias-grade',
+    '/blog-sidebar': '/noticias-sidebar',
+    '/cart': '/carrinho',
+    '/checkout': '/finalizar-compra',
+    '/wishlist': '/lista-desejos',
+  },
+  en: {
+    '/contact': '/contact',
+    '/about': '/about',
+    '/services': '/services',
+    '/team': '/team',
+    '/careers': '/careers',
+    '/shop': '/shop',
+    '/login': '/login',
+    '/password': '/password',
+    '/pricing-plan': '/pricing-plan',
+    '/faq': '/faq',
+    '/history': '/history',
+    '/blog-grid': '/blog-grid',
+    '/blog-sidebar': '/blog-sidebar',
+    '/cart': '/cart',
+    '/checkout': '/checkout',
+    '/wishlist': '/wishlist',
+  },
+  es: {
+    '/contact': '/contacto',
+    '/about': '/acerca',
+    '/services': '/servicios',
+    '/team': '/equipo',
+    '/careers': '/carreras',
+    '/shop': '/tienda',
+    '/login': '/iniciar-sesion',
+    '/password': '/contrasena',
+    '/pricing-plan': '/planes',
+    '/faq': '/preguntas-frecuentes',
+    '/history': '/historia',
+    '/blog-grid': '/noticias-grid',
+    '/blog-sidebar': '/noticias-sidebar',
+    '/cart': '/carrito',
+    '/checkout': '/finalizar-compra',
+    '/wishlist': '/lista-deseos',
+  },
+};
+
+/**
+ * Get translated route for a given path and locale
+ * @param {string} path - The path to translate
+ * @param {string} locale - The current locale
+ * @returns {string} - The translated path
+ */
+const getTranslatedRoute = (path, locale) => {
+  // If path has dynamic segments (like /noticias/1 or /services/1), translate the base path
+  const basePath = path.split('/').slice(0, 2).join('/');
+  const remainingPath = path.replace(basePath, '');
+  
+  const translations = routeTranslations[locale] || routeTranslations.en;
+  const translatedBase = translations[basePath] || basePath;
+  
+  return translatedBase + remainingPath;
+};
+
+/**
  * Utility function to create localized paths for internationalization
  * @param {string} path - The path to localize
  * @param {string} locale - The current locale (pt, en, es)
@@ -7,12 +84,16 @@
 export const createLocalizedPath = (path, locale) => {
   if (!path || path === '#' || path === 'javascript:void(0)') return '#';
   if (path === '/') return locale === 'pt' ? '/' : `/${locale}`;
+  
+  // Translate the route according to locale
+  const translatedPath = getTranslatedRoute(path, locale);
+  
   // For Portuguese (primary language), don't add prefix
   if (locale === 'pt') {
-    return path;
+    return translatedPath;
   }
   // For other locales, add prefix
-  return `/${locale}${path}`;
+  return `/${locale}${translatedPath}`;
 };
 
 /**
