@@ -3,6 +3,7 @@ import makePath from '@/libs/makePath';
 import modifyNumber from '@/libs/modifyNumber';
 import translateMonth from '@/utils/translateMonth';
 import { translateCategory } from '@/utils/translateTags';
+import { createLocalizedPath } from '@/utils/pathUtils';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
@@ -42,17 +43,17 @@ const BlogCard10 = ({ blog, idx }) => {
         <div className="blog-two-meta">
           <ul>
             <li>
-              <Link className="meta-link" href={`/noticias?category=${makePath(category)}`}>
+              <Link className="meta-link" href={createLocalizedPath(`/noticias?category=${makePath(category)}`, locale)}>
                 {translateCategory(category, tCommon)}
               </Link>
             </li>
           </ul>
         </div>
         <h4 className="blog_title">
-          <Link href={`/noticias/${id}`}>{title}</Link>
+          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
         </h4>
         {idx === 1 ? (
-          <Link className="blog_btn text-btn-2" href={`/noticias/${id}`}>
+          <Link className="blog_btn text-btn-2" href={createLocalizedPath(`/noticias/${id}`, locale)}>
             <span className="icon">
               <i className="tji-angle-right"></i>
             </span>

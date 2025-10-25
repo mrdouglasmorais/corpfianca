@@ -1,8 +1,28 @@
+'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import FormSelect from '@/components/shared/Inputs/FormSelect';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useMemo } from 'react';
 
 const Contact1 = () => {
+  const t = useTranslations('contact_page');
+  const locale = useLocale();
+
+  const selectOptions = useMemo(
+    () => [
+      { value: '1', name: t('chose_option') },
+      { value: '2', name: t('it_consulting') },
+      { value: '3', name: t('market_research') },
+      { value: '4', name: t('business_process') },
+      { value: '5', name: t('business_consultancy') },
+      { value: '6', name: t('digital_marketing') },
+      { value: '7', name: t('branding_design') },
+    ],
+    [t],
+  );
+
   return (
     <section
       className="tj-contact-section"
@@ -15,25 +35,25 @@ const Contact1 = () => {
               <div className="contact-left-content">
                 <div className="sec-heading style-2">
                   <span className="sub-title wow fadeInUp" data-wow-delay="0.1s">
-                    // Meet our team
+                    // {t('meet_team')}
                   </span>
-                  <h2 className="sec-title text-anim">
-                    Let’s discuss further to get better results
-                  </h2>
+                  <h2 className="sec-title text-anim">{t('discuss_further')}</h2>
                   <div className="desc wow fadeInUp" data-wow-delay="0.3s">
-                    <p>
-                      Our mission is to empowers businesses off our all size too thrive in an
-                      businesses ever changing marketplaces. In today's dynamicis business
-                      environment, the key to success lies.
-                    </p>
+                    <p>{t('mission_description')}</p>
                   </div>
                   <div className="contact-button wow fadeInUp" data-wow-delay="0.5s">
-                    <ButtonPrimary text={'Contact us'} url={'/contact'} className={'white-btn'} />
+                    <ButtonPrimary
+                      text={t('contact_us')}
+                      url={createLocalizedPath('/contact', locale)}
+                      className={'white-btn'}
+                    />
                   </div>
                 </div>
               </div>
               <div className="contact-form-one wow fadeInUp" data-wow-delay="0.1s">
-                <h3 className="title">Feel free to get in touch or visit our location.</h3>
+                <h3 className="title">
+                  {t('feel_free_touch')} <span>{t('get_in_touch')}</span> {t('or_visit_location')}
+                </h3>
                 <div className="contact-item">
                   <div className="contact-text">
                     <i className="fa-solid fa-envelope"></i>
@@ -41,8 +61,7 @@ const Contact1 = () => {
                   </div>
                   <div className="contact-text">
                     <i className="fa-sharp fa-solid fa-location-dot"></i>
-                    Av. Brigadeiro Faria Lima, n° 1572, sala 1022, Ed. Barão de Rothschild, Jardim
-                    Paulistano, São Paulo/SP
+                    {t('address')}
                   </div>
                 </div>
                 <form>
@@ -53,7 +72,7 @@ const Contact1 = () => {
                           type="text"
                           id="first"
                           name="name"
-                          placeholder="Full name*"
+                          placeholder={t('full_name')}
                           required=""
                         />
                       </div>
@@ -64,7 +83,7 @@ const Contact1 = () => {
                           type="email"
                           id="emailOne"
                           name="email"
-                          placeholder="Email address*"
+                          placeholder={t('email_address')}
                           required=""
                         />
                       </div>
@@ -75,7 +94,7 @@ const Contact1 = () => {
                           type="tel"
                           id="tel"
                           name="tel"
-                          placeholder="Phone number*"
+                          placeholder={t('phone_number')}
                           required=""
                         />
                       </div>
@@ -87,16 +106,8 @@ const Contact1 = () => {
                             <FormSelect
                               id={'contact'}
                               className="nice-select"
-                              defaultValue={'Chose a option'}
-                              items={[
-                                { value: '1', name: 'Chose a option' },
-                                { value: '2', name: 'IT consulting' },
-                                { value: '3', name: 'Market research' },
-                                { value: '4', name: 'Business process' },
-                                { value: '5', name: 'Business consultancy' },
-                                { value: '6', name: 'Digital marketing' },
-                                { value: '7', name: 'Branding design' },
-                              ]}
+                              defaultValue={t('chose_option')}
+                              items={selectOptions}
                             />
                           </div>
                         </div>
@@ -104,11 +115,15 @@ const Contact1 = () => {
                     </div>
                     <div className="col-12">
                       <div className="form-input input-textarea">
-                        <textarea id="message" name="message" placeholder="Type message" />
+                        <textarea id="message" name="message" placeholder={t('type_message')} />
                       </div>
                     </div>
                     <div className="submit-button">
-                      <ButtonPrimary text={'Send message'} type="submit" className={'white-btn'} />
+                      <ButtonPrimary
+                        text={t('send_message')}
+                        type="submit"
+                        className={'white-btn'}
+                      />
                     </div>
                   </div>
                 </form>

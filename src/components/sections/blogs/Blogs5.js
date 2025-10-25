@@ -2,10 +2,12 @@
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import BlogCard5 from '@/components/shared/cards/BlogCard5';
 import getBlogs from '@/libs/getBlogs';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 
 const Blogs5 = () => {
   const t = useTranslations('blogs_section');
+  const locale = useLocale();
   const blogs = getBlogs().slice(0, 3);
   return (
     <section className="h5-blog-section section-space">
@@ -23,7 +25,10 @@ const Blogs5 = () => {
                 <p>In today's dynamic business environment, the key to success strategics..</p>
               </div>
               <div className="blog-button wow fadeInUp" data-wow-delay="0.6s">
-                <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
+                <ButtonPrimary
+                  text={t('explore_more')}
+                  url={createLocalizedPath('/noticias', locale)}
+                />
               </div>
             </div>
           </div>

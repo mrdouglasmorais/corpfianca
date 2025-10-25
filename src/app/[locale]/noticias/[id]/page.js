@@ -5,7 +5,7 @@ import PageWrapper from '@/components/shared/wrappers/PageWrapper';
 export const dynamic = 'force-dynamic';
 
 export default async function NoticiaDetails({ params }) {
-  const { id } = await params;
+  const { locale, id } = await params;
   return (
     <PageWrapper isHeaderTop={true} footerType={'inner'}>
       <BlogDetailsMain blogId={id} />

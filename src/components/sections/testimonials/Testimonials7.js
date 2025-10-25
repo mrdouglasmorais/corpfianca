@@ -43,12 +43,12 @@ const Testimonials7 = () => {
                 <div className="counter-item">
                   <FunfactSingle currentValue={99} symbol="%" />
                   <span className="sub-title wow fadeInUp" data-wow-delay="0.3s">
-                    Clientes satisfeitos ao redor do mundo com a CorpFiança
+                    {t('satisfied_clients_corpfianca')}
                   </span>
                 </div>
               </div>
               <div className="btn-area wow fadeInUp" data-wow-delay="0.3s">
-                <ButtonPrimary text="Explore more" url="/contact" />
+                <ButtonPrimary text={t('explore_more')} url="/contact" />
               </div>
             </div>
           </div>

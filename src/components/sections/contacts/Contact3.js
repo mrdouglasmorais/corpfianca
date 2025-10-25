@@ -1,8 +1,24 @@
+'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import FormSelect from '@/components/shared/Inputs/FormSelect';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useMemo } from 'react';
 
 const Contact3 = () => {
+  const t = useTranslations('contact_page');
+
+  const selectOptions = useMemo(
+    () => [
+      { value: '1', name: t('chose_option') },
+      { value: '2', name: t('business_advertising') },
+      { value: '3', name: t('social_media_marketing') },
+      { value: '4', name: t('content_marketing') },
+      { value: '5', name: t('email_marketing') },
+    ],
+    [t],
+  );
+
   return (
     <section className="contact-team-details">
       <div className="container">
@@ -12,13 +28,11 @@ const Contact3 = () => {
             <div className="col-12 col-lg-5 ">
               <div className="sec-heading style-2">
                 <span className="sub-title wow fadeInUp" data-wow-delay="0.1s">
-                  // CONTACT US
+                  // {t('contact_us_upper')}
                 </span>
-                <h2 className="sec-title text-anim">Let’s discuss further to get better results</h2>
+                <h2 className="sec-title text-anim">{t('discuss_further')}</h2>
                 <p className="desc wow fadeInUp" data-wow-delay="0.3s">
-                  Our mission is to empowers businesses off our all size too thrive in an businesses
-                  ever changing marketplaces. In today's dynamicis business environment, the key to
-                  success lies.
+                  {t('mission_description')}
                 </p>
                 <h6 className="contact-team-details__message wow fadeInUp" data-wow-delay="0.5s">
                   <Link href="mailto:contato@corpfianca.com">
@@ -36,33 +50,27 @@ const Contact3 = () => {
                 data-wow-delay="0.7s"
               >
                 <div className="tj-input__wrapper">
-                  <input className="tj-input" placeholder="Full name*" />
+                  <input className="tj-input" placeholder={t('full_name')} />
                 </div>
                 <div className="tj-input__wrapper">
-                  <input className="tj-input" placeholder="Email address*" />
+                  <input className="tj-input" placeholder={t('email_address')} />
                 </div>
                 <div className="tj-input__wrapper">
-                  <input className="tj-input" placeholder="Phone number*" />
+                  <input className="tj-input" placeholder={t('phone_number')} />
                 </div>
                 <div className="tj-input__wrapper">
                   <FormSelect
                     id={'contact'}
                     className="nice-select tj-nice-select tj-input"
-                    defaultValue={'Chose a option'}
-                    items={[
-                      { value: '1', name: 'Chose a option' },
-                      { value: '2', name: 'Business Advertising' },
-                      { value: '3', name: 'Social Media Marketing' },
-                      { value: '4', name: 'Content Marketing' },
-                      { value: '5', name: 'Email Marketing' },
-                    ]}
+                    defaultValue={t('chose_option')}
+                    items={selectOptions}
                   />
                 </div>
                 <div className="tj-input__wrapper tj-input__wrapper--message">
-                  <textarea className="tj-input" placeholder="Type message" rows="6" />
+                  <textarea className="tj-input" placeholder={t('type_message')} rows="6" />
                 </div>
                 <div>
-                  <ButtonPrimary text={'Send message'} type={'submit'} />
+                  <ButtonPrimary text={t('send_message')} type={'submit'} />
                 </div>
               </form>
             </div>

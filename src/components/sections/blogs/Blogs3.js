@@ -2,10 +2,12 @@
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import BlogCard3 from '@/components/shared/cards/BlogCard3';
 import getBlogs from '@/libs/getBlogs';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 
 const Blogs3 = () => {
   const t = useTranslations('blogs_section');
+  const locale = useLocale();
   const blogs = getBlogs().slice(0, 3);
   return (
     <section className="tj-blog-section-three section-space">
@@ -20,7 +22,10 @@ const Blogs3 = () => {
                 <h2 className="sec-title text-anim">{t('title')}</h2>
               </div>
               <div className="blog-button wow fadeInUp" data-wow-delay="0.3s">
-                <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
+                <ButtonPrimary
+                  text={t('explore_more')}
+                  url={createLocalizedPath('/noticias', locale)}
+                />
               </div>
             </div>
           </div>

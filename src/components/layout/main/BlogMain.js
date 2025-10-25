@@ -5,11 +5,13 @@ import HeroInner from '@/components/sections/heros/HeroInner';
 import filterItems from '@/libs/filterItems';
 import getBlogs from '@/libs/getBlogs';
 import makeText from '@/libs/makeText';
+import { translateCategory, translateTag } from '@/utils/translateTags';
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 
 const BlogMain = () => {
   const t = useTranslations('blogs_section');
+  const tCommon = useTranslations('common');
   const allItems = getBlogs();
   const searchParams = useSearchParams();
   const category = searchParams?.get('category') || null;
@@ -23,31 +25,30 @@ const BlogMain = () => {
     category ? category : tag ? tag : author_role ? author_role : search ? search : '',
   );
 
+  // Translate category or tag
+  const getTranslatedTitle = () => {
+    if (category) {
+      return translateCategory(makeText(category, true), tCommon);
+    }
+    if (tag) {
+      return translateTag(makeText(tag, true), tCommon);
+    }
+    if (author_role) {
+      return author_role;
+    }
+    if (search) {
+      return makeText(search, true);
+    }
+    return t('blog_standard');
+  };
+
+  const translatedTitle = getTranslatedTitle();
+
   return (
     <main>
       <HeroInner
-        title={
-          category
-            ? makeText(category, true)
-            : tag
-              ? makeText(tag, true)
-              : author_role
-                ? author_role
-                : search
-                  ? makeText(search, true)
-                  : t('blog_standard')
-        }
-        text={
-          category
-            ? `${makeText(category, true)}`
-            : tag
-              ? ` ${makeText(tag, true)}`
-              : author_role
-                ? `${author_role}`
-                : search
-                  ? `${makeText(search, true)}`
-                  : t('blog_standard')
-        }
+        title={translatedTitle}
+        text={translatedTitle}
         breadcrums={
           category || tag || author_role || search ? [{ name: t('blogs'), path: '/noticias' }] : []
         }

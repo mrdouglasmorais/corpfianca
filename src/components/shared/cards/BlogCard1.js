@@ -1,17 +1,19 @@
 'use client';
 import makePath from '@/libs/makePath';
 import { translateCategory } from '@/utils/translateTags';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const BlogCard1 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
   const { title, desc, id, img1, category, date, day, month } = blog || {};
   return (
     <div className="blog-item wow fadeInUp" data-wow-delay={`0.${idx + 1}s`}>
       <div className="blog-images hover:shine">
-        <Link href={`/noticias/${id}`}>
+        <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>
           <img src={img1 ? img1 : '/images/blog/blog-thumb-1.webp'} alt="Images" />
         </Link>
       </div>
@@ -19,7 +21,7 @@ const BlogCard1 = ({ blog, idx }) => {
         <div className="blog-meta">
           <ul>
             <li className="category">
-              <Link href={`/noticias?category=${makePath(category)}`}>
+              <Link href={createLocalizedPath(`/noticias?category=${makePath(category)}`, locale)}>
                 {translateCategory(category, tCommon)}
               </Link>
             </li>
@@ -27,10 +29,10 @@ const BlogCard1 = ({ blog, idx }) => {
           </ul>
         </div>
         <h4 className="blog-title">
-          <Link href={`/noticias/${id}`}>{title}</Link>
+          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
         </h4>
         {idx === 0 ? <div className="desc">{t('blog_card_desc')}</div> : ''}
-        <Link className="blog-button text-btn" href={`/noticias/${id}`}>
+        <Link className="blog-button text-btn" href={createLocalizedPath(`/noticias/${id}`, locale)}>
           {t('read_more')} <i className="tji-arrow-right"></i>
         </Link>
         <div className="blog-meta meta-2 mb-0">

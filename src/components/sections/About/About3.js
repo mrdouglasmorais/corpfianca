@@ -1,11 +1,14 @@
 'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import PopupVideo from '@/components/shared/popup-video/PopupVideo';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const About3 = () => {
   const t = useTranslations('funfacts_section');
+  const tAbout = useTranslations('about_section');
+  const locale = useLocale();
   return (
     <section id="about" className="tj-about-section-three section-bottom-space">
       <div className="container">
@@ -35,35 +38,33 @@ const About3 = () => {
               <div className="about-content-three">
                 <div className="sec-heading style-2">
                   <span className="sub-title wow fadeInUp" data-wow-delay="0.3s">
-                    Transformative solution
+                    {tAbout('transformative_solution')}
                   </span>
-                  <h2 className="sec-title  text-anim">
-                    Get to know expertise's and commitment to your business
-                  </h2>
+                  <h2 className="sec-title  text-anim">{tAbout('know_expertise')}</h2>
                   <div className="desc wow fadeInUp" data-wow-delay="0.7s">
-                    <p>
-                      Our mission is to empoiwers businesses off our all size too thrive in an
-                      businesses ever changing marketplaces. In today's dynamicis business
-                      environment, the key to the success lies Our mission is to empower on
-                      businesses off al size to thrive business ever
-                    </p>
+                    <p>{tAbout('know_expertise_desc')}</p>
                   </div>
                   <div className="check-list-one wow fadeInUp" data-wow-delay="0.9s">
                     <ul>
                       <li>
-                        <i className="tji-double-check"></i>Discover our expertise, mission, and
-                        values
+                        <i className="tji-double-check"></i>
+                        {tAbout('discover_expertise')}
                       </li>
                       <li>
-                        <i className="tji-double-check"></i>Journey and commitment to explained
+                        <i className="tji-double-check"></i>
+                        {tAbout('journey_commitment')}
                       </li>
                       <li>
-                        <i className="tji-double-check"></i>Meet our team and learn our visions
+                        <i className="tji-double-check"></i>
+                        {tAbout('meet_team_visions')}
                       </li>
                     </ul>
                   </div>
                   <div className="about-button wow fadeInUp" data-wow-delay="0.9s">
-                    <ButtonPrimary text={'Free consultation'} url={'/contact'} />
+                    <ButtonPrimary
+                      text={tAbout('free_consultation')}
+                      url={createLocalizedPath('/contact', locale)}
+                    />
                   </div>
                 </div>
                 <div className="about-shapes zoominout">

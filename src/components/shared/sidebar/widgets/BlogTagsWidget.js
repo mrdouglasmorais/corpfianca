@@ -1,13 +1,15 @@
 'use client';
 import getBlogTags from '@/libs/getBlogTags';
 import makePath from '@/libs/makePath';
+import { createLocalizedPath } from '@/utils/pathUtils';
 import { translateTags } from '@/utils/translateTags';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const BlogTagsWidget = () => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
   const tags = getBlogTags();
   const translatedTags = translateTags(tags, tCommon);
 
@@ -17,7 +19,7 @@ const BlogTagsWidget = () => {
       <div className="tagcloud">
         {translatedTags?.length
           ? translatedTags?.map((tag, idx) => (
-              <Link key={idx} href={`/noticias?tag=${makePath(tag)}`}>
+              <Link key={idx} href={createLocalizedPath(`/noticias?tag=${makePath(tag)}`, locale)}>
                 {' '}
                 {tag}
               </Link>

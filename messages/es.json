@@ -174,7 +174,14 @@
     "client_centric": "Enfoque centrado en el cliente",
     "commitment_excellence": "Compromiso con la excelencia",
     "read_more": "Leer más",
-    "happy_clients": "Clientes atendidos globalmente."
+    "happy_clients": "Clientes atendidos globalmente.",
+    "transformative_solution": "Solución transformadora",
+    "know_expertise": "Conoce nuestra experiencia y compromiso con tu negocio",
+    "know_expertise_desc": "Nuestra misión es capacitar empresas de todos los tamaños para prosperar en un mercado en constante cambio. En el entorno empresarial dinámico de hoy, la clave del éxito está presente. Nuestra misión es capacitar empresas de todos los tamaños para prosperar.",
+    "discover_expertise": "Descubre nuestra experiencia, misión y valores",
+    "journey_commitment": "Trayectoria y compromiso explicados",
+    "meet_team_visions": "Conoce nuestro equipo y aprende nuestras visiones",
+    "free_consultation": "Consulta gratuita"
   },
   "services_section": {
     "subtitle": "Nuestros servicios",
@@ -197,7 +204,25 @@
     "our_clients_testimonials": "Testimonios de nuestros clientes",
     "feedback_fuels_us": "Feedback que nos impulsa",
     "client_testimonial_stories": "Testimonios de clientes e historias reales de éxito",
-    "happy_clients_world": "Clientes satisfechos en todo el mundo ahora."
+    "happy_clients_world": "Clientes satisfechos en todo el mundo ahora.",
+    "satisfied_clients_corpfianca": "Clientes satisfechos alrededor del mundo con CorpFiança",
+    "explore_more": "Explorar más"
+  },
+  "teams_section": {
+    "meet_team": "Conoce nuestro equipo",
+    "expert_team_members": "Miembros expertos del equipo",
+    "more_member": "Más miembros",
+    "hello_i_am": "Hola, soy",
+    "email_address": "Dirección de correo electrónico",
+    "phone_number": "Número de teléfono",
+    "work_experience": "Experiencia laboral",
+    "professional_skills": "Habilidades profesionales",
+    "work_experience_desc": "Nuestra misión es capacitar empresas de todos los tamaños para prosperar en un mercado en constante cambio. Estamos comprometidos a entregar valor excepcional a través de nuestro enfoque estratégico y métodos innovadores. Nuestra consultoría capacita empresas de todos los tamaños comprometidas a entregar valor excepcional.",
+    "human_essential": "Creemos que lo humano es esencial para iniciar cualquier proyecto exitoso.",
+    "business_consultants": "Consultores empresariales",
+    "client_communication": "Comunicación con clientes",
+    "business_strategy": "Estrategia empresarial",
+    "digital_marketing": "Marketing digital"
   },
   "portfolios_section": {
     "subtitle": "Nuestros proyectos",
@@ -255,11 +280,6 @@
     "click_for_watch": "Hacer clic para ver",
     "see_latest_video": "Ver nuestro último video"
   },
-  "teams_section": {
-    "meet_team": "Conoce nuestro equipo",
-    "expert_team_members": "Miembros expertos del equipo",
-    "more_member": "Más miembros"
-  },
   "footer": {
     "our_offices": "Nuestras oficinas",
     "headquarters": "Sede",
@@ -296,6 +316,7 @@
   "contact_page": {
     "title": "Contacto",
     "contact_us": "Contáctenos",
+    "contact_us_upper": "CONTÁCTENOS",
     "our_contact_info": "Nuestra información de contacto",
     "email_us": "Envíanos un correo",
     "call_us": "Llámanos",
@@ -318,7 +339,14 @@
     "digital_marketing": "Marketing digital",
     "branding_design": "Diseño de marca",
     "type_message": "Escribe tu mensaje",
-    "send_message": "Enviar mensaje"
+    "send_message": "Enviar mensaje",
+    "meet_team": "Conoce nuestro equipo",
+    "discuss_further": "Discutamos más para obtener mejores resultados",
+    "mission_description": "Nuestra misión es capacitar a empresas de todos los tamaños para prosperar en un mercado en constante cambio. En el entorno empresarial dinámico de hoy, la clave del éxito está presente.",
+    "business_advertising": "Publicidad Empresarial",
+    "social_media_marketing": "Marketing en Redes Sociales",
+    "content_marketing": "Marketing de Contenido",
+    "email_marketing": "Marketing por Correo Electrónico"
   },
   "hero_inner": {
     "home": "Inicio"
@@ -326,5 +354,19 @@
   "cta": {
     "get_consultant": "Solicite una consultoría",
     "lets_talk": "Contáctenos"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "password": "Contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "username_or_email": "Nombre de usuario o dirección de correo electrónico",
+    "password_label": "Contraseña",
+    "remember_me": "Recordarme",
+    "lost_password": "¿Perdiste tu contraseña?",
+    "log_in": "Iniciar sesión",
+    "reset_password": "Restablecer contraseña",
+    "forgot_password_desc": "Por favor, ingrese su nombre de usuario o dirección de correo electrónico con cuidado. Recibirá un enlace seguro para crear una nueva contraseña por correo electrónico.",
+    "username_or_email_short": "Nombre de usuario o correo electrónico",
+    "show_password": "Mostrar contraseña"
   }
 }

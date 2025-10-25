@@ -177,20 +177,6 @@ const getNavItemsI18n = (t, locale) => {
       id: 5,
       name: t('blog'),
       path: createLocalizedPath('/noticias', locale),
-      submenu: [
-        {
-          id: 1,
-          name: t('blog'),
-          path: createLocalizedPath('/noticias', locale),
-          badge: null,
-        },
-        {
-          id: 2,
-          name: t('blog_details'),
-          path: createLocalizedPath('/noticias/1', locale),
-          badge: null,
-        },
-      ],
     },
     {
       id: 6,

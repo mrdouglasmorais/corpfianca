@@ -4,13 +4,15 @@ import filterItems from '@/libs/filterItems';
 import getBlogCategories from '@/libs/getBlogCategories';
 import getBlogs from '@/libs/getBlogs';
 import makePath from '@/libs/makePath';
+import { createLocalizedPath } from '@/utils/pathUtils';
 import { translateCategory } from '@/utils/translateTags';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const BlogCategoriesWidget = () => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
   const categories = getBlogCategories();
   const blogs = getBlogs();
   return (
@@ -22,7 +24,9 @@ const BlogCategoriesWidget = () => {
               const translatedCategory = translateCategory(category, tCommon);
               return (
                 <li key={idx}>
-                  <Link href={`/noticias?category=${makePath(category)}`}>
+                  <Link
+                    href={createLocalizedPath(`/noticias?category=${makePath(category)}`, locale)}
+                  >
                     {translatedCategory}
                   </Link>{' '}
                   ({countDataLength(filterItems(blogs, 'category', makePath(category)))})

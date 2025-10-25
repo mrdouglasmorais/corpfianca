@@ -2,13 +2,15 @@
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import PopupVideo from '@/components/shared/popup-video/PopupVideo';
 import tjHeroStackAnimation from '@/libs/tjHeroStackAnimation';
+import { createLocalizedPath } from '@/utils/pathUtils';
 import { useGSAP } from '@gsap/react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useRef } from 'react';
 
 const Hero = () => {
   const t = useTranslations('hero');
+  const locale = useLocale();
   const animContainerRef = useRef();
 
   useGSAP(
@@ -37,7 +39,7 @@ const Hero = () => {
                 <div className="wow fadeInUp" data-wow-delay="0.3s">
                   <ButtonPrimary
                     text={t('free_consultation')}
-                    url={'/contact'}
+                    url={createLocalizedPath('/contact', locale)}
                     className={'hero-button'}
                   />
                 </div>

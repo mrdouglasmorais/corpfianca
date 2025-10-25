@@ -174,7 +174,14 @@
     "client_centric": "Client-centric approach",
     "commitment_excellence": "Commitment to excellence",
     "read_more": "Read more",
-    "happy_clients": "Clients served globally."
+    "happy_clients": "Clients served globally.",
+    "transformative_solution": "Transformative solution",
+    "know_expertise": "Get to know expertise's and commitment to your business",
+    "know_expertise_desc": "Our mission is to empoiwers businesses off our all size too thrive in an businesses ever changing marketplaces. In today's dynamicis business environment, the key to the success lies Our mission is to empower on businesses off al size to thrive business ever",
+    "discover_expertise": "Discover our expertise, mission, and values",
+    "journey_commitment": "Journey and commitment to explained",
+    "meet_team_visions": "Meet our team and learn our visions",
+    "free_consultation": "Free consultation"
   },
   "services_section": {
     "subtitle": "Our services",
@@ -197,7 +204,25 @@
     "our_clients_testimonials": "Our clients testimonials",
     "feedback_fuels_us": "Feedback that fuels us",
     "client_testimonial_stories": "Client testimonial and real success stories",
-    "happy_clients_world": "Happy clients all over world now."
+    "happy_clients_world": "Happy clients all over world now.",
+    "satisfied_clients_corpfianca": "Satisfied clients around the world with CorpFiança",
+    "explore_more": "Explore more"
+  },
+  "teams_section": {
+    "meet_team": "Meet our team",
+    "expert_team_members": "Expert team members",
+    "more_member": "More member",
+    "hello_i_am": "Hello, I am",
+    "email_address": "Email address",
+    "phone_number": "Phone number",
+    "work_experience": "Work experience",
+    "professional_skills": "Professional skills",
+    "work_experience_desc": "Our mission is to empowers businesses size to thrive in an businesses ever changing marketplace. We are committed to the delivering exceptionals the value through strategic inset innovative approaches. Our consulting of our missing empowers businesses of all sizes Committed to the delivering exceptional in the values thro",
+    "human_essential": "We believe that the human essential start any successful project.",
+    "business_consultants": "Business consultants",
+    "client_communication": "Client communication",
+    "business_strategy": "Business strategy",
+    "digital_marketing": "Digital marketing"
   },
   "portfolios_section": {
     "subtitle": "Our projects",
@@ -255,11 +280,6 @@
     "click_for_watch": "Click for watch",
     "see_latest_video": "See our latest video"
   },
-  "teams_section": {
-    "meet_team": "Meet our team",
-    "expert_team_members": "Expert team members",
-    "more_member": "More member"
-  },
   "footer": {
     "our_offices": "Our offices",
     "headquarters": "Headquarters",
@@ -296,6 +316,7 @@
   "contact_page": {
     "title": "Contact",
     "contact_us": "Contact us",
+    "contact_us_upper": "CONTACT US",
     "our_contact_info": "Our contact information",
     "email_us": "Email us",
     "call_us": "Call us",
@@ -318,7 +339,14 @@
     "digital_marketing": "Digital marketing",
     "branding_design": "Branding design",
     "type_message": "Type message",
-    "send_message": "Send message"
+    "send_message": "Send message",
+    "meet_team": "Meet our team",
+    "discuss_further": "Let's discuss further to get better results",
+    "mission_description": "Our mission is to empowers businesses off our all size too thrive in an businesses ever changing marketplaces. In today's dynamicis business environment, the key to success lies.",
+    "business_advertising": "Business Advertising",
+    "social_media_marketing": "Social Media Marketing",
+    "content_marketing": "Content Marketing",
+    "email_marketing": "Email Marketing"
   },
   "hero_inner": {
     "home": "Home"
@@ -326,5 +354,19 @@
   "cta": {
     "get_consultant": "Request a consultation",
     "lets_talk": "Contact us"
+  },
+  "auth": {
+    "login": "Login",
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "username_or_email": "Username or email address",
+    "password_label": "Password",
+    "remember_me": "Remember me",
+    "lost_password": "Lost your password?",
+    "log_in": "Log in",
+    "reset_password": "Reset password",
+    "forgot_password_desc": "Please enter your username or email address carefully. You will receive a secure link to create a new password via email address.",
+    "username_or_email_short": "Username or email",
+    "show_password": "Show password"
   }
 }

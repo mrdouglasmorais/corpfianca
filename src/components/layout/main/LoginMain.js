@@ -1,15 +1,18 @@
-import Cta1 from "@/components/sections/cta/Cta1";
-import HeroInner from "@/components/sections/heros/HeroInner";
-import LoginPrimary from "@/components/sections/registration/LoginPrimary";
+'use client';
+import Cta1 from '@/components/sections/cta/Cta1';
+import HeroInner from '@/components/sections/heros/HeroInner';
+import LoginPrimary from '@/components/sections/registration/LoginPrimary';
+import { useTranslations } from 'next-intl';
 
 const LoginMain = () => {
-	return (
-		<main>
-			<HeroInner title={"Login"} text={"Login"} />
-			<LoginPrimary />
-			<Cta1 />
-		</main>
-	);
+  const t = useTranslations('auth');
+  return (
+    <main>
+      <HeroInner title={t('login')} text={t('login')} />
+      <LoginPrimary />
+      <Cta1 />
+    </main>
+  );
 };
 
 export default LoginMain;

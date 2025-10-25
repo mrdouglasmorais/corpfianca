@@ -174,7 +174,14 @@
     "client_centric": "Abordagem centrada no cliente",
     "commitment_excellence": "Compromisso com a excelência",
     "read_more": "Ler mais",
-    "happy_clients": "Clientes atendidos globalmente."
+    "happy_clients": "Clientes atendidos globalmente.",
+    "transformative_solution": "Solução transformadora",
+    "know_expertise": "Conheça nossa expertise e compromisso com seu negócio",
+    "know_expertise_desc": "Nossa missão é capacitar empresas de todos os tamanhos a prosperar em um mercado em constante mudança. No ambiente empresarial dinâmico de hoje, a chave para o sucesso está presente. Nossa missão é capacitar empresas de todos os tamanhos a prosperar.",
+    "discover_expertise": "Descubra nossa expertise, missão e valores",
+    "journey_commitment": "Trajetória e compromisso explicados",
+    "meet_team_visions": "Conheça nossa equipe e aprenda nossas visões",
+    "free_consultation": "Consulta gratuita"
   },
   "services_section": {
     "subtitle": "Nossos serviços",
@@ -197,7 +204,25 @@
     "our_clients_testimonials": "Depoimentos dos nossos clientes",
     "feedback_fuels_us": "Feedback que nos impulsiona",
     "client_testimonial_stories": "Depoimentos de clientes e histórias reais de sucesso",
-    "happy_clients_world": "Clientes satisfeitos por todo o mundo agora."
+    "happy_clients_world": "Clientes satisfeitos por todo o mundo agora.",
+    "satisfied_clients_corpfianca": "Clientes satisfeitos ao redor do mundo com a CorpFiança",
+    "explore_more": "Explorar mais"
+  },
+  "teams_section": {
+    "meet_team": "Conheça nossa equipe",
+    "expert_team_members": "Membros especialistas da equipe",
+    "more_member": "Mais membros",
+    "hello_i_am": "Olá, eu sou",
+    "email_address": "Endereço de e-mail",
+    "phone_number": "Número de telefone",
+    "work_experience": "Experiência profissional",
+    "professional_skills": "Habilidades profissionais",
+    "work_experience_desc": "Nossa missão é capacitar empresas de todos os tamanhos a prosperar em um mercado em constante mudança. Estamos comprometidos em entregar valor excepcional através de nossa abordagem estratégica e métodos inovadores. Nossa consultoria capacita empresas de todos os tamanhos comprometidas em entregar valor excepcional.",
+    "human_essential": "Acreditamos que o humano é essencial para iniciar qualquer projeto bem-sucedido.",
+    "business_consultants": "Consultores empresariais",
+    "client_communication": "Comunicação com clientes",
+    "business_strategy": "Estratégia empresarial",
+    "digital_marketing": "Marketing digital"
   },
   "portfolios_section": {
     "subtitle": "Nossos projetos",
@@ -296,6 +321,7 @@
   "contact_page": {
     "title": "Contato",
     "contact_us": "Entre em contato conosco",
+    "contact_us_upper": "CONTATO",
     "our_contact_info": "Nossas informações de contato",
     "email_us": "Envie-nos um e-mail",
     "call_us": "Ligue para nós",
@@ -318,7 +344,14 @@
     "digital_marketing": "Marketing digital",
     "branding_design": "Design de marca",
     "type_message": "Digite sua mensagem",
-    "send_message": "Enviar mensagem"
+    "send_message": "Enviar mensagem",
+    "meet_team": "Conheça nossa equipe",
+    "discuss_further": "Vamos discutir mais para obter melhores resultados",
+    "mission_description": "Nossa missão é capacitar empresas de todos os tamanhos a prosperar em um mercado em constante mudança. No ambiente empresarial dinâmico de hoje, a chave para o sucesso está presente.",
+    "business_advertising": "Publicidade empresarial",
+    "social_media_marketing": "Marketing em redes sociais",
+    "content_marketing": "Marketing de conteúdo",
+    "email_marketing": "Marketing por e-mail"
   },
   "hero_inner": {
     "home": "Início"
@@ -326,5 +359,19 @@
   "cta": {
     "get_consultant": "Solicite uma consultoria",
     "lets_talk": "Entre em contato"
+  },
+  "auth": {
+    "login": "Login",
+    "password": "Senha",
+    "forgot_password": "Esqueceu sua senha?",
+    "username_or_email": "Nome de usuário ou endereço de e-mail",
+    "password_label": "Senha",
+    "remember_me": "Lembrar-me",
+    "lost_password": "Perdeu sua senha?",
+    "log_in": "Entrar",
+    "reset_password": "Redefinir senha",
+    "forgot_password_desc": "Por favor, insira seu nome de usuário ou endereço de e-mail com cuidado. Você receberá um link seguro para criar uma nova senha via e-mail.",
+    "username_or_email_short": "Nome de usuário ou e-mail",
+    "show_password": "Mostrar senha"
   }
 }

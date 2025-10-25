@@ -10,6 +10,7 @@ import { useRef } from 'react';
 
 const TeamDetails1 = ({ teamId }) => {
   const t = useTranslations('common');
+  const tTeam = useTranslations('teams_section');
   const items = getTeamMembers();
   const currentId = useCurrentItem() || teamId;
   const currentItem = items?.find(({ id }) => currentId === id);
@@ -37,24 +38,22 @@ const TeamDetails1 = ({ teamId }) => {
           <div className="col-12  col-lg-7 ">
             <div className="team-details__content">
               <h2 className="team-details__name text-anim">
-                Hello, I am {name ? name : 'Esther Howard'}
+                {tTeam('hello_i_am')} {name ? name : 'Esther Howard'}
               </h2>
               <span className="team-details__desig wow fadeInUp" data-wow-delay="0.1s">
                 {desig ? translateRole(desig, t) : t('role_co_founder')}
               </span>
               <p className="wow fadeInUp" data-wow-delay="0.3s">
-                Our mission is to empowers businesses sizes thrive businesses ev changing
-                marketplace We are committed to the delivering exceptional value through strategic
-                inset innovative approaches. Our consulting of our missing empower.
+                {tTeam('work_experience_desc')}
               </p>
               <div className="team-details__contact-info wow fadeInUp" data-wow-delay="0.5s">
                 <ul>
                   <li>
-                    <span>Email address</span>
+                    <span>{tTeam('email_address')}</span>
                     <Link href="mailto:suporte@corpfianca.com">suporte@corpfianca.com</Link>
                   </li>
                   <li>
-                    <span>Phone number</span>
+                    <span>{tTeam('phone_number')}</span>
                     <Link href="tel:+8321890640">+1 (009) 544-7826</Link>
                   </li>
                 </ul>
@@ -84,49 +83,42 @@ const TeamDetails1 = ({ teamId }) => {
                 </ul>
               </div>
               <div className="team-details__experience">
-                <h4 className="team-details__subtitle text-anim">Work experience</h4>
+                <h4 className="team-details__subtitle text-anim">{tTeam('work_experience')}</h4>
                 <p className="wow fadeInUp" data-wow-delay="0.1s">
-                  Our mission is to empowers businesses size to thrivie in ses ever changing
-                  marketplace We are committed to the delivering exceptionals the value thro
-                  strategic ins innovative approaches. Our consulting of our missing empowers
-                  businesses of all sizes Committed to the delivering exceptional in the values thro
+                  {tTeam('work_experience_desc')}
                 </p>
                 <p className="wow fadeInUp" data-wow-delay="0.3s">
-                  Our mission is to empowers businesses size to thrivie in ses ever changing
-                  marketplace We are committed to the delivering exceptionals the value thro
-                  strategic ins innovative approaches. Our consulting of our missing empowers
+                  {tTeam('work_experience_desc')}
                 </p>
                 <div className="team-details__experience__list wow fadeInUp" data-wow-delay="0.5s">
                   <ul>
                     <li>
                       <i className="tji-double-check"></i>
-                      <p>We believe that the human essential start any successful project.</p>
+                      <p>{tTeam('human_essential')}</p>
                     </li>
                     <li>
                       <i className="tji-double-check"></i>
-                      <p>We believe that the human essential start any successful project.</p>
+                      <p>{tTeam('human_essential')}</p>
                     </li>
                     <li>
                       <i className="tji-double-check"></i>
-                      <p>We believe that the human essential start any successful project.</p>
+                      <p>{tTeam('human_essential')}</p>
                     </li>
                     <li>
                       <i className="tji-double-check"></i>
-                      <p>We believe that the human essential start any successful project.</p>
+                      <p>{tTeam('human_essential')}</p>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="team-details__skills">
-                <h4 className="team-details__subtitle text-anim">Professional skills</h4>
+                <h4 className="team-details__subtitle text-anim">{tTeam('professional_skills')}</h4>
                 <p className="wow fadeInUp" data-wow-delay="0.3s">
-                  Our mission is to empowers businesses size to thrivie in ses ever changing
-                  marketplace We are committed to the delivering exceptionals the value thro
-                  strategic ins innovative approaches. Our consulting of our missing empowers
+                  {tTeam('work_experience_desc')}
                 </p>
                 <ul className="tj-progress__list wow fadeInUp" data-wow-delay="0.5s">
                   <li>
-                    <h6 className="tj-progress__title">Business consultants</h6>
+                    <h6 className="tj-progress__title">{tTeam('business_consultants')}</h6>
                     <div className="tj-progress">
                       <div className="tj-progress__bar" data-perchant="90">
                         <span className="tj-progress__perchant">90%</span>
@@ -134,7 +126,7 @@ const TeamDetails1 = ({ teamId }) => {
                     </div>
                   </li>
                   <li>
-                    <h6 className="tj-progress__title">Client communication</h6>
+                    <h6 className="tj-progress__title">{tTeam('client_communication')}</h6>
                     <div className="tj-progress">
                       <div className="tj-progress__bar" data-perchant="82">
                         <span className="tj-progress__perchant">82%</span>
@@ -142,7 +134,7 @@ const TeamDetails1 = ({ teamId }) => {
                     </div>
                   </li>
                   <li>
-                    <h6 className="tj-progress__title">Business strategy</h6>
+                    <h6 className="tj-progress__title">{tTeam('business_strategy')}</h6>
                     <div className="tj-progress">
                       <div className="tj-progress__bar" data-perchant="88">
                         <span className="tj-progress__perchant">88%</span>
@@ -150,7 +142,7 @@ const TeamDetails1 = ({ teamId }) => {
                     </div>
                   </li>
                   <li>
-                    <h6 className="tj-progress__title">Digital marketing</h6>
+                    <h6 className="tj-progress__title">{tTeam('digital_marketing')}</h6>
                     <div className="tj-progress">
                       <div className="tj-progress__bar" data-perchant="90">
                         <span className="tj-progress__perchant">90%</span>

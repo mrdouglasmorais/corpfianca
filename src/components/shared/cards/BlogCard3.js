@@ -1,21 +1,27 @@
 'use client';
 import makePath from '@/libs/makePath';
-import { useTranslations } from 'next-intl';
+import { translateCategory } from '@/utils/translateTags';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const BlogCard3 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
   const { title, desc, id, img2, category, date, day, month } = blog || {};
   return (
     <div className="blog-style-3 right-swipe">
       <div className="blog-images">
-        <Link href={`/noticias/${id}`}>
+        <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>
           <img src={img2 ? img2 : '/images/blog/h2-blog-1.webp'} alt="Images" />
         </Link>
         <div className="blog_category">
           <ul>
             <li>
-              <Link href={`/noticias?category=${makePath(category)}`}>{category}</Link>
+              <Link href={createLocalizedPath(`/noticias?category=${makePath(category)}`, locale)}>
+                {translateCategory(category, tCommon)}
+              </Link>
             </li>
           </ul>
         </div>
@@ -27,15 +33,13 @@ const BlogCard3 = ({ blog, idx }) => {
           </ul>
         </div>
         <h4 className="title under-line">
-          <Link href={`/noticias/${id}`}>{title}</Link>
+          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
         </h4>
         <div className="desc">
-          <p>
-            In today's dynamic business environment, the key to success lies in strategic planning.
-          </p>
+          <p>{desc || t('blog_card_desc')}</p>
         </div>
         <div className="blog-button">
-          <Link className="blog-btn text-btn" href={`/noticias/${id}`}>
+          <Link className="blog-btn text-btn" href={createLocalizedPath(`/noticias/${id}`, locale)}>
             {t('read_more')} <i className="tji-arrow-right"></i>
           </Link>
         </div>

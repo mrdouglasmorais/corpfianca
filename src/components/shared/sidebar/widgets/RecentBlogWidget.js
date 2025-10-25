@@ -1,11 +1,13 @@
 'use client';
 import getBlogs from '@/libs/getBlogs';
 import sliceText from '@/libs/sliceText';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const RecentBlogWidget = () => {
   const t = useTranslations('blogs_section');
+  const locale = useLocale();
   const recentBlogs = getBlogs()
     ?.filter(({ isBlogQuote }) => !isBlogQuote)
     ?.slice(0, 3);
@@ -18,7 +20,7 @@ const RecentBlogWidget = () => {
           ? recentBlogs?.map(({ id, detailsImg, title, blogTopList, comments, date }, idx) => (
               <div key={idx} className="single-post d-flex align-items-center">
                 <div className="post-image">
-                  <Link href={`/noticias/${id}`}>
+                  <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>
                     <img
                       src={detailsImg ? detailsImg : '/images/blog/tj-blog-1.webp'}
                       alt="blog-image"
@@ -27,7 +29,9 @@ const RecentBlogWidget = () => {
                 </div>
                 <div className="post-header">
                   <h6 className="title-link">
-                    <Link href={`/noticias/${id}`}>{sliceText(title, 32, true)}</Link>
+                    <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>
+                      {sliceText(title, 32, true)}
+                    </Link>
                   </h6>
                   <span className="date">{date}</span>
                 </div>

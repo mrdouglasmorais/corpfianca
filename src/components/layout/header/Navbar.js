@@ -169,19 +169,21 @@ const Navbar = ({ option, isStickyHeader }) => {
               : ''}
           </ul>
         </li>
-        <li className={`has-dropdown ${blogNav?.isActive ? 'current-menu-ancestor' : ''}`}>
+        <li
+          className={`${blogNav?.submenu?.length ? 'has-dropdown' : ''} ${blogNav?.isActive ? 'current-menu-ancestor' : ''}`}
+        >
           <Link href={blogNav?.path ? blogNav?.path : '#'}>{blogNav?.name}</Link>
-          <ul className="sub-menu">
-            {blogNav?.submenu?.length
-              ? blogNav?.submenu?.map((item, idx) => (
-                  <li key={idx} className={item?.isActive ? 'current-menu-item' : ''}>
-                    <Link href={item?.path ? item?.path : '/noticias'}>
-                      {item?.name ? item?.name : t('blog')}
-                    </Link>
-                  </li>
-                ))
-              : ''}
-          </ul>
+          {blogNav?.submenu?.length ? (
+            <ul className="sub-menu">
+              {blogNav?.submenu?.map((item, idx) => (
+                <li key={idx} className={item?.isActive ? 'current-menu-item' : ''}>
+                  <Link href={item?.path ? item?.path : '/noticias'}>
+                    {item?.name ? item?.name : t('blog')}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </li>
         <li className={contactNav?.isActive ? 'current-menu-ancestor' : ''}>
           <Link href={contactNav?.path ? contactNav?.path : '#'}>

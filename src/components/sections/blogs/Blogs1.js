@@ -2,10 +2,12 @@
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import BlogCard1 from '@/components/shared/cards/BlogCard1';
 import getBlogs from '@/libs/getBlogs';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 
 const Blogs1 = () => {
   const t = useTranslations('blogs_section');
+  const locale = useLocale();
   const blogs = getBlogs().slice(0, 4);
   return (
     <section className="tj-blog-section with-shape">
@@ -24,7 +26,10 @@ const Blogs1 = () => {
                   className="blog-button d-none d-lg-inline-flex wow fadeInDown"
                   data-wow-delay="0.3s"
                 >
-                  <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
+                  <ButtonPrimary
+                    text={t('explore_more')}
+                    url={createLocalizedPath('/noticias', locale)}
+                  />
                 </div>
               </div>
             </div>
@@ -37,7 +42,10 @@ const Blogs1 = () => {
                   : ''}
               </div>
               <div className="blog-button d-lg-none text-center wow fadeInUp" data-wow-delay="0.5s">
-                <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
+                <ButtonPrimary
+                  text={t('explore_more')}
+                  url={createLocalizedPath('/noticias', locale)}
+                />
               </div>
             </div>
           </div>

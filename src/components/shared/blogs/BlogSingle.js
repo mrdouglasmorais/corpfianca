@@ -1,5 +1,6 @@
 'use client';
 import makePath from '@/libs/makePath';
+import { createLocalizedPath } from '@/utils/pathUtils';
 import translateMonth from '@/utils/translateMonth';
 import { translateCategory } from '@/utils/translateTags';
 import { useLocale, useTranslations } from 'next-intl';
@@ -92,7 +93,7 @@ const BlogSingle = ({ blog }) => {
 
             <div className="tj-post-date">
               <span className="date">{day}</span>
-              <span className="month">{month}</span>
+              <span className="month">{translatedMonth}</span>
             </div>
           </div>
         </>
@@ -102,18 +103,21 @@ const BlogSingle = ({ blog }) => {
         <div className="tj-post-meta">
           <ul>
             <li>
-              <Link href={`/noticias?category=${makePath(category)}`}>
+              <Link href={createLocalizedPath(`/noticias?category=${makePath(category)}`, locale)}>
                 {translateCategory(category, tCommon)}
               </Link>
             </li>
           </ul>
         </div>
         <h3 className="tj-post-title">
-          <Link href={`/noticias/${id}`}>{title}</Link>
+          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
         </h3>
         <div className="tj-post-excerpt">{desc || ''}</div>
         <div className="tj-post-btn">
-          <ButtonPrimary text={t('read_more')} url={`/noticias/${id}`} />
+          <ButtonPrimary
+            text={t('read_more')}
+            url={createLocalizedPath(`/noticias/${id}`, locale)}
+          />
         </div>
       </div>
     </article>
