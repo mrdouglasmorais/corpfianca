@@ -6,8 +6,12 @@
  */
 export const createLocalizedPath = (path, locale) => {
   if (!path || path === '#' || path === 'javascript:void(0)') return '#';
-  if (path === '/') return `/${locale}`;
-  // Always include locale prefix for all paths
+  if (path === '/') return locale === 'pt' ? '/' : `/${locale}`;
+  // For Portuguese (primary language), don't add prefix
+  if (locale === 'pt') {
+    return path;
+  }
+  // For other locales, add prefix
   return `/${locale}${path}`;
 };
 
