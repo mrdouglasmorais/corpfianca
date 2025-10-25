@@ -100,7 +100,7 @@ const BlogSingle = ({ blog }) => {
             </li>
             <li>
               <span>
-                {comments || '03'} {t('comments')}
+                {Array.isArray(comments) ? comments.length : comments || '03'} {t('comments')}
               </span>
             </li>
           </ul>
