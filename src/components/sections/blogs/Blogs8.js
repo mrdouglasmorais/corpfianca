@@ -1,9 +1,11 @@
-"use client";
-import BlogCard8 from "@/components/shared/cards/BlogCard8";
-import getBlogs from "@/libs/getBlogs";
-import { useState } from "react";
+'use client';
+import BlogCard8 from '@/components/shared/cards/BlogCard8';
+import getBlogs from '@/libs/getBlogs';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 
 const Blogs8 = () => {
+	const t = useTranslations('blogs_section');
 	const blogs = getBlogs().slice(0, 3);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const handleCurrentIndex = idx => {
@@ -16,10 +18,10 @@ const Blogs8 = () => {
 					<div className="col-12">
 						<div className="sec-heading text-center">
 							<span className="sub-title wow fadeInUp" data-wow-delay="0.2s">
-								Latest news
+								{t('subtitle')}
 							</span>
 							<h2 className="sec-title text-anim">
-								Tip and tricks for success
+								{t('title')}
 							</h2>
 						</div>
 					</div>

@@ -1,53 +1,49 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 
 export default function BackToTop({ type, className }) {
-	const [visible, setVisible] = useState(false);
+  const t = useTranslations('back_to_top');
+  const [visible, setVisible] = useState(false);
 
-	useEffect(() => {
-		const toggleVisibility = () => {
-			if (window.scrollY > 300) {
-				setVisible(true);
-			} else {
-				setVisible(false);
-			}
-		};
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
 
-		window.addEventListener("scroll", toggleVisibility);
-		return () => window.removeEventListener("scroll", toggleVisibility);
-	}, []);
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
 
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth", // same as jQuery animate()
-		});
-	};
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // same as jQuery animate()
+    });
+  };
 
-	return (
-		<div
-			className={`back-to-top-wrapper ${className ? className : ""} ${
-				visible ? "back-to-top-btn-show" : ""
-			}`}
-		>
-			<button
-				id="back_to_top"
-				type="button"
-				className={`back-to-top-btn  ${
-					type === 4
-						? "style-6"
-						: type === 2
-						? "style-3"
-						: type === 3
-						? "style-5"
-						: "style-2"
-				}`}
-				onClick={scrollToTop}
-			>
-				<i className="tji-arrow-up"></i>
-				<span>GO TOP</span>
-			</button>
-		</div>
-	);
+  return (
+    <div
+      className={`back-to-top-wrapper ${className ? className : ''} ${
+        visible ? 'back-to-top-btn-show' : ''
+      }`}
+    >
+      <button
+        id="back_to_top"
+        type="button"
+        className={`back-to-top-btn  ${
+          type === 4 ? 'style-6' : type === 2 ? 'style-3' : type === 3 ? 'style-5' : 'style-2'
+        }`}
+        onClick={scrollToTop}
+      >
+        <i className="tji-arrow-up"></i>
+        <span>{t('go_top')}</span>
+      </button>
+    </div>
+  );
 }

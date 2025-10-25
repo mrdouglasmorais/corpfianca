@@ -10,22 +10,97 @@
     "team": "Team",
     "home": "Home"
   },
+  "header_top": {
+    "trusted_partner": "Trusted partner in business excellence",
+    "join_us_now": "Contact us",
+    "working_hours": "Mon - Friday : 9:00 - 18:00"
+  },
+  "header": {
+    "get_quote": "Request proposal",
+    "free_consultation": "Initial consultation",
+    "explore": "Explore",
+    "search": "Search",
+    "search_title": "Search Blog, projects, Service or people.",
+    "search_placeholder": "Search here..."
+  },
+  "navigation": {
+    "home": "Home",
+    "pages": "Pages",
+    "services": "Services",
+    "portfolios": "Portfolios",
+    "blog": "Blog",
+    "contact": "Contact",
+    "main_pages": "Main Pages",
+    "other_pages": "Other Pages",
+    "about_us": "About us",
+    "our_history": "Our history",
+    "team": "Team",
+    "team_details": "Team details",
+    "careers": "Careers",
+    "careers_details": "Careers details",
+    "pricing_plan": "Pricing Plan",
+    "feedbacks": "Feedbacks",
+    "faq": "FAQ",
+    "contact_us": "Contact us",
+    "login": "Login",
+    "register": "Register",
+    "password": "Password",
+    "shop": "Shop",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "wishlist": "Wishlist",
+    "blog_grid": "Blog grid",
+    "blog_sidebar": "Blog with sidebar",
+    "blog_details": "Blog details",
+    "portfolio_details": "Portfolio details",
+    "business_process_optimization": "Business process optimization",
+    "strategic_planning_execution": "Strategic planning & execution",
+    "leadership_executive_coaching": "Leadership executive coaching",
+    "legacy_leadership_institute": "Legacy leadership institute",
+    "executive_growth_solutions": "Executive growth solutions",
+    "empowered_leadership_journey": "Empowered leadership journey",
+    "view_demo": "View demo",
+    "get_in_touch": "Get in touch",
+    "need_help_title": "Need help?",
+    "need_help_subtitle": "Feel free contact us",
+    "mission_description": "Our mission is to empowers businesses off all size in an businesses.",
+    "business_process_optimization_fallback": "Business process optimization",
+    "portfolio_fallback": "Portfolio",
+    "contact_fallback": "Contact"
+  },
   "hero": {
-    "title": "Maximise growth qualified business",
-    "title_highlight": "consulting",
-    "description": "We leverage our expertise to deliver tailored business solutions that drive sustainable growth and operational excellence for our clients.",
-    "get_started": "Get started",
-    "watch_video": "Watch video"
+    "title": "Specialized solutions in",
+    "title_highlight": "business consulting",
+    "description": "We provide strategic consulting services focused on measurable results. Our team of qualified consultants develops customized solutions to strengthen organizational performance.",
+    "free_consultation": "Initial consultation",
+    "scroll": "Scroll",
+    "subtitle_gen": "Consulting excellence",
+    "title_expert_business": "Expert business consulting",
+    "title_transforms": "Transform your business with expert consultancy services by our team of seasoned consultants.",
+    "subtitle_helping": "Helping ambitious businesses achieve success",
+    "title_tailored": "Tailored consulting for modern businesses",
+    "title_proven": "Proven consulting for modern global enterprises",
+    "title_business_growth": "Business growth through strategic thinking",
+    "title_smartest": "Smartest solutions for agile companies",
+    "title_cutting_edge": "Cutting-edge solution for businesses",
+    "title_intelligent": "Intelligent solutions for modern businesses",
+    "title_expert_guidance": "Expert guidance for ambitious companies",
+    "learn_more": "Learn more",
+    "learn_more_here": "Learn more here",
+    "play_reels": "Play our reels",
+    "happy_clients": "Happy clients all over the world.",
+    "faster_growth": "Faster growth",
+    "reach_worldwide": "Reach worldwide"
   },
   "about": {
     "section_title": "Our company",
-    "title": "We boost revenue strategic partnerships",
-    "description": "We are committed to providing innovative solutions that transform businesses and drive sustainable growth through strategic partnerships and cutting-edge technology."
+    "title": "We develop solutions through strategic partnerships",
+    "description": "Our commitment is to provide evidence-based solutions that strengthen businesses and promote sustainable growth through strategic partnerships and applied technology."
   },
   "services": {
-    "section_title": "Transformative solution",
-    "title": "Get our exclusive service",
-    "description": "Discover our comprehensive range of business solutions designed to accelerate your company's growth and success."
+    "section_title": "Our services",
+    "title": "Specialized business consulting",
+    "description": "We offer a comprehensive range of business consulting services designed to strengthen management and organizational performance."
   },
   "skills": {
     "title": "Skill and experience",
@@ -45,10 +120,160 @@
   },
   "homepage": {
     "title": "Corporate Finance Solutions",
-    "subtitle": "Driving your business growth",
-    "description": "We offer complete solutions in corporate finance, strategic consulting, and business management to maximize your business potential."
+    "subtitle": "Strengthening business management",
+    "description": "We offer integrated solutions in corporate finance, strategic consulting, and business management to strengthen organizational performance."
   },
   "brands": {
-    "join_companies": "Join over 500 companies that trust us"
+    "join_companies": "Companies that trust our services"
+  },
+  "features": {
+    "subtitle": "Consulting excellence",
+    "title": "Our core competencies",
+    "description": "We develop strategic solutions for companies seeking sustainable growth",
+    "quick_solutions": "Analysis and diagnosis",
+    "quick_solutions_desc": "We conduct in-depth analysis of organizational challenges to identify improvement opportunities",
+    "expert_advice": "Specialized consulting",
+    "expert_advice_desc": "Personalized service based on technical knowledge and proven experience",
+    "strategic_planning": "Strategic planning",
+    "strategic_planning_desc": "Development of strategic plans aligned with business objectives and market reality",
+    "efficient_operations": "Operational optimization",
+    "efficient_operations_desc": "Implementation of efficient processes to improve organizational performance"
+  },
+  "about_section": {
+    "subtitle": "About our company",
+    "title": "Strategic solutions for business challenges",
+    "description": "Our mission is to assist companies of all sizes in achieving consistent results in evolving business environments. We are committed to delivering value through evidence-based strategies and proven methodologies.",
+    "expertise_experience": "Expertise and experience",
+    "client_centric": "Client-centric approach",
+    "commitment_excellence": "Commitment to excellence",
+    "read_more": "Read more",
+    "happy_clients": "Clients served globally."
+  },
+  "services_section": {
+    "subtitle": "Our services",
+    "title": "Specialized business consulting",
+    "customers_review": "Customer reviews",
+    "get_started": "Get started"
+  },
+  "skills_section": {
+    "title": "Skill and experience",
+    "description": "In today's dynamic business environment, the key to success lies in strategic planning and operational",
+    "business_consultants": "Business consultants",
+    "client_communication": "Client communication"
+  },
+  "testimonials_section": {
+    "subtitle": "Testimonials",
+    "title": "Listening to our clients"
+  },
+  "portfolios_section": {
+    "subtitle": "Our projects",
+    "title": "Success cases"
+  },
+  "blogs_section": {
+    "subtitle": "Publications",
+    "title": "Business analysis and perspectives",
+    "explore_more": "View all publications",
+    "read_more": "Read more",
+    "comments": "Comments",
+    "previous": "Previous",
+    "next": "Next",
+    "reply": "Reply",
+    "leave_reply": "Leave a reply",
+    "leave_comment": "Leave comment",
+    "tags": "Tags:",
+    "share": "Share:",
+    "authored_by": "Authored by",
+    "date_released": "Date Released",
+    "enter_name": "Enter name",
+    "enter_email": "Enter email",
+    "your_website": "Your website",
+    "enter_comments": "Enter your comments",
+    "learn_more": "Learn more",
+    "comments_count": "({count}) Comments",
+    "comments_count_simple": "{count} Comments"
+  },
+  "blog_details": {
+    "title": "Publication Details",
+    "conclusions": "Conclusions",
+    "key_lessons": "Key learnings",
+    "discover_expertise": "Learn about our expertise",
+    "journey_commitment": "Our journey and commitment",
+    "meet_team": "Meet our team",
+    "greatest_asset": "A consultant's strength lies in the ability to formulate appropriate questions and guide clients in identifying strategic solutions."
+  },
+  "funfacts_section": {
+    "subtitle": "Our results",
+    "title": "Metrics and achievements",
+    "complete_project": "Projects completed",
+    "reach_worldwide": "International reach",
+    "faster_growth": "Consistent growth",
+    "awards_archived": "Recognition received"
+  },
+  "footer": {
+    "our_offices": "Our offices",
+    "headquarters": "Headquarters",
+    "address": "Av. Brigadeiro Faria Lima, n° 1572, sala 1022, Ed. Barão de Rothschild, Jardim Paulistano, São Paulo/SP, Brazil",
+    "cnpj": "CNPJ: 22.319.919/0001-85",
+    "resources": "Resourses",
+    "contact_us": "Contact us",
+    "privacy_policy": "Privacy policy",
+    "recognitions": "Recognitions",
+    "careers": "Careers",
+    "new": "New",
+    "blog": "Blog",
+    "feedback": "Feedback",
+    "error_404": "Error 404",
+    "services": "Services",
+    "strategic_planning": "Strategic planning",
+    "market_research": "Market research",
+    "business_process": "Business process",
+    "financial_management": "Financial management",
+    "change_management": "Change management",
+    "it_consulting": "IT consulting",
+    "leadership": "Leadership",
+    "subscribe_newsletter": "Subscribe to our newsletter",
+    "enter_email": "Enter email",
+    "all_rights_reserved": "All right reserved",
+    "policy_privacy": "Policy & privacy",
+    "terms_conditions": "Terms & conditions",
+    "technology_by": "Technology developed by",
+    "habitvs": "habitvs"
+  },
+  "back_to_top": {
+    "go_top": "TOP"
+  },
+  "contact_page": {
+    "title": "Contact",
+    "contact_us": "Contact us",
+    "our_contact_info": "Our contact information",
+    "email_us": "Email us",
+    "call_us": "Call us",
+    "our_location": "Our Location",
+    "address": "Av. Brigadeiro Faria Lima, n° 1572, sala 1022, Ed. Barão de Rothschild, Jardim Paulistano, São Paulo/SP, Brazil",
+    "cnpj": "CNPJ: 22.319.919/0001-85",
+    "live_chat": "Live chat",
+    "need_help": "Need help?",
+    "feel_free_touch": "Feel free to",
+    "get_in_touch": "get in touch",
+    "or_visit_location": "or visit our location.",
+    "full_name": "Full name*",
+    "email_address": "Email address*",
+    "phone_number": "Phone number*",
+    "chose_option": "Chose a option",
+    "it_consulting": "IT consulting",
+    "market_research": "Market research",
+    "business_process": "Business process",
+    "business_consultancy": "Business consultancy",
+    "digital_marketing": "Digital marketing",
+    "branding_design": "Branding design",
+    "type_message": "Type message",
+    "send_message": "Send message"
+  },
+  "hero_inner": {
+    "home": "Home"
+  },
+  "cta": {
+    "get_consultant": "Request a consultation",
+    "lets_talk": "Contact us"
   }
 }

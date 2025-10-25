@@ -1,8 +1,11 @@
-import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import BlogCard5 from "@/components/shared/cards/BlogCard5";
-import getBlogs from "@/libs/getBlogs";
+'use client';
+import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
+import BlogCard5 from '@/components/shared/cards/BlogCard5';
+import getBlogs from '@/libs/getBlogs';
+import { useTranslations } from 'next-intl';
 
 const Blogs5 = () => {
+	const t = useTranslations('blogs_section');
 	const blogs = getBlogs().slice(0, 3);
 	return (
 		<section className="h5-blog-section section-space">
@@ -12,10 +15,10 @@ const Blogs5 = () => {
 						<div className="sec-heading style-4">
 							<div className="sec-text">
 								<span className="sub-title wow fadeInUp" data-wow-delay="0.2s">
-									Latest news
+									{t('subtitle')}
 								</span>
 								<h2 className="sec-title text-anim">
-									Tip and tricks for success
+									{t('title')}
 								</h2>
 							</div>
 							<div className="desc wow fadeInUp" data-wow-delay="0.4s">
@@ -25,7 +28,7 @@ const Blogs5 = () => {
 								</p>
 							</div>
 							<div className="blog-button wow fadeInUp" data-wow-delay="0.6s">
-								<ButtonPrimary text={"More blog"} url={"/blogs"} />
+								<ButtonPrimary text={t('explore_more')} url={"/blogs"} />
 							</div>
 						</div>
 					</div>

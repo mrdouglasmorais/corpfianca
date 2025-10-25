@@ -1,7 +1,10 @@
-import BlogCard9 from "@/components/shared/cards/BlogCard9";
-import getBlogs from "@/libs/getBlogs";
+'use client';
+import BlogCard9 from '@/components/shared/cards/BlogCard9';
+import getBlogs from '@/libs/getBlogs';
+import { useTranslations } from 'next-intl';
 
 const Blogs9 = () => {
+	const t = useTranslations('blogs_section');
 	const blogs = getBlogs().slice(0, 3);
 
 	return (
@@ -11,10 +14,10 @@ const Blogs9 = () => {
 					<div className="col">
 						<div className="sec-heading style-2 text-center">
 							<span className="sub-title wow fadeInUp" data-wow-delay="0.3s">
-								[ LATEST NEW & ARTICLES ]
+								{t('subtitle')}
 							</span>
 							<h2 className="sec-title text-anim">
-								Tip and tricks for success
+								{t('title')}
 							</h2>
 						</div>
 

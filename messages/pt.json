@@ -10,22 +10,97 @@
     "team": "Equipe",
     "home": "Início"
   },
+  "header_top": {
+    "trusted_partner": "Parceiro confiável em excelência empresarial",
+    "join_us_now": "Entre em contato",
+    "working_hours": "Seg - Sex : 9:00 - 18:00"
+  },
+  "header": {
+    "get_quote": "Solicitar proposta",
+    "free_consultation": "Consultoria inicial",
+    "explore": "Explorar",
+    "search": "Pesquisar",
+    "search_title": "Pesquise por Blog, projetos, Serviços ou pessoas.",
+    "search_placeholder": "Pesquisar aqui..."
+  },
+  "navigation": {
+    "home": "Início",
+    "pages": "Páginas",
+    "services": "Serviços",
+    "portfolios": "Portfólios",
+    "blog": "Blog",
+    "contact": "Contato",
+    "main_pages": "Páginas Principais",
+    "other_pages": "Outras Páginas",
+    "about_us": "Sobre nós",
+    "our_history": "Nossa história",
+    "team": "Equipe",
+    "team_details": "Detalhes da equipe",
+    "careers": "Carreiras",
+    "careers_details": "Detalhes das carreiras",
+    "pricing_plan": "Plano de preços",
+    "feedbacks": "Feedbacks",
+    "faq": "FAQ",
+    "contact_us": "Entre em contato",
+    "login": "Login",
+    "register": "Registrar",
+    "password": "Senha",
+    "shop": "Loja",
+    "cart": "Carrinho",
+    "checkout": "Finalizar compra",
+    "wishlist": "Lista de desejos",
+    "blog_grid": "Blog em grade",
+    "blog_sidebar": "Blog com barra lateral",
+    "blog_details": "Detalhes do blog",
+    "portfolio_details": "Detalhes do portfólio",
+    "business_process_optimization": "Otimização de processos empresariais",
+    "strategic_planning_execution": "Planejamento estratégico e execução",
+    "leadership_executive_coaching": "Coaching executivo de liderança",
+    "legacy_leadership_institute": "Instituto de liderança legado",
+    "executive_growth_solutions": "Soluções de crescimento executivo",
+    "empowered_leadership_journey": "Jornada de liderança empoderada",
+    "view_demo": "Ver demonstração",
+    "get_in_touch": "Entre em contato",
+    "need_help_title": "Precisa de ajuda?",
+    "need_help_subtitle": "Sinta-se à vontade para nos contatar",
+    "mission_description": "Nossa missão é capacitar empresas de todos os tamanhos em negócios.",
+    "business_process_optimization_fallback": "Otimização de processos empresariais",
+    "portfolio_fallback": "Portfólio",
+    "contact_fallback": "Contato"
+  },
   "hero": {
-    "title": "Maximize o crescimento qualificado da sua",
+    "title": "Soluções especializadas em",
     "title_highlight": "consultoria empresarial",
-    "description": "Aproveitamos nossa expertise para entregar soluções empresariais personalizadas que impulsionam o crescimento sustentável e a excelência operacional para nossos clientes.",
-    "get_started": "Começar agora",
-    "watch_video": "Assistir vídeo"
+    "description": "Oferecemos serviços de consultoria estratégica com foco em resultados mensuráveis. Nossa equipe de consultores qualificados desenvolve soluções personalizadas para fortalecer a performance organizacional.",
+    "free_consultation": "Consultoria inicial",
+    "scroll": "Rolar",
+    "subtitle_gen": "Excelência em consultoria",
+    "title_expert_business": "Consultoria empresarial especializada",
+    "title_transforms": "Transformar seu negócio com serviços de consultoria especializados por nossa equipe de consultores experientes.",
+    "subtitle_helping": "Apoiando empresas ambiciosas a alcançar o sucesso",
+    "title_tailored": "Consultoria personalizada para empresas modernas",
+    "title_proven": "Consultoria comprovada para empresas globais modernas",
+    "title_business_growth": "Crescimento empresarial através de pensamento estratégico",
+    "title_smartest": "Soluções inteligentes para empresas ágeis",
+    "title_cutting_edge": "Solução de ponta para empresas",
+    "title_intelligent": "Soluções inteligentes para empresas modernas",
+    "title_expert_guidance": "Orientação especializada para empresas ambiciosas",
+    "learn_more": "Saiba mais",
+    "learn_more_here": "Saiba mais aqui",
+    "play_reels": "Assistir nossos vídeos",
+    "happy_clients": "Clientes satisfeitos em todo o mundo.",
+    "faster_growth": "Crescimento mais rápido",
+    "reach_worldwide": "Alcance mundial"
   },
   "about": {
     "section_title": "Nossa empresa",
-    "title": "Impulsionamos receita através de parcerias estratégicas",
-    "description": "Estamos comprometidos em fornecer soluções inovadoras que transformam negócios e impulsionam o crescimento sustentável através de parcerias estratégicas e tecnologia de ponta."
+    "title": "Desenvolvemos soluções através de parcerias estratégicas",
+    "description": "Nosso compromisso é fornecer soluções fundamentadas que fortalecem negócios e promovem crescimento sustentável através de parcerias estratégicas e tecnologia aplicada."
   },
   "services": {
-    "section_title": "Solução transformadora",
-    "title": "Obtenha nosso serviço exclusivo",
-    "description": "Descubra nossa ampla gama de soluções empresariais projetadas para acelerar o crescimento e sucesso da sua empresa."
+    "section_title": "Nossos serviços",
+    "title": "Consultoria empresarial especializada",
+    "description": "Oferecemos uma gama completa de serviços de consultoria empresarial desenvolvidos para fortalecer a gestão e o desempenho organizacional."
   },
   "skills": {
     "title": "Habilidade e experiência",
@@ -45,10 +120,160 @@
   },
   "homepage": {
     "title": "Soluções Corporativas e Financeiras",
-    "subtitle": "Impulsionando o crescimento de seu negócio",
-    "description": "Oferecemos soluções completas em finanças corporativas, consultoria estratégica e gestão empresarial para maximizar o potencial do seu negócio."
+    "subtitle": "Fortalecendo a gestão empresarial",
+    "description": "Oferecemos soluções integradas em finanças corporativas, consultoria estratégica e gestão empresarial para fortalecer a performance organizacional."
   },
   "brands": {
-    "join_companies": "Junte-se a mais de 500 empresas que confiam em nós"
+    "join_companies": "Empresas que confiam em nossos serviços"
+  },
+  "features": {
+    "subtitle": "Excelência em consultoria",
+    "title": "Nossas principais competências",
+    "description": "Desenvolvemos soluções estratégicas para empresas que buscam crescimento sustentável",
+    "quick_solutions": "Análise e diagnóstico",
+    "quick_solutions_desc": "Realizamos análise aprofundada dos desafios organizacionais para identificar oportunidades de melhoria",
+    "expert_advice": "Consultoria especializada",
+    "expert_advice_desc": "Atendimento personalizado baseado em conhecimento técnico e experiência comprovada",
+    "strategic_planning": "Planejamento estratégico",
+    "strategic_planning_desc": "Elaboração de planos estratégicos alinhados aos objetivos de negócio e realidade do mercado",
+    "efficient_operations": "Otimização operacional",
+    "efficient_operations_desc": "Implementação de processos eficientes para melhorar a performance organizacional"
+  },
+  "about_section": {
+    "subtitle": "Sobre nossa empresa",
+    "title": "Soluções estratégicas para desafios empresariais",
+    "description": "Nossa missão é auxiliar empresas de todos os portes a alcançar resultados consistentes em ambientes de negócio em transformação. Comprometemo-nos a entregar valor através de estratégias fundamentadas e metodologias comprovadas.",
+    "expertise_experience": "Expertise e experiência",
+    "client_centric": "Abordagem centrada no cliente",
+    "commitment_excellence": "Compromisso com a excelência",
+    "read_more": "Ler mais",
+    "happy_clients": "Clientes atendidos globalmente."
+  },
+  "services_section": {
+    "subtitle": "Nossos serviços",
+    "title": "Consultoria empresarial especializada",
+    "customers_review": "Avaliação dos clientes",
+    "get_started": "Iniciar"
+  },
+  "skills_section": {
+    "title": "Habilidade e experiência",
+    "description": "No ambiente empresarial dinâmico de hoje, a chave para o sucesso está no planejamento estratégico e na excelência operacional",
+    "business_consultants": "Consultores empresariais",
+    "client_communication": "Comunicação com clientes"
+  },
+  "testimonials_section": {
+    "subtitle": "Depoimentos",
+    "title": "Ouvindo nossos clientes"
+  },
+  "portfolios_section": {
+    "subtitle": "Nossos projetos",
+    "title": "Casos de sucesso"
+  },
+  "blogs_section": {
+    "subtitle": "Publicações",
+    "title": "Análises e perspectivas empresariais",
+    "explore_more": "Ver todas as publicações",
+    "read_more": "Ler mais",
+    "comments": "Comentários",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "reply": "Responder",
+    "leave_reply": "Deixe uma resposta",
+    "leave_comment": "Deixar comentário",
+    "tags": "Tags:",
+    "share": "Compartilhar:",
+    "authored_by": "Escrito por",
+    "date_released": "Data de publicação",
+    "enter_name": "Digite seu nome",
+    "enter_email": "Digite seu e-mail",
+    "your_website": "Seu site",
+    "enter_comments": "Digite seus comentários",
+    "learn_more": "Saiba mais",
+    "comments_count": "({count}) Comentários",
+    "comments_count_simple": "{count} Comentários"
+  },
+  "blog_details": {
+    "title": "Detalhes da Publicação",
+    "conclusions": "Conclusões",
+    "key_lessons": "Principais aprendizados",
+    "discover_expertise": "Conheça nossa expertise",
+    "journey_commitment": "Nossa trajetória e compromisso",
+    "meet_team": "Conheça nossa equipe",
+    "greatest_asset": "O diferencial de um consultor está na capacidade de formular as questões adequadas e orientar clientes na identificação de soluções estratégicas."
+  },
+  "funfacts_section": {
+    "subtitle": "Nossos resultados",
+    "title": "Métricas e conquistas",
+    "complete_project": "Projetos concluídos",
+    "reach_worldwide": "Alcance internacional",
+    "faster_growth": "Crescimento consistente",
+    "awards_archived": "Reconhecimentos recebidos"
+  },
+  "footer": {
+    "our_offices": "Nossos escritórios",
+    "headquarters": "Sede",
+    "address": "Av. Brigadeiro Faria Lima, n° 1572, sala 1022, Ed. Barão de Rothschild, Jardim Paulistano, São Paulo/SP",
+    "cnpj": "CNPJ: 22.319.919/0001-85",
+    "resources": "Recursos",
+    "contact_us": "Entre em contato",
+    "privacy_policy": "Política de privacidade",
+    "recognitions": "Reconhecimentos",
+    "careers": "Carreiras",
+    "new": "Novo",
+    "blog": "Blog",
+    "feedback": "Feedback",
+    "error_404": "Erro 404",
+    "services": "Serviços",
+    "strategic_planning": "Planejamento estratégico",
+    "market_research": "Pesquisa de mercado",
+    "business_process": "Processo de negócios",
+    "financial_management": "Gestão financeira",
+    "change_management": "Gestão de mudanças",
+    "it_consulting": "Consultoria em TI",
+    "leadership": "Liderança",
+    "subscribe_newsletter": "Assine nossa newsletter",
+    "enter_email": "Digite seu e-mail",
+    "all_rights_reserved": "Todos os direitos reservados",
+    "policy_privacy": "Política e privacidade",
+    "terms_conditions": "Termos e condições",
+    "technology_by": "Tecnologia desenvolvida por",
+    "habitvs": "habitvs"
+  },
+  "back_to_top": {
+    "go_top": "TOPO"
+  },
+  "contact_page": {
+    "title": "Contato",
+    "contact_us": "Entre em contato conosco",
+    "our_contact_info": "Nossas informações de contato",
+    "email_us": "Envie-nos um e-mail",
+    "call_us": "Ligue para nós",
+    "our_location": "Nossa localização",
+    "address": "Av. Brigadeiro Faria Lima, n° 1572, sala 1022, Ed. Barão de Rothschild, Jardim Paulistano, São Paulo/SP",
+    "cnpj": "CNPJ: 22.319.919/0001-85",
+    "live_chat": "Chat ao vivo",
+    "need_help": "Precisa de ajuda?",
+    "feel_free_touch": "Sinta-se à vontade para",
+    "get_in_touch": "entrar em contato",
+    "or_visit_location": "ou visitar nossa localização.",
+    "full_name": "Nome completo*",
+    "email_address": "Endereço de e-mail*",
+    "phone_number": "Número de telefone*",
+    "chose_option": "Escolha uma opção",
+    "it_consulting": "Consultoria em TI",
+    "market_research": "Pesquisa de mercado",
+    "business_process": "Processo de negócios",
+    "business_consultancy": "Consultoria empresarial",
+    "digital_marketing": "Marketing digital",
+    "branding_design": "Design de marca",
+    "type_message": "Digite sua mensagem",
+    "send_message": "Enviar mensagem"
+  },
+  "hero_inner": {
+    "home": "Início"
+  },
+  "cta": {
+    "get_consultant": "Solicite uma consultoria",
+    "lets_talk": "Entre em contato"
   }
 }
