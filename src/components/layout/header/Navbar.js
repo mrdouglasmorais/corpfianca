@@ -15,9 +15,8 @@ const Navbar = ({ option, isStickyHeader }) => {
   const homeNav = makeActiveLink(navItems[0]);
   const pagesNav = makeActiveLink(navItems[1]);
   const serviceNav = makeActiveLink(navItems[2]);
-  const portfolioNav = makeActiveLink(navItems[3]);
-  const blogNav = makeActiveLink(navItems[4]);
-  const contactNav = makeActiveLink(navItems[5]);
+  const blogNav = makeActiveLink(navItems[3]);
+  const contactNav = makeActiveLink(navItems[4]);
 
   return (
     <div
@@ -27,47 +26,49 @@ const Navbar = ({ option, isStickyHeader }) => {
       id={isStickyHeader ? 'mainmenu' : 'main-menu'}
     >
       <ul>
-        <li className={`has-dropdown ${homeNav?.isActive ? 'current-menu-ancestor' : ''}`}>
+        <li
+          className={`${homeNav?.submenu?.length ? 'has-dropdown' : ''} ${homeNav?.isActive ? 'current-menu-ancestor' : ''}`}
+        >
           <Link href={homeNav?.path ? homeNav?.path : '#'}>{homeNav?.name}</Link>
-          <ul className="sub-menu header__mega-menu mega-menu  ">
-            <li>
-              <div className="mega-menu-wrapper">
-                <div className="container-fluid gap-60-25">
-                  <div className="row">
-                    {homeNav?.submenu?.length
-                      ? homeNav?.submenu?.map((item, idx) => (
-                          <div key={idx} className="col-xl-3 col-lg-3 col-12">
-                            <div className="tj-demo-thumb ">
-                              <div className="image">
-                                <img
-                                  src={item?.img ? item?.img : '/images/header/demo/home-1.webp'}
-                                  alt=""
+          {homeNav?.submenu?.length ? (
+            <ul className="sub-menu header__mega-menu mega-menu  ">
+              <li>
+                <div className="mega-menu-wrapper">
+                  <div className="container-fluid gap-60-25">
+                    <div className="row">
+                      {homeNav?.submenu?.map((item, idx) => (
+                        <div key={idx} className="col-xl-3 col-lg-3 col-12">
+                          <div className="tj-demo-thumb ">
+                            <div className="image">
+                              <img
+                                src={item?.img ? item?.img : '/images/header/demo/home-1.webp'}
+                                alt=""
+                              />
+                              {item?.badge ? (
+                                <span className="tj-demo-badge">{item?.badge}</span>
+                              ) : (
+                                ''
+                              )}
+                              <div className="tj-demo-button">
+                                <ButtonPrimary
+                                  text={t('view_demo')}
+                                  url={item?.path}
+                                  className={'header_btn'}
                                 />
-                                {item?.badge ? (
-                                  <span className="tj-demo-badge">{item?.badge}</span>
-                                ) : (
-                                  ''
-                                )}
-                                <div className="tj-demo-button">
-                                  <ButtonPrimary
-                                    text={t('view_demo')}
-                                    url={item?.path}
-                                    className={'header_btn'}
-                                  />
-                                </div>
                               </div>
-                              <h6 className="tj-demo-title">
-                                <Link href={item?.path ? item?.path : '#'}>{item?.name}</Link>
-                              </h6>
                             </div>
+                            <h6 className="tj-demo-title">
+                              <Link href={item?.path ? item?.path : '#'}>{item?.name}</Link>
+                            </h6>
                           </div>
-                        ))
-                      : ''}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          ) : null}
         </li>
         <li className={`has-dropdown ${pagesNav?.isActive ? 'current-menu-ancestor' : ''}`}>
           <Link href="#">{pagesNav?.name}</Link>
@@ -168,28 +169,14 @@ const Navbar = ({ option, isStickyHeader }) => {
               : ''}
           </ul>
         </li>
-        <li className={`has-dropdown ${portfolioNav?.isActive ? 'current-menu-ancestor' : ''}`}>
-          <Link href={portfolioNav?.path ? portfolioNav?.path : '#'}>{portfolioNav?.name}</Link>
-          <ul className="sub-menu">
-            {portfolioNav?.submenu?.length
-              ? portfolioNav?.submenu?.map((item, idx) => (
-                  <li key={idx} className={item?.isActive ? 'current-menu-item' : ''}>
-                    <Link href={item?.path ? item?.path : '/portfolios'}>
-                      {item?.name ? item?.name : t('portfolio_fallback')}
-                    </Link>
-                  </li>
-                ))
-              : ''}
-          </ul>
-        </li>
         <li className={`has-dropdown ${blogNav?.isActive ? 'current-menu-ancestor' : ''}`}>
           <Link href={blogNav?.path ? blogNav?.path : '#'}>{blogNav?.name}</Link>
           <ul className="sub-menu">
             {blogNav?.submenu?.length
               ? blogNav?.submenu?.map((item, idx) => (
                   <li key={idx} className={item?.isActive ? 'current-menu-item' : ''}>
-                    <Link href={item?.path ? item?.path : '/portfolios'}>
-                      {item?.name ? item?.name : t('portfolio_fallback')}
+                    <Link href={item?.path ? item?.path : '/noticias'}>
+                      {item?.name ? item?.name : t('blog')}
                     </Link>
                   </li>
                 ))

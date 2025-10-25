@@ -1,13 +1,18 @@
 'use client';
 import makePath from '@/libs/makePath';
 import modifyNumber from '@/libs/modifyNumber';
-import { useTranslations } from 'next-intl';
+import translateMonth from '@/utils/translateMonth';
+import { translateCategory } from '@/utils/translateTags';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import ButtonPrimary from '../buttons/ButtonPrimary';
 
 const BlogCard8 = ({ blog, idx, currentIndex, handleCurrentIndex }) => {
   const t = useTranslations('blogs_section');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
   const { title, desc, id, img4, category, date, day, month } = blog || {};
+  const translatedMonth = translateMonth(month, locale);
   return (
     <div
       className={`h8-blog-item ${currentIndex === idx ? 'active' : ''}	`}
@@ -17,7 +22,7 @@ const BlogCard8 = ({ blog, idx, currentIndex, handleCurrentIndex }) => {
         <img src={img4 ? img4 : '/images/blog/blog-thumb-1.webp'} alt="Images" />
         <div className="blog-date">
           <span className="date">{modifyNumber(day)}</span>
-          <span className="month">{month}</span>
+          <span className="month">{translatedMonth}</span>
         </div>
       </div>
       <div className="blog-content">
@@ -25,15 +30,14 @@ const BlogCard8 = ({ blog, idx, currentIndex, handleCurrentIndex }) => {
           <div className="blog-two-meta">
             <ul>
               <li>
-                <Link className="meta-link" href={`/blogs?category=${makePath(category)}`}>
-                  {category}
+                <Link className="meta-link" href={`/noticias?category=${makePath(category)}`}>
+                  {translateCategory(category, tCommon)}
                 </Link>
               </li>
-              <li>{t('comments')}</li>
             </ul>
           </div>
           <h4 className="title  under-line">
-            <Link href={`/blogs/${id}`}>{title}</Link>
+            <Link href={`/noticias/${id}`}>{title}</Link>
           </h4>
           <div className="desc">
             <p>
@@ -42,7 +46,7 @@ const BlogCard8 = ({ blog, idx, currentIndex, handleCurrentIndex }) => {
             </p>
           </div>
           <div className="blog-button">
-            <ButtonPrimary text={t('read_more')} url={`/blogs/${id}`} />
+            <ButtonPrimary text={t('read_more')} url={`/noticias/${id}`} />
           </div>
         </div>
       </div>

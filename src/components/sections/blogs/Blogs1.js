@@ -24,7 +24,7 @@ const Blogs1 = () => {
                   className="blog-button d-none d-lg-inline-flex wow fadeInDown"
                   data-wow-delay="0.3s"
                 >
-                  <ButtonPrimary text={t('explore_more')} url={'/blogs'} />
+                  <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
                 </div>
               </div>
             </div>
@@ -37,7 +37,7 @@ const Blogs1 = () => {
                   : ''}
               </div>
               <div className="blog-button d-lg-none text-center wow fadeInUp" data-wow-delay="0.5s">
-                <ButtonPrimary text={t('explore_more')} url={'/blogs'} />
+                <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
               </div>
             </div>
           </div>

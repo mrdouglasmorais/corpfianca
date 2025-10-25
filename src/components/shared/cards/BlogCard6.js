@@ -1,34 +1,37 @@
 'use client';
 import makePath from '@/libs/makePath';
-import { useTranslations } from 'next-intl';
+import modifyNumber from '@/libs/modifyNumber';
+import translateMonth from '@/utils/translateMonth';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import ButtonPrimary from '../buttons/ButtonPrimary';
 
 const BlogCard6 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
+  const locale = useLocale();
   const { title, desc, id, img2, category, date, day, month } = blog || {};
+  const translatedMonth = translateMonth(month, locale);
   return (
     <div className="blog-style-2 style-6">
       <div className="blog-images">
         <img src={img2 ? img2 : '/images/blog/h2-blog-1.webp'} alt="Images" />
         <div className="blog-date">
-          <span className="date">06</span>
-          <span className="month">Nov</span>
+          <span className="date">{modifyNumber(day)}</span>
+          <span className="month">{translatedMonth}</span>
         </div>
       </div>
       <div className="blog-content">
         <div className="blog-two-meta">
           <ul>
             <li>
-              <Link className="meta-link" href={`/blogs?category=${makePath(category)}`}>
+              <Link className="meta-link" href={`/noticias?category=${makePath(category)}`}>
                 {category}
               </Link>
             </li>
-            <li>{t('comments')}</li>
           </ul>
         </div>
         <h4 className="title under-line">
-          <Link href={`/blogs/${id}`}>{title}</Link>
+          <Link href={`/noticias/${id}`}>{title}</Link>
         </h4>
         <div className="desc">
           <p>
@@ -36,7 +39,7 @@ const BlogCard6 = ({ blog, idx }) => {
           </p>
         </div>
         <div className="blog-button">
-          <ButtonPrimary text={t('read_more')} url={`/blogs/${id}`} />
+          <ButtonPrimary text={t('read_more')} url={`/noticias/${id}`} />
         </div>
       </div>
     </div>

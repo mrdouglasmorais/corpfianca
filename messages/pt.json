@@ -6,9 +6,34 @@
     "about": "Sobre",
     "services": "Serviços",
     "portfolio": "Portfólio",
-    "blog": "Blog",
+    "blog": "Notícias",
     "team": "Equipe",
-    "home": "Início"
+    "home": "Início",
+    "drag": "Arrastar",
+    "custom_branding": "Identidade Visual Personalizada",
+    "website_design": "Design de Websites",
+    "digital_marketing": "Marketing Digital",
+    "strategy_consulting": "Consultoria Estratégica",
+    "analytics_reporting": "Análise e Relatórios",
+    "tag_strategy": "Estratégia",
+    "tag_growth": "Crescimento",
+    "tag_design": "Design",
+    "tag_marketing": "Marketing",
+    "tag_business": "Negócios",
+    "tag_branding": "Identidade de Marca",
+    "view_project": "Ver Projeto",
+    "portfolio_card_desc": "No ambiente empresarial dinâmico de hoje, a chave para o sucesso está no planejamento estratégico e nas operações empresariais.",
+    "category_branding": "Identidade de Marca",
+    "category_business": "Negócios",
+    "category_consulting": "Consultoria",
+    "category_innovations": "Inovações",
+    "category_managements": "Gestão",
+    "category_marketing": "Marketing",
+    "role_manager": "Gerente",
+    "role_co_founder": "Co-fundador",
+    "role_sr_manager": "Gerente Sênior",
+    "role_sr_marketer": "Marketeiro Sênior",
+    "role_sr_designer": "Designer Sênior"
   },
   "header_top": {
     "trusted_partner": "Parceiro confiável em excelência empresarial",
@@ -20,7 +45,7 @@
     "free_consultation": "Consultoria inicial",
     "explore": "Explorar",
     "search": "Pesquisar",
-    "search_title": "Pesquise por Blog, projetos, Serviços ou pessoas.",
+    "search_title": "Pesquise por Notícias, projetos, Serviços ou pessoas.",
     "search_placeholder": "Pesquisar aqui..."
   },
   "navigation": {
@@ -28,7 +53,7 @@
     "pages": "Páginas",
     "services": "Serviços",
     "portfolios": "Portfólios",
-    "blog": "Blog",
+    "blog": "Notícias",
     "contact": "Contato",
     "main_pages": "Páginas Principais",
     "other_pages": "Outras Páginas",
@@ -49,9 +74,9 @@
     "cart": "Carrinho",
     "checkout": "Finalizar compra",
     "wishlist": "Lista de desejos",
-    "blog_grid": "Blog em grade",
-    "blog_sidebar": "Blog com barra lateral",
-    "blog_details": "Detalhes do blog",
+    "blog_grid": "Notícias em grade",
+    "blog_sidebar": "Notícias com barra lateral",
+    "blog_details": "Detalhes da notícia",
     "portfolio_details": "Detalhes do portfólio",
     "business_process_optimization": "Otimização de processos empresariais",
     "strategic_planning_execution": "Planejamento estratégico e execução",
@@ -93,9 +118,7 @@
     "reach_worldwide": "Alcance mundial"
   },
   "about": {
-    "section_title": "Nossa empresa",
-    "title": "Desenvolvemos soluções através de parcerias estratégicas",
-    "description": "Nosso compromisso é fornecer soluções fundamentadas que fortalecem negócios e promovem crescimento sustentável através de parcerias estratégicas e tecnologia aplicada."
+    "title": "Sobre"
   },
   "services": {
     "section_title": "Nossos serviços",
@@ -115,7 +138,7 @@
     "title": "Nossos projetos mais recentes"
   },
   "blogs": {
-    "section_title": "Blog",
+    "section_title": "Notícias",
     "title": "Últimas insights"
   },
   "homepage": {
@@ -124,7 +147,9 @@
     "description": "Oferecemos soluções integradas em finanças corporativas, consultoria estratégica e gestão empresarial para fortalecer a performance organizacional."
   },
   "brands": {
-    "join_companies": "Empresas que confiam em nossos serviços"
+    "join_companies": "Empresas que confiam em nossos serviços",
+    "join_companies_trust": "Junte-se a mais de",
+    "companies_that_trust": "empresas que confiam em nós"
   },
   "features": {
     "subtitle": "Excelência em consultoria",
@@ -141,8 +166,10 @@
   },
   "about_section": {
     "subtitle": "Sobre nossa empresa",
-    "title": "Soluções estratégicas para desafios empresariais",
+    "title": "Criando soluções personalizadas de sucesso para cada desafio",
     "description": "Nossa missão é auxiliar empresas de todos os portes a alcançar resultados consistentes em ambientes de negócio em transformação. Comprometemo-nos a entregar valor através de estratégias fundamentadas e metodologias comprovadas.",
+    "description_1": "Nossa missão é capacitar empresas de todos os tamanhos a prosperar em um mercado em constante mudança. Estamos comprometidos em entregar valor excepcional através de nossa abordagem estratégica e métodos inovadores. Nossa missão é capacitar empresas de todos os tamanhos a prosperar.",
+    "description_2": "Comprometidos em entregar valor excepcional através de nossa abordagem estratégica, métodos inovadores capacitam.",
     "expertise_experience": "Expertise e experiência",
     "client_centric": "Abordagem centrada no cliente",
     "commitment_excellence": "Compromisso com a excelência",
@@ -153,7 +180,8 @@
     "subtitle": "Nossos serviços",
     "title": "Consultoria empresarial especializada",
     "customers_review": "Avaliação dos clientes",
-    "get_started": "Iniciar"
+    "get_started": "Iniciar",
+    "service_desc_generic": "No ambiente empresarial dinâmico de hoje, a chave para o sucesso está no planejamento estratégico e na execução operacional de negócios."
   },
   "skills_section": {
     "title": "Habilidade e experiência",
@@ -163,7 +191,13 @@
   },
   "testimonials_section": {
     "subtitle": "Depoimentos",
-    "title": "Ouvindo nossos clientes"
+    "title": "Ouvindo nossos clientes",
+    "clients_feedback": "Feedback dos clientes",
+    "clients_feedback_upper": "FEEDBACK DOS CLIENTES",
+    "our_clients_testimonials": "Depoimentos dos nossos clientes",
+    "feedback_fuels_us": "Feedback que nos impulsiona",
+    "client_testimonial_stories": "Depoimentos de clientes e histórias reais de sucesso",
+    "happy_clients_world": "Clientes satisfeitos por todo o mundo agora."
   },
   "portfolios_section": {
     "subtitle": "Nossos projetos",
@@ -174,6 +208,7 @@
     "title": "Análises e perspectivas empresariais",
     "explore_more": "Ver todas as publicações",
     "read_more": "Ler mais",
+    "blog_card_desc": "No ambiente empresarial dinâmico de hoje, a chave para o sucesso está no planejamento estratégico e na execução operacional das organizações.",
     "comments": "Comentários",
     "previous": "Anterior",
     "next": "Próximo",
@@ -190,7 +225,14 @@
     "enter_comments": "Digite seus comentários",
     "learn_more": "Saiba mais",
     "comments_count": "({count}) Comentários",
-    "comments_count_simple": "{count} Comentários"
+    "comments_count_simple": "{count} Comentários",
+    "blog_standard": "Notícias",
+    "blogs": "Notícias",
+    "search_here": "Pesquisar aqui",
+    "search_placeholder": "Pesquisar...",
+    "categories": "Categorias",
+    "tags_title": "Tags",
+    "recent_post": "Postagens recentes"
   },
   "blog_details": {
     "title": "Detalhes da Publicação",
@@ -207,7 +249,16 @@
     "complete_project": "Projetos concluídos",
     "reach_worldwide": "Alcance internacional",
     "faster_growth": "Crescimento consistente",
-    "awards_archived": "Reconhecimentos recebidos"
+    "awards_archived": "Reconhecimentos recebidos",
+    "our_evolution": "Nossa evolução",
+    "evolution_description": "Fundada em 2002 por Burdee Ncolase, nossa empresa começou com a grande visão de trazer soluções inovadoras para empresas que enfrentam desafios sem precedentes. O que começou como uma pequena empresa de consultoria rapidamente evoluiu para um parceiro confiável para empresas ao redor do globo. Nossa jornada começou com uma ideia simples: oferecer serviços de consultoria incomparáveis que capacitam. Nossos valores fundamentais de integridade, inovação e excelência guiam tudo o que fazemos, liderando a onda em consultoria.",
+    "click_for_watch": "Clique para assistir",
+    "see_latest_video": "Veja nosso último vídeo"
+  },
+  "teams_section": {
+    "meet_team": "Conheça nossa equipe",
+    "expert_team_members": "Membros especialistas da equipe",
+    "more_member": "Mais membros"
   },
   "footer": {
     "our_offices": "Nossos escritórios",
@@ -220,7 +271,7 @@
     "recognitions": "Reconhecimentos",
     "careers": "Carreiras",
     "new": "Novo",
-    "blog": "Blog",
+    "blog": "Notícias",
     "feedback": "Feedback",
     "error_404": "Erro 404",
     "services": "Serviços",

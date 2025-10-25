@@ -6,9 +6,34 @@
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
-    "blog": "Blog",
+    "blog": "News",
     "team": "Team",
-    "home": "Home"
+    "home": "Home",
+    "drag": "Drag",
+    "custom_branding": "Custom Branding",
+    "website_design": "Website Design",
+    "digital_marketing": "Digital Marketing",
+    "strategy_consulting": "Strategy Consulting",
+    "analytics_reporting": "Analytics & Reporting",
+    "tag_strategy": "Strategy",
+    "tag_growth": "Growth",
+    "tag_design": "Design",
+    "tag_marketing": "Marketing",
+    "tag_business": "Business",
+    "tag_branding": "Branding",
+    "view_project": "View Project",
+    "portfolio_card_desc": "In today's dynamic business environment, the key to success lies in strategic planning and operational business.",
+    "category_branding": "Branding",
+    "category_business": "Business",
+    "category_consulting": "Consulting",
+    "category_innovations": "Innovations",
+    "category_managements": "Management",
+    "category_marketing": "Marketing",
+    "role_manager": "Manager",
+    "role_co_founder": "Co. Founder",
+    "role_sr_manager": "Sr. Manager",
+    "role_sr_marketer": "Sr. Marketer",
+    "role_sr_designer": "Sr. Designer"
   },
   "header_top": {
     "trusted_partner": "Trusted partner in business excellence",
@@ -20,7 +45,7 @@
     "free_consultation": "Initial consultation",
     "explore": "Explore",
     "search": "Search",
-    "search_title": "Search Blog, projects, Service or people.",
+    "search_title": "Search News, projects, Service or people.",
     "search_placeholder": "Search here..."
   },
   "navigation": {
@@ -28,7 +53,7 @@
     "pages": "Pages",
     "services": "Services",
     "portfolios": "Portfolios",
-    "blog": "Blog",
+    "blog": "News",
     "contact": "Contact",
     "main_pages": "Main Pages",
     "other_pages": "Other Pages",
@@ -49,9 +74,9 @@
     "cart": "Cart",
     "checkout": "Checkout",
     "wishlist": "Wishlist",
-    "blog_grid": "Blog grid",
-    "blog_sidebar": "Blog with sidebar",
-    "blog_details": "Blog details",
+    "blog_grid": "News grid",
+    "blog_sidebar": "News with sidebar",
+    "blog_details": "News details",
     "portfolio_details": "Portfolio details",
     "business_process_optimization": "Business process optimization",
     "strategic_planning_execution": "Strategic planning & execution",
@@ -93,9 +118,7 @@
     "reach_worldwide": "Reach worldwide"
   },
   "about": {
-    "section_title": "Our company",
-    "title": "We develop solutions through strategic partnerships",
-    "description": "Our commitment is to provide evidence-based solutions that strengthen businesses and promote sustainable growth through strategic partnerships and applied technology."
+    "title": "About"
   },
   "services": {
     "section_title": "Our services",
@@ -115,7 +138,7 @@
     "title": "Our latest projects"
   },
   "blogs": {
-    "section_title": "Blog",
+    "section_title": "News",
     "title": "Latest insights"
   },
   "homepage": {
@@ -124,7 +147,9 @@
     "description": "We offer integrated solutions in corporate finance, strategic consulting, and business management to strengthen organizational performance."
   },
   "brands": {
-    "join_companies": "Companies that trust our services"
+    "join_companies": "Companies that trust our services",
+    "join_companies_trust": "Join over",
+    "companies_that_trust": "companies that trust us"
   },
   "features": {
     "subtitle": "Consulting excellence",
@@ -141,8 +166,10 @@
   },
   "about_section": {
     "subtitle": "About our company",
-    "title": "Strategic solutions for business challenges",
+    "title": "Crafting success tailored solution for each & every challenges",
     "description": "Our mission is to assist companies of all sizes in achieving consistent results in evolving business environments. We are committed to delivering value through evidence-based strategies and proven methodologies.",
+    "description_1": "Our mission is to empowers businesses off all size to thrive in an businesses ever changing marketplace. We are committed to the delivering exceptional in the value through our strategic inset, innovative approaches. Our mission is to empower businesses of all sizes to thrive.",
+    "description_2": "Committed to the delivering exceptional in the value through our strategic inset, innovative approaches empower.",
     "expertise_experience": "Expertise and experience",
     "client_centric": "Client-centric approach",
     "commitment_excellence": "Commitment to excellence",
@@ -153,7 +180,8 @@
     "subtitle": "Our services",
     "title": "Specialized business consulting",
     "customers_review": "Customer reviews",
-    "get_started": "Get started"
+    "get_started": "Get started",
+    "service_desc_generic": "In today's dynamic business environment, the key to success lies in strategic planning and operational business execution."
   },
   "skills_section": {
     "title": "Skill and experience",
@@ -163,7 +191,13 @@
   },
   "testimonials_section": {
     "subtitle": "Testimonials",
-    "title": "Listening to our clients"
+    "title": "Listening to our clients",
+    "clients_feedback": "Clients feedback",
+    "clients_feedback_upper": "CLIENTS FEEDBACK",
+    "our_clients_testimonials": "Our clients testimonials",
+    "feedback_fuels_us": "Feedback that fuels us",
+    "client_testimonial_stories": "Client testimonial and real success stories",
+    "happy_clients_world": "Happy clients all over world now."
   },
   "portfolios_section": {
     "subtitle": "Our projects",
@@ -174,6 +208,7 @@
     "title": "Business analysis and perspectives",
     "explore_more": "View all publications",
     "read_more": "Read more",
+    "blog_card_desc": "In today's dynamic business environment, the key to success lies in strategic planning and operational execution organisations.",
     "comments": "Comments",
     "previous": "Previous",
     "next": "Next",
@@ -190,7 +225,14 @@
     "enter_comments": "Enter your comments",
     "learn_more": "Learn more",
     "comments_count": "({count}) Comments",
-    "comments_count_simple": "{count} Comments"
+    "comments_count_simple": "{count} Comments",
+    "blog_standard": "News",
+    "blogs": "News",
+    "search_here": "Search here",
+    "search_placeholder": "Search...",
+    "categories": "Categories",
+    "tags_title": "Tags",
+    "recent_post": "Recent Posts"
   },
   "blog_details": {
     "title": "Publication Details",
@@ -204,10 +246,19 @@
   "funfacts_section": {
     "subtitle": "Our results",
     "title": "Metrics and achievements",
-    "complete_project": "Projects completed",
-    "reach_worldwide": "International reach",
-    "faster_growth": "Consistent growth",
-    "awards_archived": "Recognition received"
+    "complete_project": "Complete project",
+    "reach_worldwide": "Reach worldwide",
+    "faster_growth": "Faster growth",
+    "awards_archived": "Recognition received",
+    "our_evolution": "Our evolution",
+    "evolution_description": "Founded in 2002 by Burdee Ncolase en. our firm started with our great vision to bring innovative solutions of businesses facing unprecedented challenges. That began as a small consultings firm quickly evolved into a trusted partner for companies around the globe . Our journey into began with a simple idea thats offer unparalleled consulting services empower Our core values of integrity, innovation, and excellence guide everything we do leading the wave in consulting's.",
+    "click_for_watch": "Click for watch",
+    "see_latest_video": "See our latest video"
+  },
+  "teams_section": {
+    "meet_team": "Meet our team",
+    "expert_team_members": "Expert team members",
+    "more_member": "More member"
   },
   "footer": {
     "our_offices": "Our offices",
@@ -220,7 +271,7 @@
     "recognitions": "Recognitions",
     "careers": "Careers",
     "new": "New",
-    "blog": "Blog",
+    "blog": "News",
     "feedback": "Feedback",
     "error_404": "Error 404",
     "services": "Services",

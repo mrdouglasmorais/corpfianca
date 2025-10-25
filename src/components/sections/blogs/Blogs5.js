@@ -5,46 +5,41 @@ import getBlogs from '@/libs/getBlogs';
 import { useTranslations } from 'next-intl';
 
 const Blogs5 = () => {
-	const t = useTranslations('blogs_section');
-	const blogs = getBlogs().slice(0, 3);
-	return (
-		<section className="h5-blog-section section-space">
-			<div className="container">
-				<div className="row">
-					<div className="col-12">
-						<div className="sec-heading style-4">
-							<div className="sec-text">
-								<span className="sub-title wow fadeInUp" data-wow-delay="0.2s">
-									{t('subtitle')}
-								</span>
-								<h2 className="sec-title text-anim">
-									{t('title')}
-								</h2>
-							</div>
-							<div className="desc wow fadeInUp" data-wow-delay="0.4s">
-								<p>
-									In today's dynamic business environment, the key to success
-									strategics..
-								</p>
-							</div>
-							<div className="blog-button wow fadeInUp" data-wow-delay="0.6s">
-								<ButtonPrimary text={t('explore_more')} url={"/blogs"} />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="row rg-30 ">
-					{blogs?.length
-						? blogs?.map((blog, idx) => (
-								<div key={idx} className="col-xl-4 col-md-6">
-									<BlogCard5 blog={blog} idx={idx} />
-								</div>
-						  ))
-						: ""}
-				</div>
-			</div>
-		</section>
-	);
+  const t = useTranslations('blogs_section');
+  const blogs = getBlogs().slice(0, 3);
+  return (
+    <section className="h5-blog-section section-space">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="sec-heading style-4">
+              <div className="sec-text">
+                <span className="sub-title wow fadeInUp" data-wow-delay="0.2s">
+                  {t('subtitle')}
+                </span>
+                <h2 className="sec-title text-anim">{t('title')}</h2>
+              </div>
+              <div className="desc wow fadeInUp" data-wow-delay="0.4s">
+                <p>In today's dynamic business environment, the key to success strategics..</p>
+              </div>
+              <div className="blog-button wow fadeInUp" data-wow-delay="0.6s">
+                <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row rg-30 ">
+          {blogs?.length
+            ? blogs?.map((blog, idx) => (
+                <div key={idx} className="col-xl-4 col-md-6">
+                  <BlogCard5 blog={blog} idx={idx} />
+                </div>
+              ))
+            : ''}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Blogs5;

@@ -133,6 +133,7 @@ body.is-modal-opened {
 body main {
   position: relative;
   z-index: 2;
+  background-color: var(--tj-color-common-white);
 }
 
 body.is-modal-opened main {
@@ -3994,7 +3995,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
+  background-color: var(--tj-color-theme-dark);
 }
 
 .footerStack .tj-footer-area {

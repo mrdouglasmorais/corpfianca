@@ -1,12 +1,15 @@
 'use client';
 import makePath from '@/libs/makePath';
 import modifyNumber from '@/libs/modifyNumber';
-import { useTranslations } from 'next-intl';
+import translateMonth from '@/utils/translateMonth';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const BlogCard2 = ({ blog, type, isSidebar, idx }) => {
   const t = useTranslations('blogs_section');
+  const locale = useLocale();
   const { title, desc, id, img2, detailsImg, category, date, day, month } = blog || {};
+  const translatedMonth = translateMonth(month, locale);
   return (
     <div
       className={`blog-style-2  ${type === 2 ? 'wow fadeInUp' : 'left-swipe'}`}
@@ -23,22 +26,21 @@ const BlogCard2 = ({ blog, type, isSidebar, idx }) => {
         />
         <div className="blog-date">
           <span className="date">{modifyNumber(day)}</span>
-          <span className="month">{month}</span>
+          <span className="month">{translatedMonth}</span>
         </div>
       </div>
       <div className="blog-content">
         <div className="blog-two-meta">
           <ul>
             <li>
-              <Link className="meta-link" href={`/blogs?category=${makePath(category)}`}>
+              <Link className="meta-link" href={`/noticias?category=${makePath(category)}`}>
                 {category}
               </Link>
             </li>
-            <li>{t('comments')}</li>
           </ul>
         </div>
         <h4 className="title under-line">
-          <Link href={`/blogs/${id}`}>{title}</Link>
+          <Link href={`/noticias/${id}`}>{title}</Link>
         </h4>
         <div className="desc">
           <p>
@@ -46,7 +48,7 @@ const BlogCard2 = ({ blog, type, isSidebar, idx }) => {
           </p>
         </div>
         <div className="blog-button">
-          <Link className="blog-btn text-btn" href={`/blogs/${id}`}>
+          <Link className="blog-btn text-btn" href={`/noticias/${id}`}>
             {t('read_more')} <i className="tji-arrow-right"></i>
           </Link>
         </div>

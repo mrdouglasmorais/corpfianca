@@ -6,14 +6,6 @@ const getNavItemsI18n = (t, locale) => {
       id: 1,
       name: t('home'),
       path: createLocalizedPath('/', locale),
-      submenu: [
-        {
-          id: 1,
-          name: 'Home - 01',
-          img: '/images/header/demo/home-1.webp',
-          path: createLocalizedPath('/', locale),
-        },
-      ],
     },
     {
       id: 2,
@@ -182,37 +174,20 @@ const getNavItemsI18n = (t, locale) => {
       ],
     },
     {
-      id: 4,
-      name: t('portfolios'),
-      path: createLocalizedPath('/portfolios', locale),
-      submenu: [
-        {
-          id: 1,
-          name: t('portfolios'),
-          path: createLocalizedPath('/portfolios', locale),
-        },
-        {
-          id: 2,
-          name: t('portfolio_details'),
-          path: createLocalizedPath('/portfolios/1', locale),
-        },
-      ],
-    },
-    {
       id: 5,
       name: t('blog'),
-      path: createLocalizedPath('/blogs', locale),
+      path: createLocalizedPath('/noticias', locale),
       submenu: [
         {
           id: 1,
           name: t('blog'),
-          path: createLocalizedPath('/blogs', locale),
+          path: createLocalizedPath('/noticias', locale),
           badge: null,
         },
         {
           id: 2,
           name: t('blog_details'),
-          path: createLocalizedPath('/blogs/1', locale),
+          path: createLocalizedPath('/noticias/1', locale),
           badge: null,
         },
       ],

@@ -62,7 +62,7 @@ const Footer = ({ footerType, isRtl }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blogs">{t('blog')}</Link>
+                      <Link href="/noticias">{t('blog')}</Link>
                     </li>
                     <li>
                       <Link href="/team">{t('feedback')}</Link>

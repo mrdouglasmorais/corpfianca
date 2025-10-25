@@ -1,12 +1,17 @@
 'use client';
 import makePath from '@/libs/makePath';
 import modifyNumber from '@/libs/modifyNumber';
-import { useTranslations } from 'next-intl';
+import translateMonth from '@/utils/translateMonth';
+import { translateCategory } from '@/utils/translateTags';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const BlogCard10 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
   const { title, desc, id, img6, category, date, day, month } = blog || {};
+  const translatedMonth = translateMonth(month, locale);
   return (
     <div className="h10-blog_item wow fadeInUp" data-wow-delay={`0.${idx + 2}s`}>
       {idx > 1 ? (
@@ -28,7 +33,7 @@ const BlogCard10 = ({ blog, idx }) => {
           )}
           <div className="blog-date">
             <span className="day">{modifyNumber(day)}</span>
-            <span className="month">{month}</span>
+            <span className="month">{translatedMonth}</span>
           </div>
         </>
       )}
@@ -37,18 +42,17 @@ const BlogCard10 = ({ blog, idx }) => {
         <div className="blog-two-meta">
           <ul>
             <li>
-              <Link className="meta-link" href={`/blogs?category=${makePath(category)}`}>
-                {category}
+              <Link className="meta-link" href={`/noticias?category=${makePath(category)}`}>
+                {translateCategory(category, tCommon)}
               </Link>
             </li>
-            <li>{t('comments')}</li>
           </ul>
         </div>
         <h4 className="blog_title">
-          <Link href={`/blogs/${id}`}>{title}</Link>
+          <Link href={`/noticias/${id}`}>{title}</Link>
         </h4>
         {idx === 1 ? (
-          <Link className="blog_btn text-btn-2" href={`/blogs/${id}`}>
+          <Link className="blog_btn text-btn-2" href={`/noticias/${id}`}>
             <span className="icon">
               <i className="tji-angle-right"></i>
             </span>

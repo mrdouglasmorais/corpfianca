@@ -2,15 +2,7 @@
 	{
 		"id": 1,
 		"name": "Home",
-		"path": "/",
-		"submenu": [
-			{
-				"id": 1,
-				"name": "Home - 01",
-				"img": "/images/header/demo/home-1.webp",
-				"path": "/"
-			}
-		]
+		"path": "/"
 	},
 	{
 		"id": 2,
@@ -121,14 +113,14 @@
 					},
 					{
 						"id": 6,
-						"name": "Blog",
-						"path": "/blogs",
+						"name": "Notícias",
+						"path": "/noticias",
 						"badge": null
 					},
 					{
 						"id": 9,
-						"name": "Blog details",
-						"path": "/blogs/1",
+						"name": "Detalhes da notícia",
+						"path": "/noticias/1",
 						"badge": null
 					},
 					{
@@ -270,19 +262,19 @@
 	},
 	{
 		"id": 5,
-		"name": "Blog",
-		"path": "/blogs",
+		"name": "Notícias",
+		"path": "/noticias",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Blog",
-				"path": "/blogs",
+				"name": "Notícias",
+				"path": "/noticias",
 				"badge": "NEW"
 			},
 			{
 				"id": 4,
-				"name": "Blog details",
-				"path": "/blogs/1",
+				"name": "Detalhes da notícia",
+				"path": "/noticias/1",
 				"badge": null
 			}
 		]

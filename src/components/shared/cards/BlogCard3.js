@@ -9,13 +9,13 @@ const BlogCard3 = ({ blog, idx }) => {
   return (
     <div className="blog-style-3 right-swipe">
       <div className="blog-images">
-        <Link href={`/blogs/${id}`}>
+        <Link href={`/noticias/${id}`}>
           <img src={img2 ? img2 : '/images/blog/h2-blog-1.webp'} alt="Images" />
         </Link>
         <div className="blog_category">
           <ul>
             <li>
-              <Link href={`/blogs?category=${makePath(category)}`}>{category}</Link>
+              <Link href={`/noticias?category=${makePath(category)}`}>{category}</Link>
             </li>
           </ul>
         </div>
@@ -24,11 +24,10 @@ const BlogCard3 = ({ blog, idx }) => {
         <div className="blog-three-meta">
           <ul>
             <li>{date}</li>
-            <li>{t('comments')}</li>
           </ul>
         </div>
         <h4 className="title under-line">
-          <Link href={`/blogs/${id}`}>{title}</Link>
+          <Link href={`/noticias/${id}`}>{title}</Link>
         </h4>
         <div className="desc">
           <p>
@@ -36,7 +35,7 @@ const BlogCard3 = ({ blog, idx }) => {
           </p>
         </div>
         <div className="blog-button">
-          <Link className="blog-btn text-btn" href={`/blogs/${id}`}>
+          <Link className="blog-btn text-btn" href={`/noticias/${id}`}>
             {t('read_more')} <i className="tji-arrow-right"></i>
           </Link>
         </div>

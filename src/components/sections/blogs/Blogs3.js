@@ -20,7 +20,7 @@ const Blogs3 = () => {
                 <h2 className="sec-title text-anim">{t('title')}</h2>
               </div>
               <div className="blog-button wow fadeInUp" data-wow-delay="0.3s">
-                <ButtonPrimary text={t('explore_more')} url={'/blogs'} />
+                <ButtonPrimary text={t('explore_more')} url={'/noticias'} />
               </div>
             </div>
           </div>

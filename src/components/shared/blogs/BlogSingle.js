@@ -1,6 +1,8 @@
 'use client';
 import makePath from '@/libs/makePath';
-import { useTranslations } from 'next-intl';
+import translateMonth from '@/utils/translateMonth';
+import { translateCategory } from '@/utils/translateTags';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +11,8 @@ import PopupVideo from '../popup-video/PopupVideo';
 
 const BlogSingle = ({ blog }) => {
   const t = useTranslations('blogs_section');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
   const {
     id,
     detailsImg,
@@ -24,6 +28,8 @@ const BlogSingle = ({ blog }) => {
     date,
     comments,
   } = blog ? blog : {};
+
+  const translatedMonth = translateMonth(month, locale);
 
   return (
     <article className="tj-post-item wow fadeInUp" data-wow-delay="0.1s">
@@ -49,7 +55,7 @@ const BlogSingle = ({ blog }) => {
                   />
                   <div className="tj-post-date">
                     <span className="date">{day}</span>
-                    <span className="month">{month}</span>
+                    <span className="month">{translatedMonth}</span>
                   </div>
                 </div>
               </SwiperSlide>
@@ -96,21 +102,18 @@ const BlogSingle = ({ blog }) => {
         <div className="tj-post-meta">
           <ul>
             <li>
-              <Link href={`/blogs?category=${makePath(category)}`}>{category}</Link>
-            </li>
-            <li>
-              <span>
-                {Array.isArray(comments) ? comments.length : comments || '03'} {t('comments')}
-              </span>
+              <Link href={`/noticias?category=${makePath(category)}`}>
+                {translateCategory(category, tCommon)}
+              </Link>
             </li>
           </ul>
         </div>
         <h3 className="tj-post-title">
-          <Link href={`/blogs/${id}`}>{title}</Link>
+          <Link href={`/noticias/${id}`}>{title}</Link>
         </h3>
         <div className="tj-post-excerpt">{desc || ''}</div>
         <div className="tj-post-btn">
-          <ButtonPrimary text={t('read_more')} url={`/blogs/${id}`} />
+          <ButtonPrimary text={t('read_more')} url={`/noticias/${id}`} />
         </div>
       </div>
     </article>

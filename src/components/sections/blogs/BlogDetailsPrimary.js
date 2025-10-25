@@ -5,6 +5,7 @@ import { useCurrentItem } from '@/context_api/CurrentItemContext';
 import getBlogs from '@/libs/getBlogs';
 import getPreviousNextItem from '@/libs/getPreviousNextItem';
 import makePath from '@/libs/makePath';
+import { translateTags } from '@/utils/translateTags';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useEffect } from 'react';
@@ -12,6 +13,7 @@ import { useEffect } from 'react';
 const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
   const t = useTranslations('blogs_section');
   const tDetails = useTranslations('blog_details');
+  const tCommon = useTranslations('common');
   const items = getBlogs();
   const currentId = useCurrentItem() || blogId;
   const { prevId, nextId, currentItem, isPrevItem, isNextItem } = getPreviousNextItem(
@@ -22,7 +24,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
   const id = currentItem?.id || null;
   const detailsImg = currentItem?.detailsImg || '';
   const tags = currentItem?.tags || [];
-  const comments = currentItem?.comments || 3;
+  const translatedTags = translateTags(tags, tCommon);
   const author = currentItem?.author || 'Burdee Nicolas';
   const dateReleased = currentItem?.dateReleased || '29 Sep,2024';
   const desc = currentItem?.desc || [];
@@ -54,7 +56,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                     <div className="cate-text">
                       <span className="degination">{t('authored_by')}</span>
                       <h6 className="title">
-                        <Link href={`/blogs/${id}`}>{author}</Link>
+                        <Link href={`/noticias/${id}`}>{author}</Link>
                       </h6>
                     </div>
                   </div>
@@ -65,17 +67,6 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                     <div className="cate-text">
                       <span className="degination">{t('date_released')}</span>
                       <h6 className="text">{dateReleased}</h6>
-                    </div>
-                  </div>
-                  <div className="category-item">
-                    <div className="cate-icons">
-                      <i className="tji-coments"></i>
-                    </div>
-                    <div className="cate-text">
-                      <span className="degination">{t('comments')}</span>
-                      <h6 className="text">
-                        {comments} {t('comments')}
-                      </h6>
                     </div>
                   </div>
                 </div>
@@ -162,9 +153,9 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
               <div className="tj-post-details_tags_share wow fadeInUp" data-wow-delay="0.1s">
                 <div className="tj-tags tagcloud">
                   <span className="tag__title">{t('tags')}</span>
-                  {tags?.length
-                    ? tags?.map((tag, idx) => (
-                        <Link key={idx} href={`/blogs?tag=${makePath(tag)}`}>
+                  {translatedTags?.length
+                    ? translatedTags?.map((tag, idx) => (
+                        <Link key={idx} href={`/noticias?tag=${makePath(tag)}`}>
                           {tag}
                         </Link>
                       ))
@@ -194,7 +185,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                   style={{ visibility: isPrevItem ? 'visible' : 'hidden' }}
                 >
                   <div className="tj-nav-post__nav prev_post">
-                    <Link href={isPrevItem ? `/blogs/${prevId}` : '#'}>
+                    <Link href={isPrevItem ? `/noticias/${prevId}` : '#'}>
                       <span>
                         <i className="tji-arrow-left"></i>
                       </span>
@@ -202,7 +193,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                     </Link>
                   </div>
                 </div>
-                <Link href={'/blogs'} className="tj-nav-post__grid">
+                <Link href={'/noticias'} className="tj-nav-post__grid">
                   <i className="tji-square-cube"></i>
                 </Link>
                 {/* <!-- next post --> */}
@@ -211,176 +202,12 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                   style={{ visibility: isNextItem ? 'visible' : 'hidden' }}
                 >
                   <div className="tj-nav-post__nav next_post">
-                    <Link href={isNextItem ? `/blogs/${nextId}` : '#'}>
+                    <Link href={isNextItem ? `/noticias/${nextId}` : '#'}>
                       {t('next')}
                       <span>
                         <i className="tji-arrow-right"></i>
                       </span>
                     </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="tj-comments-container">
-                <div className="tj-comments-wrap">
-                  <div className="comments-title">
-                    <h3 className="title">
-                      {t('comments')} ({comments})
-                    </h3>
-                  </div>
-                  <div className="tj-latest-comments">
-                    <ul>
-                      <li className="tj-comment">
-                        <div className="comment-content">
-                          <div className="comment-avatar">
-                            <img src="/images/blog/author-1.png" alt="Image" />
-                          </div>
-                          <div className="comments-header">
-                            <div className="avatar-name">
-                              <h5 className="title">
-                                <Link href={`/blogs/${id}`}>Jami Simth</Link>
-                              </h5>
-                            </div>
-                            <div className="comment-text">
-                              <span className="date">February 03, 2024</span>
-                              <Link className="reply" href={`/blogs/${id}`}>
-                                <i className="tji-reply"></i>
-                                {t('reply')}
-                              </Link>
-                            </div>
-                            <div className="desc">
-                              <p>
-                                Our mission is to empowers businesses size to thrive in an
-                                businesses ever changes marketplace. We are committed to the
-                                delivering exceptionals the value through strategic inset.Our
-                                mission is to empowers businesses size to thrive in an businesses
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="tj-comment">
-                        <ul className="children">
-                          <li className="tj-comment">
-                            <div className="comment-content">
-                              <div className="comment-avatar">
-                                <img src="/images/blog/author-2.png" alt="Image" />
-                              </div>
-                              <div className="comments-header">
-                                <div className="avatar-name">
-                                  <h5 className="title">
-                                    <Link href={`/blogs/${id}`}>Marden Smith</Link>
-                                  </h5>
-                                </div>
-                                <div className="comment-text">
-                                  <span className="date">March 12. 2024</span>
-                                  <Link className="reply" href={`/blogs/${id}`}>
-                                    <i className="tji-reply"></i>Reply
-                                  </Link>
-                                </div>
-                                <div className="desc">
-                                  <p>
-                                    Our mission is to empowers businesses size to thrive in an
-                                    businesses ever changes marketplace. We are committed to the
-                                    delivering exceptionals the value through strategic inset.Our
-                                    mission is to empowers businesses size to thrive in an
-                                    businesses
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="tj-comment">
-                        <div className="comment-content">
-                          <div className="comment-avatar">
-                            <img src="/images/blog/author-1.png" alt="Image" />
-                          </div>
-                          <div className="comments-header">
-                            <div className="avatar-name">
-                              <h5 className="title">
-                                <Link href={`/blogs/${id}`}>Mahin Deen</Link>
-                              </h5>
-                            </div>
-                            <div className="comment-text">
-                              <span className="date">June 22. 2024</span>
-                              <Link className="reply" href={`/blogs/${id}`}>
-                                <i className="tji-reply"></i>
-                                {t('reply')}
-                              </Link>
-                            </div>
-                            <div className="desc">
-                              <p>
-                                Our mission is to empowers businesses size to thrive in an
-                                businesses ever changes marketplace. We are committed to the
-                                delivering exceptionals the value through strategic inset.Our
-                                mission is to empowers businesses size to thrive in an businesses
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="tj-comments__container">
-                  <div className="comment-respond">
-                    <h3 className="comment-reply-title">{t('leave_reply')}</h3>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <div className="form-input">
-                          <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder={t('enter_name')}
-                            required=""
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="form-input">
-                          <input
-                            type="email"
-                            id="emailOne"
-                            name="name"
-                            placeholder={t('enter_email')}
-                            required=""
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-input">
-                          <input
-                            type="text"
-                            id="website"
-                            name="name"
-                            placeholder={t('your_website')}
-                            required=""
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-input">
-                          <textarea id="comment" name="message" placeholder={t('enter_comments')} />
-                        </div>
-                      </div>
-                      <div className="comments-btn">
-                        <button type="submit" className="tj-primary-btn">
-                          <span className="btn_inner">
-                            <span className="btn_icon">
-                              <span>
-                                <i className="tji-arrow-right"></i>
-                                <i className="tji-arrow-right"></i>
-                              </span>
-                            </span>
-                            <span className="btn_text">
-                              <span>{t('leave_comment')}</span>
-                            </span>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
