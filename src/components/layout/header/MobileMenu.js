@@ -1,6 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 
 const MobileMenu = () => {
   const t = useTranslations('mobile_menu');
@@ -35,6 +36,10 @@ const MobileMenu = () => {
                 placeholder={t('search_placeholder')}
               />
             </form>
+          </div>
+
+          <div className="hamburger_language" style={{ marginBottom: '20px' }}>
+            <LanguageSwitcher />
           </div>
 
           <div className="hamburger_menu">

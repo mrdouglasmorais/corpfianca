@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://corpfianca.com';
-  
+
   // Translated routes for each locale
   const routeTranslations = {
     pt: {
@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Generate URLs for each locale
   Object.entries(routeTranslations).forEach(([locale, localeRoutes]) => {
     const localePrefix = locale === 'pt' ? '' : `/${locale}`;
-    
+
     routes.forEach(route => {
       const path = localeRoutes[route.key as keyof typeof localeRoutes];
       if (path !== undefined) {
