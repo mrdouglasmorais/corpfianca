@@ -93,16 +93,7 @@ const HeaderTop = ({ type }) => {
                     </span>
                     <Link href="mailto:suporte@corpfianca.com">suporte@corpfianca.com</Link>
                   </div>
-                  <div
-                    className="info_item"
-                    style={{
-                      display: 'flex',
-                      visibility: 'visible',
-                      opacity: 1,
-                      position: 'relative',
-                      zIndex: 99999,
-                    }}
-                  >
+                  <div className="info_item">
                     <LanguageSwitcher />
                   </div>
                 </div>
