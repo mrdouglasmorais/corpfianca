@@ -15,9 +15,6 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Debug: log current locale
-  console.log('LanguageSwitcher - Current locale:', locale, 'Pathname:', pathname);
-
   const handleSelectChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
     const newLocale = locales.find(l => l.code === selectedValue)?.code;
@@ -47,12 +44,16 @@ export default function LanguageSwitcher() {
     }
   }, [locale, pathname, router]);
 
-  // Ensure locale value is set correctly
+  // Get current locale - useLocale() should always return a valid locale
+  // Default to 'pt' if somehow undefined
   const currentLocale = locale || 'pt';
+  
+  // Validate that currentLocale is one of our supported locales
+  const validLocale = locales.find(l => l.code === currentLocale)?.code || 'pt';
 
   return (
     <select
-      value={currentLocale}
+      value={validLocale}
       onChange={handleSelectChange}
       style={{
         display: 'inline-block',
