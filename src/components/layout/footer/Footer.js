@@ -67,9 +67,6 @@ const Footer = ({ footerType, isRtl }) => {
                     <li>
                       <Link href="/team">{t('feedback')}</Link>
                     </li>
-                    <li>
-                      <Link href="/contact">{t('error_404')}</Link>
-                    </li>
                   </ul>
                 </div>
               </div>
