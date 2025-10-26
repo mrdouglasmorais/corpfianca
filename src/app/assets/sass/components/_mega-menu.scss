@@ -74,10 +74,10 @@
 			}
 		}
 		&-pages {
-			width: calc(100% - 30px);
-			max-width: 1320px;
+			width: auto;
+			max-width: none;
 			padding: 0;
-			margin: 0 auto;
+			margin: 0;
 
 			.mega-menu {
 				&-wrapper {
