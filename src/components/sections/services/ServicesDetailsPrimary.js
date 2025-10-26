@@ -5,13 +5,14 @@ import { useCurrentItem } from "@/context_api/CurrentItemContext";
 import getALlServices from "@/libs/getALlServices";
 import { getServiceSlug } from "@/utils/slugUtils";
 import { createLocalizedPath } from "@/utils/pathUtils";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect } from "react";
 import CtaSidebar from "../cta/CtaSidebar";
 
 const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
 	const locale = useLocale();
+	const t = useTranslations('navigation');
 	const items = getALlServices();
 	const currentId = useCurrentItem() || serviceId;
 	const currentItem = items?.find(({ id }) => currentId === id);
@@ -20,7 +21,9 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
 	const titleLarge = currentItem?.titleLarge || "";
 	const id = currentItem?.id || null;
 	const iconName = currentItem?.iconName || "";
-	const img = currentItem?.img || "";	useEffect(() => {
+	const img = currentItem?.img || "";
+	const desc1 = currentItem?.desc1 || "";
+	const desc2 = currentItem?.desc2 || "";	useEffect(() => {
 		if (title) {
 			setCurrentTitle(title);
 		}
@@ -44,22 +47,10 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
 								<h3 className="tj-post-title text-anim">{titleLarge}</h3>
 								<div className="tj-entry-content">
 									<p className="wow fadeInUp" data-wow-delay="0.1s">
-										Our service guides you through the entire strategic planning
-										process, from initial goal formulation to precise execution.
-										Start with a thorough assessment of your current position
-										and market landscape, then help you define clear, actionable
-										objectives aligned with your vision. Our approach includes
-										developing detailed action plans, setting key performance
-										indicators (KPIs), and implementing strategies to ensure
-										seamless execution.
+										{desc1}
 									</p>
 									<p className="wow fadeInUp" data-wow-delay="0.3s">
-										Our Strategic Planning and Execution service offers a
-										thorough approach to formulating and implementing business
-										goals. We begin with an in-depth analysis of your business
-										and market to identify opportunities and challenges. From
-										there, we work with you to define clear, actionable
-										objectives and develop a detailed.
+										{desc2}
 									</p>
 									<div className="tj-check-list">
 										<h4 className="text-anim">Service overview</h4>
@@ -422,7 +413,7 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
 								className="tj-sidebar-widget wow fadeInUp"
 								data-wow-delay="0.1s"
 							>
-								<h5 className="tj-sidebar-widget-title">Related service</h5>
+								<h5 className="tj-sidebar-widget-title">{t('related_service')}</h5>
 								<div className="service-category">
 									<ul>
 										{items?.length
