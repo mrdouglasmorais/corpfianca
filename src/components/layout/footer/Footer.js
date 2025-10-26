@@ -149,7 +149,12 @@ const Footer = ({ footerType, isRtl }) => {
                       Corp Fiança{' '}
                     </Link>{' '}
                     {t('all_rights_reserved')}. {t('technology_by')}{' '}
-                    <Link href="https://habitvs.io" target="_blank" rel="noopener noreferrer" className="habitvs-link">
+                    <Link
+                      href="https://habitvs.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="habitvs-link"
+                    >
                       <img src="/images/logos/habitvs.png" alt="habitvs" className="habitvs-logo" />
                       {t('habitvs')}
                     </Link>

@@ -389,7 +389,8 @@
         align-items: center;
         gap: 6px;
         .habitvs-logo {
-          height: 20px;
+          max-height: 100px;
+          height: auto;
           width: auto;
           vertical-align: middle;
         }
