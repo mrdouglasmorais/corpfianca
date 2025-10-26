@@ -66,24 +66,25 @@ const routeTranslations = {
  */
 const getTranslatedRoute = (path, locale) => {
   const translations = routeTranslations[locale] || routeTranslations.en;
-  
+
   // Handle root path
   if (path === '/') return '/';
-  
+
   // Split path into segments
   const pathSegments = path.split('/').filter(Boolean);
-  
+
   // Translate the first segment (base route)
   const baseSegment = pathSegments[0];
   const basePath = `/${baseSegment}`;
   const translatedBase = translations[basePath] || basePath;
-  
+
   // Get remaining segments (dynamic routes like /1, /2, etc.)
   const remainingSegments = pathSegments.slice(1);
-  
+
   // Reconstruct the translated path
-  const translatedPath = translatedBase + (remainingSegments.length > 0 ? '/' + remainingSegments.join('/') : '');
-  
+  const translatedPath =
+    translatedBase + (remainingSegments.length > 0 ? '/' + remainingSegments.join('/') : '');
+
   return translatedPath;
 };
 
@@ -95,16 +96,12 @@ const getTranslatedRoute = (path, locale) => {
  */
 export const createLocalizedPath = (path, locale) => {
   if (!path || path === '#' || path === 'javascript:void(0)') return '#';
-  if (path === '/') return locale === 'pt' ? '/' : `/${locale}`;
-
+  if (path === '/') return `/${locale}`;
+  
   // Translate the route according to locale
   const translatedPath = getTranslatedRoute(path, locale);
-
-  // For Portuguese (primary language), don't add prefix
-  if (locale === 'pt') {
-    return translatedPath;
-  }
-  // For other locales, add prefix
+  
+  // Always add locale prefix for all languages
   return `/${locale}${translatedPath}`;
 };
 
