@@ -9,7 +9,7 @@
  */
 export const createSlug = (text) => {
   if (!text) return '';
-  
+
   return text
     .toString()
     .toLowerCase()
@@ -41,6 +41,5 @@ export const getServiceSlug = (service) => {
  */
 export const findServiceBySlug = (services, slug) => {
   if (!services || !slug) return null;
-  return services.find(service => getServiceSlug(service) === slug) || null;
+  return services.find((service) => getServiceSlug(service) === slug) || null;
 };
-
