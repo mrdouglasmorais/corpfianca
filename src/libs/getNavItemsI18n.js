@@ -1,6 +1,6 @@
+import getALlServices from '@/libs/getALlServices';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
-import getALlServices from '@/libs/getALlServices';
 
 const getNavItemsI18n = (t, locale) => {
   const services = getALlServices();
@@ -58,19 +58,22 @@ const getNavItemsI18n = (t, locale) => {
       id: 3,
       name: t('services'),
       path: createLocalizedPath('/services', locale),
-      submenu: services.slice(0, 6).map((service, idx) => ({
-        id: idx + 1,
-        name: t([
+      submenu: services.slice(0, 6).map((service, idx) => {
+        const translationKeys = [
           'traditional_bonds',
           'corporate_bonds',
           'structured_bonds',
           'judicial_bonds',
           'credit_bonds',
           'rental_bonds',
-        ][idx]),
-        icon: service.iconName || 'tji-optimization',
-        path: createLocalizedPath(`/services/${getServiceSlug(service)}`, locale),
-      })),
+        ];
+        return {
+          id: idx + 1,
+          name: t(translationKeys[idx]),
+          icon: service.iconName || 'tji-optimization',
+          path: createLocalizedPath(`/services/${getServiceSlug(service)}`, locale),
+        };
+      }),
     },
     {
       id: 5,

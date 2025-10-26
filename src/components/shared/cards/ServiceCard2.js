@@ -1,5 +1,6 @@
 'use client';
 import modifyNumber from '@/libs/modifyNumber';
+import { useTranslations } from 'next-intl';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
 import { useLocale } from 'next-intl';
@@ -7,8 +8,10 @@ import Link from 'next/link';
 
 const ServiceCard2 = ({ service, idx, lastItem }) => {
   const locale = useLocale();
+  const tNav = useTranslations('navigation');
   const { title, desc, id, totalProject, iconName, img, bgImg, svg } = service || {};
   const slug = getServiceSlug(service);
+  const translateServiceTitle = (serviceTitle, serviceId) => {    const titleMap = {      1: tNav('traditional_bonds'),      2: tNav('corporate_bonds'),      3: tNav('structured_bonds'),      4: tNav('judicial_bonds'),      5: tNav('credit_bonds'),      6: tNav('rental_bonds'),    };    return titleMap[serviceId] || serviceTitle;  };  const translatedTitle = translateServiceTitle(title, id);
   return (
     <div className="service-style-2">
       <div className="service-icon">
@@ -17,7 +20,7 @@ const ServiceCard2 = ({ service, idx, lastItem }) => {
       <div className="service-content">
         <span className="number">{modifyNumber(id)}</span>
         <h4 className="title">
-          <Link href={createLocalizedPath(`/services/${slug}`, locale)}>{title}</Link>
+          <Link href={createLocalizedPath(`/services/${slug}`, locale)}>{translatedTitle}</Link>
         </h4>
         <div className="desc">
           <p>

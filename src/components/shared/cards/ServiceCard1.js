@@ -12,17 +12,17 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
   const { title, desc, id, totalProject, img, svg } = service || {};
   const slug = getServiceSlug(service);
 
-  // Função para traduzir títulos de serviços
-  const translateServiceTitle = (serviceTitle) => {
+  // Função para traduzir títulos de serviços baseado no ID
+  const translateServiceTitle = (serviceTitle, serviceId) => {
     const titleMap = {
-      'Fianças Tradicionais': tNav('traditional_bonds'),
-      'Fianças Corporativas': tNav('corporate_bonds'),
-      'Fianças Estruturadas': tNav('structured_bonds'),
-      'Fianças Judicial': tNav('judicial_bonds'),
-      'Fianças de Crédito': tNav('credit_bonds'),
-      'Fianças Locatícia': tNav('rental_bonds'),
+      1: tNav('traditional_bonds'),
+      2: tNav('corporate_bonds'),
+      3: tNav('structured_bonds'),
+      4: tNav('judicial_bonds'),
+      5: tNav('credit_bonds'),
+      6: tNav('rental_bonds'),
     };
-    return titleMap[serviceTitle] || serviceTitle;
+    return titleMap[serviceId] || serviceTitle;
   };
 
   // Traduzir descrição genérica
@@ -31,7 +31,7 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
       ? t('service_desc_generic')
       : desc;
 
-  const translatedTitle = translateServiceTitle(title);
+  const translatedTitle = translateServiceTitle(title, id);
 
   return (
     <div className={`service-item ${idx < lastItem ? 'service-stack' : ''}`}>
