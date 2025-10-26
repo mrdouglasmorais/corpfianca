@@ -50,6 +50,15 @@
   --tj-color-red-1: #ff0000;
 }
 
+/* Custom GLightbox z-index fix */
+.glightbox-container {
+  z-index: 9999999 !important;
+}
+
+.glightbox-overlay {
+  z-index: 9999998 !important;
+}
+
 /*----------------------------------------------------------
 
 Theme Name: CorpFiança - Plataforma Corporativa de Confiança
