@@ -384,6 +384,16 @@
         color: var(--tj-color-common-white);
         margin-inline-end: 5px;
       }
+      .habitvs-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        .habitvs-logo {
+          height: 20px;
+          width: auto;
+          vertical-align: middle;
+        }
+      }
     }
   }
   .copyright-socails {
