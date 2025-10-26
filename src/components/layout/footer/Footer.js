@@ -142,7 +142,9 @@ const Footer = ({ footerType, isRtl }) => {
             <div className="col-12">
               <div className="copyright-content-area">
                 <div className="copyright-text">
-                  <p style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '6px' }}>
+                  <p
+                    style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '6px' }}
+                  >
                     © 2025{' '}
                     <Link href="/" target="_blank">
                       {' '}
