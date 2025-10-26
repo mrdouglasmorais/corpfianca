@@ -50,13 +50,29 @@
   --tj-color-red-1: #ff0000;
 }
 
-/* Custom GLightbox z-index fix */
-.glightbox-container {
+/* Custom GLightbox z-index fix - CRITICAL */
+.glightbox-container,
+.glightbox-wrapper,
+.glightbox-items,
+.glightbox-item,
+.glightbox-item-inner {
   z-index: 9999999 !important;
+  position: fixed !important;
 }
 
-.glightbox-overlay {
+.glightbox-overlay,
+.goverlay {
   z-index: 9999998 !important;
+  position: fixed !important;
+}
+
+/* Reduce footer z-index to avoid conflicts */
+.footerStack {
+  z-index: 1 !important;
+}
+
+.tj-footer-area {
+  z-index: 1 !important;
 }
 
 /*----------------------------------------------------------
