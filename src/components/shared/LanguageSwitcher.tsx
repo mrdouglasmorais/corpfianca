@@ -73,14 +73,22 @@ export default function LanguageSwitcher() {
   }, []);
 
   return (
-    <FormSelect
-      id="language-switcher"
-      name="language-switcher"
-      className="nice-select"
-      defaultValue={currentLocale}
-      items={selectItems}
-      value={currentLocale}
-      onChange={handleChange}
-    />
+    <div style={{ 
+      display: 'inline-block', 
+      visibility: 'visible', 
+      opacity: 1,
+      position: 'relative',
+      zIndex: 9999 
+    }}>
+      <FormSelect
+        id="language-switcher"
+        name="language-switcher"
+        className="nice-select"
+        defaultValue={currentLocale}
+        items={selectItems}
+        value={currentLocale}
+        onChange={handleChange}
+      />
+    </div>
   );
 }
