@@ -73,12 +73,12 @@ export default function LanguageSwitcher() {
   }, []);
 
   return (
-    <div style={{ 
-      display: 'inline-block', 
-      visibility: 'visible', 
+    <div style={{
+      display: 'inline-block',
+      visibility: 'visible',
       opacity: 1,
       position: 'relative',
-      zIndex: 9999 
+      zIndex: 9999
     }}>
       <FormSelect
         id="language-switcher"

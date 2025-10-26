@@ -423,14 +423,14 @@ select.nice-select {
 }
 
 /* Language switcher visibility - CRITICAL */
-#language-switcher + .nice-select {
+#language-switcher+.nice-select {
   display: inline-flex !important;
   visibility: visible !important;
   opacity: 1 !important;
   z-index: 9999 !important;
 }
 
-#language-switcher + .nice-select .nice-select-dropdown {
+#language-switcher+.nice-select .nice-select-dropdown {
   display: block !important;
   z-index: 10000 !important;
 }
