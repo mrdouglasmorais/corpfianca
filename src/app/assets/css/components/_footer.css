@@ -450,7 +450,7 @@
   gap: 6px;
 }
 .copyright-content-area .copyright-text p .habitvs-link .habitvs-logo {
-  max-height: 100px;
+  max-width: 100px;
   height: auto;
   width: auto;
   vertical-align: middle;
