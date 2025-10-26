@@ -352,6 +352,15 @@
   "back_to_top": {
     "go_top": "TOPO"
   },
+  "mobile_menu": {
+    "search_placeholder": "Pesquisar aqui",
+    "contact_info": "Informações de contato",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "location": "Localização",
+    "location_address": "São Paulo, Brasil",
+    "follow_us": "Siga-nos"
+  },
   "privacy_policy": {
     "title": "Política de Privacidade",
     "subtitle": "Proteção de dados e privacidade",

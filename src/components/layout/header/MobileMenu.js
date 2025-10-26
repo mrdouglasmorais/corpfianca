@@ -1,6 +1,10 @@
+'use client';
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 const MobileMenu = () => {
+	const t = useTranslations('mobile_menu');
+	
 	return (
 		<>
 			<div className="body-overlay"></div>
@@ -28,7 +32,7 @@ const MobileMenu = () => {
 								type="search"
 								autoComplete="off"
 								name="s"
-								placeholder="Search here"
+								placeholder={t('search_placeholder')}
 							/>
 						</form>
 					</div>
@@ -38,10 +42,10 @@ const MobileMenu = () => {
 					</div>
 
 					<div className="hamburger-infos">
-						<h4 className="hamburger-title">Contact info</h4>
+						<h4 className="hamburger-title">{t('contact_info')}</h4>
 						<div className="contact-info">
 							<div className="contact_item">
-								<span className="subtitle">Email</span>
+								<span className="subtitle">{t('email')}</span>
 								<div className="text">
 									<Link className="link" href="mailto:suporte@corpfianca.com">
 										suporte@corpfianca.com
@@ -49,7 +53,7 @@ const MobileMenu = () => {
 								</div>
 							</div>
 							<div className="contact_item">
-								<span className="subtitle">Phone</span>
+								<span className="subtitle">{t('phone')}</span>
 								<div className="text">
 									<Link className="link" href="tel:000123456789">
 										(000) 123 456 789
@@ -57,13 +61,13 @@ const MobileMenu = () => {
 								</div>
 							</div>
 							<div className="contact_item">
-								<span className="subtitle">Location</span>
-								<div className="text">Santa, United State</div>
+								<span className="subtitle">{t('location')}</span>
+								<div className="text">{t('location_address')}</div>
 							</div>
 						</div>
 					</div>
 					<div className="hamburger-socials">
-						<h4 className="hamburger-title">Follow us</h4>
+						<h4 className="hamburger-title">{t('follow_us')}</h4>
 						<ul>
 							<li>
 								<Link href="https://www.facebook.com/">

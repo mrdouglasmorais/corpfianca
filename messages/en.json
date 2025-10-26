@@ -356,6 +356,15 @@
   "back_to_top": {
     "go_top": "TOP"
   },
+  "mobile_menu": {
+    "search_placeholder": "Search here",
+    "contact_info": "Contact info",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "location_address": "São Paulo, Brazil",
+    "follow_us": "Follow us"
+  },
   "privacy_policy": {
     "title": "Privacy Policy",
     "subtitle": "Data protection and privacy",
