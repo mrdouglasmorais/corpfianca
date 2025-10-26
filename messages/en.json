@@ -46,7 +46,9 @@
     "explore": "Explore",
     "search": "Search",
     "search_title": "Search News, projects, Service or people.",
-    "search_placeholder": "Search here..."
+    "search_placeholder": "Search here...",
+    "services": "Products",
+    "blog": "News"
   },
   "navigation": {
     "home": "Home",
