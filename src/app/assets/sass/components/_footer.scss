@@ -388,10 +388,10 @@
         display: inline-flex;
         align-items: center;
         gap: 6px;
+        padding-left: 10px;
         .habitvs-logo {
-          max-width: 100px;
+          width: 85px;
           height: auto;
-          width: auto;
           vertical-align: middle;
         }
       }

@@ -448,11 +448,11 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding-left: 10px;
 }
 .copyright-content-area .copyright-text p .habitvs-link .habitvs-logo {
-  max-width: 100px;
+  width: 85px;
   height: auto;
-  width: auto;
   vertical-align: middle;
 }
 .copyright-content-area .copyright-socails ul {
