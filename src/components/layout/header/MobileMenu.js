@@ -123,7 +123,11 @@ const MobileMenu = () => {
               </button>
             </div>
           </div>
-          <div className="hamburger_search" ref={searchContainerRef} style={{ position: 'relative' }}>
+          <div
+            className="hamburger_search"
+            ref={searchContainerRef}
+            style={{ position: 'relative' }}
+          >
             <form onSubmit={handleSubmit}>
               <button type="submit">
                 <i className="fal fa-search"></i>
@@ -141,24 +145,27 @@ const MobileMenu = () => {
               />
             </form>
             {showSuggestions && suggestions.length > 0 && (
-              <div className="mobile-search-suggestions" style={{
-                position: 'absolute',
-                top: '100%',
-                left: 0,
-                right: 0,
-                backgroundColor: 'var(--tj-color-theme-dark)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                borderRadius: '8px',
-                marginTop: '5px',
-                maxHeight: '300px',
-                overflowY: 'auto',
-                zIndex: 10001,
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
-              }}>
+              <div
+                className="mobile-search-suggestions"
+                style={{
+                  position: 'absolute',
+                  top: '100%',
+                  left: 0,
+                  right: 0,
+                  backgroundColor: 'var(--tj-color-theme-dark)',
+                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  borderRadius: '8px',
+                  marginTop: '5px',
+                  maxHeight: '300px',
+                  overflowY: 'auto',
+                  zIndex: 10001,
+                  boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
+                }}
+              >
                 {suggestions.map((item, idx) => (
-                  <Link 
-                    key={idx} 
-                    href={item.url} 
+                  <Link
+                    key={idx}
+                    href={item.url}
                     className="mobile-suggestion-item"
                     style={{
                       display: 'flex',
@@ -166,7 +173,10 @@ const MobileMenu = () => {
                       padding: '12px 15px',
                       color: 'var(--tj-color-common-white)',
                       textDecoration: 'none',
-                      borderBottom: idx < suggestions.length - 1 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+                      borderBottom:
+                        idx < suggestions.length - 1
+                          ? '1px solid rgba(255, 255, 255, 0.1)'
+                          : 'none',
                       transition: 'background-color 0.2s',
                     }}
                     onMouseEnter={(e) => {
@@ -182,13 +192,15 @@ const MobileMenu = () => {
                   >
                     <i className="tji-search" style={{ marginRight: '10px', fontSize: '14px' }}></i>
                     <span style={{ flex: 1, fontSize: '14px' }}>{item.title}</span>
-                    <span style={{
-                      fontSize: '12px',
-                      color: 'var(--tj-color-theme-primary)',
-                      padding: '2px 8px',
-                      borderRadius: '4px',
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    }}>
+                    <span
+                      style={{
+                        fontSize: '12px',
+                        color: 'var(--tj-color-theme-primary)',
+                        padding: '2px 8px',
+                        borderRadius: '4px',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      }}
+                    >
                       {item.type === 'service' ? tHeader('services') : tHeader('blog')}
                     </span>
                   </Link>
