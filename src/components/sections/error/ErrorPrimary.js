@@ -1,6 +1,12 @@
+'use client';
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
+import { useTranslations, useLocale } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
 
 const ErrorPrimary = ({ onRetry }) => {
+	const t = useTranslations('common');
+	const locale = useLocale();
+	
 	return (
 		<section className="tj-error__area not-found section-space">
 			<div className="container">
@@ -12,19 +18,18 @@ const ErrorPrimary = ({ onRetry }) => {
 									<img src="/images/error/404.png" alt="" />
 								</div>
 								<h2 className="error_title text-anim mb-20">
-									Opps! Page not found
+									{t('page_not_found')}
 								</h2>
 								<div className="error_desc mb-30">
-									Page does not exist or some other error occurred. Go to our
-									Home Page
+									{t('page_not_found_desc')}
 								</div>
 								{onRetry ? (
 									<div className="d-flex gap-3 justify-content-center">
-										<ButtonPrimary text={"Tentar novamente"} onClick={onRetry} />
-										<ButtonPrimary text={"Ir para início"} url={"/"} />
+										<ButtonPrimary text={t('try_again')} onClick={onRetry} />
+										<ButtonPrimary text={t('go_to_home')} url={createLocalizedPath('/', locale)} />
 									</div>
 								) : (
-									<ButtonPrimary text={"Go back to home page"} url={"/"} />
+									<ButtonPrimary text={t('go_back_home')} url={createLocalizedPath('/', locale)} />
 								)}
 							</div>
 						</div>

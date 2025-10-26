@@ -1,10 +1,10 @@
 'use client';
-import { useTranslations, useLocale } from 'next-intl';
-import { useState, useEffect, useRef } from 'react';
 import getALlServices from '@/libs/getALlServices';
 import getBlogs from '@/libs/getBlogs';
 import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 
 const HeaderSearchForm = () => {
   const t = useTranslations('header');
@@ -41,7 +41,7 @@ const HeaderSearchForm = () => {
               .replace(/\-\-+/g, '-')
               .replace(/^-+/, '')
               .replace(/-+$/, '');
-            
+
             results.push({
               type: 'service',
               title: service.title,
@@ -81,7 +81,10 @@ const HeaderSearchForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (searchTerm) {
-      window.location.href = createLocalizedPath(`/noticias?search=${encodeURIComponent(searchTerm)}`, locale);
+      window.location.href = createLocalizedPath(
+        `/noticias?search=${encodeURIComponent(searchTerm)}`,
+        locale,
+      );
     }
   };
 

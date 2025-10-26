@@ -1,4 +1,9 @@
+'use client';
+import { useTranslations } from 'next-intl';
+
 const ButtonMenuToggler = ({ isMobile, type, headerType }) => {
+	const t = useTranslations('header');
+	
 	return (
 		<>
 			{type ? (
@@ -19,7 +24,7 @@ const ButtonMenuToggler = ({ isMobile, type, headerType }) => {
 							: ""
 					}`}
 				>
-					Menu
+					{t('menu')}
 					<span className="cubes">
 						<span></span>
 						<span></span>

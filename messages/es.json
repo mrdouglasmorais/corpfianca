@@ -48,7 +48,8 @@
     "search_title": "Buscar Noticias, proyectos, Servicios o personas.",
     "search_placeholder": "Buscar aquí...",
     "services": "Productos",
-    "blog": "Noticias"
+    "blog": "Noticias",
+    "menu": "Menú"
   },
   "navigation": {
     "home": "Inicio",
@@ -319,6 +320,14 @@
     "blog": "Noticias",
     "feedback": "Comentarios",
     "error_404": "Error 404",
+    "page_not_found": "Página no encontrada",
+    "page_not_found_desc": "La página que busca no existe o ocurrió algún error.",
+    "go_back_home": "Volver a la página de inicio",
+    "try_again": "Intentar de nuevo",
+    "go_to_home": "Ir al inicio",
+    "something_went_wrong": "¡Algo salió mal!",
+    "unexpected_error": "Ocurrió un error inesperado. Por favor, intente de nuevo.",
+    "product_not_found": "Producto no encontrado",
     "services": "Productos",
     "strategic_planning": "Planificación estratégica",
     "market_research": "Investigación de mercado",
