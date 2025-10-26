@@ -422,18 +422,6 @@ select.nice-select {
   display: none !important;
 }
 
-/* Force language switcher visibility */
-#language-switcher+.nice-select {
-  display: inline-flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  z-index: 10000 !important;
-}
-
-#language-switcher+.nice-select .nice-select-dropdown {
-  z-index: 10001 !important;
-}
-
 .nice-select-dropdown {
   -webkit-margin-start: -5px;
   margin-inline-start: -5px;
@@ -3803,12 +3791,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .hamburger_language .nice-select-dropdown {
   background: var(--tj-color-theme-dark);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 10000 !important;
 }
 
 .hamburger_language .nice-select-dropdown .list {
   background: var(--tj-color-theme-dark);
-  z-index: 10000 !important;
 }
 
 .hamburger_language .nice-select-dropdown .list li {

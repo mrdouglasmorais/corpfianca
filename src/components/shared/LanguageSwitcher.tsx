@@ -2,7 +2,8 @@
 
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
+import FormSelect from './Inputs/FormSelect';
 
 const locales = [
   { code: 'pt', name: 'Português', flag: '🇧🇷' },
@@ -29,7 +30,7 @@ export default function LanguageSwitcher() {
     ? detectedLocale
     : (locale || detectedLocale);
 
-  const handleSelectChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
     const newLocale = locales.find(l => l.code === selectedValue)?.code;
 
@@ -63,28 +64,23 @@ export default function LanguageSwitcher() {
     ? effectiveLocale
     : 'pt';
 
+  // Convert locales to FormSelect items format
+  const selectItems = useMemo(() => {
+    return locales.map(loc => ({
+      value: loc.code,
+      name: loc.name
+    }));
+  }, []);
+
   return (
-    <select
+    <FormSelect
+      id="language-switcher"
+      name="language-switcher"
+      className="nice-select"
+      defaultValue={currentLocale}
+      items={selectItems}
       value={currentLocale}
-      onChange={handleSelectChange}
-      key={currentLocale} // Force re-render when locale changes
-      style={{
-        display: 'inline-block',
-        minWidth: '120px',
-        padding: '5px 10px',
-        backgroundColor: 'transparent',
-        border: 'none',
-        color: 'var(--tj-color-common-white)',
-        fontSize: '14px',
-        cursor: 'pointer',
-        outline: 'none',
-      }}
-    >
-      {locales.map(loc => (
-        <option key={loc.code} value={loc.code}>
-          {loc.name}
-        </option>
-      ))}
-    </select>
+      onChange={handleChange}
+    />
   );
 }

@@ -209,7 +209,7 @@ const MobileMenu = () => {
             )}
           </div>
 
-          <div className="hamburger_language" style={{ display: 'block', width: '100%' }}>
+          <div className="hamburger_language">
             <LanguageSwitcher />
           </div>
 
