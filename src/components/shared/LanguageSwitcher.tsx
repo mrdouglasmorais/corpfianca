@@ -40,7 +40,7 @@ export default function LanguageSwitcher() {
   }, [locale, pathname, router]);
 
   return (
-    <div style={{ display: 'inline-block', minWidth: '120px' }}>
+    <div style={{ display: 'inline-block', minWidth: '120px', position: 'relative', zIndex: 9999 }}>
       <FormSelect
         id="language-switcher"
         name="language"

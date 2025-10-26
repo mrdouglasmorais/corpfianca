@@ -77,7 +77,10 @@ const HeaderTop = ({ type }) => {
                   </svg>
                 </button>
               ) : (
-                <div className="topbar_infos" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                <div
+                  className="topbar_infos"
+                  style={{ display: 'flex', gap: '20px', alignItems: 'center' }}
+                >
                   <div className="info_item">
                     <span>
                       <i className="tji-clock"></i>
@@ -90,7 +93,10 @@ const HeaderTop = ({ type }) => {
                     </span>
                     <Link href="mailto:suporte@corpfianca.com">suporte@corpfianca.com</Link>
                   </div>
-                  <div className="info_item" style={{ display: 'block', visibility: 'visible', opacity: 1 }}>
+                  <div
+                    className="info_item"
+                    style={{ display: 'block', visibility: 'visible', opacity: 1 }}
+                  >
                     <LanguageSwitcher />
                   </div>
                 </div>
