@@ -60,7 +60,9 @@ const Footer = ({ footerType, isRtl }) => {
                       <Link href={createLocalizedPath('/faq', locale)}>{tNav('faq')}</Link>
                     </li>
                     <li>
-                      <Link href={createLocalizedPath('/register', locale)}>{tNav('register')}</Link>
+                      <Link href={createLocalizedPath('/register', locale)}>
+                        {tNav('register')}
+                      </Link>
                     </li>
                     <li>
                       <Link href={createLocalizedPath('/login', locale)}>{tNav('login')}</Link>
@@ -93,7 +95,12 @@ const Footer = ({ footerType, isRtl }) => {
                       ];
                       return (
                         <li key={idx}>
-                          <Link href={createLocalizedPath(`/services/${getServiceSlug(service)}`, locale)}>
+                          <Link
+                            href={createLocalizedPath(
+                              `/services/${getServiceSlug(service)}`,
+                              locale,
+                            )}
+                          >
                             {tNav(translationKeys[idx])}
                           </Link>
                         </li>
@@ -174,10 +181,10 @@ const Footer = ({ footerType, isRtl }) => {
                 <div className="copyright-menu">
                   <ul>
                     <li>
-                      <Link href="contact">{t('policy_privacy')}</Link>
+                      <Link href={createLocalizedPath('/contact', locale)}>{t('policy_privacy')}</Link>
                     </li>
                     <li>
-                      <Link href="contact">{t('terms_conditions')}</Link>
+                      <Link href={createLocalizedPath('/contact', locale)}>{t('terms_conditions')}</Link>
                     </li>
                   </ul>
                 </div>
