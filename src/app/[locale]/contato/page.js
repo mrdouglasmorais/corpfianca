@@ -5,9 +5,9 @@ import PageWrapper from '@/components/shared/wrappers/PageWrapper';
 export const dynamic = 'force-dynamic';
 
 export default function Contact() {
-  return (
-    <PageWrapper isHeaderTop={true} topbarType={1} footerType={'inner'}>
-      <ContactMain />
-    </PageWrapper>
-  );
+   return (
+     <PageWrapper isHeaderTop={true} headerType={1} topbarType={1} footerType={'inner'}>
+       <ContactMain />
+     </PageWrapper>
+   );
 }
