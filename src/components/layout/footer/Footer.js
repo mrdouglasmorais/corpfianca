@@ -155,7 +155,11 @@ const Footer = ({ footerType, isRtl }) => {
                       rel="noopener noreferrer"
                       style={{ paddingLeft: '10px', display: 'inline-flex', alignItems: 'center' }}
                     >
-                      <img src="/images/logos/habitvs.png" alt="habitvs" style={{ width: '85px', height: 'auto' }} />
+                      <img
+                        src="/images/logos/habitvs.png"
+                        alt="habitvs"
+                        style={{ width: '85px', height: 'auto' }}
+                      />
                     </Link>
                   </p>
                 </div>
