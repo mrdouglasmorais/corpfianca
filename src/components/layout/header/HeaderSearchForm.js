@@ -1,8 +1,77 @@
 'use client';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { useState, useEffect, useRef } from 'react';
+import getALlServices from '@/libs/getALlServices';
+import getBlogs from '@/libs/getBlogs';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import Link from 'next/link';
 
 const HeaderSearchForm = () => {
   const t = useTranslations('header');
+  const locale = useLocale();
+  const [searchTerm, setSearchTerm] = useState('');
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const searchTimeoutRef = useRef(null);
+
+  const services = getALlServices();
+  const blogs = getBlogs();
+
+  useEffect(() => {
+    if (searchTimeoutRef.current) {
+      clearTimeout(searchTimeoutRef.current);
+    }
+
+    if (searchTerm.length >= 2) {
+      searchTimeoutRef.current = setTimeout(() => {
+        const searchLower = searchTerm.toLowerCase();
+        const results = [];
+
+        // Buscar em serviços/produtos
+        services.forEach((service) => {
+          if (service.title.toLowerCase().includes(searchLower)) {
+            results.push({
+              type: 'service',
+              title: service.title,
+              id: service.id,
+              url: createLocalizedPath(`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`, locale),
+            });
+          }
+        });
+
+        // Buscar em notícias
+        blogs.forEach((blog) => {
+          if (blog.title.toLowerCase().includes(searchLower)) {
+            results.push({
+              type: 'blog',
+              title: blog.title,
+              id: blog.id,
+              url: createLocalizedPath(`/noticias/${blog.id}`, locale),
+            });
+          }
+        });
+
+        setSuggestions(results.slice(0, 5));
+        setShowSuggestions(true);
+      }, 300);
+    } else {
+      setSuggestions([]);
+      setShowSuggestions(false);
+    }
+
+    return () => {
+      if (searchTimeoutRef.current) {
+        clearTimeout(searchTimeoutRef.current);
+      }
+    };
+  }, [searchTerm, services, blogs, locale]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (searchTerm) {
+      window.location.href = createLocalizedPath(`/noticias?search=${encodeURIComponent(searchTerm)}`, locale);
+    }
+  };
 
   return (
     <>
@@ -38,7 +107,7 @@ const HeaderSearchForm = () => {
             <div className="col-xxl-12">
               <div className="tj_search_wrapper">
                 <div className="search_form">
-                  <form action="#">
+                  <form onSubmit={handleSubmit}>
                     <div className="search_input">
                       <h4 className="title">{t('search_title')}</h4>
                       <div className="search-box">
@@ -46,11 +115,32 @@ const HeaderSearchForm = () => {
                           className="search-input-field"
                           type="search"
                           placeholder={t('search_placeholder')}
+                          value={searchTerm}
+                          onChange={(e) => setSearchTerm(e.target.value)}
+                          onFocus={() => {
+                            if (suggestions.length > 0) setShowSuggestions(true);
+                          }}
+                          onBlur={() => {
+                            setTimeout(() => setShowSuggestions(false), 200);
+                          }}
                           required=""
                         />
                         <button type="submit">
                           <i className="tji-search"></i>
                         </button>
+                        {showSuggestions && suggestions.length > 0 && (
+                          <div className="search-suggestions">
+                            {suggestions.map((item, idx) => (
+                              <Link key={idx} href={item.url} className="suggestion-item">
+                                <i className="tji-search"></i>
+                                <span>{item.title}</span>
+                                <span className="suggestion-type">
+                                  {item.type === 'service' ? t('services') : t('blog')}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </form>
