@@ -97,20 +97,35 @@ const Navbar = ({ option, isStickyHeader }) => {
                     ))
                   : ''}
 
-                <div className="mega-menu-pages-single mega-menu-cta-column">
+                <div className="col-12 col-lg-3 mega-menu-pages-single">
                   <div className="mega-menu-pages-single-inner">
-                    <div className="mega-menu-cta-section">
-                      <ButtonPrimary
-                        text={t('register')}
-                        url={createLocalizedPath('/register', locale)}
-                        className={'mega-menu-cta-primary'}
-                      />
-                      <Link 
-                        href={createLocalizedPath('/login', locale)}
-                        className="mega-menu-login-link"
-                      >
-                        {t('login')}
-                      </Link>
+                    <div
+                      className="tj-sidebar-cta"
+                      style={{
+                        backgroundImage: "url('/images/blog/widget-cta.webp')",
+                      }}
+                    >
+                      <div className="content">
+                        <div className="icon">
+                          <img src="/images/shapes/widget-cta-icon.png" alt="image" />
+                        </div>
+                        <h3>
+                          {t('need_help_title')} <br /> {t('need_help_subtitle')}
+                        </h3>
+                        <p>{t('mission_description')}</p>
+                      </div>
+                      <div className="cta-btn">
+                        <ButtonPrimary
+                          text={t('get_in_touch')}
+                          url={createLocalizedPath('/contact', locale)}
+                          className={'white-btn'}
+                        />
+                        <img
+                          className="shapes move-anim-2"
+                          src="/images/shapes/carrow.png"
+                          alt="shape"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
