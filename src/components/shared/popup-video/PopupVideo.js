@@ -50,7 +50,7 @@ const PopupVideo = ({ children }) => {
         const observer = new MutationObserver(() => {
           const containers = document.querySelectorAll('.glightbox-container');
           const overlays = document.querySelectorAll('.goverlay');
-          
+
           if (containers.length > 0 || overlays.length > 0) {
             applyGLightboxStyles();
           }

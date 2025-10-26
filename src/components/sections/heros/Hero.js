@@ -1,6 +1,5 @@
 'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
-import PopupVideo from '@/components/shared/popup-video/PopupVideo';
 import tjHeroStackAnimation from '@/libs/tjHeroStackAnimation';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { useGSAP } from '@gsap/react';
@@ -56,19 +55,6 @@ const Hero = () => {
                 </div>
                 <div className="images-shapes move-anim-2">
                   <img src="/images/shapes/hero-2.png" alt="Shapes" />
-                </div>
-                <div className="hero-circle">
-                  <div className="circle-wrap">
-                    <img className="rotate-image" src="/images/shapes/play-text.png" alt="image" />
-                    <PopupVideo>
-                      <Link
-                        className="circle glightbox video-popup"
-                        href="https://www.youtube.com/watch?v=MLpWrANjFbI"
-                      >
-                        <i className="fa-sharp fa-solid fa-play"></i>
-                      </Link>
-                    </PopupVideo>
-                  </div>
                 </div>
               </div>
             </div>
