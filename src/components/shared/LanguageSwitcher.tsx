@@ -44,17 +44,14 @@ export default function LanguageSwitcher() {
     }
   }, [locale, pathname, router]);
 
-  // Get current locale - useLocale() should always return a valid locale
-  // Default to 'pt' if somehow undefined
-  const currentLocale = locale || 'pt';
-  
-  // Validate that currentLocale is one of our supported locales
-  const validLocale = locales.find(l => l.code === currentLocale)?.code || 'pt';
+  // Ensure we have a valid locale
+  const currentLocale = (locale && locales.find(l => l.code === locale)) ? locale : 'pt';
 
   return (
     <select
-      value={validLocale}
+      value={currentLocale}
       onChange={handleSelectChange}
+      key={currentLocale} // Force re-render when locale changes
       style={{
         display: 'inline-block',
         minWidth: '120px',
