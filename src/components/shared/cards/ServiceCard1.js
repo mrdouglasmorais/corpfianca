@@ -12,12 +12,12 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
   // Função para traduzir títulos de serviços
   const translateServiceTitle = (serviceTitle) => {
     const titleMap = {
-      'Business process optimization': tNav('business_process_optimization'),
-      'Strategic planning & execution': tNav('strategic_planning_execution'),
-      'Leadership executive coaching': tNav('leadership_executive_coaching'),
-      'Legacy leadership institute': tNav('legacy_leadership_institute'),
-      'Executive growth solutions': tNav('executive_growth_solutions'),
-      'Empowered leadership journey': tNav('empowered_leadership_journey'),
+      'Fianças Tradicionais': tNav('traditional_bonds'),
+      'Fianças Corporativas': tNav('corporate_bonds'),
+      'Fianças Estruturadas': tNav('structured_bonds'),
+      'Fianças Judicial': tNav('judicial_bonds'),
+      'Fianças de Crédito': tNav('credit_bonds'),
+      'Fianças Locatícia': tNav('rental_bonds'),
     };
     return titleMap[serviceTitle] || serviceTitle;
   };
