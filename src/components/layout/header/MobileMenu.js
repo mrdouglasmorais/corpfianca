@@ -1,7 +1,7 @@
 'use client';
+import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 
 const MobileMenu = () => {
   const t = useTranslations('mobile_menu');

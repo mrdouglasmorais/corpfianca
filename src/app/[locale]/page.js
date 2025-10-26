@@ -3,7 +3,7 @@ import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 
 export default async function Home() {
 	return (
-		<PageWrapper isHeaderTop={true} needZIndex={true}>
+		<PageWrapper isHeaderTop={true} topbarType={1} needZIndex={true}>
 			<IndexMain />
 		</PageWrapper>
 	);
