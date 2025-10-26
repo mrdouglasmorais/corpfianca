@@ -156,7 +156,6 @@ const Footer = ({ footerType, isRtl }) => {
                       className="habitvs-link"
                     >
                       <img src="/images/logos/habitvs.png" alt="habitvs" className="habitvs-logo" />
-                      {t('habitvs')}
                     </Link>
                   </p>
                 </div>
