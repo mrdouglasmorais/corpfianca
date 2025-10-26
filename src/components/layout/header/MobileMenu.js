@@ -38,7 +38,7 @@ const MobileMenu = () => {
             </form>
           </div>
 
-          <div className="hamburger_language">
+          <div className="hamburger_language" style={{ display: 'block', width: '100%' }}>
             <LanguageSwitcher />
           </div>
 

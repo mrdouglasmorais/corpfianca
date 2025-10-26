@@ -40,14 +40,16 @@ export default function LanguageSwitcher() {
   }, [locale, pathname, router]);
 
   return (
-    <FormSelect
-      id="language-switcher"
-      name="language"
-      className="nice-select"
-      defaultValue=""
-      value={locale}
-      onChange={handleSelectChange}
-      items={items}
-    />
+    <div style={{ display: 'inline-block', minWidth: '120px' }}>
+      <FormSelect
+        id="language-switcher"
+        name="language"
+        className="nice-select"
+        defaultValue=""
+        value={locale}
+        onChange={handleSelectChange}
+        items={items}
+      />
+    </div>
   );
 }
