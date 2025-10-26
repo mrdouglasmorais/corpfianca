@@ -33,7 +33,16 @@
     "role_co_founder": "Co. Founder",
     "role_sr_manager": "Sr. Manager",
     "role_sr_marketer": "Sr. Marketer",
-    "role_sr_designer": "Sr. Designer"
+    "role_sr_designer": "Sr. Designer",
+    "error_404": "Error 404",
+    "page_not_found": "Page not found",
+    "page_not_found_desc": "The page you are looking for does not exist or some error occurred.",
+    "go_back_home": "Go back to home page",
+    "try_again": "Try again",
+    "go_to_home": "Go to home",
+    "something_went_wrong": "Something went wrong!",
+    "unexpected_error": "An unexpected error occurred. Please try again.",
+    "product_not_found": "Product not found"
   },
   "header_top": {
     "trusted_partner": "Trusted partner in business excellence",

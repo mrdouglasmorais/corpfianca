@@ -33,7 +33,16 @@
     "role_co_founder": "Co-fundador",
     "role_sr_manager": "Gerente Senior",
     "role_sr_marketer": "Marketero Senior",
-    "role_sr_designer": "Diseñador Senior"
+    "role_sr_designer": "Diseñador Senior",
+    "error_404": "Error 404",
+    "page_not_found": "Página no encontrada",
+    "page_not_found_desc": "La página que busca no existe o ocurrió algún error.",
+    "go_back_home": "Volver a la página de inicio",
+    "try_again": "Intentar de nuevo",
+    "go_to_home": "Ir al inicio",
+    "something_went_wrong": "¡Algo salió mal!",
+    "unexpected_error": "Ocurrió un error inesperado. Por favor, intente de nuevo.",
+    "product_not_found": "Producto no encontrado"
   },
   "header_top": {
     "trusted_partner": "Socio de confianza en excelencia empresarial",
