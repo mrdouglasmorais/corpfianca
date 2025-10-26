@@ -3,11 +3,15 @@ import Accordion from "@/components/shared/accordion/Accordion";
 import PopupVideo from "@/components/shared/popup-video/PopupVideo";
 import { useCurrentItem } from "@/context_api/CurrentItemContext";
 import getALlServices from "@/libs/getALlServices";
+import { getServiceSlug } from "@/utils/slugUtils";
+import { createLocalizedPath } from "@/utils/pathUtils";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { useEffect } from "react";
 import CtaSidebar from "../cta/CtaSidebar";
 
 const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
+	const locale = useLocale();
 	const items = getALlServices();
 	const currentId = useCurrentItem() || serviceId;
 	const currentItem = items?.find(({ id }) => currentId === id);
@@ -426,7 +430,7 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
 													<li key={idx}>
 														<Link
 															className={`${currentId === id ? "active" : ""}`}
-															href={`/services/${id}`}
+															href={createLocalizedPath(`/services/${getServiceSlug({ title, id })}`, locale)}
 														>
 															{title}
 															<i className="tji-angle-right"></i>
