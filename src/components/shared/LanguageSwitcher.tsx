@@ -15,37 +15,50 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
+  // Detect locale from pathname as fallback if useLocale() doesn't work correctly
+  const detectLocaleFromPath = (path: string): string => {
+    if (path.startsWith('/en')) return 'en';
+    if (path.startsWith('/es')) return 'es';
+    return 'pt'; // Default locale
+  };
+
+  // Use locale from hook, but fallback to pathname detection if needed
+  const detectedLocale = detectLocaleFromPath(pathname);
+  const effectiveLocale = locale || detectedLocale;
+
   const handleSelectChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
     const newLocale = locales.find(l => l.code === selectedValue)?.code;
 
-    if (newLocale && newLocale !== locale) {
+    if (newLocale && newLocale !== effectiveLocale) {
       // Extract pathname without locale prefix
       let pathnameWithoutLocale = pathname;
-      
+
       // Remove locale prefix if present
       if (pathname.startsWith('/pt/') || pathname.startsWith('/en/') || pathname.startsWith('/es/')) {
         pathnameWithoutLocale = pathname.replace(/^\/(pt|en|es)/, '') || '/';
       } else if (pathname === '/pt' || pathname === '/en' || pathname === '/es') {
         pathnameWithoutLocale = '/';
       }
-      
+
       // Ensure pathname doesn't start with double slash
       if (pathnameWithoutLocale === '') {
         pathnameWithoutLocale = '/';
       }
-      
+
       // Build new path based on locale
       const newPath = newLocale === 'pt'
         ? pathnameWithoutLocale
         : `/${newLocale}${pathnameWithoutLocale}`;
-      
+
       router.push(newPath);
     }
-  }, [locale, pathname, router]);
+  }, [effectiveLocale, pathname, router]);
 
-  // Ensure we have a valid locale
-  const currentLocale = (locale && locales.find(l => l.code === locale)) ? locale : 'pt';
+  // Ensure we have a valid locale - prioritize detected locale from pathname
+  const currentLocale = (effectiveLocale && locales.find(l => l.code === effectiveLocale)) 
+    ? effectiveLocale 
+    : 'pt';
 
   return (
     <select
