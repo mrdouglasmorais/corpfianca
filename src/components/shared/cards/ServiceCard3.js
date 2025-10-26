@@ -1,7 +1,11 @@
+'use client';
+import { useLocale } from 'next-intl';
 import modifyNumber from "@/libs/modifyNumber";
 import Link from "next/link";
+import { createLocalizedPath } from '@/utils/pathUtils';
 
 const ServiceCard3 = ({ service, idx, lastItem }) => {
+	const locale = useLocale();
 	const { title, desc, id, totalProject, iconName, img, bgImg2, svg } =
 		service || {};
 	return (
@@ -16,7 +20,7 @@ const ServiceCard3 = ({ service, idx, lastItem }) => {
 			<div className="service-title">
 				<h4 className="title">
 					<span>{modifyNumber(idx + 1)}.</span>
-					<Link href={`/services/${id}`}>{title}</Link>
+					<Link href={createLocalizedPath(`/services/${id}`, locale)}>{title}</Link>
 				</h4>
 			</div>
 			<div className="desc">
@@ -26,13 +30,13 @@ const ServiceCard3 = ({ service, idx, lastItem }) => {
 				</p>
 
 				<div className="service-button d-lg-none">
-					<Link href={`/services/${id}`} className="text-btn">
+					<Link href={createLocalizedPath(`/services/${id}`, locale)} className="text-btn">
 						Learn more <i className="tji-angle-right"></i>
 					</Link>
 				</div>
 			</div>
 			<div className="service-button d-none d-lg-inline-block">
-				<Link href={`/services/${id}`} className="text-btn">
+				<Link href={createLocalizedPath(`/services/${id}`, locale)} className="text-btn">
 					Learn more <i className="tji-angle-right"></i>
 				</Link>
 			</div>

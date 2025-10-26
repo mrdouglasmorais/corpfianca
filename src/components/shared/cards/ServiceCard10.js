@@ -1,6 +1,10 @@
+'use client';
+import { useLocale } from 'next-intl';
 import Link from "next/link";
+import { createLocalizedPath } from '@/utils/pathUtils';
 
 const ServiceCard10 = ({ service, idx, lastItem }) => {
+	const locale = useLocale();
 	const { title, desc, iconName, id, totalProject, img, svg } = service || {};
 	return (
 		<div className="h10-service-item wow fadeInUp" data-wow-delay=".3s">
@@ -10,7 +14,7 @@ const ServiceCard10 = ({ service, idx, lastItem }) => {
 						<i className={iconName ? iconName : "tji-optimization"}></i>
 					</div>
 					<h4 className="title">
-						<Link href={`/services/${id}`}>{title}</Link>
+						<Link href={createLocalizedPath(`/services/${id}`, locale)}>{title}</Link>
 					</h4>
 				</div>
 				<div className="service-content">
@@ -20,7 +24,7 @@ const ServiceCard10 = ({ service, idx, lastItem }) => {
 					</p>
 				</div>
 				<div className="service-btn">
-					<Link className="text-btn-2" href={`/services/${id}`}>
+					<Link className="text-btn-2" href={createLocalizedPath(`/services/${id}`, locale)}>
 						<span className="icon">
 							<i className="tji-angle-right"></i>
 						</span>

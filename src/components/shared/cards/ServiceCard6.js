@@ -1,6 +1,10 @@
+'use client';
+import { useLocale } from 'next-intl';
 import Link from "next/link";
+import { createLocalizedPath } from '@/utils/pathUtils';
 
 const ServiceCard6 = ({ service, idx, lastItem }) => {
+	const locale = useLocale();
 	const { title, id, iconName, img } = service || {};
 	return (
 		<div
@@ -19,10 +23,10 @@ const ServiceCard6 = ({ service, idx, lastItem }) => {
 
 			<div className="service_content">
 				<h4 className="title">
-					<Link href={`/services/${id}`}>{title}</Link>
+					<Link href={createLocalizedPath(`/services/${id}`, locale)}>{title}</Link>
 				</h4>
 
-				<Link className="icon-btn-2 service_btn" href={`/services/${id}`}>
+				<Link className="icon-btn-2 service_btn" href={createLocalizedPath(`/services/${id}`, locale)}>
 					<span className="btn-icon">
 						<i className="tji-arrow-right"></i>
 					</span>
