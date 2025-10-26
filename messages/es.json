@@ -45,13 +45,13 @@
     "product_not_found": "Producto no encontrado"
   },
   "header_top": {
-    "trusted_partner": "Socio de confianza en excelencia empresarial",
+    "trusted_partner": "Confianza y credibilidad para grandes operaciones empresariales",
     "join_us_now": "Contáctenos",
     "working_hours": "Lun - Vie : 9:00 - 18:00"
   },
   "header": {
-    "get_quote": "Solicitar propuesta",
-    "free_consultation": "Consultoría inicial",
+    "get_quote": "Solicite su análisis",
+    "free_consultation": "Solicite su análisis",
     "explore": "Explorar",
     "search": "Buscar",
     "search_title": "Buscar Noticias, proyectos, Servicios o personas.",
@@ -98,32 +98,32 @@
     "rental_bonds": "Fianzas Locatícias",
     "related_service": "Productos relacionados",
     "service_overview": "Resumen del producto",
-    "service_overview_desc": "Soluciones completas de garantías bancarias para empresas de todos los tamaños. Ofrecemos valor excepcional a través de nuestro enfoque estratégico.",
-    "service_feature_1": "Visión clara y dirección para su negocio con consultoría especializada.",
-    "service_feature_2": "Capacidad mejorada para anticipar y responder a los cambios del mercado.",
-    "service_feature_3": "Toma de decisiones basada en datos para la ejecución de planificación estratégica.",
-    "service_feature_4": "Enfoque estructurado para alcanzar sus objetivos comerciales.",
+    "service_overview_desc": "Garantías bancarias personalizadas para empresas que buscan seguridad y credibilidad. Análisis riguroso y procesos eficientes.",
+    "service_feature_1": "Precisión y credibilidad para decisiones estratégicas fundamentadas.",
+    "service_feature_2": "Capacidad analítica que anticipa riesgos e identifica oportunidades.",
+    "service_feature_3": "Decisiones fundamentadas en análisis técnico e inteligencia aplicada.",
+    "service_feature_4": "Enfoque estructurado que entrega resultados consistentes.",
     "key_features": "Características principales",
-    "key_features_desc_1": "Nuestras soluciones de garantía lo guían a través de todo el proceso de análisis y emisión, desde la evaluación inicial hasta la ejecución precisa. Comenzamos con una evaluación completa de su situación actual y panorama del mercado.",
-    "key_features_desc_2": "Formulando e implementando soluciones de garantía personalizadas. Comenzamos con un análisis en profundidad de su negocio y mercado para identificar oportunidades y desafíos.",
-    "quick_solutions": "Soluciones rápidas",
-    "quick_solutions_desc": "Proporcionar orientación práctica y apoyo durante la ejecución estratégica",
-    "proven_results": "Resultados comprobados",
-    "proven_results_desc": "Benefíciese de la experiencia de consultores experimentados que ofrecen estrategias",
-    "personalization": "Personalización",
-    "personalization_desc": "Asegurar que las estrategias se implementen efectivamente y objetivos",
-    "general_questions": "Preguntas generales",
+    "key_features_desc_1": "Nuestras garantías son resultado de análisis técnico riguroso. Evaluamos cada contexto con precisión, identificando riesgos y oportunidades con clara objetividad.",
+    "key_features_desc_2": "Soluciones personalizadas basadas en análisis profundo. Identificamos las necesidades específicas de su negocio y entregamos garantías que agregan valor real.",
+    "quick_solutions": "Análisis ágil",
+    "quick_solutions_desc": "Procesos optimizados que entregan respuestas precisas sin comprometer la seguridad",
+    "proven_results": "Credibilidad comprobada",
+    "proven_results_desc": "Experiencia técnica que resulta en garantías sólidas y decisiones confiables",
+    "personalization": "Soluciones bajo medida",
+    "personalization_desc": "Garantías personalizadas que atienden las necesidades específicas de su negocio",
+    "general_questions": "Preguntas frecuentes",
     "faq_question_1": "¿Cómo las garantías bancarias agregan valor a mi negocio?",
     "faq_question_2": "¿Cómo sé si mi negocio necesita una garantía bancaria?",
-    "faq_question_3": "¿Cómo se cobran las garantías bancarias?",
-    "faq_question_4": "¿Una garantía bancaria puede garantizar resultados?",
-    "faq_question_5": "¿Cómo puedo medir el éxito de una garantía bancaria?",
-    "faq_answer": "Puede necesitar una garantía bancaria si enfrenta desafíos específicos, como crecimiento estancado, ineficiencias operativas, problemas estratégicos o si carece de experiencia en ciertas áreas. Nuestras garantías también pueden ayudar si necesita una perspectiva objetiva sobre su negocio.",
-    "view_demo": "Ver demostración",
-    "get_in_touch": "Ponte en contacto",
+    "faq_question_3": "¿Cómo funciona el análisis y la emisión de garantías?",
+    "faq_question_4": "¿Cuáles son los criterios de análisis para obtener garantías?",
+    "faq_question_5": "¿Cómo se garantizan plazos y valores de las fianzas?",
+    "faq_answer": "Nuestro análisis técnico identifica las necesidades específicas de su negocio. Ofrecemos garantías que protegen operaciones contractuales, procesos judiciales y garantizan credibilidad en licitaciones y relaciones comerciales.",
+    "view_demo": "Solicite análisis",
+    "get_in_touch": "Avance con tranquilidad",
     "need_help_title": "¿Necesitas ayuda?",
-    "need_help_subtitle": "Siéntete libre de contactarnos",
-    "mission_description": "Nuestra misión es capacitar empresas de todos los tamaños en negocios.",
+    "need_help_subtitle": "Póngase en contacto con nosotros",
+    "mission_description": "Nuestra misión es ofrecer garantías corporativas con credibilidad y precisión. Tecnología al servicio de la confianza.",
     "traditional_bonds_fallback": "Fianzas Tradicionales",
     "portfolio_fallback": "Portafolio",
     "contact_fallback": "Contacto"
@@ -177,9 +177,9 @@
     "title": "Últimas perspectivas"
   },
   "homepage": {
-    "title": "Soluciones Corporativas y Financieras",
-    "subtitle": "Fortalecimiento de la gestión empresarial",
-    "description": "Ofrecemos soluciones integradas en finanzas corporativas, consultoría estratégica y gestión empresarial para fortalecer el desempeño organizacional."
+    "title": "Corp Fiança",
+    "subtitle": "Fianza bajo medida para grandes operaciones empresariales",
+    "description": "Experiencia técnica apoyada por tecnología avanzada. Análisis precisos, procesos ágiles y decisiones fundamentadas. Confianza institucional con agilidad moderna."
   },
   "brands": {
     "join_companies": "Empresas que confían en nuestros productos",
@@ -202,7 +202,7 @@
   "about_section": {
     "subtitle": "Acerca de nuestra empresa",
     "title": "Creando soluciones personalizadas de éxito para cada desafío",
-    "description": "Nuestra misión es asistir a empresas de todos los tamaños en alcanzar resultados consistentes en entornos empresariales en transformación. Nos comprometemos a entregar valor a través de estrategias fundamentadas y metodologías comprobadas.",
+    "description": "Corp Fiança ofrece experiencia técnica apoyada por tecnología avanzada. Análisis rápidos, seguros y precisos. Solidez institucional con agilidad moderna.",
     "description_1": "Nuestra misión es capacitar empresas de todos los tamaños para prosperar en un mercado en constante cambio. Estamos comprometidos a entregar valor excepcional a través de nuestro enfoque estratégico y métodos innovadores. Nuestra misión es capacitar empresas de todos los tamaños para prosperar.",
     "description_2": "Comprometidos a entregar valor excepcional a través de nuestro enfoque estratégico, los métodos innovadores capacitan.",
     "expertise_experience": "Experiencia y conocimiento",
@@ -210,20 +210,20 @@
     "commitment_excellence": "Compromiso con la excelencia",
     "read_more": "Leer más",
     "happy_clients": "Clientes atendidos globalmente.",
-    "transformative_solution": "Solución transformadora",
+    "transformative_solution": "Solución confiable",
     "know_expertise": "Conoce nuestra experiencia y compromiso con tu negocio",
-    "know_expertise_desc": "Nuestra misión es capacitar empresas de todos los tamaños para prosperar en un mercado en constante cambio. En el entorno empresarial dinámico de hoy, la clave del éxito está presente. Nuestra misión es capacitar empresas de todos los tamaños para prosperar.",
+    "know_expertise_desc": "Análisis de riesgos con precisión. Tecnología que acelera procesos. Garantías sólidas. Confianza institucional con agilidad moderna.",
     "discover_expertise": "Descubre nuestra experiencia, misión y valores",
     "journey_commitment": "Trayectoria y compromiso explicados",
-    "meet_team_visions": "Conoce nuestro equipo y aprende nuestras visiones",
-    "free_consultation": "Consulta gratuita"
+    "meet_team_visions": "Conoce nuestro equipo",
+    "free_consultation": "Solicite análisis"
   },
   "services_section": {
     "subtitle": "Nuestros productos",
-    "title": "Consultoría empresarial especializada",
+    "title": "Garantías corporativas bajo medida",
     "customers_review": "Reseñas de clientes",
-    "get_started": "Iniciar",
-    "service_desc_generic": "En el entorno empresarial dinámico de hoy, la clave del éxito radica en la planificación estratégica y la ejecución operacional empresarial."
+    "get_started": "Solicite análisis",
+    "service_desc_generic": "Garantías bancarias que aseguran credibilidad y seguridad para sus operaciones corporativas."
   },
   "skills_section": {
     "title": "Habilidad y experiencia",
@@ -305,13 +305,13 @@
   },
   "funfacts_section": {
     "subtitle": "Nuestros resultados",
-    "title": "Métricas y logros",
-    "complete_project": "Proyecto completo",
+    "title": "Credibilidad y resultados",
+    "complete_project": "Garantías emitidas",
     "reach_worldwide": "Alcance mundial",
     "faster_growth": "Crecimiento más rápido",
     "awards_archived": "Reconocimientos recibidos",
     "our_evolution": "Nuestra evolución",
-    "evolution_description": "Fundada en 2002 por Burdee Ncolase, nuestra empresa comenzó con nuestra gran visión de traer soluciones innovadoras para empresas que enfrentan desafíos sin precedentes. Lo que comenzó como una pequeña empresa de consultoría evolucionó rápidamente en un socio confiable para empresas de todo el mundo. Nuestro viaje comenzó con una idea simple: ofrecer servicios de consultoría sin igual que empoderan. Nuestros valores fundamentales de integridad, innovación y excelencia guían todo lo que hacemos, liderando la ola en consultoría.",
+    "evolution_description": "Fundada en 2002, Corp Fiança se ha consolidado como referencia en garantías corporativas. Solidez institucional aliada a la agilidad tecnológica. Nuestros valores de integridad, precisión y excelencia orientan cada análisis y garantía que emitimos.",
     "click_for_watch": "Hacer clic para ver",
     "see_latest_video": "Ver nuestro último video"
   },
@@ -438,8 +438,8 @@
     "home": "Inicio"
   },
   "cta": {
-    "get_consultant": "Solicite una consultoría",
-    "lets_talk": "Contáctenos"
+    "get_consultant": "Contáctenos",
+    "lets_talk": "Avance con tranquilidad"
   },
   "auth": {
     "login": "Iniciar sesión",
