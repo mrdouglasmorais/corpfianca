@@ -153,9 +153,9 @@ const Footer = ({ footerType, isRtl }) => {
                       href="https://habitvs.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="habitvs-link"
+                      style={{ paddingLeft: '10px', display: 'inline-flex', alignItems: 'center' }}
                     >
-                      <img src="/images/logos/habitvs.png" alt="habitvs" className="habitvs-logo" />
+                      <img src="/images/logos/habitvs.png" alt="habitvs" style={{ width: '85px', height: 'auto' }} />
                     </Link>
                   </p>
                 </div>
