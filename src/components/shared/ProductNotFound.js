@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 const ProductNotFound = () => {
   const t = useTranslations('common');
-  
+
   return (
     <div className="container py-5">
       <div className="row justify-content-center">
@@ -17,4 +17,3 @@ const ProductNotFound = () => {
 };
 
 export default ProductNotFound;
-

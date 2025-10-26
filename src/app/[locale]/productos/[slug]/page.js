@@ -1,6 +1,6 @@
 import ServiceDetailsMain from '@/components/layout/main/ServiceDetailsMain';
-import PageWrapper from '@/components/shared/wrappers/PageWrapper';
 import ProductNotFound from '@/components/shared/ProductNotFound';
+import PageWrapper from '@/components/shared/wrappers/PageWrapper';
 import getALlServices from '@/libs/getALlServices';
 import { findServiceBySlug } from '@/utils/slugUtils';
 
