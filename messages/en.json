@@ -45,13 +45,13 @@
     "product_not_found": "Product not found"
   },
   "header_top": {
-    "trusted_partner": "Trusted partner in business excellence",
+    "trusted_partner": "Trust and credibility for major business operations",
     "join_us_now": "Contact us",
     "working_hours": "Mon - Friday : 9:00 - 18:00"
   },
   "header": {
-    "get_quote": "Request proposal",
-    "free_consultation": "Initial consultation",
+    "get_quote": "Request your analysis",
+    "free_consultation": "Request your analysis",
     "explore": "Explore",
     "search": "Search",
     "search_title": "Search News, projects, Service or people.",
@@ -98,32 +98,32 @@
     "rental_bonds": "Rental Bonds",
     "related_service": "Related Products",
     "service_overview": "Service overview",
-    "service_overview_desc": "Complete banking guarantee solutions for businesses of all sizes. We deliver exceptional value through our strategic approach.",
-    "service_feature_1": "Clear vision and direction for your business with specialized consulting.",
-    "service_feature_2": "Enhanced ability to anticipate and respond to market changes.",
-    "service_feature_3": "Data-driven decision-making for strategic planning execution.",
-    "service_feature_4": "Structured approach to achieving your business goals.",
+    "service_overview_desc": "Custom banking guarantees for companies seeking security and credibility. Rigorous analysis and efficient processes.",
+    "service_feature_1": "Accuracy and credibility for informed strategic decisions.",
+    "service_feature_2": "Analytical capability that anticipates risks and identifies opportunities.",
+    "service_feature_3": "Data-driven decisions based on technical analysis and applied intelligence.",
+    "service_feature_4": "Structured approach delivering consistent results.",
     "key_features": "Key features",
-    "key_features_desc_1": "Our guarantee solutions guide you through the entire analysis and issuance process, from initial assessment to precise execution. We start with a thorough evaluation of your current situation and market landscape.",
-    "key_features_desc_2": "Formulating and implementing customized guarantee solutions. We begin with an in-depth analysis of your business and market to identify opportunities and challenges.",
-    "quick_solutions": "Quick solutions",
-    "quick_solutions_desc": "Provide hands-on guidance and support during strategic execution",
-    "proven_results": "Proven Results",
-    "proven_results_desc": "Benefit from the expertise of seasoned consultants who offer strategic",
-    "personalization": "Personalization",
-    "personalization_desc": "Ensure that strategies are effectively implemented and objectives",
-    "general_questions": "General questions",
+    "key_features_desc_1": "Our guarantees result from rigorous technical analysis. We evaluate each context with precision, identifying risks and opportunities with clear objectivity.",
+    "key_features_desc_2": "Customized solutions based on thorough analysis. We identify your business's specific needs and deliver guarantees that add real value.",
+    "quick_solutions": "Rapid analysis",
+    "quick_solutions_desc": "Optimized processes delivering precise responses without compromising security",
+    "proven_results": "Proven credibility",
+    "proven_results_desc": "Technical expertise resulting in solid guarantees and reliable decisions",
+    "personalization": "Custom solutions",
+    "personalization_desc": "Custom guarantees meeting your business's specific needs",
+    "general_questions": "Frequently asked questions",
     "faq_question_1": "How do banking guarantees add value to my business?",
     "faq_question_2": "How do I know if my business needs a banking guarantee?",
-    "faq_question_3": "How are banking guarantees charged?",
-    "faq_question_4": "Can a banking guarantee guarantee results?",
-    "faq_question_5": "How can I measure the success of a banking guarantee?",
-    "faq_answer": "You might need a banking guarantee if you're facing specific challenges, such as stagnating growth, operational inefficiencies, strategic issues, or if you lack expertise in certain areas. Our guarantees can also help if you need an objective perspective on your business.",
-    "view_demo": "View demo",
-    "get_in_touch": "Get in touch",
+    "faq_question_3": "How do the analysis and guarantee issuance work?",
+    "faq_question_4": "What are the analysis criteria for obtaining guarantees?",
+    "faq_question_5": "How are guarantee terms and values ensured?",
+    "faq_answer": "Our technical analysis identifies your business's specific needs. We offer guarantees that protect contractual operations, legal processes, and ensure credibility in bids and commercial relationships.",
+    "view_demo": "Request analysis",
+    "get_in_touch": "Move forward with confidence",
     "need_help_title": "Need help?",
-    "need_help_subtitle": "Feel free contact us",
-    "mission_description": "Our mission is to empowers businesses off all size in an businesses.",
+    "need_help_subtitle": "Contact us",
+    "mission_description": "Our mission is to offer corporate guarantees with credibility and precision. Technology at the service of trust.",
     "traditional_bonds_fallback": "Traditional Bonds",
     "portfolio_fallback": "Portfolio",
     "contact_fallback": "Contact"
@@ -177,9 +177,9 @@
     "title": "Latest insights"
   },
   "homepage": {
-    "title": "Corporate Finance Solutions",
-    "subtitle": "Strengthening business management",
-    "description": "We offer integrated solutions in corporate finance, strategic consulting, and business management to strengthen organizational performance."
+    "title": "Corp Fiança",
+    "subtitle": "Custom guarantee for major business operations",
+    "description": "Technical expertise supported by advanced technology. Precise analysis, efficient processes, and informed decisions. Institutional trust with modern agility."
   },
   "brands": {
     "join_companies": "Companies that trust our products",
@@ -202,7 +202,7 @@
   "about_section": {
     "subtitle": "About our company",
     "title": "Crafting success tailored solution for each & every challenges",
-    "description": "Our mission is to assist companies of all sizes in achieving consistent results in evolving business environments. We are committed to delivering value through evidence-based strategies and proven methodologies.",
+    "description": "Corp Fiança offers technical expertise supported by advanced technology. Fast, secure, and precise analysis. Institutional solidity with modern agility.",
     "description_1": "Our mission is to empowers businesses off all size to thrive in an businesses ever changing marketplace. We are committed to the delivering exceptional in the value through our strategic inset, innovative approaches. Our mission is to empower businesses of all sizes to thrive.",
     "description_2": "Committed to the delivering exceptional in the value through our strategic inset, innovative approaches empower.",
     "expertise_experience": "Expertise and experience",
@@ -210,20 +210,20 @@
     "commitment_excellence": "Commitment to excellence",
     "read_more": "Read more",
     "happy_clients": "Clients served globally.",
-    "transformative_solution": "Transformative solution",
+    "transformative_solution": "Reliable solution",
     "know_expertise": "Get to know expertise's and commitment to your business",
-    "know_expertise_desc": "Our mission is to empoiwers businesses off our all size too thrive in an businesses ever changing marketplaces. In today's dynamicis business environment, the key to the success lies Our mission is to empower on businesses off al size to thrive business ever",
+    "know_expertise_desc": "Risk analysis with precision. Technology accelerating processes. Solid guarantees. Institutional trust with modern agility.",
     "discover_expertise": "Discover our expertise, mission, and values",
     "journey_commitment": "Journey and commitment to explained",
-    "meet_team_visions": "Meet our team and learn our visions",
-    "free_consultation": "Free consultation"
+    "meet_team_visions": "Meet our team",
+    "free_consultation": "Request analysis"
   },
   "services_section": {
     "subtitle": "Our products",
-    "title": "Specialized business consulting",
+    "title": "Custom corporate guarantees",
     "customers_review": "Customer reviews",
-    "get_started": "Get started",
-    "service_desc_generic": "In today's dynamic business environment, the key to success lies in strategic planning and operational business execution."
+    "get_started": "Request analysis",
+    "service_desc_generic": "Banking guarantees ensuring credibility and security for your corporate operations."
   },
   "skills_section": {
     "title": "Skill and experience",
@@ -305,13 +305,13 @@
   },
   "funfacts_section": {
     "subtitle": "Our results",
-    "title": "Metrics and achievements",
-    "complete_project": "Complete project",
+    "title": "Credibility and results",
+    "complete_project": "Guarantees issued",
     "reach_worldwide": "Reach worldwide",
     "faster_growth": "Faster growth",
     "awards_archived": "Recognition received",
     "our_evolution": "Our evolution",
-    "evolution_description": "Founded in 2002 by Burdee Ncolase en. our firm started with our great vision to bring innovative solutions of businesses facing unprecedented challenges. That began as a small consultings firm quickly evolved into a trusted partner for companies around the globe . Our journey into began with a simple idea thats offer unparalleled consulting services empower Our core values of integrity, innovation, and excellence guide everything we do leading the wave in consulting's.",
+    "evolution_description": "Founded in 2002, Corp Fiança has established itself as a reference in corporate guarantees. Institutional solidity combined with technological agility. Our values of integrity, precision, and excellence guide every analysis and guarantee we issue.",
     "click_for_watch": "Click for watch",
     "see_latest_video": "See our latest video"
   },
@@ -438,8 +438,8 @@
     "home": "Home"
   },
   "cta": {
-    "get_consultant": "Request a consultation",
-    "lets_talk": "Contact us"
+    "get_consultant": "Request your analysis securely",
+    "lets_talk": "Move forward with confidence"
   },
   "auth": {
     "login": "Login",
