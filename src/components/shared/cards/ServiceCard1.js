@@ -1,14 +1,16 @@
 'use client';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { getServiceSlug } from '@/utils/slugUtils';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import ButtonPrimary from '../buttons/ButtonPrimary';
-import { createLocalizedPath } from '@/utils/pathUtils';
 
 const ServiceCard1 = ({ service, idx, lastItem }) => {
   const t = useTranslations('services_section');
   const tNav = useTranslations('navigation');
   const locale = useLocale();
   const { title, desc, id, totalProject, img, svg } = service || {};
+  const slug = getServiceSlug(service);
 
   // Função para traduzir títulos de serviços
   const translateServiceTitle = (serviceTitle) => {
@@ -43,14 +45,14 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
             <img src={svg ? svg : 'assets/images/icons/service-1.svg'} alt="Icons" />
           </div>
           <h3 className="title">
-            <Link href={createLocalizedPath(`/services/${id}`, locale)}>{translatedTitle}</Link>
+            <Link href={createLocalizedPath(`/services/${slug}`, locale)}>{translatedTitle}</Link>
           </h3>
           <div className="desc">
             <p>{translatedDesc}</p>
           </div>
           <ButtonPrimary
             text={t('get_started')}
-            url={createLocalizedPath(`/services/${id}`, locale)}
+            url={createLocalizedPath(`/services/${slug}`, locale)}
             className={'service-btn'}
           />
         </div>

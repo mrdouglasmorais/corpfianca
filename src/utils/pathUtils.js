@@ -5,7 +5,7 @@ const routeTranslations = {
   pt: {
     '/contact': '/contato',
     '/about': '/sobre',
-    '/services': '/servicos',
+    '/services': '/produtos',
     '/login': '/entrar',
     '/password': '/senha',
     '/register': '/cadastrar',
@@ -14,7 +14,7 @@ const routeTranslations = {
   en: {
     '/contact': '/contact',
     '/about': '/about',
-    '/services': '/services',
+    '/services': '/products',
     '/login': '/login',
     '/password': '/password',
     '/register': '/register',
@@ -23,7 +23,7 @@ const routeTranslations = {
   es: {
     '/contact': '/contacto',
     '/about': '/acerca',
-    '/services': '/servicios',
+    '/services': '/productos',
     '/login': '/iniciar-sesion',
     '/password': '/contrasena',
     '/register': '/registrarse',
@@ -70,10 +70,10 @@ const getTranslatedRoute = (path, locale) => {
 export const createLocalizedPath = (path, locale) => {
   if (!path || path === '#' || path === 'javascript:void(0)') return '#';
   if (path === '/') return `/${locale}`;
-  
+
   // Translate the route according to locale
   const translatedPath = getTranslatedRoute(path, locale);
-  
+
   // Always add locale prefix for all languages
   return `/${locale}${translatedPath}`;
 };
