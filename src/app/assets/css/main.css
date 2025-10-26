@@ -3791,10 +3791,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .hamburger_language .nice-select-dropdown {
   background: var(--tj-color-theme-dark);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10000 !important;
 }
 
 .hamburger_language .nice-select-dropdown .list {
   background: var(--tj-color-theme-dark);
+  z-index: 10000 !important;
 }
 
 .hamburger_language .nice-select-dropdown .list li {
