@@ -142,7 +142,7 @@ const Footer = ({ footerType, isRtl }) => {
                     © 2025{' '}
                     <Link href="/" target="_blank">
                       {' '}
-                      CorpFiança{' '}
+                      Corp Fiança{' '}
                     </Link>{' '}
                     {t('all_rights_reserved')}. {t('technology_by')}{' '}
                     <Link href="https://habitvs.io" target="_blank" rel="noopener noreferrer">
