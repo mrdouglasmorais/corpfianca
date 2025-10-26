@@ -95,7 +95,13 @@ const HeaderTop = ({ type }) => {
                   </div>
                   <div
                     className="info_item"
-                    style={{ display: 'block', visibility: 'visible', opacity: 1, position: 'relative', zIndex: 1000 }}
+                    style={{
+                      display: 'block',
+                      visibility: 'visible',
+                      opacity: 1,
+                      position: 'relative',
+                      zIndex: 1000,
+                    }}
                   >
                     <LanguageSwitcher />
                   </div>

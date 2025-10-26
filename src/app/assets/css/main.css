@@ -422,6 +422,18 @@ select.nice-select {
   display: none !important;
 }
 
+/* Force language switcher visibility */
+#language-switcher + .nice-select {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 10000 !important;
+}
+
+#language-switcher + .nice-select .nice-select-dropdown {
+  z-index: 10001 !important;
+}
+
 .nice-select-dropdown {
   -webkit-margin-start: -5px;
   margin-inline-start: -5px;
