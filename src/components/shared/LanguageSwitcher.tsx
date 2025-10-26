@@ -50,6 +50,16 @@ export default function LanguageSwitcher() {
         onChange={handleSelectChange}
         items={items}
       />
+      <style jsx>{`
+        #language-switcher {
+          display: none !important;
+        }
+        #language-switcher + .nice-select {
+          display: inline-flex !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+        }
+      `}</style>
     </div>
   );
 }
