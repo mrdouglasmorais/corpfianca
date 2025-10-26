@@ -356,6 +356,40 @@
   "back_to_top": {
     "go_top": "TOP"
   },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "subtitle": "Data protection and privacy",
+    "section_1_title": "1. Introduction",
+    "section_1_content": "CorpFiança is committed to protecting the privacy and security of our clients' and visitors' data. This Privacy Policy describes how we collect, use, store, and protect your personal information.",
+    "section_2_title": "2. Information Collected",
+    "section_2_content": "We collect information when you use our services, including name, email address, phone number, and other information necessary to provide our guarantee and consulting services.",
+    "section_3_title": "3. Use of Information",
+    "section_3_content": "We use your information to provide, maintain, and improve our services, process transactions, communicate about products and services, and comply with legal obligations.",
+    "section_4_title": "4. Data Sharing",
+    "section_4_content": "We do not sell, rent, or share your personal information with third parties, except when necessary to provide our services or when required by law.",
+    "section_5_title": "5. Data Security",
+    "section_5_content": "We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.",
+    "section_6_title": "6. Your Rights",
+    "section_6_content": "You have the right to access, correct, delete, or limit the processing of your personal information. To exercise these rights, please contact us through the available channels.",
+    "last_updated": "Last updated: January 2025"
+  },
+  "terms_conditions": {
+    "title": "Terms and Conditions",
+    "subtitle": "Service usage conditions",
+    "section_1_title": "1. Acceptance of Terms",
+    "section_1_content": "By accessing and using CorpFiança services, you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any of these terms, you should not use our services.",
+    "section_2_title": "2. Service Description",
+    "section_2_content": "CorpFiança offers banking guarantee and business consulting services. We reserve the right to modify, suspend, or discontinue any aspect of the services at any time.",
+    "section_3_title": "3. Eligibility",
+    "section_3_content": "You must be at least 18 years old and have legal capacity to enter into binding contracts to use our services. By using our services, you declare and warrant that you meet these requirements.",
+    "section_4_title": "4. Intellectual Property",
+    "section_4_content": "All content on the website, including texts, graphics, logos, icons, and software, is the property of CorpFiança and is protected by copyright laws and other intellectual property laws.",
+    "section_5_title": "5. Limitation of Liability",
+    "section_5_content": "CorpFiança will not be liable for indirect, incidental, special, or consequential damages resulting from the use or inability to use our services.",
+    "section_6_title": "6. Terms Modifications",
+    "section_6_content": "We reserve the right to modify these Terms and Conditions at any time. Changes will take effect immediately after publication on the website. We recommend that you periodically review these terms.",
+    "last_updated": "Last updated: January 2025"
+  },
   "contact_page": {
     "title": "Contact",
     "contact_us": "Contact us",

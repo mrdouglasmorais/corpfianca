@@ -18,7 +18,10 @@
 		"day": 28,
 		"month": "JUL",
 		"category": "Branding",
-		"tags": ["Branding", "Business"],
+		"tags": [
+			"Branding",
+			"Business"
+		],
 		"author_role": "Analysis",
 		"author": "gerold",
 		"status": "Tutorial",
@@ -121,7 +124,10 @@
 		"day": 6,
 		"month": "NOV",
 		"category": "Business",
-		"tags": ["Business", "Design"],
+		"tags": [
+			"Business",
+			"Design"
+		],
 		"author_name": "Silvester Scott",
 		"author_role": "admin",
 		"author": "gerold",
@@ -229,7 +235,11 @@
 		"day": 24,
 		"month": "AUG",
 		"category": "Consuting",
-		"tags": ["Design", "Marketing", "Strategy"],
+		"tags": [
+			"Design",
+			"Marketing",
+			"Strategy"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "TIPS",
@@ -238,7 +248,6 @@
 			"/images/blog/tj-blog-6.webp",
 			"/images/blog/tj-blog-7.webp"
 		],
-
 		"blogTopList": [
 			{
 				"iconName": "fa-light fa-user",
@@ -339,7 +348,11 @@
 		"day": 28,
 		"month": "AUG",
 		"category": "Innovations",
-		"tags": ["Business", "Design", "Marketing"],
+		"tags": [
+			"Business",
+			"Design",
+			"Marketing"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "FREEBIES",
@@ -443,7 +456,11 @@
 		"day": 28,
 		"month": "AUG",
 		"category": "Managements",
-		"tags": ["Branding", "Design", "Strategy"],
+		"tags": [
+			"Branding",
+			"Design",
+			"Strategy"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "Tutorial",
@@ -547,7 +564,10 @@
 		"day": 28,
 		"month": "AUG",
 		"category": "Marketing",
-		"tags": ["Business", "Marketing"],
+		"tags": [
+			"Business",
+			"Marketing"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "Tutorial",
@@ -651,7 +671,10 @@
 		"day": 28,
 		"month": "AUG",
 		"category": "Branding",
-		"tags": ["Marketing", "Strategy"],
+		"tags": [
+			"Marketing",
+			"Strategy"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "Tutorial",
@@ -755,7 +778,10 @@
 		"day": 28,
 		"month": "AUG",
 		"category": "Business",
-		"tags": ["Design", "Marketing"],
+		"tags": [
+			"Design",
+			"Marketing"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "Tutorial",
@@ -859,7 +885,12 @@
 		"day": 28,
 		"month": "AUG",
 		"category": "Consuting",
-		"tags": ["Business", "Design", "Marketing", "Strategy"],
+		"tags": [
+			"Business",
+			"Design",
+			"Marketing",
+			"Strategy"
+		],
 		"author_role": "admin",
 		"author": "gerold",
 		"status": "Tutorial",

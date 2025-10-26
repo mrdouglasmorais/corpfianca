@@ -356,6 +356,40 @@
   "back_to_top": {
     "go_top": "ARRIBA"
   },
+  "privacy_policy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Protección de datos y privacidad",
+    "section_1_title": "1. Introducción",
+    "section_1_content": "CorpFiança está comprometida en proteger la privacidad y seguridad de los datos de nuestros clientes y visitantes. Esta Política de Privacidad describe cómo recopilamos, usamos, almacenamos y protegemos su información personal.",
+    "section_2_title": "2. Información Recopilada",
+    "section_2_content": "Recopilamos información cuando utiliza nuestros servicios, incluyendo nombre, dirección de correo electrónico, número de teléfono y otra información necesaria para proporcionar nuestros servicios de garantías y consultoría.",
+    "section_3_title": "3. Uso de la Información",
+    "section_3_content": "Utilizamos su información para proporcionar, mantener y mejorar nuestros servicios, procesar transacciones, comunicar sobre productos y servicios, y cumplir con obligaciones legales.",
+    "section_4_title": "4. Compartir Datos",
+    "section_4_content": "No vendemos, alquilamos o compartimos su información personal con terceros, excepto cuando sea necesario para proporcionar nuestros servicios o cuando sea requerido por ley.",
+    "section_5_title": "5. Seguridad de los Datos",
+    "section_5_content": "Implementamos medidas de seguridad técnicas y organizacionales adecuadas para proteger su información contra acceso no autorizado, alteración, divulgación o destrucción.",
+    "section_6_title": "6. Sus Derechos",
+    "section_6_content": "Usted tiene el derecho de acceder, corregir, eliminar o limitar el procesamiento de su información personal. Para ejercer estos derechos, contáctenos a través de los canales disponibles.",
+    "last_updated": "Última actualización: Enero de 2025"
+  },
+  "terms_conditions": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Condiciones de uso de los servicios",
+    "section_1_title": "1. Aceptación de los Términos",
+    "section_1_content": "Al acceder y utilizar los servicios de CorpFiança, usted acepta cumplir y estar vinculado a estos Términos y Condiciones. Si no está de acuerdo con alguno de estos términos, no debe utilizar nuestros servicios.",
+    "section_2_title": "2. Descripción de los Servicios",
+    "section_2_content": "CorpFiança ofrece servicios de garantías bancarias y consultoría empresarial. Nos reservamos el derecho de modificar, suspender o discontinuar cualquier aspecto de los servicios en cualquier momento.",
+    "section_3_title": "3. Elegibilidad",
+    "section_3_content": "Debe tener al menos 18 años de edad y capacidad legal para celebrar contratos vinculantes para utilizar nuestros servicios. Al utilizar nuestros servicios, declara y garantiza que cumple con estos requisitos.",
+    "section_4_title": "4. Propiedad Intelectual",
+    "section_4_content": "Todo el contenido del sitio web, incluyendo textos, gráficos, logotipos, iconos y software, es propiedad de CorpFiança y está protegido por leyes de derechos de autor y otras leyes de propiedad intelectual.",
+    "section_5_title": "5. Limitación de Responsabilidad",
+    "section_5_content": "CorpFiança no será responsable por daños indirectos, incidentales, especiales o consecuentes resultantes del uso o incapacidad de usar nuestros servicios.",
+    "section_6_title": "6. Modificaciones de los Términos",
+    "section_6_content": "Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web. Recomendamos que revise periódicamente estos términos.",
+    "last_updated": "Última actualización: Enero de 2025"
+  },
   "contact_page": {
     "title": "Contacto",
     "contact_us": "Contáctenos",

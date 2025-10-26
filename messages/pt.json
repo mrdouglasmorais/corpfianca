@@ -352,6 +352,40 @@
   "back_to_top": {
     "go_top": "TOPO"
   },
+  "privacy_policy": {
+    "title": "Política de Privacidade",
+    "subtitle": "Proteção de dados e privacidade",
+    "section_1_title": "1. Introdução",
+    "section_1_content": "A CorpFiança está comprometida em proteger a privacidade e segurança dos dados de nossos clientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais.",
+    "section_2_title": "2. Informações Coletadas",
+    "section_2_content": "Coletamos informações quando você utiliza nossos serviços, incluindo nome, endereço de e-mail, número de telefone e outras informações necessárias para fornecer nossos serviços de garantias e consultoria.",
+    "section_3_title": "3. Uso das Informações",
+    "section_3_content": "Utilizamos suas informações para fornecer, manter e melhorar nossos serviços, processar transações, comunicar sobre produtos e serviços, e cumprir obrigações legais.",
+    "section_4_title": "4. Compartilhamento de Dados",
+    "section_4_content": "Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto quando necessário para fornecer nossos serviços ou quando exigido por lei.",
+    "section_5_title": "5. Segurança dos Dados",
+    "section_5_content": "Implementamos medidas de segurança técnicas e organizacionais adequadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição.",
+    "section_6_title": "6. Seus Direitos",
+    "section_6_content": "Você tem o direito de acessar, corrigir, excluir ou limitar o processamento de suas informações pessoais. Para exercer esses direitos, entre em contato conosco através dos canais disponíveis.",
+    "last_updated": "Última atualização: Janeiro de 2025"
+  },
+  "terms_conditions": {
+    "title": "Termos e Condições",
+    "subtitle": "Condições de uso dos serviços",
+    "section_1_title": "1. Aceitação dos Termos",
+    "section_1_content": "Ao acessar e utilizar os serviços da CorpFiança, você concorda em cumprir e estar vinculado a estes Termos e Condições. Se você não concorda com algum destes termos, não deve utilizar nossos serviços.",
+    "section_2_title": "2. Descrição dos Serviços",
+    "section_2_content": "A CorpFiança oferece serviços de garantias bancárias e consultoria empresarial. Reservamo-nos o direito de modificar, suspender ou descontinuar qualquer aspecto dos serviços a qualquer momento.",
+    "section_3_title": "3. Elegibilidade",
+    "section_3_content": "Você deve ter pelo menos 18 anos de idade e capacidade legal para celebrar contratos vinculativos para utilizar nossos serviços. Ao utilizar nossos serviços, você declara e garante que atende a esses requisitos.",
+    "section_4_title": "4. Propriedade Intelectual",
+    "section_4_content": "Todo o conteúdo do site, incluindo textos, gráficos, logotipos, ícones e software, é propriedade da CorpFiança e está protegido por leis de direitos autorais e outras leis de propriedade intelectual.",
+    "section_5_title": "5. Limitação de Responsabilidade",
+    "section_5_content": "A CorpFiança não será responsável por danos indiretos, incidentais, especiais ou consequenciais resultantes do uso ou incapacidade de usar nossos serviços.",
+    "section_6_title": "6. Modificações dos Termos",
+    "section_6_content": "Reservamo-nos o direito de modificar estes Termos e Condições a qualquer momento. As alterações entrarão em vigor imediatamente após sua publicação no site. Recomendamos que você revise periodicamente estes termos.",
+    "last_updated": "Última atualização: Janeiro de 2025"
+  },
   "contact_page": {
     "title": "Contato",
     "contact_us": "Entre em contato conosco",
