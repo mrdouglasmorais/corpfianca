@@ -142,7 +142,7 @@ const Footer = ({ footerType, isRtl }) => {
             <div className="col-12">
               <div className="copyright-content-area">
                 <div className="copyright-text">
-                  <p>
+                  <p style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '6px' }}>
                     © 2025{' '}
                     <Link href="/" target="_blank">
                       {' '}
@@ -153,12 +153,12 @@ const Footer = ({ footerType, isRtl }) => {
                       href="https://habitvs.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ paddingLeft: '10px', display: 'inline-flex', alignItems: 'center', marginTop: '20px' }}
+                      style={{ paddingLeft: '10px' }}
                     >
                       <img
                         src="/images/logos/habitvs.png"
                         alt="habitvs"
-                        style={{ width: '85px', height: 'auto' }}
+                        style={{ width: '85px', height: 'auto', verticalAlign: 'middle' }}
                       />
                     </Link>
                   </p>
