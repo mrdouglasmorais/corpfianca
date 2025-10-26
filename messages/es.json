@@ -4,7 +4,7 @@
     "learn_more": "Saber más",
     "contact_us": "Contáctanos",
     "about": "Acerca de",
-    "services": "Servicios",
+    "services": "Productos",
     "portfolio": "Portafolio",
     "blog": "Noticias",
     "team": "Equipo",
@@ -51,7 +51,7 @@
   "navigation": {
     "home": "Inicio",
     "pages": "Páginas",
-    "services": "Servicios",
+    "services": "Productos",
     "portfolios": "Portafolios",
     "blog": "Noticias",
     "contact": "Contacto",
@@ -121,7 +121,7 @@
     "title": "Acerca de"
   },
   "services": {
-    "section_title": "Nuestros servicios",
+    "section_title": "Nuestros productos",
     "title": "Consultoría empresarial especializada",
     "description": "Ofrecemos una gama completa de servicios de consultoría empresarial desarrollados para fortalecer la gestión y el desempeño organizacional."
   },
@@ -147,7 +147,7 @@
     "description": "Ofrecemos soluciones integradas en finanzas corporativas, consultoría estratégica y gestión empresarial para fortalecer el desempeño organizacional."
   },
   "brands": {
-    "join_companies": "Empresas que confían en nuestros servicios",
+    "join_companies": "Empresas que confían en nuestros productos",
     "join_companies_trust": "Únete a más de",
     "companies_that_trust": "empresas que confían en nosotros"
   },
@@ -184,7 +184,7 @@
     "free_consultation": "Consulta gratuita"
   },
   "services_section": {
-    "subtitle": "Nuestros servicios",
+    "subtitle": "Nuestros productos",
     "title": "Consultoría empresarial especializada",
     "customers_review": "Reseñas de clientes",
     "get_started": "Iniciar",
@@ -294,7 +294,7 @@
     "blog": "Noticias",
     "feedback": "Comentarios",
     "error_404": "Error 404",
-    "services": "Servicios",
+    "services": "Productos",
     "strategic_planning": "Planificación estratégica",
     "market_research": "Investigación de mercado",
     "business_process": "Proceso de negocio",

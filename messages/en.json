@@ -4,7 +4,7 @@
     "learn_more": "Learn more",
     "contact_us": "Contact us",
     "about": "About",
-    "services": "Services",
+    "services": "Products",
     "portfolio": "Portfolio",
     "blog": "News",
     "team": "Team",
@@ -51,7 +51,7 @@
   "navigation": {
     "home": "Home",
     "pages": "Pages",
-    "services": "Services",
+    "services": "Products",
     "portfolios": "Portfolios",
     "blog": "News",
     "contact": "Contact",
@@ -121,7 +121,7 @@
     "title": "About"
   },
   "services": {
-    "section_title": "Our services",
+    "section_title": "Our products",
     "title": "Specialized business consulting",
     "description": "We offer a comprehensive range of business consulting services designed to strengthen management and organizational performance."
   },
@@ -147,7 +147,7 @@
     "description": "We offer integrated solutions in corporate finance, strategic consulting, and business management to strengthen organizational performance."
   },
   "brands": {
-    "join_companies": "Companies that trust our services",
+    "join_companies": "Companies that trust our products",
     "join_companies_trust": "Join over",
     "companies_that_trust": "companies that trust us"
   },
@@ -184,7 +184,7 @@
     "free_consultation": "Free consultation"
   },
   "services_section": {
-    "subtitle": "Our services",
+    "subtitle": "Our products",
     "title": "Specialized business consulting",
     "customers_review": "Customer reviews",
     "get_started": "Get started",
@@ -294,7 +294,7 @@
     "blog": "News",
     "feedback": "Feedback",
     "error_404": "Error 404",
-    "services": "Services",
+    "services": "Products",
     "strategic_planning": "Strategic planning",
     "market_research": "Market research",
     "business_process": "Business process",
