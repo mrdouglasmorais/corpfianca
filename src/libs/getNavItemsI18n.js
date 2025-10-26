@@ -35,6 +35,18 @@ const getNavItemsI18n = (t, locale) => {
               path: createLocalizedPath('/faq', locale),
               badge: null,
             },
+            {
+              id: 4,
+              name: t('register'),
+              path: createLocalizedPath('/register', locale),
+              badge: 'New',
+            },
+            {
+              id: 5,
+              name: t('login'),
+              path: createLocalizedPath('/login', locale),
+              badge: null,
+            },
           ],
         },
       ],
