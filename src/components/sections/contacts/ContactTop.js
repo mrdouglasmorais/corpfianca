@@ -60,7 +60,6 @@ const ContactTop = () => {
               </div>
               <h3 className="contact-title">{t('our_location')}</h3>
               <p>{t('address')}</p>
-              <p className="cnpj-text">{t('cnpj')}</p>
             </div>
           </div>
           <div className="col-xl-3 col-lg-6 col-sm-6">
