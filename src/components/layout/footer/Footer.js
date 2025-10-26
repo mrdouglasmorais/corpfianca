@@ -181,12 +181,12 @@ const Footer = ({ footerType, isRtl }) => {
                 <div className="copyright-menu">
                   <ul>
                     <li>
-                      <Link href={createLocalizedPath('/contact', locale)}>
+                      <Link href={createLocalizedPath('/privacy-policy', locale)}>
                         {t('policy_privacy')}
                       </Link>
                     </li>
                     <li>
-                      <Link href={createLocalizedPath('/contact', locale)}>
+                      <Link href={createLocalizedPath('/termos-e-condicoes', locale)}>
                         {t('terms_conditions')}
                       </Link>
                     </li>
