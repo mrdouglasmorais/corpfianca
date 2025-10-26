@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 export default function Contact() {
 	return (
-		<PageWrapper isHeaderTop={true} footerType={"inner"}>
+		<PageWrapper isHeaderTop={true} topbarType={1} footerType={"inner"}>
 			<ContactMain />
 		</PageWrapper>
 	);

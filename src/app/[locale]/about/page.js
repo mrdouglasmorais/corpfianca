@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 export default function About() {
 	return (
-		<PageWrapper isHeaderTop={true} footerType={"inner"}>
+		<PageWrapper isHeaderTop={true} topbarType={1} footerType={"inner"}>
 			<AboutMain />
 		</PageWrapper>
 	);
