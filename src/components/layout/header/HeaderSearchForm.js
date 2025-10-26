@@ -30,11 +30,23 @@ const HeaderSearchForm = () => {
         // Buscar em serviços/produtos
         services.forEach((service) => {
           if (service.title.toLowerCase().includes(searchLower)) {
+            // Criar slug a partir do título
+            const slug = service.title
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .trim()
+              .replace(/\s+/g, '-')
+              .replace(/[^\w\-]+/g, '')
+              .replace(/\-\-+/g, '-')
+              .replace(/^-+/, '')
+              .replace(/-+$/, '');
+            
             results.push({
               type: 'service',
               title: service.title,
               id: service.id,
-              url: createLocalizedPath(`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`, locale),
+              url: createLocalizedPath(`/services/${slug}`, locale),
             });
           }
         });
