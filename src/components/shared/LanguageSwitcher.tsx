@@ -22,9 +22,12 @@ export default function LanguageSwitcher() {
     return 'pt'; // Default locale
   };
 
-  // Use locale from hook, but fallback to pathname detection if needed
+  // Use locale from hook, but prioritize pathname detection if URL has locale prefix
   const detectedLocale = detectLocaleFromPath(pathname);
-  const effectiveLocale = locale || detectedLocale;
+  // If pathname starts with a locale prefix, use that; otherwise use hook value
+  const effectiveLocale = (pathname.startsWith('/en') || pathname.startsWith('/es')) 
+    ? detectedLocale 
+    : (locale || detectedLocale);
 
   const handleSelectChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
