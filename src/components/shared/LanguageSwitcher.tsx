@@ -2,7 +2,7 @@
 
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
-import { useCallback, useMemo } from 'react';
+import { useCallback } from 'react';
 
 const locales = [
   { code: 'pt', name: 'Português', flag: '🇧🇷' },
@@ -15,22 +15,44 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
+  // Debug: log current locale
+  console.log('LanguageSwitcher - Current locale:', locale, 'Pathname:', pathname);
+
   const handleSelectChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
     const newLocale = locales.find(l => l.code === selectedValue)?.code;
 
     if (newLocale && newLocale !== locale) {
-      const pathnameWithoutLocale = pathname.replace(/^\/(pt|en|es)/, '') || '/';
+      // Extract pathname without locale prefix
+      let pathnameWithoutLocale = pathname;
+      
+      // Remove locale prefix if present
+      if (pathname.startsWith('/pt/') || pathname.startsWith('/en/') || pathname.startsWith('/es/')) {
+        pathnameWithoutLocale = pathname.replace(/^\/(pt|en|es)/, '') || '/';
+      } else if (pathname === '/pt' || pathname === '/en' || pathname === '/es') {
+        pathnameWithoutLocale = '/';
+      }
+      
+      // Ensure pathname doesn't start with double slash
+      if (pathnameWithoutLocale === '') {
+        pathnameWithoutLocale = '/';
+      }
+      
+      // Build new path based on locale
       const newPath = newLocale === 'pt'
         ? pathnameWithoutLocale
         : `/${newLocale}${pathnameWithoutLocale}`;
+      
       router.push(newPath);
     }
   }, [locale, pathname, router]);
 
+  // Ensure locale value is set correctly
+  const currentLocale = locale || 'pt';
+
   return (
     <select
-      value={locale}
+      value={currentLocale}
       onChange={handleSelectChange}
       style={{
         display: 'inline-block',
