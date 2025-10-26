@@ -1,11 +1,17 @@
 'use client';
 import BrandSlider1 from '@/components/shared/brands/BrandSlider1';
 import BackToTop from '@/components/shared/others/BackToTop';
-import { useTranslations } from 'next-intl';
+import getALlServices from '@/libs/getALlServices';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { getServiceSlug } from '@/utils/slugUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const Footer = ({ footerType, isRtl }) => {
   const t = useTranslations('footer');
+  const tNav = useTranslations('navigation');
+  const locale = useLocale();
+  const services = getALlServices();
   return (
     <footer className="tj-footer-area footer-1">
       {/* <!-- start: Brand Section --> */}
@@ -48,24 +54,22 @@ const Footer = ({ footerType, isRtl }) => {
                 <div className="widget-menu">
                   <ul>
                     <li>
-                      <Link href="/contact">{t('contact_us')}</Link>
+                      <Link href={createLocalizedPath('/about', locale)}>{tNav('about_us')}</Link>
                     </li>
                     <li>
-                      <Link href="/contact">{t('privacy_policy')}</Link>
+                      <Link href={createLocalizedPath('/faq', locale)}>{tNav('faq')}</Link>
                     </li>
                     <li>
-                      <Link href="/about">{t('recognitions')}</Link>
+                      <Link href={createLocalizedPath('/register', locale)}>{tNav('register')}</Link>
                     </li>
                     <li>
-                      <Link href="/careers">
-                        {t('careers')} <span>{t('new')}</span>
-                      </Link>
+                      <Link href={createLocalizedPath('/login', locale)}>{tNav('login')}</Link>
                     </li>
                     <li>
-                      <Link href="/noticias">{t('blog')}</Link>
+                      <Link href={createLocalizedPath('/noticias', locale)}>{tNav('blog')}</Link>
                     </li>
                     <li>
-                      <Link href="/team">{t('feedback')}</Link>
+                      <Link href={createLocalizedPath('/contact', locale)}>{tNav('contact')}</Link>
                     </li>
                   </ul>
                 </div>
@@ -78,27 +82,23 @@ const Footer = ({ footerType, isRtl }) => {
                 </div>
                 <div className="widget-menu">
                   <ul>
-                    <li>
-                      <Link href="/services/1">{t('strategic_planning')}</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/2">{t('market_research')}</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/3">{t('business_process')}</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/4">{t('financial_management')}</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/5">{t('change_management')}</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/6">{t('it_consulting')}</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/1">{t('leadership')}</Link>
-                    </li>
+                    {services.slice(0, 6).map((service, idx) => {
+                      const translationKeys = [
+                        'traditional_bonds',
+                        'corporate_bonds',
+                        'structured_bonds',
+                        'judicial_bonds',
+                        'credit_bonds',
+                        'rental_bonds',
+                      ];
+                      return (
+                        <li key={idx}>
+                          <Link href={createLocalizedPath(`/services/${getServiceSlug(service)}`, locale)}>
+                            {tNav(translationKeys[idx])}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
