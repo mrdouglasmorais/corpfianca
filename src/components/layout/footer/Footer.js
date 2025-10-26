@@ -153,7 +153,7 @@ const Footer = ({ footerType, isRtl }) => {
                       href="https://habitvs.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ paddingLeft: '10px', display: 'inline-flex', alignItems: 'center' }}
+                      style={{ paddingLeft: '10px', display: 'inline-flex', alignItems: 'center', marginTop: '20px' }}
                     >
                       <img
                         src="/images/logos/habitvs.png"
