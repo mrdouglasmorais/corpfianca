@@ -42,7 +42,7 @@ const Header = ({ option, isStickyHeader }) => {
             : 'header-absolute'
       } ${isStickyHeader && isSticky ? 'sticky' : ''}`}
     >
-      {isHeaderTop && !isStickyHeader ? <HeaderTop type={topbarType} /> : ''}
+      {isHeaderTop && !isStickyHeader ? <HeaderTop type={topbarType || 1} /> : ''}
       <div className="header-bottom">
         <div className="container-fluid">
           <div className="row">
