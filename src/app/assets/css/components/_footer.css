@@ -32,19 +32,19 @@
   /**
     @Color Declaration
   */
-  --tj-color-common-white: #f7f7f7;
-  --tj-color-common-white-2: #a9b0b8;
+  --tj-color-common-white: #ffffff;
+  --tj-color-common-white-2: #e5e5e5;
   --tj-color-common-black: #000000;
-  --tj-color-common-black-2: #676e7a;
-  --tj-color-common-black-3: #969ca5;
-  --tj-color-heading-primary: #051229;
-  --tj-color-text-body: #364052;
-  --tj-color-text-body-2: #7e8590;
-  --tj-color-theme-primary: #0075ff;
-  --tj-color-theme-dark: #051229;
-  --tj-color-theme-bg: #e1e8f0;
-  --tj-color-theme-bg-2: #dfecfd;
-  --tj-color-border-1: #27354d;
+  --tj-color-common-black-2: #1a1a1a;
+  --tj-color-common-black-3: #4a4a4a;
+  --tj-color-heading-primary: #000B40;
+  --tj-color-text-body: #1a1a1a;
+  --tj-color-text-body-2: #4a4a4a;
+  --tj-color-theme-primary: #FF6200;
+  --tj-color-theme-dark: #000B40;
+  --tj-color-theme-bg: #fff5f0;
+  --tj-color-theme-bg-2: #ffe8dc;
+  --tj-color-border-1: #000B40;
   --tj-color-border-2: #ced7e0;
   --tj-color-border-3: #d7d8db;
   --tj-color-red-1: #ff0000;
