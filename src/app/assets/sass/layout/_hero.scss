@@ -4,9 +4,20 @@
 .tj-hero-section {
 	position: relative;
 	padding-top: 170px;
-	background-color: var(--tj-color-theme-dark);
+	background: linear-gradient(135deg, #e04800 0%, #f95603 50%, #ff7a2e 100%);
 	z-index: 1;
 	overflow: hidden;
+	&::after {
+		content: "";
+		position: absolute;
+		inset-inline-start: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.15);
+		z-index: 1;
+		pointer-events: none;
+	}
 	&::before {
 		position: absolute;
 		content: "";
@@ -39,9 +50,20 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background-color: var(--tj-color-theme-dark);
+		background: linear-gradient(135deg, #e04800 0%, #f95603 50%, #ff7a2e 100%);
 		z-index: 1;
 		opacity: 1;
+		&::after {
+			content: "";
+			position: absolute;
+			inset-inline-start: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.15);
+			z-index: 2;
+			pointer-events: none;
+		}
 	}
 	.tj-hero-section {
 		&::before {
@@ -213,7 +235,7 @@
 		line-height: 1.1;
 		margin-bottom: 20px;
 		.active-color {
-			color: var(--tj-color-theme-primary);
+			color: var(--tj-color-theme-dark);
 		}
 		@media #{$sm, $xs} {
 			font-size: 45px;
@@ -407,7 +429,7 @@
 					height: 90px;
 				}
 			}
-			.blue {
+			.orange {
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
@@ -439,7 +461,7 @@
 				}
 			}
 			&:hover {
-				.blue {
+				.orange {
 					span {
 						i:first-child {
 							transform: translateY(150%);
