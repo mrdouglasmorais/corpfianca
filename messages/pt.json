@@ -50,8 +50,8 @@
     "working_hours": "Seg - Sex : 9:00 - 18:00"
   },
   "header": {
-    "get_quote": "Solicite sua análise",
-    "free_consultation": "Solicite sua análise",
+    "get_quote": "Fazer cotação",
+    "free_consultation": "Fazer cotação",
     "explore": "Pesquisar",
     "search": "Pesquisar",
     "search_title": "Pesquise por Notícias, projetos, Serviços ou pessoas.",
@@ -67,6 +67,8 @@
     "portfolios": "Portfólios",
     "blog": "Notícias",
     "contact": "Contato",
+    "get_quote": "Fazer cotação",
+    "file_claim": "Acionamento de sinistros",
     "main_pages": "Páginas Principais",
     "other_pages": "Outras Páginas",
     "about_us": "Sobre nós",
@@ -126,13 +128,16 @@
     "mission_description": "Nossa missão é oferecer garantias corporativas com credibilidade e precisão. Tecnologia a serviço da confiança.",
     "traditional_bonds_fallback": "Fianças Tradicionais",
     "portfolio_fallback": "Portfólio",
-    "contact_fallback": "Contato"
+    "contact_fallback": "Contato",
+    "faq_search_title": "Olá, como podemos",
+    "faq_search_support": "ajudar",
+    "faq_search_placeholder": "Faça uma pergunta"
   },
   "hero": {
     "title": "Garantias corporativas com",
     "title_highlight": "confiança e precisão",
     "description": "Expertise técnica apoiada por tecnologia avançada. Análises precisas, processos ágeis e decisões fundamentadas para empresas que buscam segurança e solidez.",
-    "free_consultation": "Solicite sua análise",
+    "free_consultation": "Fazer cotação",
     "scroll": "Descer",
     "subtitle_gen": "Excelência em consultoria",
     "title_expert_business": "Consultoria empresarial especializada",
@@ -216,7 +221,7 @@
     "discover_expertise": "Conheça nossa expertise, missão e valores",
     "journey_commitment": "Nossa trajetória e compromisso",
     "meet_team_visions": "Conheça nossa equipe",
-    "free_consultation": "Solicite análise"
+    "free_consultation": "Fazer cotação"
   },
   "services_section": {
     "subtitle": "Nossos produtos",
@@ -227,9 +232,9 @@
   },
   "skills_section": {
     "title": "Habilidade e experiência",
-    "description": "No ambiente empresarial dinâmico de hoje, a chave para o sucesso está no planejamento estratégico e na excelência operacional",
-    "business_consultants": "Consultores empresariais",
-    "client_communication": "Comunicação com clientes"
+    "description": "Expertise técnica especializada em análise de riscos e garantias corporativas. Tecnologia avançada aliada a conhecimento profundo para oferecer soluções seguras e precisas.",
+    "business_consultants": "Análise de riscos",
+    "client_communication": "Aprovação de garantias"
   },
   "testimonials_section": {
     "subtitle": "Depoimentos",
@@ -395,6 +400,47 @@
     "section_6_content": "Reservamo-nos o direito de modificar estes Termos e Condições a qualquer momento. As alterações entrarão em vigor imediatamente após sua publicação no site. Recomendamos que você revise periodicamente estes termos.",
     "last_updated": "Última atualização: Janeiro de 2025"
   },
+  "quote_page": {
+    "quote_subtitle": "Cotação",
+    "quote_title": "Solicite sua cotação",
+    "quote_description": "Preencha o formulário abaixo para solicitar uma cotação personalizada de garantias bancárias para sua empresa.",
+    "company_name": "Razão social*",
+    "cnpj": "CNPJ*",
+    "contact_name": "Nome do contato*",
+    "email_address": "Endereço de e-mail*",
+    "phone_number": "Número de telefone*",
+    "select_bond_type": "Selecione o tipo de fiança",
+    "traditional_bonds": "Fianças Tradicionais",
+    "corporate_bonds": "Fianças Corporativas",
+    "structured_bonds": "Fianças Estruturadas",
+    "judicial_bonds": "Fianças Judicial",
+    "credit_bonds": "Fianças de Crédito",
+    "rental_bonds": "Fianças Locatícia",
+    "select_company_size": "Selecione o porte da empresa",
+    "micro_enterprise": "Microempresa",
+    "small_enterprise": "Pequena empresa",
+    "medium_enterprise": "Média empresa",
+    "large_enterprise": "Grande empresa",
+    "bond_value": "Valor da fiança*",
+    "additional_info": "Informações adicionais",
+    "request_quote": "Solicitar cotação"
+  },
+  "claim_page": {
+    "title": "Acionamento de sinistros",
+    "subtitle": "Acionamento de sinistros",
+    "description": "Preencha o formulário abaixo para acionar um sinistro relacionado à sua garantia bancária.",
+    "company_name": "Razão social*",
+    "cnpj": "CNPJ*",
+    "contact_name": "Nome do contato*",
+    "email_address": "Endereço de e-mail*",
+    "phone_number": "Número de telefone*",
+    "bond_number": "Número da apólice/fiança*",
+    "claim_date": "Data do sinistro*",
+    "claim_type": "Tipo de sinistro*",
+    "description_placeholder": "Descreva detalhadamente o ocorrido*",
+    "attach_documents": "Anexar documentos (PDF, DOC, DOCX, JPG, PNG)",
+    "submit_claim": "Enviar sinistro"
+  },
   "contact_page": {
     "title": "Contato",
     "contact_us": "Entre em contato conosco",
@@ -431,7 +477,10 @@
     "email_marketing": "Marketing por e-mail"
   },
   "hero_inner": {
-    "home": "Início"
+    "home": "Início",
+    "faq": "Perguntas Frequentes",
+    "quote": "Fazer cotação",
+    "claim": "Acionamento de sinistros"
   },
   "cta": {
     "get_consultant": "Entre em contato",

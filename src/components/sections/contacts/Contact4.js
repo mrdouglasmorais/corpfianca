@@ -1,4 +1,10 @@
+'use client';
+import { useTranslations } from 'next-intl';
+
 const Contact4 = () => {
+	const t = useTranslations('navigation');
+	const tSearch = useTranslations('header');
+
 	return (
 		<section className="tj-faq-search">
 			<div className="container">
@@ -7,7 +13,7 @@ const Contact4 = () => {
 						<div className="col-lg-8 col-md-9 text-center">
 							<div className="sec-heading mb-0">
 								<h2 className="sec-title text-anim">
-									Hi, how we <span>support</span> you?
+									{t('faq_search_title')} <span>{t('faq_search_support')}</span>?
 								</h2>
 							</div>
 							<div
@@ -16,13 +22,13 @@ const Contact4 = () => {
 							>
 								<form action="#">
 									<div className="faq-search">
-										<input type="text" placeholder="Ask a question" />
+										<input type="text" placeholder={t('faq_search_placeholder')} />
 										<label>
 											<i className="tji-search"></i>
 										</label>
 										<button type="submit">
 											<span className="btn-text">
-												<span>Search</span>
+												<span>{tSearch('search')}</span>
 											</span>
 										</button>
 									</div>

@@ -10,6 +10,8 @@ const routeTranslations = {
     '/password': '/senha',
     '/register': '/cadastrar',
     '/faq': '/perguntas-frequentes',
+    '/cotacao': '/cotacao',
+    '/sinistros': '/sinistros',
   },
   en: {
     '/contact': '/contact',
@@ -19,6 +21,8 @@ const routeTranslations = {
     '/password': '/password',
     '/register': '/register',
     '/faq': '/faq',
+    '/cotacao': '/quote',
+    '/sinistros': '/claims',
   },
   es: {
     '/contact': '/contacto',
@@ -28,6 +32,8 @@ const routeTranslations = {
     '/password': '/contrasena',
     '/register': '/registrarse',
     '/faq': '/preguntas-frecuentes',
+    '/cotacao': '/cotizacion',
+    '/sinistros': '/siniestros',
   },
 };
 

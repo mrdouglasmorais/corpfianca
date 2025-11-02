@@ -1,6 +1,10 @@
+'use client';
 import Accordion from "@/components/shared/accordion/Accordion";
+import { useTranslations } from 'next-intl';
 
 const Faq3 = () => {
+	const t = useTranslations('navigation');
+
 	return (
 		<section className="tj-faq-area section-space">
 			<div className="container">
@@ -8,7 +12,7 @@ const Faq3 = () => {
 					<div className="col-xl-5 col-lg-5">
 						<div className="sec-heading mb-0 tj-sticky-top">
 							<h2 className="sec-title text-anim">
-								No matter the strategy, we've got it handled.
+								{t('general_questions')}
 							</h2>
 						</div>
 					</div>
@@ -31,7 +35,7 @@ const Faq3 = () => {
 												data-bs-target="#collapseOne-1"
 												aria-expanded="false"
 											>
-												How do consultants add value to a business?
+												{t('faq_question_1')}
 											</button>
 										</h2>
 										{/* <!-- content --> */}
@@ -42,14 +46,7 @@ const Faq3 = () => {
 										>
 											<div className="accordion-body">
 												<p>
-													You might need a consultant if you're facing specifics
-													challenges, such as stagnating our growth, operational
-													inefficiencies, strategic issues, or if you lack
-													expertise in certain areas. Consultants can also help
-													if you need an objective perspective on your business
-													businesses ever changing marketplace. We are committed
-													to the delivering exceptional the value through
-													strategic.
+													{t('faq_answer')}
 												</p>
 											</div>
 										</div>
@@ -66,7 +63,7 @@ const Faq3 = () => {
 												data-bs-target="#collapseOne-2"
 												aria-expanded="false"
 											>
-												How do I know if my business needs a consultant?
+												{t('faq_question_2')}
 											</button>
 										</h2>
 										{/* <!-- content --> */}
@@ -77,14 +74,7 @@ const Faq3 = () => {
 										>
 											<div className="accordion-body">
 												<p>
-													You might need a consultant if you're facing specifics
-													challenges, such as stagnating our growth, operational
-													inefficiencies, strategic issues, or if you lack
-													expertise in certain areas. Consultants can also help
-													if you need an objective perspective on your business
-													businesses ever changing marketplace. We are committed
-													to the delivering exceptional the value through
-													strategic.
+													{t('faq_answer')}
 												</p>
 											</div>
 										</div>
@@ -101,7 +91,7 @@ const Faq3 = () => {
 												data-bs-target="#collapseOne-3"
 												aria-expanded="false"
 											>
-												How do business consultants charge for their services?
+												{t('faq_question_3')}
 											</button>
 										</h2>
 										{/* <!-- content --> */}
@@ -112,14 +102,7 @@ const Faq3 = () => {
 										>
 											<div className="accordion-body">
 												<p>
-													You might need a consultant if you're facing specifics
-													challenges, such as stagnating our growth, operational
-													inefficiencies, strategic issues, or if you lack
-													expertise in certain areas. Consultants can also help
-													if you need an objective perspective on your business
-													businesses ever changing marketplace. We are committed
-													to the delivering exceptional the value through
-													strategic.
+													{t('faq_answer')}
 												</p>
 											</div>
 										</div>
@@ -136,7 +119,7 @@ const Faq3 = () => {
 												data-bs-target="#collapseOne-4"
 												aria-expanded="false"
 											>
-												Can a business consultant guarantee results?
+												{t('faq_question_4')}
 											</button>
 										</h2>
 										{/* <!-- content --> */}
@@ -147,14 +130,7 @@ const Faq3 = () => {
 										>
 											<div className="accordion-body">
 												<p>
-													You might need a consultant if you're facing specifics
-													challenges, such as stagnating our growth, operational
-													inefficiencies, strategic issues, or if you lack
-													expertise in certain areas. Consultants can also help
-													if you need an objective perspective on your business
-													businesses ever changing marketplace. We are committed
-													to the delivering exceptional the value through
-													strategic.
+													{t('faq_answer')}
 												</p>
 											</div>
 										</div>
@@ -171,8 +147,7 @@ const Faq3 = () => {
 												data-bs-target="#collapseOne-5"
 												aria-expanded="false"
 											>
-												How can I measure the success of a consulting
-												engagement?
+												{t('faq_question_5')}
 											</button>
 										</h2>
 										{/* <!-- content --> */}
@@ -183,14 +158,7 @@ const Faq3 = () => {
 										>
 											<div className="accordion-body">
 												<p>
-													You might need a consultant if you're facing specifics
-													challenges, such as stagnating our growth, operational
-													inefficiencies, strategic issues, or if you lack
-													expertise in certain areas. Consultants can also help
-													if you need an objective perspective on your business
-													businesses ever changing marketplace. We are committed
-													to the delivering exceptional the value through
-													strategic.
+													{t('faq_answer')}
 												</p>
 											</div>
 										</div>

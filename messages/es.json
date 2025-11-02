@@ -50,8 +50,8 @@
     "working_hours": "Lun - Vie : 9:00 - 18:00"
   },
   "header": {
-    "get_quote": "Solicite su análisis",
-    "free_consultation": "Solicite su análisis",
+    "get_quote": "Hacer cotización",
+    "free_consultation": "Hacer cotización",
     "explore": "Explorar",
     "search": "Buscar",
     "search_title": "Buscar Noticias, proyectos, Servicios o personas.",
@@ -67,6 +67,8 @@
     "portfolios": "Portafolios",
     "blog": "Noticias",
     "contact": "Contacto",
+    "get_quote": "Hacer cotización",
+    "file_claim": "Presentar reclamación",
     "main_pages": "Páginas Principales",
     "other_pages": "Otras Páginas",
     "about_us": "Acerca de nosotros",
@@ -126,13 +128,16 @@
     "mission_description": "Nuestra misión es ofrecer garantías corporativas con credibilidad y precisión. Tecnología al servicio de la confianza.",
     "traditional_bonds_fallback": "Fianzas Tradicionales",
     "portfolio_fallback": "Portafolio",
-    "contact_fallback": "Contacto"
+    "contact_fallback": "Contacto",
+    "faq_search_title": "Hola, ¿cómo podemos",
+    "faq_search_support": "ayudar",
+    "faq_search_placeholder": "Haga una pregunta"
   },
   "hero": {
     "title": "Soluciones especializadas en",
     "title_highlight": "consultoría empresarial",
     "description": "Ofrecemos servicios de consultoría estratégica enfocados en resultados medibles. Nuestro equipo de consultores cualificados desarrolla soluciones personalizadas para fortalecer el desempeño organizacional.",
-    "free_consultation": "Consultoría inicial",
+    "free_consultation": "Hacer cotización",
     "scroll": "Desplazar",
     "subtitle_gen": "Excelencia en consultoría",
     "title_expert_business": "Consultoría empresarial especializada",
@@ -187,17 +192,17 @@
     "companies_that_trust": "empresas que confían en nosotros"
   },
   "features": {
-    "subtitle": "Excelencia en consultoría",
-    "title": "Nuestras principales competencias",
-    "description": "Desarrollamos soluciones estratégicas para empresas que buscan crecimiento sostenible",
-    "quick_solutions": "Análisis y diagnóstico",
-    "quick_solutions_desc": "Realizamos análisis en profundidad de los desafíos organizacionales para identificar oportunidades de mejora",
-    "expert_advice": "Consultoría especializada",
-    "expert_advice_desc": "Atención personalizada basada en conocimiento técnico y experiencia comprobada",
-    "strategic_planning": "Planificación estratégica",
-    "strategic_planning_desc": "Elaboración de planes estratégicos alineados con los objetivos empresariales y la realidad del mercado",
-    "efficient_operations": "Optimización operacional",
-    "efficient_operations_desc": "Implementación de procesos eficientes para mejorar el desempeño organizacional"
+    "subtitle": "Inteligencia corporativa",
+    "title": "Experiencia técnica apoyada por tecnología de vanguardia",
+    "description": "Análisis precisos, procesos ágiles y decisiones fundamentadas",
+    "quick_solutions": "Análisis preciso",
+    "quick_solutions_desc": "Inteligencia aplicada para evaluación rigurosa de riesgos y oportunidades",
+    "expert_advice": "Experiencia especializada",
+    "expert_advice_desc": "Conocimiento técnico profundo con soporte tecnológico avanzado",
+    "strategic_planning": "Procesos ágiles",
+    "strategic_planning_desc": "Tecnología que acelera análisis sin comprometer la seguridad corporativa",
+    "efficient_operations": "Decisiones seguras",
+    "efficient_operations_desc": "Inteligencia aplicada que resulta en garantías sólidas y procesos eficientes"
   },
   "about_section": {
     "subtitle": "Acerca de nuestra empresa",
@@ -216,7 +221,7 @@
     "discover_expertise": "Descubre nuestra experiencia, misión y valores",
     "journey_commitment": "Trayectoria y compromiso explicados",
     "meet_team_visions": "Conoce nuestro equipo",
-    "free_consultation": "Solicite análisis"
+    "free_consultation": "Hacer cotización"
   },
   "services_section": {
     "subtitle": "Nuestros productos",
@@ -227,9 +232,9 @@
   },
   "skills_section": {
     "title": "Habilidad y experiencia",
-    "description": "En el entorno empresarial dinámico de hoy, la clave del éxito radica en la planificación estratégica y la excelencia operacional",
-    "business_consultants": "Consultores empresariales",
-    "client_communication": "Comunicación con clientes"
+    "description": "Experiencia técnica especializada en análisis de riesgos y garantías corporativas. Tecnología avanzada combinada con conocimiento profundo para ofrecer soluciones seguras y precisas.",
+    "business_consultants": "Análisis de riesgos",
+    "client_communication": "Aprobación de garantías"
   },
   "testimonials_section": {
     "subtitle": "Testimonios",
@@ -399,6 +404,47 @@
     "section_6_content": "Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web. Recomendamos que revise periódicamente estos términos.",
     "last_updated": "Última actualización: Enero de 2025"
   },
+  "quote_page": {
+    "quote_subtitle": "Cotización",
+    "quote_title": "Solicite su cotización",
+    "quote_description": "Complete el formulario a continuación para solicitar una cotización personalizada de garantías bancarias para su empresa.",
+    "company_name": "Razón social*",
+    "cnpj": "CNPJ*",
+    "contact_name": "Nombre de contacto*",
+    "email_address": "Dirección de correo electrónico*",
+    "phone_number": "Número de teléfono*",
+    "select_bond_type": "Seleccione el tipo de fianza",
+    "traditional_bonds": "Fianzas Tradicionales",
+    "corporate_bonds": "Fianzas Corporativas",
+    "structured_bonds": "Fianzas Estructuradas",
+    "judicial_bonds": "Fianzas Judicial",
+    "credit_bonds": "Fianzas de Crédito",
+    "rental_bonds": "Fianzas de Alquiler",
+    "select_company_size": "Seleccione el tamaño de la empresa",
+    "micro_enterprise": "Microempresa",
+    "small_enterprise": "Pequeña empresa",
+    "medium_enterprise": "Mediana empresa",
+    "large_enterprise": "Grande empresa",
+    "bond_value": "Valor de la fianza*",
+    "additional_info": "Información adicional",
+    "request_quote": "Solicitar cotización"
+  },
+  "claim_page": {
+    "title": "Presentar reclamación",
+    "subtitle": "Presentar reclamación",
+    "description": "Complete el formulario a continuación para presentar una reclamación relacionada con su garantía bancaria.",
+    "company_name": "Razón social*",
+    "cnpj": "CNPJ*",
+    "contact_name": "Nombre de contacto*",
+    "email_address": "Dirección de correo electrónico*",
+    "phone_number": "Número de teléfono*",
+    "bond_number": "Número de póliza/fianza*",
+    "claim_date": "Fecha del siniestro*",
+    "claim_type": "Tipo de siniestro*",
+    "description_placeholder": "Describa en detalle lo ocurrido*",
+    "attach_documents": "Adjuntar documentos (PDF, DOC, DOCX, JPG, PNG)",
+    "submit_claim": "Enviar reclamación"
+  },
   "contact_page": {
     "title": "Contacto",
     "contact_us": "Contáctenos",
@@ -435,7 +481,10 @@
     "email_marketing": "Marketing por Correo Electrónico"
   },
   "hero_inner": {
-    "home": "Inicio"
+    "home": "Inicio",
+    "faq": "Preguntas Frecuentes",
+    "quote": "Hacer cotización",
+    "claim": "Presentar reclamación"
   },
   "cta": {
     "get_consultant": "Contáctenos",
