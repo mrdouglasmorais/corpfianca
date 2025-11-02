@@ -4,7 +4,8 @@ import ButtonMenuToggler from '@/components/shared/buttons/ButtonMenuToggler';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import ButtonSearch from '@/components/shared/buttons/ButtonSearch';
 import useHeaderFunction from '@/hooks/useHeaderFunction';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { useLocale, useTranslations } from 'next-intl';
 import HeaderTop from './HeaderTop';
 import Logo from './Logo';
 import Navbar from './Navbar';
@@ -13,6 +14,7 @@ const Header = ({ option, isStickyHeader }) => {
   const { isInnerPage, headerType, isIndexPage, isHeaderTop, topbarType } = option;
   const isSticky = useHeaderFunction(isStickyHeader);
   const t = useTranslations('header');
+  const locale = useLocale();
 
   return (
     <header
@@ -82,7 +84,7 @@ const Header = ({ option, isStickyHeader }) => {
                   {headerType !== 2 ? (
                     <ButtonPrimary
                       text={headerType === 8 ? t('free_consultation') : t('get_quote')}
-                      url={'/contact'}
+                      url={createLocalizedPath('/cotacao', locale)}
                       className={
                         (headerType === 3 ||
                           headerType == 4 ||

@@ -50,8 +50,8 @@
     "working_hours": "Mon - Friday : 9:00 - 18:00"
   },
   "header": {
-    "get_quote": "Request your analysis",
-    "free_consultation": "Request your analysis",
+    "get_quote": "Get a quote",
+    "free_consultation": "Get a quote",
     "explore": "Explore",
     "search": "Search",
     "search_title": "Search News, projects, Service or people.",
@@ -67,6 +67,8 @@
     "portfolios": "Portfolios",
     "blog": "News",
     "contact": "Contact",
+    "get_quote": "Get a quote",
+    "file_claim": "File a claim",
     "main_pages": "Main Pages",
     "other_pages": "Other Pages",
     "about_us": "About us",
@@ -126,13 +128,16 @@
     "mission_description": "Our mission is to offer corporate guarantees with credibility and precision. Technology at the service of trust.",
     "traditional_bonds_fallback": "Traditional Bonds",
     "portfolio_fallback": "Portfolio",
-    "contact_fallback": "Contact"
+    "contact_fallback": "Contact",
+    "faq_search_title": "Hi, how we",
+    "faq_search_support": "support",
+    "faq_search_placeholder": "Ask a question"
   },
   "hero": {
     "title": "Specialized solutions in",
     "title_highlight": "business consulting",
     "description": "We provide strategic consulting services focused on measurable results. Our team of qualified consultants develops customized solutions to strengthen organizational performance.",
-    "free_consultation": "Initial consultation",
+    "free_consultation": "Get a quote",
     "scroll": "Scroll",
     "subtitle_gen": "Consulting excellence",
     "title_expert_business": "Expert business consulting",
@@ -187,17 +192,17 @@
     "companies_that_trust": "companies that trust us"
   },
   "features": {
-    "subtitle": "Consulting excellence",
-    "title": "Our core competencies",
-    "description": "We develop strategic solutions for companies seeking sustainable growth",
-    "quick_solutions": "Analysis and diagnosis",
-    "quick_solutions_desc": "We conduct in-depth analysis of organizational challenges to identify improvement opportunities",
-    "expert_advice": "Specialized consulting",
-    "expert_advice_desc": "Personalized service based on technical knowledge and proven experience",
-    "strategic_planning": "Strategic planning",
-    "strategic_planning_desc": "Development of strategic plans aligned with business objectives and market reality",
-    "efficient_operations": "Operational optimization",
-    "efficient_operations_desc": "Implementation of efficient processes to improve organizational performance"
+    "subtitle": "Corporate intelligence",
+    "title": "Technical expertise supported by cutting-edge technology",
+    "description": "Precise analysis, agile processes and informed decisions",
+    "quick_solutions": "Precise analysis",
+    "quick_solutions_desc": "Applied intelligence for rigorous assessment of risks and opportunities",
+    "expert_advice": "Specialized expertise",
+    "expert_advice_desc": "Deep technical knowledge with advanced technological support",
+    "strategic_planning": "Agile processes",
+    "strategic_planning_desc": "Technology that accelerates analysis without compromising corporate security",
+    "efficient_operations": "Safe decisions",
+    "efficient_operations_desc": "Applied intelligence that results in solid guarantees and efficient processes"
   },
   "about_section": {
     "subtitle": "About our company",
@@ -216,7 +221,7 @@
     "discover_expertise": "Discover our expertise, mission, and values",
     "journey_commitment": "Journey and commitment to explained",
     "meet_team_visions": "Meet our team",
-    "free_consultation": "Request analysis"
+    "free_consultation": "Get a quote"
   },
   "services_section": {
     "subtitle": "Our products",
@@ -227,9 +232,9 @@
   },
   "skills_section": {
     "title": "Skill and experience",
-    "description": "In today's dynamic business environment, the key to success lies in strategic planning and operational",
-    "business_consultants": "Business consultants",
-    "client_communication": "Client communication"
+    "description": "Specialized technical expertise in risk analysis and corporate guarantees. Advanced technology combined with deep knowledge to deliver safe and precise solutions.",
+    "business_consultants": "Risk analysis",
+    "client_communication": "Guarantee approval"
   },
   "testimonials_section": {
     "subtitle": "Testimonials",
@@ -399,6 +404,47 @@
     "section_6_content": "We reserve the right to modify these Terms and Conditions at any time. Changes will take effect immediately after publication on the website. We recommend that you periodically review these terms.",
     "last_updated": "Last updated: January 2025"
   },
+  "quote_page": {
+    "quote_subtitle": "Quote",
+    "quote_title": "Request your quote",
+    "quote_description": "Fill out the form below to request a personalized quote for bank guarantees for your company.",
+    "company_name": "Company name*",
+    "cnpj": "CNPJ*",
+    "contact_name": "Contact name*",
+    "email_address": "Email address*",
+    "phone_number": "Phone number*",
+    "select_bond_type": "Select bond type",
+    "traditional_bonds": "Traditional Bonds",
+    "corporate_bonds": "Corporate Bonds",
+    "structured_bonds": "Structured Bonds",
+    "judicial_bonds": "Judicial Bonds",
+    "credit_bonds": "Credit Bonds",
+    "rental_bonds": "Rental Bonds",
+    "select_company_size": "Select company size",
+    "micro_enterprise": "Micro enterprise",
+    "small_enterprise": "Small enterprise",
+    "medium_enterprise": "Medium enterprise",
+    "large_enterprise": "Large enterprise",
+    "bond_value": "Bond value*",
+    "additional_info": "Additional information",
+    "request_quote": "Request quote"
+  },
+  "claim_page": {
+    "title": "File a claim",
+    "subtitle": "File a claim",
+    "description": "Fill out the form below to file a claim related to your bank guarantee.",
+    "company_name": "Company name*",
+    "cnpj": "CNPJ*",
+    "contact_name": "Contact name*",
+    "email_address": "Email address*",
+    "phone_number": "Phone number*",
+    "bond_number": "Policy/bond number*",
+    "claim_date": "Claim date*",
+    "claim_type": "Claim type*",
+    "description_placeholder": "Describe in detail what happened*",
+    "attach_documents": "Attach documents (PDF, DOC, DOCX, JPG, PNG)",
+    "submit_claim": "Submit claim"
+  },
   "contact_page": {
     "title": "Contact",
     "contact_us": "Contact us",
@@ -435,7 +481,10 @@
     "email_marketing": "Email Marketing"
   },
   "hero_inner": {
-    "home": "Home"
+    "home": "Home",
+    "faq": "FAQ",
+    "quote": "Get a quote",
+    "claim": "File a claim"
   },
   "cta": {
     "get_consultant": "Get in touch",

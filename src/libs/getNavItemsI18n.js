@@ -39,6 +39,12 @@ const getNavItemsI18n = (t, locale) => {
               badge: null,
             },
             {
+              id: 6,
+              name: t('file_claim'),
+              path: createLocalizedPath('/sinistros', locale),
+              badge: null,
+            },
+            {
               id: 4,
               name: t('register'),
               path: createLocalizedPath('/register', locale),
@@ -79,6 +85,11 @@ const getNavItemsI18n = (t, locale) => {
       id: 5,
       name: t('blog'),
       path: createLocalizedPath('/noticias', locale),
+    },
+    {
+      id: 7,
+      name: t('get_quote'),
+      path: createLocalizedPath('/cotacao', locale),
     },
     {
       id: 6,

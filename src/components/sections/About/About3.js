@@ -63,7 +63,7 @@ const About3 = () => {
                   <div className="about-button wow fadeInUp" data-wow-delay="0.9s">
                     <ButtonPrimary
                       text={tAbout('free_consultation')}
-                      url={createLocalizedPath('/contact', locale)}
+                      url={createLocalizedPath('/cotacao', locale)}
                     />
                   </div>
                 </div>

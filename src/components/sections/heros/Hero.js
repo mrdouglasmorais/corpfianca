@@ -38,7 +38,7 @@ const Hero = () => {
                 <div className="wow fadeInUp" data-wow-delay="0.3s">
                   <ButtonPrimary
                     text={t('free_consultation')}
-                    url={createLocalizedPath('/contact', locale)}
+                    url={createLocalizedPath('/cotacao', locale)}
                     className={'hero-button'}
                   />
                 </div>

@@ -60,6 +60,12 @@ const Footer = ({ footerType, isRtl }) => {
                       <Link href={createLocalizedPath('/faq', locale)}>{tNav('faq')}</Link>
                     </li>
                     <li>
+                      <Link href={createLocalizedPath('/cotacao', locale)}>{tNav('get_quote')}</Link>
+                    </li>
+                    <li>
+                      <Link href={createLocalizedPath('/sinistros', locale)}>{tNav('file_claim')}</Link>
+                    </li>
+                    <li>
                       <Link href={createLocalizedPath('/register', locale)}>
                         {tNav('register')}
                       </Link>
@@ -175,11 +181,6 @@ const Footer = ({ footerType, isRtl }) => {
                     <li>
                       <Link href="https://www.instagram.com/">
                         <i className="fa-brands fa-instagram"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://x.com/">
-                        <i className="fa-brands fa-twitter"></i>
                       </Link>
                     </li>
                     <li>

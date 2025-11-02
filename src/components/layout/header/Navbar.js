@@ -16,7 +16,8 @@ const Navbar = ({ option, isStickyHeader }) => {
   const pagesNav = makeActiveLink(navItems[1]);
   const serviceNav = makeActiveLink(navItems[2]);
   const blogNav = makeActiveLink(navItems[3]);
-  const contactNav = makeActiveLink(navItems[4]);
+  const quoteNav = makeActiveLink(navItems[4]);
+  const contactNav = makeActiveLink(navItems[5]);
 
   return (
     <div
@@ -172,6 +173,11 @@ const Navbar = ({ option, isStickyHeader }) => {
               ))}
             </ul>
           ) : null}
+        </li>
+        <li className={quoteNav?.isActive ? 'current-menu-ancestor' : ''}>
+          <Link href={quoteNav?.path ? quoteNav?.path : '#'}>
+            {quoteNav?.name ? quoteNav?.name : t('get_quote')}
+          </Link>
         </li>
         <li className={contactNav?.isActive ? 'current-menu-ancestor' : ''}>
           <Link href={contactNav?.path ? contactNav?.path : '#'}>
