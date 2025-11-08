@@ -1,6 +1,7 @@
 import getALlServices from '@/libs/getALlServices';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
+import getLocalizedServiceContent from '@/utils/serviceContent';
 
 const getNavItemsI18n = (t, locale) => {
   const services = getALlServices();
@@ -65,17 +66,10 @@ const getNavItemsI18n = (t, locale) => {
       name: t('services'),
       path: createLocalizedPath('/services', locale),
       submenu: services.slice(0, 6).map((service, idx) => {
-        const translationKeys = [
-          'traditional_bonds',
-          'corporate_bonds',
-          'structured_bonds',
-          'judicial_bonds',
-          'credit_bonds',
-          'rental_bonds',
-        ];
+        const translation = getLocalizedServiceContent(service, locale);
         return {
           id: idx + 1,
-          name: t(translationKeys[idx]),
+          name: translation.title || service.title,
           icon: service.iconName || 'tji-optimization',
           path: createLocalizedPath(`/services/${getServiceSlug(service)}`, locale),
         };

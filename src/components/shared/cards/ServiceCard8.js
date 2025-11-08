@@ -1,27 +1,31 @@
 'use client';
 import modifyNumber from '@/libs/modifyNumber';
-import { useTranslations } from 'next-intl';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
+import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
 
 const ServiceCard8 = ({ service, idx, lastItem }) => {
   const locale = useLocale();
-  const tNav = useTranslations('navigation');
-  const { title, id, iconName, img } = service || {};
+  const { title, id, iconName, img, desc } = service || {};
   const slug = getServiceSlug(service);
-  const translateServiceTitle = (serviceTitle, serviceId) => {    const titleMap = {      1: tNav('traditional_bonds'),      2: tNav('corporate_bonds'),      3: tNav('structured_bonds'),      4: tNav('judicial_bonds'),      5: tNav('credit_bonds'),      6: tNav('rental_bonds'),    };    return titleMap[serviceId] || serviceTitle;  };  const translatedTitle = translateServiceTitle(title, id);
+  const { title: localizedTitle, cardSummary } = getLocalizedServiceContent(service, locale);
+  const description =
+    cardSummary ||
+    (desc && desc.includes("In today's dynamic business environment") ? '' : desc) ||
+    '';
   return (
     <div className="service_item wow fadeInUp" data-wow-delay={`0.${idx + 3}s`}>
       <span className="no">{modifyNumber(idx + 1)}.</span>
       <div className="content">
         <h4 className="title">
-          <Link href={createLocalizedPath(`/services/${slug}`, locale)}>{translatedTitle}</Link>
+          <Link href={createLocalizedPath(`/services/${slug}`, locale)}>
+            {localizedTitle || title}
+          </Link>
         </h4>
         <div className="desc">
-          In today's dynamic business environment, the key to success lies strategics our planning
-          and operational business.
+          {description}
         </div>
       </div>
       <Link className="service_btn icon-btn" href={createLocalizedPath(`/services/${slug}`, locale)}>

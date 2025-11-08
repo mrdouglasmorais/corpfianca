@@ -5,6 +5,7 @@ import { useCurrentItem } from '@/context_api/CurrentItemContext';
 import getALlServices from '@/libs/getALlServices';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
+import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useEffect } from 'react';
@@ -16,19 +17,20 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
   const items = getALlServices();
   const currentId = useCurrentItem() || serviceId;
   const currentItem = items?.find(({ id }) => currentId === id);
-
-  const title = currentItem?.title || '';
-  const titleLarge = currentItem?.titleLarge || '';
+  const localizedContent = getLocalizedServiceContent(currentItem, locale);
+  const localizedTitle = localizedContent.title || currentItem?.title || '';
+  const titleLarge = localizedContent.titleLarge || '';
+  const summary = localizedContent.summary || '';
+  const details = localizedContent.details || '';
+  const highlights = localizedContent.highlights || [];
   const id = currentItem?.id || null;
   const iconName = currentItem?.iconName || '';
   const img = currentItem?.img || '';
-  const desc1 = currentItem?.desc1 || '';
-  const desc2 = currentItem?.desc2 || '';
   useEffect(() => {
-    if (title) {
-      setCurrentTitle(title);
+    if (localizedTitle) {
+      setCurrentTitle(localizedTitle);
     }
-  }, [currentId, title]);
+  }, [currentId, localizedTitle, setCurrentTitle]);
   return (
     <section className="tj-service-area section-space">
       <div className="container">
@@ -42,10 +44,10 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
                 <h3 className="tj-post-title text-anim">{titleLarge}</h3>
                 <div className="tj-entry-content">
                   <p className="wow fadeInUp" data-wow-delay="0.1s">
-                    {desc1}
+                    {summary}
                   </p>
                   <p className="wow fadeInUp" data-wow-delay="0.3s">
-                    {desc2}
+                    {details}
                   </p>
                   <div className="tj-check-list">
                     <h4 className="text-anim">{t('service_overview')}</h4>
@@ -55,22 +57,33 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
                   </div>
                   <div className="service-check-list mt-4 wow fadeInUp" data-wow-delay="0.3s">
                     <ul>
-                      <li>
-                        <i className="tji-double-check"></i>
-                        <span>{t('service_feature_1')}</span>
-                      </li>
-                      <li>
-                        <i className="tji-double-check"></i>
-                        <span>{t('service_feature_2')}</span>
-                      </li>
-                      <li>
-                        <i className="tji-double-check"></i>
-                        <span>{t('service_feature_3')}</span>
-                      </li>
-                      <li>
-                        <i className="tji-double-check"></i>
-                        <span>{t('service_feature_4')}</span>
-                      </li>
+                      {highlights.length
+                        ? highlights.map((item, idx) => (
+                            <li key={idx}>
+                              <i className="tji-double-check"></i>
+                              <span>{item}</span>
+                            </li>
+                          ))
+                        : (
+                            <>
+                              <li>
+                                <i className="tji-double-check"></i>
+                                <span>{t('service_feature_1')}</span>
+                              </li>
+                              <li>
+                                <i className="tji-double-check"></i>
+                                <span>{t('service_feature_2')}</span>
+                              </li>
+                              <li>
+                                <i className="tji-double-check"></i>
+                                <span>{t('service_feature_3')}</span>
+                              </li>
+                              <li>
+                                <i className="tji-double-check"></i>
+                                <span>{t('service_feature_4')}</span>
+                              </li>
+                            </>
+                          )}
                     </ul>
                   </div>
                   <div className="service-images-wrap">
@@ -270,20 +283,24 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
                 <div className="service-category">
                   <ul>
                     {items?.length
-                      ? items?.map(({ title, id }, idx) => (
-                          <li key={idx}>
-                            <Link
-                              className={`${currentId === id ? 'active' : ''}`}
-                              href={createLocalizedPath(
-                                `/services/${getServiceSlug({ title, id })}`,
-                                locale,
-                              )}
-                            >
-                              {title}
-                              <i className="tji-angle-right"></i>
-                            </Link>
-                          </li>
-                        ))
+                      ? items?.map((service, idx) => {
+                          const serviceTitle =
+                            getLocalizedServiceContent(service, locale).title || service.title;
+                          return (
+                            <li key={idx}>
+                              <Link
+                                className={`${currentId === service.id ? 'active' : ''}`}
+                                href={createLocalizedPath(
+                                  `/services/${getServiceSlug(service)}`,
+                                  locale,
+                                )}
+                              >
+                                {serviceTitle}
+                                <i className="tji-angle-right"></i>
+                              </Link>
+                            </li>
+                          );
+                        })
                       : ''}
                   </ul>
                 </div>

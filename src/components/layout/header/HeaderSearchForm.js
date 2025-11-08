@@ -2,6 +2,8 @@
 import getALlServices from '@/libs/getALlServices';
 import getBlogs from '@/libs/getBlogs';
 import { createLocalizedPath } from '@/utils/pathUtils';
+import { getServiceSlug } from '@/utils/slugUtils';
+import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -29,22 +31,14 @@ const HeaderSearchForm = () => {
 
         // Buscar em serviços/produtos
         services.forEach((service) => {
-          if (service.title.toLowerCase().includes(searchLower)) {
-            // Criar slug a partir do título
-            const slug = service.title
-              .toLowerCase()
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .trim()
-              .replace(/\s+/g, '-')
-              .replace(/[^\w\-]+/g, '')
-              .replace(/\-\-+/g, '-')
-              .replace(/^-+/, '')
-              .replace(/-+$/, '');
-
+          const localizedTitle =
+            getLocalizedServiceContent(service, locale).title || service.title || '';
+          const searchable = `${service.title || ''} ${localizedTitle}`.toLowerCase();
+          if (searchable.includes(searchLower)) {
+            const slug = getServiceSlug(service);
             results.push({
               type: 'service',
-              title: service.title,
+              title: localizedTitle,
               id: service.id,
               url: createLocalizedPath(`/services/${slug}`, locale),
             });
