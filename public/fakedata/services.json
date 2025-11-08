@@ -1,212 +1,665 @@
 [
-	{
-		"id": 1,
-		"title": "Fianças Tradicionais",
-		"titleLarge": "Cartas que ofertam garantias personalizadas para o cumprimento de contratos e execução de obras",
-		"img": "/images/service/h1-service-1.webp",
-		"imgSm": "/img/icons/services-10-icons-1.svg",
-		"bgImg": "/images/service/h1-service-1.webp",
-		"bgImg2": "/images/service/h3-service-1.webp",
-		"iconName": "tji-optimization",
-		"svg": "/images/icons/service-1.svg",
-		"desc": "Cartas que ofertam garantias personalizadas para o cumprimento de contratos e execução de obras.",
-		"shortDesc": "Garantias customizadas para contratos e obras públicas",
-		"desc1": "As Fianças Tradicionais são soluções que oferecem garantias personalizadas para o cumprimento de contratos e execução de obras. Essas cartas de fiança proporcionam segurança financeira e legal, protegendo todas as partes envolvidas em processos contratuais complexos.",
-		"desc2": "Nossas Fianças Tradicionais são adequadas para diversos cenários empresariais, incluindo contratos de obras públicas, licitações, empreendimentos imobiliários e outras operações que requerem garantias bancárias robustas.",
-		"totalProject": "Centenas de contratos garantidos",
-		"process": {
-			"title": "Processo de Fianças Tradicionais",
-			"titleLarge": "Garantias personalizadas para contratos e obras",
-			"img": "/img/services/service-details.jpg",
-			"imgSm": "/img/icons/services-10-icons-2.svg",
-			"bgImg": "/images/service/h1-service-1.webp",
-			"bgImg2": "/images/service/h3-service-1.webp",
-			"iconName": "flaticon-ux-design ",
-			"svg": "/images/icons/service-1.svg",
-			"desc": "Proceso completo de análise e emissão de cartas de fiança tradicionais",
-			"processItems": [
-				"Análise de documentos contratuais",
-				"Avaliação de risco",
-				"Emissão da carta de fiança",
-				"Acompanhamento do contrato",
-				"Renovação automática quando aplicável",
-				"Suporte durante toda a vigência"
-			]
-		}
-	},
-	{
-		"id": 2,
-		"title": "Fianças Corporativas",
-		"titleLarge": "Garantia para processos judiciais e administrativos em âmbito público ou privado",
-		"img": "/images/service/h1-service-2.webp",
-		"imgSm": "/img/icons/services-10-icons-3.svg",
-		"bgImg": "/images/service/h1-service-2.webp",
-		"bgImg2": "/images/service/h3-service-2.webp",
-		"iconName": "tji-strategic",
-		"svg": "/images/icons/service-2.svg",
-		"desc": "Garantia para processos judiciais e administrativos em âmbito público ou privado.",
-		"shortDesc": "Proteção em processos judiciais e administrativos",
-		"desc1": "As Fianças Corporativas são específicas para processos judiciais e administrativos, oferecendo garantias fundamentais para empresas que precisam de segurança jurídica em disputas, licitações e procedimentos administrativos.",
-		"desc2": "Nossas soluções cobrem processos trabalhistas, cíveis, tributários e administrativos, garantindo a continuidade das operações empresariais mesmo em situações de litígio.",
-		"totalProject": "Processos administrativos protegidos",
-		"process": {
-			"title": "Processo de Fianças Corporativas",
-			"titleLarge": "Garantias para processos judiciais e administrativos",
-			"img": "/img/services/service-details.jpg",
-			"imgSm": "/img/icons/services-10-icons-1.svg",
-			"bgImg": "/images/service/h1-service-1.webp",
-			"bgImg2": "/images/service/h3-service-1.webp",
-			"iconName": "flaticon-design",
-			"svg": "/images/icons/service-2.svg",
-			"desc": "Proceso completo de análise e emissão de fianças corporativas",
-			"processItems": [
-				"Análise do processo judicial/administrativo",
-				"Avaliação dos riscos envolvidos",
-				"Emissão da garantia",
-				"Acompanhamento processual",
-				"Gerenciamento de renovações",
-				"Suporte jurídico especializado"
-			]
-		                                    }
-	},
-	{
-		"id": 3,
-		"title": "Fianças Estruturadas",
-		"titleLarge": "Soluções para os setores de energia, naval, petróleo e gás natural com cartas personalizadas",
-		"img": "/images/service/h1-service-3.webp",
-		"imgSm": "/img/icons/services-10-icons-1.svg",
-		"bgImg": "/images/service/h1-service-3.webp",
-		"bgImg2": "/images/service/h3-service-3.webp",
-		"iconName": "tji-leadership",
-		"svg": "/images/icons/service-3.svg",
-		"desc": "Soluções para os setores de energia, naval, petróleo e gás natural com cartas personalizadas.",
-		"shortDesc": "Garantias especializadas para setores estratégicos",
-		"desc1": "As Fianças Estruturadas são soluções customizadas para setores específicos como energia, naval, petróleo e gás natural. Essas garantias são desenvolvidas com características particulares que atendem às exigências regulatórias e contratuais de cada segmento.",
-		"desc2": "Oferecemos expertise em estruturar garantias complexas que suportam grandes operações de infraestrutura e projetos de longa duração, com condições flexíveis e adequadas às necessidades específicas de cada cliente.",
-		"totalProject": "Projetos estruturados garantidos",
-		"process": {
-			"title": "Processo de Fianças Estruturadas",
-			"titleLarge": "Soluções para setores estratégicos",
-			"img": "/img/services/service-details.jpg",
-			"imgSm": "/img/icons/services-10-icons-1.svg",
-			"bgImg": "/images/service/h1-service-1.webp",
-			"bgImg2": "/images/service/h3-service-1.webp",
-			"iconName": "flaticon-design",
-			"svg": "/images/icons/service-3.svg",
-			"desc": "Proceso completo de estruturação de garantias especializadas",
-			"processItems": [
-				"Análise do setor e regulamentações",
-				"Estruturação da operação",
-				"Customização da garantia",
-				"Emissão da carta estruturada",
-				"Monitoramento contínuo",
-				"Reestruturação quando necessário"
-			]
-		}
-	},
-	{
-		"id": 4,
-		"title": "Fianças Judicial",
-		"titleLarge": "Fiança Judicial para Ações Cíveis: Tributárias, Trabalhistas e Depósitos Recursais",
-		"img": "/images/service/h1-service-4.webp",
-		"imgSm": "/img/icons/services-10-icons-1.svg",
-		"bgImg": "/images/service/h1-service-4.webp",
-		"bgImg2": "/images/service/h3-service-4.webp",
-		"iconName": "tji-business",
-		"svg": "/images/icons/service-1.svg",
-		"desc": "Fiança Judicial para Ações Cíveis: Tributárias, Trabalhistas e Depósitos Recursais.",
-		"shortDesc": "Garantias para processos fiscais, trabalhistas e depósitos recursais",
-		"desc1": "As Fianças Judiciais são essenciais para processos que envolvem ações cíveis, tributárias e trabalhistas, além de depósitos recursais. Essas garantias permitem que empresas protejam seus interesses em disputas judiciais complexas.",
-		"desc2": "Especializamo-nos em fornecer garantias que atendem às exigências específicas do Poder Judiciário, com agilidade na emissão e condições competitivas para processos de diferentes naturezas.",
-		"totalProject": "Processos judiciais garantidos",
-		"process": {
-			"title": "Processo de Fianças Judiciais",
-			"titleLarge": "Garantias para ações cíveis, tributárias e trabalhistas",
-			"img": "/img/services/service-details.jpg",
-			"imgSm": "/img/icons/services-10-icons-1.svg",
-			"bgImg": "/images/service/h1-service-1.webp",
-			"bgImg2": "/images/service/h3-service-1.webp",
-			"iconName": "flaticon-design",
-			"svg": "/images/icons/service-1.svg",
-			"desc": "Proceso completo de análise e emissão de fianças judiciais",
-			"processItems": [
-				"Análise da ação judicial",
-				"Avaliação do risco processual",
-				"Emissão da garantia judicial",
-				"Acompanhamento processual",
-				"Gerenciamento de depósitos",
-				"Renovação automática quando aplicável"
-			]
-		}
-	},
-	{
-		"id": 5,
-		"title": "Fianças de Crédito",
-		"titleLarge": "Oferece às empresas todos os benefícios de proteção de suas vendas a crédito",
-		"img": "/images/service/h1-service-5.webp",
-		"imgSm": "/img/icons/services-10-icons-1.svg",
-		"bgImg": "/images/service/h1-service-5.webp",
-		"bgImg2": "/images/service/h3-service-1.webp",
-		"iconName": "tji-executive",
-		"svg": "/images/icons/service-1.svg",
-		"desc": "Oferece às empresas todos os benefícios de proteção de suas vendas a crédito.",
-		"shortDesc": "Proteção para vendas a crédito e risco comercial",
-		"desc1": "As Fianças de Crédito protegem empresas contra inadimplência em vendas a crédito, oferecendo segurança financeira e garantindo o recebimento de valores devidos. Essas garantias são fundamentais para operações comerciais que envolvem prazo de pagamento.",
-		"desc2": "Nossas soluções cobrem diversos tipos de risco comercial, permitindo que empresas expandam suas vendas a crédito com confiança, conhecendo antecipadamente os limites de cobertura disponíveis.",
-		"totalProject": "Vendas a crédito protegidas",
-		"process": {
-			"title": "Processo de Fianças de Crédito",
-			"titleLarge": "Proteção para vendas a crédito",
-			"img": "/img/services/service-details.jpg",
-			"imgSm": "/img/icons/services-10-icons-1.svg",
-			"bgImg": "/images/service/h1-service-1.webp",
-			"bgImg2": "/images/service/h3-service-1.webp",
-			"iconName": "flaticon-design",
-			"svg": "/images/icons/service-1.svg",
-			"desc": "Proceso completo de análise e emissão de fianças de crédito",
-			"processItems": [
-				"Análise do perfil comercial",
-				"Avaliação de risco de crédito",
-				"Definição de limites e condições",
-				"Emissão da garantia",
-				"Monitoramento de inadimplência",
-				"Gestão de sinistros"
-			]
-		}
-	},
-	{
-		"id": 6,
-		"title": "Fianças Locatícia",
-		"titleLarge": "Constitui uma das modalidades de Garantias Locatícias previstas na Lei do Inquilinato",
-		"img": "/images/service/h1-service-6.webp",
-		"imgSm": "/img/icons/services-10-icons-1.svg",
-		"bgImg": "/images/service/h1-service-6.webp",
-		"bgImg2": "/images/service/h3-service-1.webp",
-		"iconName": "tji-process",
-		"svg": "/images/icons/service-1.svg",
-		"desc": "Constitui uma das modalidades de Garantias Locatícias previstas na Lei do Inquilinato.",
-		"shortDesc": "Garantias para locação conforme Lei do Inquilinato",
-		"desc1": "As Fianças Locatícias são garantias específicas para o mercado imobiliário locatício, atendendo às exigências da Lei do Inquilinato. Essas garantias protegem proprietários e facilitam o acesso de inquilinos a imóveis comerciais e residenciais.",
-		"desc2": "Oferecemos soluções completas para locação, incluindo análise de perfil, emissão ágil de garantias e acompanhamento durante toda a vigência do contrato locatício.",
-		"totalProject": "Contratos locatícios garantidos",
-		"process": {
-			"title": "Processo de Fianças Locatícias",
-			"titleLarge": "Garantias para locação conforme Lei do Inquilinato",
-			"img": "/img/services/service-details.jpg",
-			"imgSm": "/img/icons/services-10-icons-1.svg",
-			"bgImg": "/images/service/h1-service-1.webp",
-			"bgImg2": "/images/service/h3-service-1.webp",
-			"iconName": "flaticon-design",
-			"svg": "/images/icons/service-1.svg",
-			"desc": "Proceso completo de análise e emissão de fianças locatícias",
-			"processItems": [
-				"Análise do perfil do inquilino",
-				"Avaliação do contrato locatício",
-				"Emissão da garantia locatícia",
-				"Acompanhamento da locação",
-				"Gerenciamento de renovação",
-				"Suporte em caso de inadimplência"
-			]
-		}
-	}
+  {
+    "iconName": "tji-shield",
+    "img": "/images/service/h1-service-1.webp",
+    "bgImg": "/images/service/h3-service-1.webp",
+    "bgImg2": "/images/service/tj-service-1.webp",
+    "svg": "/images/icons/service-1.svg",
+    "id": 1,
+    "title": "Carta Fiança Fidejussória",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Carta Fiança Fidejussória",
+        "cardSummary": "Garantia pessoal que substitui depósitos judiciais e devolve liquidez ao caixa.",
+        "titleLarge": "Carta Fiança Fidejussória para destravar obrigações sem imobilizar ativos.",
+        "summary": "Instrumento jurídico emitido por companhia independente que garante obrigações civis, empresariais e processuais sem exigir bens em garantia. Ideal para empresas que precisam comprovar capacidade financeira em disputas judiciais, contratos complexos e negociações estratégicas.",
+        "details": "Amparada pelos artigos 818 a 839 do Código Civil e pelos artigos 300 §1º e 835 do CPC, a carta fidejussória substitui depósitos, bens penhorados ou avais bancários. A emissão é ágil, com análise documental objetiva e sem contragarantias rígidas, permitindo trazer recursos de volta ao caixa e manter operações em andamento.",
+        "highlights": [
+          "Reconhecida em decisões judiciais como alternativa segura aos depósitos em dinheiro.",
+          "Emissão em poucas horas, com acompanhamento dedicado até o fim da apólice.",
+          "Custos previsíveis e inferiores aos de cartas bancárias tradicionais.",
+          "Libera capital imobilizado em penhoras, cauções ou fianças reais."
+        ]
+      },
+      "en": {
+        "title": "Fidejussory Surety Bond",
+        "cardSummary": "Personal surety that replaces judicial deposits and keeps liquidity available.",
+        "titleLarge": "Fidejussory Surety Bond that unlocks obligations without freezing assets.",
+        "summary": "A legal instrument issued by an independent surety company that secures civil, corporate and procedural obligations without demanding hard collateral. It fits companies that must prove financial strength in court disputes, complex contracts or strategic negotiations.",
+        "details": "Grounded on Brazilian Civil Code arts. 818-839 and CPC arts. 300 §1 and 835, the fidejussory bond replaces cash deposits, seized assets or bank guarantees. Issuance is fast, based on objective document review and no rigid counter-guarantees, so cash returns to the business while operations keep moving.",
+        "highlights": [
+          "Accepted by courts as a safe replacement for cash deposits.",
+          "Issued within hours with dedicated support until the policy expires.",
+          "Predictable pricing, usually below traditional bank letters.",
+          "Releases working capital previously tied up in liens or collateral."
+        ]
+      },
+      "es": {
+        "title": "Carta Fianza Fideyusoria",
+        "cardSummary": "Garantía personal que sustituye depósitos judiciales y mantiene la liquidez disponible.",
+        "titleLarge": "Carta Fianza Fideyusoria para garantizar obligaciones sin inmovilizar activos.",
+        "summary": "Instrumento jurídico emitido por una compañía independiente que respalda obligaciones civiles, corporativas y procesales sin exigir garantías reales. Ideal para empresas que necesitan demostrar solidez financiera en disputas judiciales, contratos complejos o negociaciones estratégicas.",
+        "details": "Respaldada por los artículos 818 a 839 del Código Civil y por los artículos 300 §1 y 835 del CPC brasileño, la fianza fideyusoria reemplaza depósitos, bienes embargados o cartas bancarias. La emisión es ágil, con análisis documental objetivo y sin contragarantías rígidas, devolviendo recursos al flujo de caja.",
+        "highlights": [
+          "Aceptada por los tribunales como reemplazo seguro del depósito en efectivo.",
+          "Emisión en cuestión de horas con acompañamiento dedicado.",
+          "Costos predecibles y menores que las cartas bancarias tradicionales.",
+          "Libera capital inmovilizado en embargos, cauciones o avales reales."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-optimization",
+    "img": "/images/service/h1-service-2.webp",
+    "bgImg": "/images/service/h3-service-2.webp",
+    "bgImg2": "/images/service/tj-service-2.webp",
+    "svg": "/images/icons/service-2.svg",
+    "id": 2,
+    "title": "Garantia para ações judiciais",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia para ações judiciais",
+        "cardSummary": "Substitui depósitos judiciais em processos fiscais, cíveis ou trabalhistas com rapidez e segurança.",
+        "titleLarge": "Garantia para ações judiciais que preserva caixa e fortalece a defesa.",
+        "summary": "Apólice específica para substituir depósitos em dinheiro e bens penhorados durante disputas fiscais, cíveis ou trabalhistas. Entrega lastro jurídico ao Judiciário enquanto a empresa mantém liquidez.",
+        "details": "Indicada para autos de infração, execuções e litígios complexos. Analisamos o processo, dimensionamos o risco e acompanhamos o protocolo de substituição com relatórios e alertas de prazo, reduzindo bloqueios e interrupções operacionais.",
+        "highlights": [
+          "Aceita em processos fiscais, cíveis e trabalhistas.",
+          "Converte depósitos em capital de giro imediato.",
+          "Suporte jurídico para peticionar a substituição.",
+          "Gestão proativa de renovações e reforços de garantia."
+        ]
+      },
+      "en": {
+        "title": "Judicial Action Guarantee",
+        "cardSummary": "Fast substitute for judicial deposits in tax, civil or labor lawsuits.",
+        "titleLarge": "Judicial guarantee that protects cash while legal defenses move forward.",
+        "summary": "A tailor-made policy to replace cash deposits and seized assets during tax, civil or labor disputes. Courts receive reliable collateral and the company keeps liquidity.",
+        "details": "We review the case file, size the exposure and issue the bond with legal memoranda to support the substitution request. Our team follows every petition, renewal and deadline so assets stay free and operations continue.",
+        "highlights": [
+          "Accepted in tax, civil and labor proceedings.",
+          "Turns frozen deposits into immediate working capital.",
+          "Legal team supports the motion for substitution.",
+          "Proactive renewal and add-on management."
+        ]
+      },
+      "es": {
+        "title": "Garantía para acciones judiciales",
+        "cardSummary": "Sustituye depósitos judiciales en procesos fiscales, civiles o laborales con agilidad.",
+        "titleLarge": "Garantía judicial que preserva caja y da ritmo a la defensa.",
+        "summary": "Póliza diseñada para reemplazar depósitos en efectivo y bienes embargados durante disputas fiscales, civiles o laborales. Ofrece seguridad al Poder Judicial mientras la empresa mantiene liquidez.",
+        "details": "Analizamos el expediente, dimensionamos el riesgo y emitimos la garantía con los soportes necesarios para solicitar la sustitución. Acompañamos cada petición y renovación para evitar bloqueos y mantener la operación activa.",
+        "highlights": [
+          "Aceptada en procesos fiscales, civiles y laborales.",
+          "Convierte depósitos en capital de trabajo inmediato.",
+          "Equipo jurídico apoya la solicitud de sustitución.",
+          "Gestión proactiva de renovaciones y refuerzos."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-analytics",
+    "img": "/images/service/h1-service-3.webp",
+    "bgImg": "/images/service/h3-service-3.webp",
+    "bgImg2": "/images/service/tj-service-3.webp",
+    "svg": "/images/icons/service-3.svg",
+    "id": 3,
+    "title": "Garantia Depósito Recursal",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia Depósito Recursal",
+        "cardSummary": "Cobre o valor exigido para interpor recursos trabalhistas sem descapitalizar a empresa.",
+        "titleLarge": "Depósito recursal garantido para manter recursos trabalhistas em andamento.",
+        "summary": "Substitui o depósito recursal obrigatório em ações trabalhistas, atendendo às exigências da CLT e do TST.",
+        "details": "Analisamos o processo, definimos o valor atualizado e emitimos a apólice em poucas horas, com aceitação nacional e comunicação direta com o jurídico trabalhista.",
+        "highlights": [
+          "Aceita em recursos ordinários, adesivos e de revista.",
+          "Evita a imobilização imediata de caixa.",
+          "Atualização automática conforme índices oficiais.",
+          "Alertas de prazo para renovações e liquidações."
+        ]
+      },
+      "en": {
+        "title": "Labor Appeal Deposit Guarantee",
+        "cardSummary": "Covers labor appeal deposits without draining corporate cash.",
+        "titleLarge": "Guaranteed appeal deposits to keep labor cases moving.",
+        "summary": "Replaces the mandatory deposit required to file labor appeals, compliant with Brazilian labor courts.",
+        "details": "We review the claim, calculate the updated amount and issue the bond within hours. It is valid nationwide and aligned with the company’s labor counsel.",
+        "highlights": [
+          "Accepted for ordinary, interlocutory and special appeals.",
+          "Avoids tying up cash for long procedures.",
+          "Automatically updated with official indexes.",
+          "Deadline alerts for renewals and releases."
+        ]
+      },
+      "es": {
+        "title": "Garantía Depósito Recursal",
+        "cardSummary": "Cubre el depósito exigido para interponer recursos laborales sin descapitalizar la empresa.",
+        "titleLarge": "Depósito recursal garantizado para sostener los recursos laborales.",
+        "summary": "Sustituye el depósito obligatorio en procesos laborales, cumpliendo los requisitos de la legislación brasileña.",
+        "details": "Analizamos el proceso, definimos el valor actualizado y emitimos la póliza en pocas horas, con validez en todo el país y contacto directo con el equipo laboral.",
+        "highlights": [
+          "Aceptada en recursos ordinarios, adhesivos y de revista.",
+          "Evita inmovilizar caja durante años.",
+          "Actualización automática por índices oficiales.",
+          "Alertas de renovación y liberación."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-strategic",
+    "img": "/images/service/h1-service-4.webp",
+    "bgImg": "/images/service/h3-service-4.webp",
+    "bgImg2": "/images/service/tj-service-4.webp",
+    "svg": "/images/icons/service-4.svg",
+    "id": 4,
+    "title": "Garantia Financeira",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia Financeira",
+        "cardSummary": "Assegura obrigações de pagamento em contratos comerciais e negociações estratégicas.",
+        "titleLarge": "Garantia financeira para obrigações a prazo com credibilidade jurídica.",
+        "summary": "Solução para assegurar pagamentos parcelados, contratos de fornecimento e acordos entre empresas sem comprometer o fluxo de caixa.",
+        "details": "Estruturamos cláusulas personalizadas para compras, financiamentos privados e renegociações, entregando conforto ao credor e previsibilidade ao devedor. Monitoramos liberações e vencimentos com relatórios claros.",
+        "highlights": [
+          "Ideal para negociações com pagamento diluído.",
+          "Mitiga risco de inadimplência percebido pelo credor.",
+          "Dispensa avais bancários onerosos.",
+          "Equipe acompanha eventos de pagamento e liberações."
+        ]
+      },
+      "en": {
+        "title": "Financial Guarantee",
+        "cardSummary": "Secures payment obligations in commercial and financial agreements.",
+        "titleLarge": "Financial guarantee for deferred obligations with legal certainty.",
+        "summary": "Protects instalment payments, supply contracts and corporate agreements without hurting cash flow.",
+        "details": "We tailor clauses for procurement, private financings and restructurings, giving comfort to the creditor and predictability to the debtor. Releases and maturities are monitored with transparent reports.",
+        "highlights": [
+          "Perfect for long-term or staged payments.",
+          "Reduces perceived default risk for the beneficiary.",
+          "Avoids expensive bank guarantees.",
+          "Specialists follow every payment event."
+        ]
+      },
+      "es": {
+        "title": "Garantía Financiera",
+        "cardSummary": "Asegura obligaciones de pago en contratos comerciales y acuerdos corporativos.",
+        "titleLarge": "Garantía financiera para compromisos diferidos con respaldo jurídico.",
+        "summary": "Protege pagos a plazo, contratos de suministro y negociaciones estratégicas sin afectar el flujo de caja.",
+        "details": "Diseñamos cláusulas a medida para compras, financiamientos privados y reestructuraciones, brindando tranquilidad al acreedor y previsibilidad al deudor. Monitoreamos liberaciones y vencimientos con reportes claros.",
+        "highlights": [
+          "Ideal para pagos escalonados o de largo plazo.",
+          "Reduce el riesgo percibido de incobrabilidad.",
+          "Evita cartas bancarias costosas.",
+          "Equipo acompaña pagos y liberaciones."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-shield",
+    "img": "/images/service/h1-service-1.webp",
+    "bgImg": "/images/service/h3-service-1.webp",
+    "bgImg2": "/images/service/tj-service-1.webp",
+    "svg": "/images/icons/service-1.svg",
+    "id": 5,
+    "title": "Garantia Imobiliária para Permuta",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia Imobiliária para Permuta",
+        "cardSummary": "Segurança jurídica para permutas entre proprietários de terreno e incorporadoras.",
+        "titleLarge": "Garantia para permutas imobiliárias que reforça a confiança entre as partes.",
+        "summary": "Garante a entrega das unidades ou pagamentos prometidos em permutas imobiliárias e contratos built to suit, oferecendo tranquilidade ao dono do terreno.",
+        "details": "Monitoramos o cronograma físico-financeiro, vinculamos a garantia aos marcos de obra e reportamos ao proprietário eventuais desvios, assegurando a continuidade do projeto.",
+        "highlights": [
+          "Fortalece negociações com proprietários de terreno.",
+          "Cobertura desenhada para obras residenciais e corporativas.",
+          "Relatórios periódicos sobre evolução da obra.",
+          "Acionamento claro em caso de atraso ou abandono."
+        ]
+      },
+      "en": {
+        "title": "Real Estate Swap Guarantee",
+        "cardSummary": "Legal certainty for land-swap agreements between owners and developers.",
+        "titleLarge": "Guarantee for real estate swaps that builds trust throughout the project.",
+        "summary": "Ensures the delivery of units or payments promised in land swaps and built-to-suit contracts, giving landowners confidence.",
+        "details": "We track the construction schedule, tie the guarantee to project milestones and report deviations so stakeholders can act quickly and keep the development on track.",
+        "highlights": [
+          "Strengthens negotiations with landowners.",
+          "Covers residential, commercial and corporate projects.",
+          "Periodic reports on construction progress.",
+          "Clear trigger in case of delay or abandonment."
+        ]
+      },
+      "es": {
+        "title": "Garantía Inmobiliaria para Permuta",
+        "cardSummary": "Seguridad jurídica para permutas entre propietarios de terreno e incorporadoras.",
+        "titleLarge": "Garantía para permutas inmobiliarias que genera confianza en todo el proyecto.",
+        "summary": "Asegura la entrega de unidades o pagos prometidos en permutas y contratos built to suit, brindando tranquilidad al propietario del terreno.",
+        "details": "Monitoreamos el cronograma físico-financiero, vinculamos la garantía a los hitos de la obra e informamos cualquier desvío para garantizar la continuidad del emprendimiento.",
+        "highlights": [
+          "Fortalece la negociación con los propietarios.",
+          "Cobertura para proyectos residenciales y corporativos.",
+          "Reportes periódicos del avance de obra.",
+          "Activación objetiva ante atrasos o abandono."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-optimization",
+    "img": "/images/service/h1-service-2.webp",
+    "bgImg": "/images/service/h3-service-2.webp",
+    "bgImg2": "/images/service/tj-service-2.webp",
+    "svg": "/images/icons/service-2.svg",
+    "id": 6,
+    "title": "Garantia adiantamento de pagamento",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia de adiantamento de pagamento",
+        "cardSummary": "Assegura a correta aplicação de valores pagos antecipadamente em contratos.",
+        "titleLarge": "Garantia de adiantamento que protege recursos pagos antes da execução.",
+        "summary": "Protege contratantes que antecipam parte do valor do contrato, garantindo que os recursos serão usados conforme o escopo contratado.",
+        "details": "Indicada para fornecimentos industriais, projetos de engenharia e serviços especializados. Prevê devolução dos valores em caso de descumprimento e acompanha marcos de entrega.",
+        "highlights": [
+          "Evita desvios no uso dos adiantamentos.",
+          "Acionamento simples em caso de não execução.",
+          "Complementa performance bonds e cartas de crédito.",
+          "Análise rápida inclusive para operações internacionais."
+        ]
+      },
+      "en": {
+        "title": "Advance Payment Guarantee",
+        "cardSummary": "Ensures advance payments are used strictly according to the contract.",
+        "titleLarge": "Advance payment guarantee that protects funds released before delivery.",
+        "summary": "Shields buyers that disburse part of the contract upfront, assuring that resources will be applied to the agreed scope.",
+        "details": "Suited for industrial supplies, engineering projects and specialized services. Provides repayment if obligations are not met and monitors contractual milestones.",
+        "highlights": [
+          "Prevents misuse of advance funds.",
+          "Straightforward trigger if execution fails.",
+          "Complements performance bonds and letters of credit.",
+          "Fast analysis even for cross-border deals."
+        ]
+      },
+      "es": {
+        "title": "Garantía de anticipo de pago",
+        "cardSummary": "Asegura que los anticipos se apliquen exactamente según el contrato.",
+        "titleLarge": "Garantía de anticipo que protege el dinero liberado antes de la entrega.",
+        "summary": "Protege a los contratantes que adelantan parte del valor, garantizando el uso correcto de los recursos.",
+        "details": "Indicada para suministros industriales, proyectos de ingeniería y servicios especializados. Prevê devolución en caso de incumplimiento y seguimiento de hitos.",
+        "highlights": [
+          "Evita desvíos en el uso del anticipo.",
+          "Activación clara ante falta de ejecución.",
+          "Complementa performance bonds y cartas de crédito.",
+          "Análisis ágil incluso para operaciones internacionales."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-analytics",
+    "img": "/images/service/h1-service-3.webp",
+    "bgImg": "/images/service/h3-service-3.webp",
+    "bgImg2": "/images/service/tj-service-3.webp",
+    "svg": "/images/icons/service-3.svg",
+    "id": 7,
+    "title": "Garantia manutenção corretiva",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia de manutenção corretiva",
+        "cardSummary": "Cobre riscos de falhas quando a contratada não executa as correções acordadas.",
+        "titleLarge": "Garantia de manutenção que protege a qualidade pós-entrega.",
+        "summary": "Protege o contratante contra prejuízos decorrentes de inadequações de qualidade ou ausência de correções durante o período de garantia.",
+        "details": "Aplicável a obras, fornecimentos industriais e contratos de tecnologia. Mantém cobertura vigente durante o prazo contratual e prevê reembolsos ágeis mediante laudos técnicos.",
+        "highlights": [
+          "Cobre falhas técnicas e materiais.",
+          "Incentiva resposta rápida às ordens corretivas.",
+          "Processo simplificado de acionamento com laudos.",
+          "Compatível com contratos EPC e turnkey."
+        ]
+      },
+      "en": {
+        "title": "Corrective Maintenance Guarantee",
+        "cardSummary": "Covers losses when the contractor fails to perform agreed corrective actions.",
+        "titleLarge": "Maintenance guarantee that preserves quality after delivery.",
+        "summary": "Protects the buyer against damages caused by quality issues or lack of corrections within the warranty period.",
+        "details": "Applies to construction, industrial supplies and technology contracts. Coverage stays active during the agreed term and offers quick reimbursements supported by technical reports.",
+        "highlights": [
+          "Covers technical and material failures.",
+          "Encourages rapid response to corrective orders.",
+          "Simple claim process backed by expert reports.",
+          "Compatible with EPC and turnkey agreements."
+        ]
+      },
+      "es": {
+        "title": "Garantía de mantenimiento correctivo",
+        "cardSummary": "Cubre los riesgos cuando la contratada no ejecuta las correcciones pactadas.",
+        "titleLarge": "Garantía de mantenimiento que resguarda la calidad posterior a la entrega.",
+        "summary": "Protege al contratante frente a daños derivados de deficiencias de calidad o ausencia de correcciones durante el período de garantía.",
+        "details": "Aplicable a obras, suministros industriales y contratos de tecnología. Mantiene la cobertura activa y prevé reembolsos ágiles con soporte técnico.",
+        "highlights": [
+          "Cubre fallas técnicas y materiales.",
+          "Incentiva respuestas rápidas a órdenes correctivas.",
+          "Proceso de reclamo simplificado con laudos.",
+          "Compatible con contratos EPC y llave en mano."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-strategic",
+    "img": "/images/service/h1-service-4.webp",
+    "bgImg": "/images/service/h3-service-4.webp",
+    "bgImg2": "/images/service/tj-service-4.webp",
+    "svg": "/images/icons/service-4.svg",
+    "id": 8,
+    "title": "Garantia para exportação",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia para exportação",
+        "cardSummary": "Garante contratos de exportação com documentação bilíngue e aderente às normas internacionais.",
+        "titleLarge": "Garantia para exportação que dá confiança ao comprador estrangeiro.",
+        "summary": "Oferece segurança de que os termos comerciais, logísticos e cambiais serão cumpridos em operações de exportação.",
+        "details": "Estruturada em português, inglês ou espanhol, contempla cronograma de entrega, condições de pagamento e penalidades. Ideal para empresas que atuam na América Latina e em mercados regulados.",
+        "highlights": [
+          "Facilita financiamentos e adiantamentos à exportação.",
+          "Reduz o risco percebido por importadores.",
+          "Compatível com requisitos aduaneiros e de câmbio.",
+          "Suporte em inglês e espanhol para todas as partes."
+        ]
+      },
+      "en": {
+        "title": "Export Guarantee",
+        "cardSummary": "Guarantees export contracts with bilingual documentation and compliance with international rules.",
+        "titleLarge": "Export guarantee that reassures overseas buyers.",
+        "summary": "Ensures that commercial, logistics and FX terms will be honored throughout the export operation.",
+        "details": "Prepared in Portuguese, English or Spanish, it covers delivery schedules, payment conditions and penalties. Ideal for companies active in Latin America and regulated markets.",
+        "highlights": [
+          "Facilitates export financing and advances.",
+          "Lowers the risk perceived by importers.",
+          "Compliant with customs and FX requirements.",
+          "Support provided in English and Spanish."
+        ]
+      },
+      "es": {
+        "title": "Garantía para exportación",
+        "cardSummary": "Garantiza contratos de exportación con documentación bilingüe y cumplimiento normativo.",
+        "titleLarge": "Garantía de exportación que brinda confianza al comprador internacional.",
+        "summary": "Asegura que los términos comerciales, logísticos y cambiarios se cumplan durante toda la operación.",
+        "details": "Disponible en portugués, inglés o español, incluye cronograma de entrega, pagos y penalidades. Ideal para empresas que actúan en América Latina y mercados regulados.",
+        "highlights": [
+          "Facilita financiamientos y anticipos a la exportación.",
+          "Reduce el riesgo percibido por los importadores.",
+          "Compatible con requisitos aduaneros y cambiarios.",
+          "Soporte en inglés y español para todos los involucrados."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-shield",
+    "img": "/images/service/h1-service-1.webp",
+    "bgImg": "/images/service/h3-service-1.webp",
+    "bgImg2": "/images/service/tj-service-1.webp",
+    "svg": "/images/icons/service-1.svg",
+    "id": 9,
+    "title": "Garantia execução do contrato",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia de execução do contrato",
+        "cardSummary": "Performance bond que assegura o fiel cumprimento de contratos públicos e privados.",
+        "titleLarge": "Garantia de execução para entregar contratos com segurança total.",
+        "summary": "Reforça a confiança do contratante, cobrindo atrasos, falhas de performance ou abandono de obra.",
+        "details": "Adequada para obras, fornecimentos e serviços complexos. Inclui relatórios periódicos e cláusulas de step-in para manter a continuidade do projeto.",
+        "highlights": [
+          "Aumenta pontuação em licitações e RFPs.",
+          "Resposta ágil em caso de inadimplemento.",
+          "Customizada por segmento (infra, energia, serviços).",
+          "Suporte dedicado durante todo o ciclo contratual."
+        ]
+      },
+      "en": {
+        "title": "Performance Guarantee",
+        "cardSummary": "Performance bond that secures public and private contract execution.",
+        "titleLarge": "Contract execution guarantee for flawless delivery.",
+        "summary": "Strengthens the employer’s confidence by covering delays, underperformance or project abandonment.",
+        "details": "Suitable for construction, supply and complex service agreements. Includes periodic reports and step-in provisions to keep the project on track.",
+        "highlights": [
+          "Improves scoring in bids and RFPs.",
+          "Fast response in case of default.",
+          "Tailored to each industry (infrastructure, energy, services).",
+          "Dedicated support throughout the contract lifecycle."
+        ]
+      },
+      "es": {
+        "title": "Garantía de ejecución contractual",
+        "cardSummary": "Performance bond que asegura el cumplimiento de contratos públicos y privados.",
+        "titleLarge": "Garantía de ejecución para entregar proyectos con seguridad.",
+        "summary": "Refuerza la confianza del contratante cubriendo atrasos, fallas de performance o abandono.",
+        "details": "Adecuada para obras, suministros y servicios complejos. Incluye reportes periódicos y cláusulas de step-in para mantener la continuidad.",
+        "highlights": [
+          "Mejora el puntaje en licitaciones y RFP.",
+          "Respuesta rápida ante incumplimientos.",
+          "Personalizada por industria.",
+          "Soporte durante todo el ciclo contractual."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-optimization",
+    "img": "/images/service/h1-service-2.webp",
+    "bgImg": "/images/service/h3-service-2.webp",
+    "bgImg2": "/images/service/tj-service-2.webp",
+    "svg": "/images/icons/service-2.svg",
+    "id": 10,
+    "title": "Garantia retenção de pagamento",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia de retenção de pagamento",
+        "cardSummary": "Libera valores retidos em contrato sem comprometer a segurança do contratante.",
+        "titleLarge": "Garantia de retenção que equilibra fluxo de caixa e proteção contratual.",
+        "summary": "Substitui retenções de 5% a 10% em contratos de obras e serviços, liberando caixa imediato ao prestador.",
+        "details": "Mantém a proteção exigida pelo cliente, com condições claras de acionamento e renovação alinhada aos marcos de entrega.",
+        "highlights": [
+          "Acelera o recebimento de fornecedores e prestadores.",
+          "Preserva a cobertura até a aceitação final do contrato.",
+          "Integração simples aos contratos existentes.",
+          "Alertas de prazo evitam vencimentos inadvertidos."
+        ]
+      },
+      "en": {
+        "title": "Payment Retention Guarantee",
+        "cardSummary": "Replaces contract retentions while keeping the beneficiary protected.",
+        "titleLarge": "Retention guarantee that balances cash flow and contractual security.",
+        "summary": "Substitutes the 5–10% retention in works and services, releasing immediate cash to the supplier.",
+        "details": "Maintains the client’s protection with clear trigger conditions and renewals aligned with delivery milestones.",
+        "highlights": [
+          "Speeds up cash inflow for vendors and contractors.",
+          "Keeps coverage until final acceptance.",
+          "Easy to integrate into existing contracts.",
+          "Deadline alerts prevent accidental lapses."
+        ]
+      },
+      "es": {
+        "title": "Garantía de retención de pago",
+        "cardSummary": "Libera los valores retenidos sin sacrificar la seguridad del contratante.",
+        "titleLarge": "Garantía de retención que equilibra liquidez y protección.",
+        "summary": "Sustituye retenciones de 5% a 10% en contratos de obras y servicios, entregando caja inmediata al proveedor.",
+        "details": "Mantiene la cobertura exigida con condiciones claras de activación y renovaciones alineadas a los hitos.",
+        "highlights": [
+          "Acelera el cobro de proveedores.",
+          "Preserva la cobertura hasta la recepción final.",
+          "Integración sencilla a contratos vigentes.",
+          "Alertas de plazo evitan vencimientos no deseados."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-analytics",
+    "img": "/images/service/h1-service-3.webp",
+    "bgImg": "/images/service/h3-service-3.webp",
+    "bgImg2": "/images/service/tj-service-3.webp",
+    "svg": "/images/icons/service-3.svg",
+    "id": 11,
+    "title": "Garantia para licitações",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia para licitações",
+        "cardSummary": "Garante propostas em licitações públicas e privadas, demonstrando solidez financeira.",
+        "titleLarge": "Garantia para licitações alinhada à Lei 14.133 e a editais privados.",
+        "summary": "Cobre a obrigação de assinatura do contrato e demais compromissos assumidos no edital, aumentando a competitividade da proposta.",
+        "details": "Emissão rápida com análise societária, técnica e de compliance. Pode ser usada em concorrências públicas, PPPs e RFPs privados.",
+        "highlights": [
+          "Evita bloqueio de capital para cauções.",
+          "Melhora a avaliação da proposta pelo órgão público.",
+          "Atende à nova Lei de Licitações e regulamentos setoriais.",
+          "Gestão centralizada para múltiplos editais."
+        ]
+      },
+      "en": {
+        "title": "Bid Bond",
+        "cardSummary": "Backs bids in public and private tenders, proving financial strength.",
+        "titleLarge": "Bid guarantee compliant with Law 14.133 and private RFPs.",
+        "summary": "Covers the obligation to sign the contract and all commitments stated in the tender documents, making your proposal more competitive.",
+        "details": "Issued quickly after corporate, technical and compliance review. Works for public bids, PPPs and private tenders.",
+        "highlights": [
+          "Avoids tying up capital in cash collateral.",
+          "Improves evaluation scores from contracting entities.",
+          "Fully aligned with Brazil’s new procurement law.",
+          "Centralized management for multiple bids."
+        ]
+      },
+      "es": {
+        "title": "Garantía para licitaciones",
+        "cardSummary": "Respalda propuestas en licitaciones públicas y privadas demostrando solidez.",
+        "titleLarge": "Garantía de licitación alineada a la Ley 14.133 y a RFP privadas.",
+        "summary": "Cubre la obligación de firmar el contrato y los compromisos del pliego, aumentando la competitividad de la oferta.",
+        "details": "Emisión ágil con análisis societario, técnico y de compliance. Aplicable a licitaciones públicas, PPP y concursos privados.",
+        "highlights": [
+          "Evita inmovilizar capital en cauciones.",
+          "Mejora la evaluación por parte del organismo.",
+          "Cumple con la nueva Ley de Licitaciones brasileña.",
+          "Gestión centralizada para múltiples procesos."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-strategic",
+    "img": "/images/service/h1-service-4.webp",
+    "bgImg": "/images/service/h3-service-4.webp",
+    "bgImg2": "/images/service/tj-service-4.webp",
+    "svg": "/images/icons/service-4.svg",
+    "id": 12,
+    "title": "Garantia para compra de energia",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Garantia para compra de energia",
+        "cardSummary": "Segurança para negociações no mercado livre de energia e contratos de longo prazo.",
+        "titleLarge": "Garantia para compra de energia com foco em previsibilidade e compliance.",
+        "summary": "Garante pagamentos e obrigações contratuais em operações com comercializadoras e geradoras no mercado livre.",
+        "details": "Considera sazonalidade de consumo e limites de exposição, com relatórios de risco para ambas as partes e aderência regulatória.",
+        "highlights": [
+          "Atende contratos no ACL, autoprodução e migração.",
+          "Reduz risco de default em contratos de longo prazo.",
+          "Adequada a estruturas com hedge e derivativos.",
+          "Equipe acompanha medições e ajustes mensais."
+        ]
+      },
+      "en": {
+        "title": "Energy Purchase Guarantee",
+        "cardSummary": "Security for free-market energy deals and long-term PPAs.",
+        "titleLarge": "Energy purchase guarantee focused on predictability and compliance.",
+        "summary": "Secures payments and contractual obligations in transactions with traders and generators in the free energy market.",
+        "details": "Considers consumption seasonality and exposure limits, delivering risk reports to both parties and full regulatory compliance.",
+        "highlights": [
+          "Supports ACL contracts, self-production and migration.",
+          "Reduces default risk in long-term agreements.",
+          "Fits structures with hedging and derivatives.",
+          "Team monitors measurements and monthly adjustments."
+        ]
+      },
+      "es": {
+        "title": "Garantía para compra de energía",
+        "cardSummary": "Seguridad para operaciones en el mercado libre de energía y contratos a largo plazo.",
+        "titleLarge": "Garantía de compra de energía con previsibilidad y cumplimiento.",
+        "summary": "Garantiza pagos y obligaciones contractuales en transacciones con comercializadoras y generadoras.",
+        "details": "Considera la estacionalidad del consumo y los límites de exposición, con reportes de riesgo para ambas partes y cumplimiento regulatorio.",
+        "highlights": [
+          "Atiende contratos en el ACL, autoproducción y procesos de migración.",
+          "Reduce el riesgo de default en contratos extensos.",
+          "Compatible con estructuras de cobertura de precio.",
+          "Equipo monitorea mediciones y ajustes mensuales."
+        ]
+      }
+    }
+  },
+  {
+    "iconName": "tji-shield",
+    "img": "/images/service/h1-service-1.webp",
+    "bgImg": "/images/service/h3-service-1.webp",
+    "bgImg2": "/images/service/tj-service-1.webp",
+    "svg": "/images/icons/service-1.svg",
+    "id": 13,
+    "title": "Fiança locatícia",
+    "totalProject": "",
+    "content": {
+      "pt": {
+        "title": "Fiança locatícia corporativa",
+        "cardSummary": "Substitui fiador ou caução em contratos de locação corporativa em todo o país.",
+        "titleLarge": "Fiança locatícia para empresas que precisam de agilidade e confiança.",
+        "summary": "Garante ao proprietário o recebimento de aluguéis e encargos sem exigir a imobilização financeira da empresa locatária.",
+        "details": "Abrange galpões, escritórios e pontos comerciais. Processo digital, com análise financeira e emissão em poucas horas, incluindo coberturas para multas e danos.",
+        "highlights": [
+          "Elimina a necessidade de fiador pessoa física.",
+          "Possibilidade de cobrir multas, danos e encargos.",
+          "Renovações automáticas vinculadas ao contrato de locação.",
+          "Atendimento nacional para redes e franquias."
+        ]
+      },
+      "en": {
+        "title": "Corporate Rental Surety",
+        "cardSummary": "Replaces guarantors or cash deposits in corporate lease agreements nationwide.",
+        "titleLarge": "Rental surety for companies that need speed and credibility.",
+        "summary": "Assures landlords that rent and charges will be paid without tying up the tenant’s working capital.",
+        "details": "Covers warehouses, offices and retail spaces. Fully digital underwriting with financial analysis and issuance within hours, including options for penalties and damages.",
+        "highlights": [
+          "Removes the need for personal guarantors.",
+          "Optional coverage for penalties, damages and fees.",
+          "Automatic renewals aligned with the lease term.",
+          "Nationwide service for networks and franchises."
+        ]
+      },
+      "es": {
+        "title": "Fianza de alquiler corporativa",
+        "cardSummary": "Sustituye fiadores o depósitos en contratos de alquiler corporativo en todo el país.",
+        "titleLarge": "Fianza locativa para empresas con necesidad de agilidad y confianza.",
+        "summary": "Garantiza al propietario el cobro de alquileres y cargos sin inmovilizar el capital de trabajo del arrendatario.",
+        "details": "Cubre galpones, oficinas y locales comerciales. Proceso digital con análisis financiero y emisión en horas, incluyendo coberturas para multas y daños.",
+        "highlights": [
+          "Elimina la necesidad de un fiador personal.",
+          "Posibilidad de cubrir multas, daños y cargos.",
+          "Renovaciones automáticas vinculadas al contrato.",
+          "Atención nacional para cadenas y franquicias."
+        ]
+      }
+    }
+  }
 ]

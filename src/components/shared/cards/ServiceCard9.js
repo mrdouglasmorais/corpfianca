@@ -1,17 +1,17 @@
 'use client';
 import modifyNumber from '@/libs/modifyNumber';
-import { useTranslations } from 'next-intl';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
+import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
 
 const ServiceCard9 = ({ service, idx, lastItem }) => {
   const locale = useLocale();
-  const tNav = useTranslations('navigation');
   const { title, id, iconName, img } = service || {};
   const slug = getServiceSlug(service);
-  const translateServiceTitle = (serviceTitle, serviceId) => {    const titleMap = {      1: tNav('traditional_bonds'),      2: tNav('corporate_bonds'),      3: tNav('structured_bonds'),      4: tNav('judicial_bonds'),      5: tNav('credit_bonds'),      6: tNav('rental_bonds'),    };    return titleMap[serviceId] || serviceTitle;  };  const translatedTitle = translateServiceTitle(title, id);
+  const { title: localizedTitle, highlights } = getLocalizedServiceContent(service, locale);
+  const displayHighlights = (highlights && highlights.length ? highlights : []).slice(0, 3);
   return (
     <div className="h9-services-item">
       <div className="h9-services-item-inner">
@@ -21,19 +21,20 @@ const ServiceCard9 = ({ service, idx, lastItem }) => {
         <span className="number">{modifyNumber(idx + 1)}.</span>
         <div className="service-content">
           <h4 className="title">
-            <Link href={createLocalizedPath(`/services/${slug}`, locale)}>{translatedTitle}</Link>
+            <Link href={createLocalizedPath(`/services/${slug}`, locale)}>
+              {localizedTitle || title}
+            </Link>
           </h4>
           <div className="check-list-one">
             <ul>
-              <li>
-                <i className="tji-double-check"></i>Expertise and experience
-              </li>
-              <li>
-                <i className="tji-double-check"></i>Client Centric approach
-              </li>
-              <li>
-                <i className="tji-double-check"></i>Commitment excellences
-              </li>
+              {displayHighlights.length
+                ? displayHighlights.map((item, index) => (
+                    <li key={index}>
+                      <i className="tji-double-check"></i>
+                      {item}
+                    </li>
+                  ))
+                : null}
             </ul>
           </div>
         </div>

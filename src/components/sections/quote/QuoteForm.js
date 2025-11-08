@@ -1,23 +1,26 @@
 'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import FormSelect from '@/components/shared/Inputs/FormSelect';
-import { useTranslations } from 'next-intl';
+import getALlServices from '@/libs/getALlServices';
+import getLocalizedServiceContent from '@/utils/serviceContent';
+import { useLocale, useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 const QuoteForm = () => {
   const t = useTranslations('quote_page');
+  const locale = useLocale();
+  const services = getALlServices();
 
   const bondTypeOptions = useMemo(
     () => [
-      { value: '1', name: t('select_bond_type') },
-      { value: '2', name: t('traditional_bonds') },
-      { value: '3', name: t('corporate_bonds') },
-      { value: '4', name: t('structured_bonds') },
-      { value: '5', name: t('judicial_bonds') },
-      { value: '6', name: t('credit_bonds') },
-      { value: '7', name: t('rental_bonds') },
+      { value: '', name: t('select_bond_type') },
+      ...services.map((service) => {
+        const localizedTitle =
+          getLocalizedServiceContent(service, locale).title || service.title || '';
+        return { value: String(service.id), name: localizedTitle };
+      }),
     ],
-    [t],
+    [locale, services, t],
   );
 
   const companySizeOptions = useMemo(
@@ -167,4 +170,3 @@ const QuoteForm = () => {
 };
 
 export default QuoteForm;
-

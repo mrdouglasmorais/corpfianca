@@ -1,9 +1,10 @@
 'use client';
-import BrandSlider1 from '@/components/shared/brands/BrandSlider1';
+// import BrandSlider1 from '@/components/shared/brands/BrandSlider1';
 import BackToTop from '@/components/shared/others/BackToTop';
 import getALlServices from '@/libs/getALlServices';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
+import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
@@ -15,7 +16,7 @@ const Footer = ({ footerType, isRtl }) => {
   return (
     <footer className="tj-footer-area footer-1">
       {/* <!-- start: Brand Section --> */}
-      {footerType === 'inner' ? (
+      {/* {footerType === 'inner' ? (
         ''
       ) : (
         <section className="tj-brand-section">
@@ -27,7 +28,7 @@ const Footer = ({ footerType, isRtl }) => {
             </div>
           </div>
         </section>
-      )}
+      )} */}
 
       {/* <!-- end: Brand Section --> */}
 
@@ -91,14 +92,8 @@ const Footer = ({ footerType, isRtl }) => {
                 <div className="widget-menu">
                   <ul>
                     {services.slice(0, 6).map((service, idx) => {
-                      const translationKeys = [
-                        'traditional_bonds',
-                        'corporate_bonds',
-                        'structured_bonds',
-                        'judicial_bonds',
-                        'credit_bonds',
-                        'rental_bonds',
-                      ];
+                      const translatedTitle =
+                        getLocalizedServiceContent(service, locale).title || service.title;
                       return (
                         <li key={idx}>
                           <Link
@@ -107,7 +102,7 @@ const Footer = ({ footerType, isRtl }) => {
                               locale,
                             )}
                           >
-                            {tNav(translationKeys[idx])}
+                            {translatedTitle}
                           </Link>
                         </li>
                       );
