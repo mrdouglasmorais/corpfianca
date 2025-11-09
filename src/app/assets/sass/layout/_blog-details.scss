@@ -681,6 +681,13 @@ blockquote {
   }
   .icon {
     margin-bottom: 30px;
+    max-width: 60px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
   h3 {
     color: var(--tj-color-common-white);
