@@ -14,6 +14,17 @@
 		border-bottom: 1px solid var(--tj-color-border-1);
 		position: absolute;
 		z-index: 98;
+
+		.header-wrapper {
+			background: rgba(50, 50, 50, 0.7);
+			backdrop-filter: blur(10px);
+			padding: 10px 24px;
+			border-radius: 12px;
+
+			@media #{$md, $sm, $xs} {
+				padding: 10px 15px;
+			}
+		}
 	}
 	&.header-duplicate {
 		background-color: var(--tj-color-theme-dark);
@@ -54,9 +65,10 @@
 
 		&.header-absolute {
 			.header-wrapper {
-				background: rgba(247, 247, 247, 0.1);
+				background: rgba(50, 50, 50, 0.75);
 				backdrop-filter: blur(35px);
-				padding: 0px 24px;
+				padding: 10px 24px;
+				border-radius: 12px;
 
 				@media #{$md, $sm, $xs} {
 					padding: 10px 15px;
@@ -441,9 +453,9 @@
 	}
 }
 .header-bottom {
-	padding: 0px 45px;
+	padding: 20px 45px;
 	@media #{$lg} {
-		padding: 0;
+		padding: 20px 0;
 	}
 	@media #{$md} {
 		padding: 17px 0;

@@ -5,7 +5,7 @@ import Funfact1 from '@/components/sections/funfacts/Funfact1';
 import Hero from '@/components/sections/heros/Hero';
 import Services1 from '@/components/sections/services/Services1';
 import Skills1 from '@/components/sections/Skills/Skills1';
-import Testimonials1 from '@/components/sections/testimonials/Testimonials1';
+// import Testimonials1 from '@/components/sections/testimonials/Testimonials1';
 
 const IndexMain = () => {
   return (
@@ -16,7 +16,7 @@ const IndexMain = () => {
       <Services1 />
       <Funfact1 />
       <Skills1 />
-      <Testimonials1 />
+      {/* <Testimonials1 /> */}
       <Blogs1 />
     </main>
   );
