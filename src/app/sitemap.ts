@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import blogs from '../../public/fakedata/blogs.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://corpfianca.com';
@@ -69,6 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const sitemap: MetadataRoute.Sitemap = [];
+  const locales = Object.keys(routeTranslations);
 
   // Generate URLs for each locale
   Object.entries(routeTranslations).forEach(([locale, localeRoutes]) => {
@@ -84,6 +86,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
           priority: route.priority
         });
       }
+    });
+  });
+
+  // Add blog detail pages for each locale
+  blogs.forEach((blog) => {
+    const slug = blog.slug || `${blog.id}`;
+    const lastModified = blog.dateReleased ? new Date(blog.dateReleased) : new Date();
+    locales.forEach((locale) => {
+      const localePrefix = locale === 'pt' ? '' : `/${locale}`;
+      sitemap.push({
+        url: `${baseUrl}${localePrefix}/noticias/${slug}`,
+        lastModified,
+        changeFrequency: 'weekly',
+        priority: 0.6,
+      });
     });
   });
 

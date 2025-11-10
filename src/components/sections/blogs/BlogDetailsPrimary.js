@@ -222,7 +222,10 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
                       ))
                     : ''}
                 </div>
-                <div className="tj-socials_share">
+                <div
+                  className="tj-socials_share"
+                  style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}
+                >
                   <span className="tag__title">{t('share')}</span>
                   {shareLinks.map(({ name, icon, href }) => (
                     <Link
