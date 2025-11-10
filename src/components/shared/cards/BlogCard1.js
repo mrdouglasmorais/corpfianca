@@ -9,11 +9,13 @@ const BlogCard1 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, img1, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, img1, category, date, day, month } = blog || {};
+  const blogSlug = slug || id;
+  const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   return (
     <div className="blog-item wow fadeInUp" data-wow-delay={`0.${idx + 1}s`}>
       <div className="blog-images hover:shine">
-        <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>
+        <Link href={detailPath}>
           <img src={img1 ? img1 : '/images/blog/blog-thumb-1.webp'} alt="Images" />
         </Link>
       </div>
@@ -29,10 +31,10 @@ const BlogCard1 = ({ blog, idx }) => {
           </ul>
         </div>
         <h4 className="blog-title">
-          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
+          <Link href={detailPath}>{title}</Link>
         </h4>
         {idx === 0 ? <div className="desc">{t('blog_card_desc')}</div> : ''}
-        <Link className="blog-button text-btn" href={createLocalizedPath(`/noticias/${id}`, locale)}>
+        <Link className="blog-button text-btn" href={detailPath}>
           {t('read_more')} <i className="tji-arrow-right"></i>
         </Link>
         <div className="blog-meta meta-2 mb-0">

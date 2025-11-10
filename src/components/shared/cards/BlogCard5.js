@@ -9,11 +9,13 @@ const BlogCard5 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, img2, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, img2, category, date, day, month } = blog || {};
+  const blogSlug = slug || id;
+  const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   return (
     <div className="blog-style-3 style-5 wow fadeInUp" data-wow-delay="0.2s">
       <div className="blog-images">
-        <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>
+        <Link href={detailPath}>
           <img src={img2 ? img2 : '/images/blog/h2-blog-1.webp'} alt="Images" />
         </Link>
         <div className="blog_category">
@@ -33,10 +35,10 @@ const BlogCard5 = ({ blog, idx }) => {
           </ul>
         </div>
         <h4 className="title under-line">
-          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
+          <Link href={detailPath}>{title}</Link>
         </h4>
         <div className="blog-button">
-          <Link className="blog-btn blog-btn-2" href={createLocalizedPath(`/noticias/${id}`, locale)}>
+          <Link className="blog-btn blog-btn-2" href={detailPath}>
             <span className="btn-icon">
               <i className="tji-arrow-right"></i>
             </span>

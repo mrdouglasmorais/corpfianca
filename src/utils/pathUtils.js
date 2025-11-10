@@ -112,8 +112,9 @@ export const normalizePath = (path, locale) => {
  * @returns {boolean} - Whether the path should be inactive
  */
 export const makeForcelyInactive = (pathname, currentPathname) => {
-  const isInactive = ['/services', '/services/1', '/noticias', '/noticias/1', '/contact'].includes(
-    pathname,
-  );
+  const staticInactive = ['/services', '/noticias', '/contact'];
+  const isDynamicService = pathname ? pathname.startsWith('/services/') : false;
+  const isDynamicBlog = pathname ? pathname.startsWith('/noticias/') : false;
+  const isInactive = staticInactive.includes(pathname) || isDynamicService || isDynamicBlog;
   return isInactive ? false : pathname === currentPathname;
 };

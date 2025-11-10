@@ -297,7 +297,8 @@
     "search_placeholder": "Search...",
     "categories": "Categories",
     "tags_title": "Tags",
-    "recent_post": "Recent Posts"
+    "recent_post": "Recent Posts",
+    "category": "Category"
   },
   "blog_details": {
     "title": "Insight details",

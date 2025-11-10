@@ -16,6 +16,7 @@ const BlogSingle = ({ blog }) => {
   const locale = useLocale();
   const {
     id,
+    slug,
     detailsImg,
     title,
     desc,
@@ -31,6 +32,9 @@ const BlogSingle = ({ blog }) => {
   } = blog ? blog : {};
 
   const translatedMonth = translateMonth(month, locale);
+  const blogSlug = slug || id;
+  const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
+  const summary = Array.isArray(desc) ? desc[0] : desc;
 
   return (
     <article className="tj-post-item wow fadeInUp" data-wow-delay="0.1s">
@@ -110,14 +114,11 @@ const BlogSingle = ({ blog }) => {
           </ul>
         </div>
         <h3 className="tj-post-title">
-          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
+          <Link href={detailPath}>{title}</Link>
         </h3>
-        <div className="tj-post-excerpt">{desc || ''}</div>
+        <div className="tj-post-excerpt">{summary || ''}</div>
         <div className="tj-post-btn">
-          <ButtonPrimary
-            text={t('read_more')}
-            url={createLocalizedPath(`/noticias/${id}`, locale)}
-          />
+          <ButtonPrimary text={t('read_more')} url={detailPath} />
         </div>
       </div>
     </article>

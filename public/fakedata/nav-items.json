@@ -120,7 +120,7 @@
 					{
 						"id": 9,
 						"name": "Detalhes da notícia",
-						"path": "/noticias/1",
+						"path": "/noticias/carta-fianca-fidejussoria-liberar-caixa",
 						"badge": null
 					},
 					{
@@ -274,7 +274,7 @@
 			{
 				"id": 4,
 				"name": "Detalhes da notícia",
-				"path": "/noticias/1",
+				"path": "/noticias/carta-fianca-fidejussoria-liberar-caixa",
 				"badge": null
 			}
 		]

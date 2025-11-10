@@ -6,7 +6,7 @@ import { getServiceSlug } from '@/utils/slugUtils';
 import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 const HeaderSearchForm = () => {
   const t = useTranslations('header');
@@ -16,8 +16,8 @@ const HeaderSearchForm = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchTimeoutRef = useRef(null);
 
-  const services = getALlServices();
-  const blogs = getBlogs();
+  const services = useMemo(() => getALlServices(), []);
+  const blogs = useMemo(() => getBlogs(), []);
 
   useEffect(() => {
     if (searchTimeoutRef.current) {
@@ -48,11 +48,12 @@ const HeaderSearchForm = () => {
         // Buscar em notícias
         blogs.forEach((blog) => {
           if (blog.title.toLowerCase().includes(searchLower)) {
+            const blogSlug = blog.slug || blog.id;
             results.push({
               type: 'blog',
               title: blog.title,
               id: blog.id,
-              url: createLocalizedPath(`/noticias/${blog.id}`, locale),
+              url: createLocalizedPath(`/noticias/${blogSlug}`, locale),
             });
           }
         });

@@ -294,7 +294,8 @@
     "search_placeholder": "Pesquisar...",
     "categories": "Categorias",
     "tags_title": "Tags",
-    "recent_post": "Postagens recentes"
+    "recent_post": "Postagens recentes",
+    "category": "Categoria"
   },
   "blog_details": {
     "title": "Detalhes do insight",

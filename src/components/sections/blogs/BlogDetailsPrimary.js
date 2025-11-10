@@ -5,35 +5,80 @@ import { useCurrentItem } from '@/context_api/CurrentItemContext';
 import getBlogs from '@/libs/getBlogs';
 import getPreviousNextItem from '@/libs/getPreviousNextItem';
 import makePath from '@/libs/makePath';
-import { translateTags } from '@/utils/translateTags';
-import { useTranslations } from 'next-intl';
+import { createLocalizedPath } from '@/utils/pathUtils';
+import { translateCategory, translateTags } from '@/utils/translateTags';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
+const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
   const t = useTranslations('blogs_section');
   const tDetails = useTranslations('blog_details');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
   const items = getBlogs();
-  const currentId = useCurrentItem() || blogId;
+  const currentIdentifier = useCurrentItem() || blogSlug;
   const { prevId, nextId, currentItem, isPrevItem, isNextItem } = getPreviousNextItem(
     items,
-    currentId,
+    currentIdentifier,
   );
   const title = currentItem?.title || '';
   const id = currentItem?.id || null;
+  const slug = currentItem?.slug || (id ? `${id}` : '');
   const detailsImg = currentItem?.detailsImg || '';
+  const category = currentItem?.category || '';
+  const translatedCategory = category ? translateCategory(category, tCommon) : '';
+  const categoryPath = category
+    ? createLocalizedPath(`/noticias?category=${makePath(category)}`, locale)
+    : '';
   const tags = currentItem?.tags || [];
   const translatedTags = translateTags(tags, tCommon);
-  const author = currentItem?.author || 'Burdee Nicolas';
-  const dateReleased = currentItem?.dateReleased || '29 Sep,2024';
-  const desc = currentItem?.desc || [];
-  const descArray = Array.isArray(desc) ? desc : desc ? [desc] : [];
+  const author = currentItem?.author || 'Douglas Morais';
+  const dateReleased = currentItem?.dateReleased || currentItem?.date || '29 Sep,2024';
+  const descArray = Array.isArray(currentItem?.content)
+    ? currentItem?.content
+    : currentItem?.desc
+    ? [currentItem?.desc]
+    : [];
+  const findSlugById = (lookupId) =>
+    items?.find(({ id: blogId }) => blogId === lookupId)?.slug || (lookupId ? `${lookupId}` : '');
+  const prevSlug = findSlugById(prevId);
+  const nextSlug = findSlugById(nextId);
+  const defaultSharePath = createLocalizedPath(`/noticias/${slug}`, locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || '';
+  const fallbackShareUrl = siteUrl ? `${siteUrl}${defaultSharePath}` : defaultSharePath;
+  const [shareUrl, setShareUrl] = useState(fallbackShareUrl);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setShareUrl(window.location.href);
+    } else {
+      setShareUrl(fallbackShareUrl);
+    }
+  }, [fallbackShareUrl]);
   useEffect(() => {
     if (title) {
       setCurrentTitle(title);
     }
-  }, [currentId, title]);
+  }, [currentIdentifier, title, setCurrentTitle]);
+  const encodedShareUrl = encodeURIComponent(shareUrl);
+  const shareMessage = encodeURIComponent(`${title} - ${shareUrl}`);
+  const shareLinks = [
+    {
+      name: 'WhatsApp',
+      icon: 'fa-brands fa-whatsapp',
+      href: `https://wa.me/?text=${shareMessage}`,
+    },
+    {
+      name: 'Facebook',
+      icon: 'fa-brands fa-facebook-f',
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedShareUrl}`,
+    },
+    {
+      name: 'LinkedIn',
+      icon: 'fa-brands fa-linkedin-in',
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedShareUrl}`,
+    },
+  ];
   return (
     <section className="tj-post-area section-space">
       <div className="container">
@@ -56,7 +101,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                     <div className="cate-text">
                       <span className="degination">{t('authored_by')}</span>
                       <h6 className="title">
-                        <Link href={`/noticias/${id}`}>{author}</Link>
+                        <Link href={createLocalizedPath(`/noticias/${slug}`, locale)}>{author}</Link>
                       </h6>
                     </div>
                   </div>
@@ -69,6 +114,19 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                       <h6 className="text">{dateReleased}</h6>
                     </div>
                   </div>
+                  {category && (
+                    <div className="category-item">
+                      <div className="cate-icons">
+                        <i className="tji-layer-group"></i>
+                      </div>
+                      <div className="cate-text">
+                        <span className="degination">{t('category')}</span>
+                        <h6 className="title">
+                          <Link href={categoryPath}>{translatedCategory}</Link>
+                        </h6>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="tj-entry-content">
                   {descArray && descArray.length > 0 ? (
@@ -87,7 +145,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                   <blockquote className="wow fadeInUp" data-wow-delay="0.1s">
                     <p>{tDetails('greatest_asset')}</p>
                     <p>
-                      <cite>Aryan Greene</cite>
+                      <cite>Douglas Morais</cite>
                     </p>
                   </blockquote>
                   {descArray && descArray.length > 2 && (
@@ -155,7 +213,10 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                   <span className="tag__title">{t('tags')}</span>
                   {translatedTags?.length
                     ? translatedTags?.map((tag, idx) => (
-                        <Link key={idx} href={`/noticias?tag=${makePath(tag)}`}>
+                        <Link
+                          key={idx}
+                          href={createLocalizedPath(`/noticias?tag=${makePath(tag)}`, locale)}
+                        >
                           {tag}
                         </Link>
                       ))
@@ -163,18 +224,17 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                 </div>
                 <div className="tj-socials_share">
                   <span className="tag__title">{t('share')}</span>
-                  <Link href="https://www.facebook.com/" title="Facebook">
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </Link>
-                  <Link href="https://x.com/" title="Twitter">
-                    <i className="fab fa-x-twitter"></i>
-                  </Link>
-                  <Link href="https://www.linkedin.com/" title="Linkedin">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                  </Link>
-                  <Link href="https://www.pinterest.com/" title="Pinterest">
-                    <i className="fa-brands fa-pinterest-p"></i>
-                  </Link>
+                  {shareLinks.map(({ name, icon, href }) => (
+                    <Link
+                      key={name}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={name}
+                    >
+                      <i className={icon}></i>
+                    </Link>
+                  ))}
                 </div>
               </div>
               {/* <!-- post navigation --> */}
@@ -185,7 +245,11 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                   style={{ visibility: isPrevItem ? 'visible' : 'hidden' }}
                 >
                   <div className="tj-nav-post__nav prev_post">
-                    <Link href={isPrevItem ? `/noticias/${prevId}` : '#'}>
+                    <Link
+                      href={
+                        isPrevItem ? createLocalizedPath(`/noticias/${prevSlug}`, locale) : '#'
+                      }
+                    >
                       <span>
                         <i className="tji-arrow-left"></i>
                       </span>
@@ -193,7 +257,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                     </Link>
                   </div>
                 </div>
-                <Link href={'/noticias'} className="tj-nav-post__grid">
+                <Link href={createLocalizedPath('/noticias', locale)} className="tj-nav-post__grid">
                   <i className="tji-square-cube"></i>
                 </Link>
                 {/* <!-- next post --> */}
@@ -202,7 +266,11 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogId }) => {
                   style={{ visibility: isNextItem ? 'visible' : 'hidden' }}
                 >
                   <div className="tj-nav-post__nav next_post">
-                    <Link href={isNextItem ? `/noticias/${nextId}` : '#'}>
+                    <Link
+                      href={
+                        isNextItem ? createLocalizedPath(`/noticias/${nextSlug}`, locale) : '#'
+                      }
+                    >
                       {t('next')}
                       <span>
                         <i className="tji-arrow-right"></i>

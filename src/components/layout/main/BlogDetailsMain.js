@@ -6,9 +6,10 @@ import sliceText from '@/libs/sliceText';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-const BlogDetailsMain = ({ blogId }) => {
+const BlogDetailsMain = ({ blogSlug }) => {
   const t = useTranslations('blogs_section');
   const [title, setCurrentTitle] = useState('');
+
   return (
     <main>
       <HeroInner
@@ -16,7 +17,7 @@ const BlogDetailsMain = ({ blogId }) => {
         text={title ? sliceText(title, 31, true) : t('blog_standard')}
         breadcrums={[{ name: t('blogs'), path: '/noticias' }]}
       />
-      <BlogDetailsPrimary setCurrentTitle={setCurrentTitle} blogId={blogId} />
+      <BlogDetailsPrimary setCurrentTitle={setCurrentTitle} blogSlug={blogSlug} />
       <Cta1 />
     </main>
   );

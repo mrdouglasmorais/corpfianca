@@ -11,9 +11,9 @@
     "img6": "/images/blog/tj-blog-8.webp",
     "detailsImg": "/images/blog/tj-blog-1.webp",
     "smallImg": "/img/blog/post-thumb-1.jpg",
-    "desc": "Descubra quando utilizar a carta fiança fidejussória para substituir depósitos em dinheiro, proteger o caixa e acelerar acordos em disputas fiscais, cíveis ou trabalhistas.",
-    "desc1": "A carta fiança fidejussória é reconhecida pelos tribunais brasileiros como garantia idônea, pois segue os artigos 818 a 839 do Código Civil e o artigo 835 do CPC. Ao apresentar a apólice, a empresa libera valores bloqueados, evita novas penhoras e mantém o planejamento financeiro em dia.",
-    "desc2": "Na Corp Fiança estruturamos cartas com análise jurídica dedicada, cláusulas transparentes e monitoramento digital de prazos. Isso mantém o juiz informado, reduz riscos de impugnação e dá fôlego para negociar acordos. Fale com um especialista e entenda como substituir depósitos ainda nesta semana.",
+    "desc": "Exponho como a carta fiança fidejussória viabiliza a substituição de depósitos judiciais de acordo com o art. 835 do CPC e com a jurisprudência pacificada no STJ.",
+    "desc1": "Mapeio o passivo, comparo os índices de atualização e apresento ao juiz garantias enquadradas nas Circulares da SUSEP e nos requisitos de honorabilidade do Banco Central.",
+    "desc2": "Com monitoramento de prazos e relatórios bilíngues, mantenho o planejamento financeiro alinhado ao jurídico e dou transparência a investidores estrangeiros.",
     "date": "Jul 28, 2025",
     "day": 28,
     "month": "JUL",
@@ -23,89 +23,35 @@
       "Fidejussória",
       "Fiscal"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Insight",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Oct 01, 2025"
+        "name": "Jul 28, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "carta-fianca-fidejussoria-liberar-caixa",
+    "content": [
+      "Começo auditando cada processo para identificar onde o depósito em dinheiro está aumentando o custo de oportunidade. Cruzo os autos com os índices oficiais do CNJ e calculo o impacto direto no fluxo de caixa.",
+      "Em seguida, desenho a carta fidejussória com base nos limites definidos nas Circulares SUSEP 662/2022 e 680/2023, garantindo que o wording contemple prazo de vigência, cláusulas de pagamento e foro aceito pelos tribunais.",
+      "Apresento ao magistrado os precedentes do STJ (REsp 1.808.493 e AgInt no REsp 1.954.244) que reconhecem a carta fiança como garantia idônea, reforçando que a empresa mantém rating mínimo exigido pelo Bacen.",
+      "Após a aceitação, automatizo alertas de renovação e envio extratos mensais para CFO, controller e escritório externo, evitando surpresas em períodos de recesso forense.",
+      "Quando há controladoras fora do Brasil, produzo um dossiê em português, inglês e espanhol detalhando riscos, limites e a relação com covenants bancários para acelerar aprovações em comitês globais."
+    ],
+    "dateReleased": "Jul 28, 2025"
   },
   {
     "id": 2,
@@ -119,8 +65,8 @@
     "img6": "/images/blog/tj-blog-2.webp",
     "detailsImg": "/images/blog/tj-blog-2.webp",
     "smallImg": "",
-    "desc": "Veja como substituir o depósito recursal obrigatório por uma apólice digital, mantendo recursos disponíveis para folha e novos investimentos.",
-    "desc2": "A análise é 100% digital, com checklist de documentos, alertas de vencimento e canal direto com o escritório de advocacia. Assim, o RH não precisa reter capital e o jurídico ganha previsibilidade para recorrer até o fim. Solicite sua análise e receba a apólice ainda hoje.",
+    "desc": "Mostro como garantir depósitos recursais trabalhistas com apólices digitais, liberando recursos para RH e evitando bloqueios em meio a decisões do TST.",
+    "desc2": "Integro o fluxo ao PJe, registro logs de protocolo e entrego planilhas auditáveis para shared services na América Latina.",
     "date": "Nov 06, 2025",
     "day": 6,
     "month": "NOV",
@@ -130,9 +76,9 @@
       "Trabalhista",
       "Fluxo de Caixa"
     ],
-    "author_name": "Silvester Scott",
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_name": "Douglas Morais",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Guia",
     "isBlogQuote": true,
     "iconId": "f10e",
@@ -140,84 +86,30 @@
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Nov 01, 2025"
+        "name": "Nov 06, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
+    "comments": [],
+    "desc1": "Reviso sentenças, simulo a atualização pela SELIC e preparo a guia com o valor exato exigido pelas Súmulas 128 e 245 do TST.",
+    "slug": "deposito-recursal-garantido-guia-rh-juridico",
+    "content": [
+      "O ponto de partida é separar recursos com risco de execução imediata. Olho o histórico de condenações por região, enquadro cada caso no limite previsto pela Lei 13.467/2017 e defino a prioridade do recurso.",
+      "Valido a póliza com seguradoras registradas na SUSEP e verifico se atendem ao item VI do Ato Conjunto TST.CSJT.CGJT 1/2019, que determina vigência mínima e cláusula de atualização automática.",
+      "Envio ao RH relatórios semanais com o status de cada processo e comparo o custo da garantia com o custo de capital da companhia, mostrando o ganho financeiro com a substituição.",
+      "Integro webservices para anexar a apólice diretamente no PJe e armazeno os comprovantes em repositório com trilha de auditoria exigida por SOX e LGPD.",
+      "Para operações multinacionais, traduzo as principais cláusulas para inglês e espanhol e compartilho com os centros de serviço para que controles internos identifiquem rapidamente quem é o responsável por cada renovação."
     ],
-    "desc1": "Toda vez que uma empresa recorre de decisão trabalhista, precisa comprovar o depósito recursal. Com a garantia da Corp Fiança, o valor é coberto por apólice e o caixa permanece liberado. Nosso time valida o processo, calcula o montante atualizado pelo TST e entrega o documento pronto para protocolo em poucas horas."
+    "dateReleased": "Nov 06, 2025"
   },
   {
     "id": 3,
@@ -231,9 +123,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-3.webp",
     "smallImg": "/img/blog/post-thumb-2.jpg",
-    "desc": "Reunimos os passos essenciais para estruturar uma garantia de execução alinhada ao contrato e evitar paralisações.",
-    "desc1": "O performance bond protege o contratante contra atrasos, falhas de entrega e abandono. Para ter a cobertura certa, começamos avaliando o escopo, cronograma físico-financeiro e cláusulas de step-in. Depois customizamos gatilhos de acionamento, limites e obrigações de reporte.",
-    "desc2": "Com dashboards em tempo real, o cliente acompanha medições e eventos críticos. Caso algo saia do previsto, o time da Corp Fiança atua preventivamente com planos de correção ou acionamento estruturado. Baixe o checklist completo e veja como elevar a credibilidade das suas propostas.",
+    "desc": "Detalho o checklist que utilizo para performance bonds alinhados à Lei 14.133/2021 e às exigências de financiadores internacionais.",
+    "desc1": "Transformo o cronograma físico-financeiro em marcos mensuráveis, cruzando métricas de engenharia e cláusulas contratuais.",
+    "desc2": "Coordeno medições, registros fotográficos e relatórios para comprovar performance a bancos, seguradoras e clientes públicos.",
     "date": "Aug 24, 2025",
     "day": 24,
     "month": "AUG",
@@ -243,8 +135,8 @@
       "Construção",
       "Compliance"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Checklist",
     "slider": [
       "/images/blog/tj-blog-5.webp",
@@ -254,83 +146,29 @@
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Nov 01, 2025"
+        "name": "Aug 24, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "performance-bonds-checklist-execucao",
+    "content": [
+      "Inicio o trabalho com uma revisão jurídica do edital, conferindo limites de 5%, 10% ou 30% previstos no art. 96 da Lei 14.133 e verificando se o contratante exige cláusula de step-in.",
+      "Valido a matriz de riscos com o time de engenharia e defino gatilhos objetivos para acionamento do bond, evitando subjetividade que gere disputas.",
+      "Estruturo o dossiê de crédito para a seguradora ou banco mandatário com balanços IFRS, comprovações de capacidade técnica no SICAF e indicadores ESG quando o financiador é multilateral.",
+      "Durante a execução, crio um painel com medições, RDOs e dados BIM, permitindo que o contratante acompanhe a aderência ao cronograma e ao orçamento.",
+      "Se houver funding externo (IFC, BID ou bancos verdes), adapto os relatórios para o idioma do financiador e integro requisitos de salvaguardas socioambientais."
+    ],
+    "dateReleased": "Aug 24, 2025"
   },
   {
     "id": 4,
@@ -344,9 +182,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-4.webp",
     "smallImg": "/img/blog/post-thumb-3.jpg",
-    "desc": "Entenda os percentuais, modalidades aceitas e oportunidades para aumentar pontuação técnica com garantias personalizadas.",
-    "desc1": "A nova Lei de Licitações permite garantias de até 5% para propostas e até 30% em contratos de grande vulto. Com a Corp Fiança, você apresenta cartas com linguagem jurídica adequada, comprova capacidade financeira e reduz questionamentos da comissão avaliadora.",
-    "desc2": "Nossas apólices trazem QR Code para validação online, anexos bilíngues quando necessário e acompanhamento dos marcos contratuais. Isso reduz riscos de sanções e mostra ao órgão público que a sua empresa está preparada para executar. Consulte nossos especialistas e simule sua próxima concorrência.",
+    "desc": "Explico como uso garantias para aumentar competitividade em licitações regidas pela Lei 14.133, combinando análise técnica e capacidade financeira.",
+    "desc1": "Simulo cenários de proposta e execução considerando limites de 5% a 30% e o impacto em capital de giro.",
+    "desc2": "Treino equipes comerciais para responder questionamentos das comissões de contratação e documentar diligências.",
     "date": "Nov 01, 2025",
     "day": 28,
     "month": "AUG",
@@ -356,89 +194,35 @@
       "Lei 14133",
       "Propostas"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Guide",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Dec 01, 2025"
+        "name": "Nov 01, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "licitacoes-lei-14133-garantias-competitivas",
+    "content": [
+      "Destrinchamos o edital identificando critérios de julgamento, matriz de riscos e exigências de habilitação econômico-financeira previstas nos arts. 58 e 69.",
+      "Montamos um quadro comparativo de garantias possíveis (caução, seguro ou fiança) e demonstramos à diretoria o efeito de cada modalidade sobre covenants bancários e Basileia.",
+      "Preparamos a proposta técnica com memorial descritivo, planilhas 2D/3D e declarações conforme Instrução Normativa SEGES 73/2022, garantindo coerência entre preço e metodologia.",
+      "Durante a fase de diligência, apresento comprovantes de capital circulante líquido e indicadores de liquidez exigidos pela administração pública, reduzindo o risco de inabilitação.",
+      "Após a adjudicação, mantenho um calendário com datas de assinatura, entrega da garantia definitiva e marcos de execução para evitar aplicação de penalidades do art. 161."
+    ],
+    "dateReleased": "Nov 01, 2025"
   },
   {
     "id": 5,
@@ -452,9 +236,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-5.webp",
     "smallImg": "",
-    "desc": "Como compradores e comercializadoras usem garantias financeiras para mitigar volatilidade e assegurar pagamentos em PPAs.",
-    "desc1": "Nos contratos do ACL, as partes precisam comprovar capacidade de pagamento diante da volatilidade. A garantia da Corp Fiança considera sazonalidade de consumo, cláusulas de reajuste e estruturas de hedge. Isso protege o vendedor sem pressionar o caixa do comprador.",
-    "desc2": "Entregamos relatórios mensais com medições, gatilhos de reforço e alertas de exposição. Assim, ambos os lados acompanham o risco em tempo real e podem renegociar antes de qualquer inadimplência. Converse com nosso time de energia e saiba como estruturar seu próximo PPA.",
+    "desc": "Mostro como estruturo garantias financeiras para PPAs no mercado livre de energia, alinhando requisitos da CCEE e das comercializadoras.",
+    "desc1": "Analiso curva de carga, sazonalidade e histórico de liquidação para sugerir limites aderentes ao PLD e às projeções do ONS.",
+    "desc2": "Integro cláusulas bilíngues para compradores e geradores sediados no Brasil, EUA ou Europa, evitando divergências de interpretação.",
     "date": "Nov 01, 2025",
     "day": 28,
     "month": "AUG",
@@ -464,89 +248,35 @@
       "PPA",
       "Garantia Financeira"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Insight",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Oct 01, 2025"
+        "name": "Nov 01, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "garantia-compra-energia-mercado-livre",
+    "content": [
+      "Faço o diagnóstico do portfólio na CCEE: verifico garantias prévias, consumo médio, fator de carga e eventual histórico de inadimplência no Mercado de Curto Prazo.",
+      "Cruzo esses dados com projeções de PLD, contratos futuros de energia e métricas ESG exigidas por bancos que financiam projetos renováveis.",
+      "Defino o mix ideal entre carta fiança, seguro garantia e contas escrow, prevendo reforços automáticos quando o consumo desvia acima de 10% da meta contratada.",
+      "Automatizo alertas com base no calendário de contabilização da CCEE (D+60) e no cronograma de entrega dos agentes, evitando chamadas de margem emergenciais.",
+      "Para PPAs transfronteiriços, incluo cláusulas em inglês descrevendo lei aplicável, mecanismos de arbitragem e harmonizo o texto com os padrões ISDA ou EEI Master Agreement."
+    ],
+    "dateReleased": "Nov 01, 2025"
   },
   {
     "id": 6,
@@ -560,9 +290,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-6.webp",
     "smallImg": "",
-    "desc": "Veja como dados de risco, jurisprudência e comportamento de crédito ajudam a antecipar exigências em garantias corporativas.",
-    "desc1": "Unimos bases públicas, scoring financeiro e machine learning para prever exigências de juízes, bancos e órgãos públicos. Isso permite preparar documentos corretos, estimar reforços de garantia e reduzir retrabalho.",
-    "desc2": "Os dashboards da Corp Fiança mostram status de cada operação, prazos críticos e alertas de compliance. Assim, o CFO sabe onde pode liberar caixa e o jurídico atua de forma proativa. Solicite uma demonstração personalizada.",
+    "desc": "Aplico analytics às carteiras de garantias para que advogados e CFOs antecipem reforços exigidos por tribunais, bancos e autarquias.",
+    "desc1": "Integro bases públicas (CNJ, Bacen, Susep) a dados internos e crio alertas orientados por risco.",
+    "desc2": "Disponibilizo dashboards em português, inglês e espanhol para conselhos e comitês globais.",
     "date": "Nov 01, 2025",
     "day": 28,
     "month": "AUG",
@@ -572,89 +302,35 @@
       "Compliance",
       "Risco"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Report",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Oct 01, 2025"
+        "name": "Nov 01, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "analytics-garantias-advogados-cfos",
+    "content": [
+      "Construo um data lake com processos judiciais (via DataJud), limites utilizados em bancos e notas técnicas emitidas por reguladores setoriais.",
+      "Uso modelos estatísticos para prever quando um juiz tende a exigir substituição da garantia (por exemplo, após 24 meses sem renovação) ou quando uma autarquia fiscaliza intensivamente determinado setor.",
+      "Integro APIs do Bacen (SCR e CCB) para acompanhar a exposição consolidada por grupo econômico e cruzo com limites internos de crédito.",
+      "No front-end, publico painéis no Power BI ou Looker com filtros por UF, instância, valor garantido e probabilidade de reforço, permitindo priorizar casos críticos.",
+      "Para multinacionais, replico os dashboards em três idiomas e adiciono comparativos com requisitos do US Department of Justice, FCA britânica e ESMA."
+    ],
+    "dateReleased": "Nov 01, 2025"
   },
   {
     "id": 7,
@@ -668,9 +344,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-7.webp",
     "smallImg": "",
-    "desc": "Estratégias para substituir penhoras, garantir contratos e estruturar permutas mantendo liquidez para expansão.",
-    "desc1": "Garantias corporativas liberam linhas de crédito e mantêm indicadores saudáveis. Ao trocar bens dados em caução por apólices da Corp Fiança, o CFO ganha flexibilidade para investir em CAPEX, M&A ou novos mercados.",
-    "desc2": "Mapeamos todas as obrigações da empresa, priorizamos liberações e definimos o mix ideal entre garantias judiciais, financeiras e imobiliárias. O resultado é previsibilidade para o conselho e proteção completa ao credor. Fale com a gente e receba um plano personalizado.",
+    "desc": "Compartilho estratégias para CFOs financiarem crescimento usando garantias corporativas sem imobilizar ativos estratégicos.",
+    "desc1": "Mapeio covenants, planos de CAPEX e alavancagem para definir quais garantias destravam caixa imediatamente.",
+    "desc2": "Conecto a companhia a bancos e investidores globais, apresentando relatórios bilíngues que demonstram governance e impacto.",
     "date": "Nov 01, 2025",
     "day": 28,
     "month": "AUG",
@@ -680,89 +356,35 @@
       "Liquidez",
       "Garantias Corporativas"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Playbook",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Oct 01, 2025"
+        "name": "Nov 01, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "cfos-garantias-financiar-crescimento",
+    "content": [
+      "Iniciamos com um workshop envolvendo tesouraria, jurídico e relações com investidores para entender metas de alavancagem, rating alvo e pipeline de projetos.",
+      "Classifico garantias existentes por custo, prazo e risco de execução, identificando onde faz sentido trocar hipotecas ou penhoras por cartas fiança ou seguros.",
+      "Desenho um roadmap de liberações priorizando processos judiciais de alto valor, contratos de fornecimento essenciais e operações de M&A que dependem de escrow.",
+      "Apresento aos bancos um dossiê com indicadores de sustentabilidade, aderência a TCFD e plano de redução de emissões, facilitando acesso a linhas ESG vinculadas a garantias.",
+      "Para emissões internacionais, traduzo o racional para inglês e espanhol, comparo com práticas IFRS e oriento o CFO sobre como comunicar o impacto ao buy side."
+    ],
+    "dateReleased": "Nov 01, 2025"
   },
   {
     "id": 8,
@@ -776,9 +398,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-2.webp",
     "smallImg": "",
-    "desc": "Aprenda a proteger operações de exportação com garantias em português, inglês e espanhol, aceitas por compradores estrangeiros.",
-    "desc1": "Empresas que exportam precisam provar capacidade de entrega, logística e compliance cambial. Nossas garantias trazem cláusulas adaptadas ao INCOTERM do contrato, contemplam prazos de embarque e penalidades por atraso.",
-    "desc2": "Também oferecemos suporte em inglês e espanhol para o comprador validar a apólice, reduzindo fricção nas negociações. Isso acelera a assinatura e evita pedidos de adiantamento em dinheiro. Consulte nossos especialistas e descubra como proteger seu próximo embarque.",
+    "desc": "Preparo garantias bilíngues que dão segurança a exportadores, compradores estrangeiros e bancos confirmadores.",
+    "desc1": "Traduzo INCOTERMS, cláusulas cambiais e obrigações logísticas em documentos auditáveis.",
+    "desc2": "Conduzo videoconferências em português, inglês e espanhol para alinhar expectativas e liberar embarques sem atrasos.",
     "date": "Nov 01, 2025",
     "day": 28,
     "month": "AUG",
@@ -788,89 +410,35 @@
       "Comércio Exterior",
       "Garantias"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Insight",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Oct 01, 2025"
+        "name": "Nov 01, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "exportacoes-garantias-bilingues",
+    "content": [
+      "Mapeio o ciclo de exportação: pedido, produção, inspeção, embarque e desembaraço. Identifico onde a garantia se encaixa (adiantamento, performance ou pagamento).",
+      "Personalizo wording conforme o INCOTERM acordado (FOB, CIF, DAP) e incluo cláusulas sobre responsabilidade por seguro, armazenamento e transferência de risco.",
+      "Integro requisitos de órgãos anuentes brasileiros (MAPA, ANVISA, Exército) e do país importador, prevenindo retenções por falta de certificado.",
+      "Coordeno com bancos confirmadores, verificando limites no BIS Swift e ajustes cambiais previstos pelo Banco Central (Resolução CMN 4.942/2021).",
+      "Ofereço FAQs e vídeos curtos para equipes comerciais espalhadas em América, Europa e Ásia, mostrando como acionar a garantia ou solicitar extensão dentro do prazo."
+    ],
+    "dateReleased": "Nov 01, 2025"
   },
   {
     "id": 9,
@@ -884,9 +452,9 @@
     "img6": "/images/blog/tj-blog-1.webp",
     "detailsImg": "/images/blog/tj-blog-4.webp",
     "smallImg": "",
-    "desc": "Principais tendências regulatórias que impactam garantias judiciais, aduaneiras e financeiras no Brasil e na América Latina.",
-    "desc1": "A Receita Federal, o Banco Central e o CNJ vêm exigindo mais transparência sobre origem dos recursos e governança das companhias que emitem ou contratam garantias. Por isso, reforçamos due diligence societária, checagens ESG e monitoramento contínuo.",
-    "desc2": "Com processos digitais e trilhas de auditoria, conseguimos provar cada etapa da operação e acelerar aprovações. Isso protege o tomador e o beneficiário, além de reduzir riscos reputacionais. Baixe nosso relatório de compliance e prepare sua empresa para 2025.",
+    "desc": "Aponto as frentes de compliance em garantias que já moldam 2025, alinhando requisitos do Bacen, Receita Federal e watchdogs internacionais.",
+    "desc1": "Atualizo matrizes de risco incorporando normas como a Resolução Bacen 4.968/2021, o Guia da CVM sobre ESG e os programas de integridade exigidos em licitações.",
+    "desc2": "Crio trilhas educacionais multilíngues para que executivos entendam porque cada documento é solicitado durante due diligence.",
     "date": "Nov 01, 2025",
     "day": 28,
     "month": "AUG",
@@ -896,88 +464,34 @@
       "Compliance",
       "Garantias"
     ],
-    "author_role": "Surety Intelligence",
-    "author": "Corp Fiança Research",
+    "author_role": "Especialista em Garantias Corporativas",
+    "author": "Douglas Morais",
     "status": "Report",
     "blogTopList": [
       {
         "iconName": "fa-light fa-user",
-        "name": "Admin",
+        "name": "Douglas Morais",
         "path": "#"
       },
       {
         "iconName": "fa-light fa-calendar-days",
-        "name": "Oct 01, 2025"
+        "name": "Nov 01, 2025"
       },
       {
         "iconName": "fa-light fa-comments",
-        "name": "Comment",
+        "name": "Comentários",
         "path": "#"
       }
     ],
-    "comments": [
-      {
-        "authorName": "Jane Doe",
-        "img": "/img/blog/user-1.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 3, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "England dotted with a lush, green landscape, rustic villages and throbbing with humanity. South Asian country that has plenty to offer to visitors with its diverse wildlife.",
-        "replies": [
-          {
-            "authorName": "Fred Bloggs",
-            "img": "/img/blog/user-2.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "February 3, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here making it look like readable English."
-          },
-          {
-            "authorName": "Jane Bloggs",
-            "img": "/img/blog/user-3.jpg",
-            "img1": "/images/blog/blog-thumb-1.webp",
-            "img2": "/images/blog/h2-blog-1.webp",
-            "img3": "/images/blog/blog-thumb-1.webp",
-            "img4": "/images/blog/blog-thumb-1.webp",
-            "img5": "/images/blog/tj-blog-8.webp",
-            "img6": "/images/blog/tj-blog-1.webp",
-            "date": "January 13, 2025",
-            "day": 28,
-            "month": "AUG",
-            "smallImg": "",
-            "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account"
-          }
-        ]
-      },
-      {
-        "authorName": "Themedemos",
-        "img": "/img/blog/user-4.jpg",
-        "img1": "/images/blog/blog-thumb-1.webp",
-        "img2": "/images/blog/h2-blog-1.webp",
-        "img3": "/images/blog/blog-thumb-1.webp",
-        "img4": "/images/blog/blog-thumb-1.webp",
-        "img5": "/images/blog/tj-blog-8.webp",
-        "img6": "/images/blog/tj-blog-1.webp",
-        "date": "January 20, 2025",
-        "day": 28,
-        "month": "AUG",
-        "smallImg": "",
-        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage you need to be sure there isn't anything embarrassing hidden in the middle of text. All the"
-      }
-    ]
+    "comments": [],
+    "slug": "compliance-garantias-2025",
+    "content": [
+      "Mapeio as novas exigências do Banco Central (cartas circulares 4.088/2020 e 4.101/2021) sobre prevenção à lavagem de dinheiro em operações com garantias.",
+      "Cruzo com o Vade Mecum da Receita Federal para regimes aduaneiros especiais (Repetro, Drawback) e oriento como manter comprovações fiscais atualizadas.",
+      "Implementei um repositório com versionamento que guarda pareceres jurídicos, laudos ambientais e certificações ESG, facilitando auditorias internas e externas.",
+      "Comparo as práticas locais com o DOJ Evaluation of Corporate Compliance Programs e com as Diretrizes da OCDE para Empresas Multinacionais, indicando gaps.",
+      "Finalizo com workshops para diretoria e conselhos, mostrando indicadores de maturidade, planos de resposta e como integrar compliance às metas de crescimento."
+    ],
+    "dateReleased": "Nov 01, 2025"
   }
 ]

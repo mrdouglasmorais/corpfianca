@@ -11,7 +11,9 @@ const BlogCard10 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, img6, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, img6, category, date, day, month } = blog || {};
+  const blogSlug = slug || id;
+  const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
   return (
     <div className="h10-blog_item wow fadeInUp" data-wow-delay={`0.${idx + 2}s`}>
@@ -50,10 +52,10 @@ const BlogCard10 = ({ blog, idx }) => {
           </ul>
         </div>
         <h4 className="blog_title">
-          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
+          <Link href={detailPath}>{title}</Link>
         </h4>
         {idx === 1 ? (
-          <Link className="blog_btn text-btn-2" href={createLocalizedPath(`/noticias/${id}`, locale)}>
+          <Link className="blog_btn text-btn-2" href={detailPath}>
             <span className="icon">
               <i className="tji-angle-right"></i>
             </span>

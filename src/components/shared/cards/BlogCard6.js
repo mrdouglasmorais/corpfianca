@@ -12,7 +12,9 @@ const BlogCard6 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, img2, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, img2, category, date, day, month } = blog || {};
+  const blogSlug = slug || id;
+  const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
   return (
     <div className="blog-style-2 style-6">
@@ -34,13 +36,13 @@ const BlogCard6 = ({ blog, idx }) => {
           </ul>
         </div>
         <h4 className="title under-line">
-          <Link href={createLocalizedPath(`/noticias/${id}`, locale)}>{title}</Link>
+          <Link href={detailPath}>{title}</Link>
         </h4>
         <div className="desc">
           <p>{desc || t('blog_card_desc')}</p>
         </div>
         <div className="blog-button">
-          <ButtonPrimary text={t('read_more')} url={createLocalizedPath(`/noticias/${id}`, locale)} />
+          <ButtonPrimary text={t('read_more')} url={detailPath} />
         </div>
       </div>
     </div>
