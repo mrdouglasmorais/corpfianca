@@ -1,16 +1,127 @@
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import useActiveLinkI18n from '@/hooks/useActiveLinkI18n';
-import getNavItemsI18n from '@/libs/getNavItemsI18n';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useMemo } from 'react';
 
 const Navbar = ({ option, isStickyHeader }) => {
   const { isIndexPage, isInnerPage, isResumeBtn, headerType } = option;
   const makeActiveLink = useActiveLinkI18n();
   const t = useTranslations('navigation');
   const locale = useLocale();
-  const navItems = getNavItemsI18n(t, locale);
+
+  // Inline navigation items to ensure they work correctly in production
+  const navItems = useMemo(() => [
+    {
+      id: 1,
+      name: t('home'),
+      path: createLocalizedPath('/', locale),
+    },
+    {
+      id: 2,
+      name: t('pages'),
+      path: '#',
+      submenu: [
+        {
+          id: 1,
+          name: '',
+          path: '#',
+          items: [
+            {
+              id: 1,
+              name: t('about_us'),
+              path: createLocalizedPath('/about', locale),
+            },
+            {
+              id: 2,
+              name: t('services'),
+              path: createLocalizedPath('/services', locale),
+            },
+            {
+              id: 3,
+              name: t('faq'),
+              path: createLocalizedPath('/faq', locale),
+            },
+            {
+              id: 6,
+              name: t('file_claim'),
+              path: createLocalizedPath('/sinistros', locale),
+            },
+            {
+              id: 4,
+              name: t('register'),
+              path: createLocalizedPath('/register', locale),
+              badge: 'New',
+            },
+            {
+              id: 5,
+              name: t('login'),
+              path: createLocalizedPath('/login', locale),
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: t('services'),
+      path: createLocalizedPath('/services', locale),
+      submenu: [
+        {
+          id: 1,
+          name: t('traditional_bonds_fallback'),
+          icon: 'tji-shield',
+          path: createLocalizedPath('/services/carta-fianca-fidejussoria', locale),
+        },
+        {
+          id: 2,
+          name: t('judicial_bonds'),
+          icon: 'tji-optimization',
+          path: createLocalizedPath('/services/garantia-acoes-judiciais', locale),
+        },
+        {
+          id: 3,
+          name: t('rental_bonds'),
+          icon: 'tji-analytics',
+          path: createLocalizedPath('/services/garantia-deposito-recursal', locale),
+        },
+        {
+          id: 4,
+          name: t('credit_bonds'),
+          icon: 'tji-strategic',
+          path: createLocalizedPath('/services/garantia-financeira', locale),
+        },
+        {
+          id: 5,
+          name: 'Garantia Imobiliária',
+          icon: 'tji-shield',
+          path: createLocalizedPath('/services/garantia-imobiliaria-permuta', locale),
+        },
+        {
+          id: 6,
+          name: 'Garantia de Adiantamento',
+          icon: 'tji-optimization',
+          path: createLocalizedPath('/services/garantia-adiantamento-pagamento', locale),
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: t('blog'),
+      path: createLocalizedPath('/noticias', locale),
+    },
+    {
+      id: 7,
+      name: t('get_quote'),
+      path: createLocalizedPath('/cotacao', locale),
+    },
+    {
+      id: 6,
+      name: t('contact'),
+      path: createLocalizedPath('/contact', locale),
+    },
+  ], [t, locale]);
 
   const homeNav = makeActiveLink(navItems[0]);
   const pagesNav = makeActiveLink(navItems[1]);
