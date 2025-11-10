@@ -57,8 +57,8 @@ const LoginPrimary = () => {
   return (
     <section className="full-width tj-page__area section-space">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
+        <div className="row justify-content-center">
+          <div className="col-xl-5 col-lg-6 col-md-9">
             <div className="tj-page__container">
               <div className="tj-entry__content">
                 <div className="contact-form-one style-2 auth-login wow fadeInUp" data-wow-delay="0.1s">
