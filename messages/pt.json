@@ -6,7 +6,7 @@
     "about": "Sobre",
     "services": "Soluções",
     "portfolio": "Cases",
-    "blog": "Insights",
+    "blog": "Notícias",
     "team": "Equipe",
     "home": "Início",
     "drag": "Arrastar",
@@ -340,7 +340,7 @@
     "leadership": "Especialistas dedicados",
     "subscribe_newsletter": "Assine os conteúdos da Corp Fiança",
     "enter_email": "Digite seu e-mail",
-    "all_rights_reserved": "Todos os direitos reservados.",
+    "all_rights_reserved": "Todos os direitos reservados",
     "policy_privacy": "Política de privacidade",
     "terms_conditions": "Termos e condições",
     "technology_by": "Tecnologia e ecossistema",
@@ -509,6 +509,15 @@
     "register_benefits_title": "Com sua conta Corp Fiança você consegue:",
     "register_benefit_1": "Simular garantias judiciais, contratuais e aduaneiras em minutos.",
     "register_benefit_2": "Enviar documentos com segurança e acompanhar cada etapa com alertas.",
-    "register_benefit_3": "Colaborar com jurídico, financeiro e operações em um único painel."
+    "register_benefit_3": "Colaborar com jurídico, financeiro e operações em um único painel.",
+    "field_required": "Campo obrigatório.",
+    "field_min_length": "Informe ao menos alguns caracteres.",
+    "invalid_email": "Informe um e-mail corporativo válido.",
+    "password_mismatch": "As senhas precisam ser iguais.",
+    "processing": "Aguarde...",
+    "register_success": "Conta criada com sucesso. Entraremos em contato em breve.",
+    "register_error": "Não foi possível criar a conta. Tente novamente.",
+    "login_success": "Login realizado com sucesso. Redirecionando...",
+    "login_error": "Não foi possível acessar. Verifique suas credenciais."
   }
 }

@@ -6,7 +6,7 @@
     "about": "About",
     "services": "Solutions",
     "portfolio": "Cases",
-    "blog": "Insights",
+    "blog": "News",
     "team": "Team",
     "home": "Home",
     "drag": "Drag",
@@ -352,7 +352,7 @@
     "leadership": "Dedicated specialists",
     "subscribe_newsletter": "Subscribe to Corp Fiança updates",
     "enter_email": "Enter your email",
-    "all_rights_reserved": "All rights reserved.",
+    "all_rights_reserved": "All rights reserved",
     "policy_privacy": "Privacy policy",
     "terms_conditions": "Terms & conditions",
     "technology_by": "Technology and ecosystem",
@@ -521,6 +521,15 @@
     "register_benefits_title": "With your Corp Fiança account you can:",
     "register_benefit_1": "Simulate judicial, contractual, and customs guarantees in minutes.",
     "register_benefit_2": "Upload documentation securely and follow every milestone with alerts.",
-    "register_benefit_3": "Collaborate with legal, finance, and operations in a single dashboard."
+    "register_benefit_3": "Collaborate with legal, finance, and operations in a single dashboard.",
+    "field_required": "This field is required.",
+    "field_min_length": "Please provide a few more characters.",
+    "invalid_email": "Enter a valid corporate email.",
+    "password_mismatch": "Passwords must match.",
+    "processing": "Please wait...",
+    "register_success": "Account created successfully. Our team will get in touch shortly.",
+    "register_error": "We couldn't create the account. Please try again.",
+    "login_success": "Login successful. Redirecting...",
+    "login_error": "Unable to sign in. Please check your credentials."
   }
 }
