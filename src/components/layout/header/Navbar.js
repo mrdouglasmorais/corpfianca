@@ -11,117 +11,119 @@ const Navbar = ({ option, isStickyHeader }) => {
   const t = useTranslations('navigation');
   const locale = useLocale();
 
-  // Inline navigation items to ensure they work correctly in production
-  const navItems = useMemo(() => [
-    {
-      id: 1,
-      name: t('home'),
-      path: createLocalizedPath('/', locale),
-    },
-    {
-      id: 2,
-      name: t('pages'),
-      path: '#',
-      submenu: [
-        {
-          id: 1,
-          name: '',
-          path: '#',
-          items: [
-            {
-              id: 1,
-              name: t('about_us'),
-              path: createLocalizedPath('/about', locale),
-            },
-            {
-              id: 2,
-              name: t('services'),
-              path: createLocalizedPath('/services', locale),
-            },
-            {
-              id: 3,
-              name: t('faq'),
-              path: createLocalizedPath('/faq', locale),
-            },
-            {
-              id: 6,
-              name: t('file_claim'),
-              path: createLocalizedPath('/sinistros', locale),
-            },
-            {
-              id: 4,
-              name: t('register'),
-              path: createLocalizedPath('/register', locale),
-              badge: 'New',
-            },
-            {
-              id: 5,
-              name: t('login'),
-              path: createLocalizedPath('/login', locale),
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: 3,
-      name: t('services'),
-      path: createLocalizedPath('/services', locale),
-      submenu: [
-        {
-          id: 1,
-          name: t('traditional_bonds_fallback'),
-          icon: 'tji-shield',
-          path: createLocalizedPath('/services/carta-fianca-fidejussoria', locale),
-        },
-        {
-          id: 2,
-          name: t('judicial_bonds'),
-          icon: 'tji-optimization',
-          path: createLocalizedPath('/services/garantia-acoes-judiciais', locale),
-        },
-        {
-          id: 3,
-          name: t('rental_bonds'),
-          icon: 'tji-analytics',
-          path: createLocalizedPath('/services/garantia-deposito-recursal', locale),
-        },
-        {
-          id: 4,
-          name: t('credit_bonds'),
-          icon: 'tji-strategic',
-          path: createLocalizedPath('/services/garantia-financeira', locale),
-        },
-        {
-          id: 5,
-          name: 'Garantia Imobiliária',
-          icon: 'tji-shield',
-          path: createLocalizedPath('/services/garantia-imobiliaria-permuta', locale),
-        },
-        {
-          id: 6,
-          name: 'Garantia de Adiantamento',
-          icon: 'tji-optimization',
-          path: createLocalizedPath('/services/garantia-adiantamento-pagamento', locale),
-        },
-      ],
-    },
-    {
-      id: 5,
-      name: t('blog'),
-      path: createLocalizedPath('/noticias', locale),
-    },
-    {
-      id: 7,
-      name: t('get_quote'),
-      path: createLocalizedPath('/cotacao', locale),
-    },
-    {
-      id: 6,
-      name: t('contact'),
-      path: createLocalizedPath('/contact', locale),
-    },
-  ], [t, locale]);
+  const navItems = useMemo(
+    () => [
+      {
+        id: 1,
+        name: t('home'),
+        path: createLocalizedPath('/', locale),
+      },
+      {
+        id: 2,
+        name: t('pages'),
+        path: '#',
+        submenu: [
+          {
+            id: 1,
+            name: '',
+            path: '#',
+            items: [
+              {
+                id: 1,
+                name: t('about_us'),
+                path: createLocalizedPath('/about', locale),
+              },
+              {
+                id: 2,
+                name: t('services'),
+                path: createLocalizedPath('/services', locale),
+              },
+              {
+                id: 3,
+                name: t('faq'),
+                path: createLocalizedPath('/faq', locale),
+              },
+              {
+                id: 6,
+                name: t('file_claim'),
+                path: createLocalizedPath('/sinistros', locale),
+              },
+              {
+                id: 4,
+                name: t('register'),
+                path: createLocalizedPath('/register', locale),
+                badge: 'New',
+              },
+              {
+                id: 5,
+                name: t('login'),
+                path: createLocalizedPath('/login', locale),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: t('services'),
+        path: createLocalizedPath('/services', locale),
+        submenu: [
+          {
+            id: 1,
+            name: t('traditional_bonds_fallback'),
+            icon: 'tji-shield',
+            path: createLocalizedPath('/services/carta-fianca-fidejussoria', locale),
+          },
+          {
+            id: 2,
+            name: t('judicial_bonds'),
+            icon: 'tji-optimization',
+            path: createLocalizedPath('/services/garantia-acoes-judiciais', locale),
+          },
+          {
+            id: 3,
+            name: t('rental_bonds'),
+            icon: 'tji-analytics',
+            path: createLocalizedPath('/services/garantia-deposito-recursal', locale),
+          },
+          {
+            id: 4,
+            name: t('credit_bonds'),
+            icon: 'tji-strategic',
+            path: createLocalizedPath('/services/garantia-financeira', locale),
+          },
+          {
+            id: 5,
+            name: 'Garantia Imobiliária',
+            icon: 'tji-shield',
+            path: createLocalizedPath('/services/garantia-imobiliaria-permuta', locale),
+          },
+          {
+            id: 6,
+            name: 'Garantia de Adiantamento',
+            icon: 'tji-optimization',
+            path: createLocalizedPath('/services/garantia-adiantamento-pagamento', locale),
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: t('blog'),
+        path: createLocalizedPath('/noticias', locale),
+      },
+      {
+        id: 7,
+        name: t('get_quote'),
+        path: createLocalizedPath('/cotacao', locale),
+      },
+      {
+        id: 6,
+        name: t('contact'),
+        path: createLocalizedPath('/contact', locale),
+      },
+    ],
+    [t, locale],
+  );
 
   const homeNav = makeActiveLink(navItems[0]);
   const pagesNav = makeActiveLink(navItems[1]);
@@ -139,7 +141,9 @@ const Navbar = ({ option, isStickyHeader }) => {
     >
       <ul>
         <li
-          className={`${homeNav?.submenu?.length ? 'has-dropdown' : ''} ${homeNav?.isActive ? 'current-menu-ancestor' : ''}`}
+          className={`${homeNav?.submenu?.length ? 'has-dropdown' : ''} ${
+            homeNav?.isActive ? 'current-menu-ancestor' : ''
+          }`}
         >
           <Link href={homeNav?.path ? homeNav?.path : '#'}>{homeNav?.name}</Link>
           {homeNav?.submenu?.length ? (
@@ -252,13 +256,12 @@ const Navbar = ({ option, isStickyHeader }) => {
               ? serviceNav?.submenu?.map((item, idx) => (
                   <li key={idx}>
                     <Link className="mega-menu-service-single" href={item?.path ? item?.path : '/'}>
-                      {' '}
                       <span className="mega-menu-service-icon">
                         <i className={item?.icon ? item?.icon : 'tji-optimization'}></i>
-                      </span>{' '}
+                      </span>
                       <span className="mega-menu-service-title">
                         {item?.name ? item?.name : t('business_process_optimization_fallback')}
-                      </span>{' '}
+                      </span>
                       <span className="mega-menu-service-nav">
                         <i className="tji-arrow-right"></i>
                         <i className="tji-arrow-right"></i>
@@ -270,7 +273,9 @@ const Navbar = ({ option, isStickyHeader }) => {
           </ul>
         </li>
         <li
-          className={`${blogNav?.submenu?.length ? 'has-dropdown' : ''} ${blogNav?.isActive ? 'current-menu-ancestor' : ''}`}
+          className={`${blogNav?.submenu?.length ? 'has-dropdown' : ''} ${
+            blogNav?.isActive ? 'current-menu-ancestor' : ''
+          }`}
         >
           <Link href={blogNav?.path ? blogNav?.path : '#'}>{blogNav?.name}</Link>
           {blogNav?.submenu?.length ? (
