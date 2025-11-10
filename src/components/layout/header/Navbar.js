@@ -167,7 +167,7 @@ const Navbar = ({ option, isStickyHeader }) => {
                               )}
                               <div className="tj-demo-button">
                                 <ButtonPrimary
-                                  text={t('view_demo')}
+                                  text={t('view_news')}
                                   url={item?.path}
                                   className={'header_btn'}
                                 />
