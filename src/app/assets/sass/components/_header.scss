@@ -521,8 +521,8 @@
 				> .sub-menu {
 					visibility: visible;
 					opacity: 1;
-					top: 100%;
 					pointer-events: inherit;
+					transform: translateY(0);
 
 					&::before {
 						width: 100%;
@@ -539,8 +539,10 @@
 				position: absolute;
 				padding: 10px 0;
 				z-index: 9;
-				top: 85%;
-				transition: 0.4s;
+				inset-inline-start: 0;
+				top: calc(100% + 12px);
+				transform: translateY(10px);
+				transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
 				box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 				pointer-events: none;
 				opacity: 0;

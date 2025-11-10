@@ -1,6 +1,23 @@
 import Link from "next/link";
 
-const ButtonPrimary = ({ className, text, url, type, iconName, onClick }) => {
+const ButtonPrimary = ({
+	className,
+	text,
+	url,
+	type,
+	iconName,
+	onClick,
+	disabled,
+	iconCount = 2,
+}) => {
+	const renderIcons = () => (
+		<span>
+			{Array.from({ length: iconCount }).map((_, idx) => (
+				<i key={idx} className={iconName ? iconName : "tji-arrow-right"}></i>
+			))}
+		</span>
+	);
+
 	return (
 		<>
 			{type || onClick ? (
@@ -8,13 +25,11 @@ const ButtonPrimary = ({ className, text, url, type, iconName, onClick }) => {
 					type={type ? type : "button"}
 					onClick={onClick}
 					className={`tj-primary-btn ${className ? className : ""}`}
+					disabled={disabled}
 				>
 					<span className="btn_inner">
 						<span className="btn_icon">
-							<span>
-								<i className="tji-arrow-right"></i>
-								<i className="tji-arrow-right"></i>
-							</span>
+							{renderIcons()}
 						</span>
 						<span className="btn_text">
 							<span>{text}</span>
@@ -28,10 +43,7 @@ const ButtonPrimary = ({ className, text, url, type, iconName, onClick }) => {
 				>
 					<span className="btn_inner">
 						<span className="btn_icon">
-							<span>
-								<i className={iconName ? iconName : "tji-arrow-right"}></i>
-								<i className={iconName ? iconName : "tji-arrow-right"}></i>
-							</span>
+							{renderIcons()}
 						</span>
 						<span className="btn_text">
 							<span>{text}</span>

@@ -1570,14 +1570,28 @@ img {
 .mainmenu ul > li:hover > a::after {
   transform: rotate(-180deg);
 }
-.mainmenu ul > li:hover > .sub-menu {
+.mainmenu ul > li:hover > .sub-menu,
+.mainmenu ul > li > .sub-menu:hover {
   visibility: visible;
   opacity: 1;
-  top: 100%;
   pointer-events: inherit;
+  transform: translateY(0);
+  transition-delay: 0s, 0s, 0s;
 }
 .mainmenu ul > li:hover > .sub-menu::before {
   width: 100%;
+}
+.mainmenu ul > li > .sub-menu:not(:hover) {
+  transition-delay: 0.2s, 0.2s, 0s;
+}
+.mainmenu ul > li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 20px;
+  pointer-events: auto;
 }
 .mainmenu ul > li > .sub-menu {
   width: 230px;
@@ -1589,8 +1603,10 @@ img {
   position: absolute;
   padding: 10px 0;
   z-index: 9;
-  top: 85%;
-  transition: 0.4s;
+  inset-inline-start: 0;
+  top: calc(100% + 12px);
+  transform: translateY(10px);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   pointer-events: none;
   opacity: 0;
@@ -9201,6 +9217,13 @@ blockquote cite::before {
 }
 .tj-sidebar-cta .icon {
   margin-bottom: 30px;
+  max-width: 60px;
+  width: 100%;
+}
+.tj-sidebar-cta .icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .tj-sidebar-cta h3 {
   color: var(--tj-color-common-white);
@@ -13505,6 +13528,49 @@ blockquote cite::before {
 .contact-form-one .form-input textarea {
   min-height: 130px;
   resize: none;
+}
+.contact-form-one .password-hint {
+  color: var(--tj-color-common-white-2);
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+.contact-form-one .register-intro {
+  color: var(--tj-color-common-white-2);
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.contact-form-one .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--tj-color-common-white);
+  font-size: 14px;
+  cursor: pointer;
+}
+.contact-form-one .checkbox-label input[type="checkbox"] {
+  margin-top: 4px;
+  cursor: pointer;
+}
+.contact-form-one .checkbox-label a {
+  color: var(--tj-color-theme-primary);
+  text-decoration: underline;
+}
+.contact-form-one .checkbox-label a:hover {
+  color: var(--tj-color-common-white);
+}
+.contact-form-one .already-have-account {
+  color: var(--tj-color-common-white-2);
+  margin: 0;
+}
+.contact-form-one .already-have-account a {
+  color: var(--tj-color-theme-primary);
+  font-weight: var(--tj-fw-bold);
+  text-decoration: none;
+}
+.contact-form-one .already-have-account a:hover {
+  text-decoration: underline;
 }
 .contact-form-one .nice-select {
   position: relative;
@@ -29675,3 +29741,49 @@ body:has(.sticky) .tj-sticky-top {
 }
 
 /* END: Home 10 team CSS */
+
+/* Auth form adjustments */
+.auth-form .form-input.has-error input,
+.auth-form .form-checkbox label.has-error {
+  border-color: var(--tj-color-theme-primary);
+  color: var(--tj-color-theme-primary);
+}
+.auth-form .form-input.has-error input:focus {
+  box-shadow: 0 0 0 1px rgba(232, 65, 91, 0.2);
+}
+.form-error-text {
+  font-size: 14px;
+  color: var(--tj-color-theme-primary);
+  margin: 6px 0 0;
+}
+.form-status-message {
+  margin-top: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.form-status-message.success {
+  background: rgba(20, 170, 120, 0.1);
+  color: #14aa78;
+}
+.form-status-message.error {
+  background: rgba(232, 65, 91, 0.08);
+  color: var(--tj-color-theme-primary);
+}
+.auth-form .form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.auth-form .form-checkbox span {
+  font-weight: 500;
+}
+.form-checkbox-row {
+  margin-top: 10px;
+}
+.tj-primary-btn:disabled,
+.tj-primary-btn[disabled] {
+  opacity: 0.6;
+  pointer-events: none;
+}
