@@ -17,3 +17,33 @@
   right: auto !important;
   transform: none !important;
 }
+
+/* Keep blog share links on a single line for desktop */
+.tj-post-details_tags_share .social-share-inline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .tj-post-details_tags_share .tagcloud {
+    width: 70% !important;
+  }
+  .tj-post-details_tags_share .social-share-inline {
+    width: 30% !important;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  .tj-post-details_tags_share .social-share-inline a {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    border-radius: 50% !important;
+    aspect-ratio: 1 / 1;
+    display: inline-flex;
+    flex: 0 0 32px;
+  }
+}
