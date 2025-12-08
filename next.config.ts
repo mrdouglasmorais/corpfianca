@@ -3,16 +3,13 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 const nextConfig = {
-	eslint: {
-		ignoreDuringBuilds: true,
-	},
 	reactStrictMode: false,
 	outputFileTracingRoot: process.cwd(),
 	// Force fresh builds and disable aggressive caching
 	experimental: {
 		staleTimes: {
 			dynamic: 0,
-			static: 0,
+			static: 30, // Minimum value is 30 in Next.js 16
 		},
 	},
 	// Ensure proper i18n routing
