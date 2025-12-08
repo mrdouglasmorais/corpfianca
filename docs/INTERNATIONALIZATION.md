@@ -30,9 +30,11 @@ Este projeto implementa um sistema completo de internacionalização para o menu
 
 ### URLs Localizadas
 
-- **Português**: `/about`, `/services`, `/contact` (sem prefixo)
-- **Inglês**: `/en/about`, `/en/services`, `/en/contact`
-- **Espanhol**: `/es/about`, `/es/services`, `/es/contact`
+Todas as URLs incluem o prefixo do idioma:
+
+- **Português**: `/pt/sobre`, `/pt/produtos`, `/pt/contato`
+- **Inglês**: `/en/about`, `/en/products`, `/en/contact`
+- **Espanhol**: `/es/acerca`, `/es/productos`, `/es/contacto`
 
 ### Estrutura das Traduções
 

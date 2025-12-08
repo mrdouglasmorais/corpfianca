@@ -49,10 +49,8 @@ export default function LanguageSwitcher() {
         pathnameWithoutLocale = '/';
       }
 
-      // Build new path based on locale
-      const newPath = newLocale === 'pt'
-        ? pathnameWithoutLocale
-        : `/${newLocale}${pathnameWithoutLocale}`;
+      // Build new path based on locale - always include locale prefix
+      const newPath = `/${newLocale}${pathnameWithoutLocale}`;
 
       router.push(newPath);
     }
