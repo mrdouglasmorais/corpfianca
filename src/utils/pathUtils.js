@@ -41,10 +41,8 @@ const SUPPORTED_LOCALES = ['pt', 'en', 'es'];
 const DEFAULT_LOCALE = 'pt';
 
 const getLocalePrefix = (locale) => {
-  if (!locale || locale === DEFAULT_LOCALE) {
-    return '';
-  }
-  return `/${locale}`;
+  const safeLocale = SUPPORTED_LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
+  return `/${safeLocale}`;
 };
 
 /**
@@ -86,17 +84,17 @@ const getTranslatedRoute = (path, locale) => {
 export const createLocalizedPath = (path, locale) => {
   if (!path || path === '#' || path === 'javascript:void(0)') return '#';
   const safeLocale = SUPPORTED_LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
+  const prefix = getLocalePrefix(safeLocale);
+
   if (path === '/') {
-    const prefix = getLocalePrefix(safeLocale);
-    return prefix || '/';
+    return prefix;
   }
 
   // Translate the route according to locale
   const translatedPath = getTranslatedRoute(path, safeLocale);
-  const prefix = getLocalePrefix(safeLocale);
 
   if (translatedPath === '/') {
-    return prefix || '/';
+    return prefix;
   }
 
   return `${prefix}${translatedPath}`;
@@ -116,12 +114,7 @@ export const normalizePath = (path, locale) => {
   const pathWithoutLocale = path.replace(/^\/(pt|en|es)(?=\/|$)/, '') || '/';
   const formattedPath = pathWithoutLocale.startsWith('/') ? pathWithoutLocale : `/${pathWithoutLocale}`;
 
-  // For default locale (pt), don't add prefix
-  if (safeLocale === DEFAULT_LOCALE) {
-    return formattedPath || '/';
-  }
-
-  // For other locales, add prefix back
+  // Always add locale prefix
   if (formattedPath === '/') {
     return `/${safeLocale}`;
   }
