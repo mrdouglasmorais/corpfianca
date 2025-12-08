@@ -234,7 +234,7 @@
   }
 
   > .mega-menu-service {
-    width: 346px;
+    width: 400px;
     margin-inline-start: -25px;
     padding: 15px 0;
     @media #{$md, $sm, $xs} {
@@ -264,6 +264,8 @@
       }
     }
     &-single {
+      display: flex;
+      align-items: center;
       gap: 12px;
       .mega-menu-service {
         &-icon {
@@ -284,10 +286,9 @@
         }
         &-title {
           line-height: 1.375;
-          max-width: 152px;
-          @media #{$md,$sm,$xs} {
-            max-width: 156px;
-          }
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         &-nav {
           display: inline-flex;
