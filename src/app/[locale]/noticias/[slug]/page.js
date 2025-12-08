@@ -5,13 +5,12 @@ import PageWrapper from '@/components/shared/wrappers/PageWrapper';
 export const dynamic = 'force-dynamic';
 
 export default async function NoticiaDetails({ params }) {
-  const resolvedParams = await params;
-  const slugParam = resolvedParams?.slug;
-  const normalizedSlug = Array.isArray(slugParam) ? slugParam.join('/') : slugParam || '';
-
+  const { locale, slug } = await params;
+  
   return (
     <PageWrapper isHeaderTop={true} footerType={'inner'}>
-      <BlogDetailsMain blogSlug={normalizedSlug} />
+      <BlogDetailsMain blogSlug={slug} />
     </PageWrapper>
   );
 }
+
