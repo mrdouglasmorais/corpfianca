@@ -12,7 +12,7 @@ const BlogCard8 = ({ blog, idx, currentIndex, handleCurrentIndex }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, slug, img4, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, image, category, date, day, month } = blog || {};
   const blogSlug = slug || id;
   const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
@@ -22,7 +22,7 @@ const BlogCard8 = ({ blog, idx, currentIndex, handleCurrentIndex }) => {
       onMouseEnter={() => handleCurrentIndex(idx)}
     >
       <div className="blog-images">
-        <img src={img4 ? img4 : '/images/blog/blog-thumb-1.webp'} alt="Images" />
+        <img src={image ? image : '/images/blog/blog-thumb-1.webp'} alt="Images" />
         <div className="blog-date">
           <span className="date">{modifyNumber(day)}</span>
           <span className="month">{translatedMonth}</span>

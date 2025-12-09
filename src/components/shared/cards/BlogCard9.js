@@ -11,7 +11,7 @@ const BlogCard9 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, slug, img5, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, image, category, date, day, month } = blog || {};
   const blogSlug = slug || id;
   const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
@@ -42,7 +42,7 @@ const BlogCard9 = ({ blog, idx }) => {
       <div
         className="blog_img hover:shine"
         style={{
-          backgroundImage: `url('${img5 ? img5 : '/images/blog/tj-blog-8.webp'}')`,
+          backgroundImage: `url('${image ? image : '/images/blog/tj-blog-8.webp'}')`,
         }}
       ></div>
     </article>

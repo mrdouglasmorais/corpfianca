@@ -9,14 +9,14 @@ const BlogCard1 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, slug, img1, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, image, category, date, day, month } = blog || {};
   const blogSlug = slug || id;
   const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   return (
     <div className="blog-item wow fadeInUp" data-wow-delay={`0.${idx + 1}s`}>
       <div className="blog-images hover:shine">
         <Link href={detailPath}>
-          <img src={img1 ? img1 : '/images/blog/blog-thumb-1.webp'} alt="Images" />
+          <img src={image ? image : '/images/blog/blog-thumb-1.webp'} alt="Images" />
         </Link>
       </div>
       <div className="blog-content">

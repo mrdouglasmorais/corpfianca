@@ -17,12 +17,12 @@ const RecentBlogWidget = () => {
       <h5 className="tj-sidebar-widget-title">{t('recent_post')}</h5>
       <div className="sidebar-recent-post">
         {recentBlogs?.length
-          ? recentBlogs?.map(({ id, slug, detailsImg, title, blogTopList, comments, date }, idx) => (
+          ? recentBlogs?.map(({ id, slug, image, title, blogTopList, comments, date }, idx) => (
               <div key={idx} className="single-post d-flex align-items-center">
                 <div className="post-image">
                   <Link href={createLocalizedPath(`/noticias/${slug || id}`, locale)}>
                     <img
-                      src={detailsImg ? detailsImg : '/images/blog/tj-blog-1.webp'}
+                      src={image ? image : '/images/blog/tj-blog-1.webp'}
                       alt="blog-image"
                     />
                   </Link>

@@ -11,7 +11,7 @@ const BlogCard2 = ({ blog, type, isSidebar, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, slug, img2, detailsImg, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, image, category, date, day, month } = blog || {};
   const blogSlug = slug || id;
   const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
@@ -26,7 +26,7 @@ const BlogCard2 = ({ blog, type, isSidebar, idx }) => {
     >
       <div className="blog-images">
         <img
-          src={type === 2 && detailsImg ? detailsImg : img2 ? img2 : '/images/blog/h2-blog-1.webp'}
+          src={image ? image : '/images/blog/h2-blog-1.webp'}
           alt="Images"
         />
         <div className="blog-date">

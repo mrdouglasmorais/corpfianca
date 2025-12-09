@@ -11,7 +11,7 @@ const BlogCard10 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, slug, img6, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, image, category, date, day, month } = blog || {};
   const blogSlug = slug || id;
   const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
@@ -25,13 +25,13 @@ const BlogCard10 = ({ blog, idx }) => {
             <div
               className="blog_image"
               style={{
-                backgroundImage: `url('${img6 ? img6 : '/images/blog/tj-blog-8.webp'}')`,
+                backgroundImage: `url('${image ? image : '/images/blog/tj-blog-8.webp'}')`,
               }}
               data-bg-image="./assets/images/blog/tj-blog-8.webp"
             ></div>
           ) : (
             <div className="blog_thumb">
-              <img src={img6 ? img6 : '/images/blog/tj-blog-2.webp'} alt="" />
+              <img src={image ? image : '/images/blog/tj-blog-2.webp'} alt="" />
             </div>
           )}
           <div className="blog-date">

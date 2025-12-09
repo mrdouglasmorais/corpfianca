@@ -25,7 +25,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
   const title = currentItem?.title || '';
   const id = currentItem?.id || null;
   const slug = currentItem?.slug || (id ? `${id}` : '');
-  const detailsImg = currentItem?.detailsImg || '';
+  const image = currentItem?.image || '';
   const category = currentItem?.category || '';
   const translatedCategory = category ? translateCategory(category, tCommon) : '';
   const categoryPath = category
@@ -88,7 +88,7 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
               <article className="tj-post-single-post">
                 <div className="tj-post-thumb hover:shine wow fadeInUp" data-wow-delay="0.1s">
                   <img
-                    src={detailsImg ? detailsImg : '/images/blog/tj-blog-1.webp'}
+                    src={image ? image : '/images/blog/tj-blog-1.webp'}
                     alt="post-image"
                   />
                 </div>

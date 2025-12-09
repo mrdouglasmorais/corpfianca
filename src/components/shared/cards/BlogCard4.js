@@ -11,7 +11,7 @@ const BlogCard4 = ({ blog, idx }) => {
   const t = useTranslations('blogs_section');
   const tCommon = useTranslations('common');
   const locale = useLocale();
-  const { title, desc, id, slug, img2, category, date, day, month } = blog || {};
+  const { title, desc, id, slug, image, category, date, day, month } = blog || {};
   const blogSlug = slug || id;
   const detailPath = createLocalizedPath(`/noticias/${blogSlug}`, locale);
   const translatedMonth = translateMonth(month, locale);
@@ -19,7 +19,7 @@ const BlogCard4 = ({ blog, idx }) => {
     <div className="blog-style-4 left-swipe">
       <div className="blog-images">
         <Link href={detailPath}>
-          <img src={img2 ? img2 : '/images/blog/h2-blog-1.webp'} alt="Images" />
+          <img src={image ? image : '/images/blog/h2-blog-1.webp'} alt="Images" />
         </Link>
         <div className="blog-date">
           <span className="date">{modifyNumber(day)}</span>
