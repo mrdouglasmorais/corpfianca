@@ -33,7 +33,6 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
     : '';
   const tags = currentItem?.tags || [];
   const translatedTags = translateTags(tags, tCommon);
-  const author = currentItem?.author || 'Douglas Morais';
   const dateReleased = currentItem?.dateReleased || currentItem?.date || '29 Sep,2024';
   const descArray = Array.isArray(currentItem?.content)
     ? currentItem?.content
@@ -94,17 +93,6 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
                 </div>
                 <h3 className="tj-post-title text-anim">{title}</h3>
                 <div className="blog-category-two wow fadeInUp" data-wow-delay="0.3s">
-                  <div className="category-item">
-                    <div className="cate-images">
-                      <img src="/images/blog/author-1.png" alt="Images" />
-                    </div>
-                    <div className="cate-text">
-                      <span className="degination">{t('authored_by')}</span>
-                      <h6 className="title">
-                        <Link href={createLocalizedPath(`/noticias/${slug}`, locale)}>{author}</Link>
-                      </h6>
-                    </div>
-                  </div>
                   <div className="category-item">
                     <div className="cate-icons">
                       <i className="tji-calender"></i>
