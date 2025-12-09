@@ -54,9 +54,6 @@
       "Fluxo de Caixa"
     ],
     "status": "Guia",
-    "isBlogQuote": true,
-    "iconId": "f10e",
-    "popupVideo": "https://www.youtube.com/watch?v=eEzD-Y97ges",
     "blogTopList": [
       {
         "iconName": "fa-light fa-calendar-days",
