@@ -1,6 +1,5 @@
 'use client';
 import Accordion from '@/components/shared/accordion/Accordion';
-import PopupVideo from '@/components/shared/popup-video/PopupVideo';
 import { useCurrentItem } from '@/context_api/CurrentItemContext';
 import getALlServices from '@/libs/getALlServices';
 import { createLocalizedPath } from '@/utils/pathUtils';
@@ -39,7 +38,7 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
             <div className="tj-post-wrapper">
               <div className="tj-post-single-post mb-0">
                 <div className="tj-post-thumb hover:shine wow fadeInUp" data-wow-delay="0.1s">
-                  <img src="/images/service/tj-service-1.webp" alt="post-image" />
+                  <img src={img ? img : '/images/service/tj-service-1.webp'} alt="post-image" />
                 </div>
                 <h3 className="tj-post-title text-anim">{titleLarge}</h3>
                 <div className="tj-entry-content">
@@ -86,20 +85,6 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
                           )}
                     </ul>
                   </div>
-                  <div className="service-images-wrap">
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <div className="image-wrap hover:shine wow fadeInUp" data-wow-delay="0.5s">
-                          <img src="/images/service/tj-service-3.webp" alt="service-image" />
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <div className="image-wrap hover:shine wow fadeInUp" data-wow-delay="0.7s">
-                          <img src="/images/service/tj-service-4.webp" alt="service-image" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div className="check-list mb-40">
                     <h4 className="text-anim">{t('key_features')}</h4>
                     <p className="wow fadeInUp" data-wow-delay="0.1s">
@@ -145,20 +130,6 @@ const ServicesDetailsPrimary = ({ setCurrentTitle, serviceId }) => {
                     </div>
                   </div>
 
-                  <div
-                    className="tj-post-thumb mt-30 mb-0 hover:shine wow fadeInUp"
-                    data-wow-delay="0.1s"
-                  >
-                    <img src="/images/service/tj-service-2.webp" alt="post-image" />
-                    <PopupVideo>
-                      <Link
-                        className="play-btn glightbox video-popup"
-                        href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-                      >
-                        <i className="fa-sharp fa-solid fa-play"></i>
-                      </Link>
-                    </PopupVideo>
-                  </div>
                   <h4 className="text-anim">{t('general_questions')}</h4>
                   <Accordion>
                     <div className="tj-faq mt-30">

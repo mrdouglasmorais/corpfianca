@@ -1,5 +1,4 @@
 'use client';
-import PopupVideo from '@/components/shared/popup-video/PopupVideo';
 import BlogSidebar from '@/components/shared/sidebar/BlogSidebar';
 import { useCurrentItem } from '@/context_api/CurrentItemContext';
 import getBlogs from '@/libs/getBlogs';
@@ -130,12 +129,6 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
                       </p>
                     </>
                   )}
-                  <blockquote className="wow fadeInUp" data-wow-delay="0.1s">
-                    <p>{tDetails('greatest_asset')}</p>
-                    <p>
-                      <cite>Douglas Morais</cite>
-                    </p>
-                  </blockquote>
                   {descArray && descArray.length > 2 && (
                     <p className="wow fadeInUp" data-wow-delay="0.3s">
                       {descArray[2]}
@@ -161,20 +154,6 @@ const BlogDetailsPrimary = ({ setCurrentTitle, blogSlug }) => {
                         <i className="tji-double-check"></i> {tDetails('meet_team')}
                       </li>
                     </ul>
-                  </div>
-                  <div
-                    className="tj-post-thumb mb-0 hover:shine wow fadeInUp"
-                    data-wow-delay="0.1s"
-                  >
-                    <img src="/images/blog/tj-blog-4.webp" alt="post-image" />
-                    <PopupVideo>
-                      <Link
-                        className="play-btn glightbox video-popup"
-                        href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-                      >
-                        <i className="fa-sharp fa-solid fa-play"></i>
-                      </Link>
-                    </PopupVideo>
                   </div>
                   <h4 className="text-anim">{tDetails('conclusions')}</h4>
                   {descArray && descArray.length > 3 ? (
