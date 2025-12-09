@@ -10,7 +10,7 @@ const CtaSidebar = () => {
     <div
       className="tj-sidebar-cta"
       style={{
-        backgroundImage: "url('/images/blog/widget-cta.webp')",
+        backgroundImage: "url('/images/home-4/cta/fale-com-especialista.png')",
       }}
     >
       <div className="content">
