@@ -1,7 +1,7 @@
 [
   {
     "iconName": "tji-shield",
-    "img": "/images/service/h1-service-1.webp",
+    "img": "/images/service/645x670-Fidejussória.png",
     "bgImg": "/images/service/h3-service-1.webp",
     "bgImg2": "/images/service/tj-service-1.webp",
     "svg": "/images/icons/service-1.svg",
@@ -52,7 +52,7 @@
   },
   {
     "iconName": "tji-optimization",
-    "img": "/images/service/h1-service-2.webp",
+    "img": "/images/service/645x670-garantias para acoes judiciais.png",
     "bgImg": "/images/service/h3-service-2.webp",
     "bgImg2": "/images/service/tj-service-2.webp",
     "svg": "/images/icons/service-2.svg",
@@ -103,7 +103,7 @@
   },
   {
     "iconName": "tji-analytics",
-    "img": "/images/service/h1-service-3.webp",
+    "img": "/images/service/645x670-recursal.png",
     "bgImg": "/images/service/h3-service-3.webp",
     "bgImg2": "/images/service/tj-service-3.webp",
     "svg": "/images/icons/service-3.svg",
