@@ -16,7 +16,7 @@ const Cta4 = () => {
 							<div className="h5-cta-contact wow fadeInUp" data-wow-delay=".3s">
 								<ButtonPrimary
 									text={"Free consultation"}
-									url={"mailto:suporte@corpfianca.com"}
+									url={"mailto:contato@corpfianca.com"}
 									iconName={"tji-email"}
 								/>
 								<ButtonPrimary

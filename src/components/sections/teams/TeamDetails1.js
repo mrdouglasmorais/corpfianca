@@ -50,7 +50,7 @@ const TeamDetails1 = ({ teamId }) => {
                 <ul>
                   <li>
                     <span>{tTeam('email_address')}</span>
-                    <Link href="mailto:suporte@corpfianca.com">suporte@corpfianca.com</Link>
+                    <Link href="mailto:contato@corpfianca.com">contato@corpfianca.com</Link>
                   </li>
                   <li>
                     <span>{tTeam('phone_number')}</span>

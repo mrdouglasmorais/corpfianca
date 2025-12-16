@@ -1,9 +1,86 @@
 'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
-import { useTranslations } from 'next-intl';
+import { sendContactEmail } from '@/utils/sendEmail';
+import { useLocale, useTranslations } from 'next-intl';
+import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const ClaimForm = () => {
   const t = useTranslations('claim_page');
+  const locale = useLocale();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+
+    const companyName = formData.get('claim_company_name');
+    const cnpj = formData.get('claim_cnpj');
+    const contactName = formData.get('claim_contact_name');
+    const email = formData.get('claim_email');
+    const phone = formData.get('claim_phone');
+    const bondNumber = formData.get('bond_number');
+    const claimDate = formData.get('claim_date');
+    const claimType = formData.get('claim_type');
+    const description = formData.get('claim_description');
+    const docs = formData.getAll('documents');
+
+    const message = `
+Empresa: ${companyName || '-'}
+CNPJ: ${cnpj || '-'}
+Contato: ${contactName || '-'}
+Email: ${email || '-'}
+Telefone: ${phone || '-'}
+Número da garantia: ${bondNumber || '-'}
+Data do evento: ${claimDate || '-'}
+Tipo de sinistro: ${claimType || '-'}
+Documentos enviados: ${docs?.length ? docs.map((f) => f?.name || '').join(', ') : 'Nenhum'}
+
+Descrição:
+${description || '-'}
+    `.trim();
+
+    try {
+      await sendContactEmail(
+        {
+          name: contactName || companyName || 'Solicitação de sinistro',
+          email,
+          phone,
+          subject: `[Sinistro] ${bondNumber || claimType || 'Solicitação'}`,
+          message,
+        },
+        locale,
+      );
+
+      Swal.fire({
+        icon: 'success',
+        title: t('submit_claim'),
+        text:
+          locale === 'pt'
+            ? 'Solicitação de sinistro enviada com sucesso!'
+            : locale === 'en'
+              ? 'Claim request sent successfully!'
+              : '¡Solicitud de siniestro enviada con éxito!',
+      });
+
+      e.target.reset();
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Erro',
+        text:
+          locale === 'pt'
+            ? 'Erro ao enviar solicitação. Tente novamente.'
+            : locale === 'en'
+              ? 'Error sending request. Please try again.'
+              : 'Error al enviar la solicitud. Intente nuevamente.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="tj-contact-area section-space">
@@ -21,8 +98,12 @@ const ClaimForm = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <div className="contact-form-one style-2 wow fadeInUp" data-wow-delay="0.1s" style={{ margin: '0 auto' }}>
-              <form action="#">
+            <div
+              className="contact-form-one style-2 wow fadeInUp"
+              data-wow-delay="0.1s"
+              style={{ margin: '0 auto' }}
+            >
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="form-input">
@@ -138,7 +219,19 @@ const ClaimForm = () => {
                     </div>
                   </div>
                   <div className="submit-button">
-                    <ButtonPrimary text={t('submit_claim')} type="submit" />
+                    <ButtonPrimary
+                      text={
+                        isSubmitting
+                          ? locale === 'pt'
+                            ? 'Enviando...'
+                            : locale === 'en'
+                              ? 'Sending...'
+                              : 'Enviando...'
+                          : t('submit_claim')
+                      }
+                      type="submit"
+                      disabled={isSubmitting}
+                    />
                   </div>
                 </div>
               </form>
@@ -151,4 +244,3 @@ const ClaimForm = () => {
 };
 
 export default ClaimForm;
-

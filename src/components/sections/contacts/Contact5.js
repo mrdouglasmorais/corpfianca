@@ -1,11 +1,15 @@
 'use client';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import FormSelect from '@/components/shared/Inputs/FormSelect';
-import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { sendContactEmail } from '@/utils/sendEmail';
+import { useLocale, useTranslations } from 'next-intl';
+import { useMemo, useState } from 'react';
+import Swal from 'sweetalert2';
 
 const Contact5 = () => {
   const t = useTranslations('contact_page');
+  const locale = useLocale();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const selectOptions = useMemo(
     () => [
@@ -20,6 +24,55 @@ const Contact5 = () => {
     [t],
   );
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const tel = formData.get('tel');
+    const message = formData.get('message');
+
+    // Get selected subject from FormSelect (the hidden select element)
+    const subjectSelect = document.getElementById('contact');
+    const selectedValue = subjectSelect?.value;
+    const subject = selectedValue && selectedValue !== '1'
+      ? selectOptions.find(opt => opt.value === selectedValue)?.name || t('chose_option')
+      : t('chose_option');
+
+    try {
+      await sendContactEmail(
+        {
+          name,
+          email,
+          phone: tel,
+          subject,
+          message,
+        },
+        locale
+      );
+
+      Swal.fire({
+        icon: 'success',
+        title: t('send_message'),
+        text: locale === 'pt' ? 'Mensagem enviada com sucesso!' : locale === 'en' ? 'Message sent successfully!' : '¡Mensaje enviado con éxito!',
+        confirmButtonText: locale === 'pt' ? 'OK' : locale === 'en' ? 'OK' : 'OK',
+      });
+
+      e.target.reset();
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Erro',
+        text: locale === 'pt' ? 'Erro ao enviar mensagem. Tente novamente.' : locale === 'en' ? 'Error sending message. Please try again.' : 'Error al enviar mensaje. Intente nuevamente.',
+        confirmButtonText: locale === 'pt' ? 'OK' : locale === 'en' ? 'OK' : 'OK',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="tj-contact-area section-bottom-space">
       <div className="container">
@@ -30,7 +83,7 @@ const Contact5 = () => {
               <h3 className="title text-anim">
                 {t('feel_free_touch')} <span>{t('get_in_touch')}</span> {t('or_visit_location')}
               </h3>
-              <form action="#">
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="form-input">
@@ -89,7 +142,11 @@ const Contact5 = () => {
                     </div>
                   </div>
                   <div className="submit-button">
-                    <ButtonPrimary text={t('send_message')} type="submit" />
+                    <ButtonPrimary
+                      text={isSubmitting ? (locale === 'pt' ? 'Enviando...' : locale === 'en' ? 'Sending...' : 'Enviando...') : t('send_message')}
+                      type="submit"
+                      disabled={isSubmitting}
+                    />
                   </div>
                 </div>
               </form>

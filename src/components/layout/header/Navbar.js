@@ -48,17 +48,6 @@ const Navbar = ({ option, isStickyHeader }) => {
                 name: t('file_claim'),
                 path: createLocalizedPath('/sinistros', locale),
               },
-              {
-                id: 4,
-                name: t('register'),
-                path: createLocalizedPath('/register', locale),
-                badge: 'New',
-              },
-              {
-                id: 5,
-                name: t('login'),
-                path: createLocalizedPath('/login', locale),
-              },
             ],
           },
         ],

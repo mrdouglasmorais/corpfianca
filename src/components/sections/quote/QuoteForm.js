@@ -2,14 +2,17 @@
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 import FormSelect from '@/components/shared/Inputs/FormSelect';
 import getALlServices from '@/libs/getALlServices';
+import { sendContactEmail } from '@/utils/sendEmail';
 import getLocalizedServiceContent from '@/utils/serviceContent';
 import { useLocale, useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
+import Swal from 'sweetalert2';
 
 const QuoteForm = () => {
   const t = useTranslations('quote_page');
   const locale = useLocale();
   const services = getALlServices();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const bondTypeOptions = useMemo(
     () => [
@@ -34,6 +37,89 @@ const QuoteForm = () => {
     [t],
   );
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+    const companyName = formData.get('company_name');
+    const cnpj = formData.get('cnpj');
+    const contactName = formData.get('contact_name');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const bondValue = formData.get('bond_value');
+    const additionalInfo = formData.get('additional_info');
+
+    // FormSelect values
+    const bondTypeSelect = document.getElementById('bond_type');
+    const bondTypeValue = bondTypeSelect?.value;
+    const bondType =
+      bondTypeValue && bondTypeValue !== ''
+        ? bondTypeOptions.find((opt) => opt.value === bondTypeValue)?.name || t('select_bond_type')
+        : t('select_bond_type');
+
+    const companySizeSelect = document.getElementById('company_size');
+    const companySizeValue = companySizeSelect?.value;
+    const companySize =
+      companySizeValue && companySizeValue !== '1'
+        ? companySizeOptions.find((opt) => opt.value === companySizeValue)?.name ||
+          t('select_company_size')
+        : t('select_company_size');
+
+    const message = `
+Empresa: ${companyName || '-'}
+CNPJ: ${cnpj || '-'}
+Contato: ${contactName || '-'}
+Email: ${email || '-'}
+Telefone: ${phone || '-'}
+Tipo de garantia: ${bondType || '-'}
+Porte da empresa: ${companySize || '-'}
+Valor da garantia: ${bondValue || '-'}
+
+Informações adicionais:
+${additionalInfo || '-'}
+    `.trim();
+
+    try {
+      await sendContactEmail(
+        {
+          name: contactName || companyName || 'Solicitação de cotação',
+          email,
+          phone,
+          subject: `[Cotação] ${bondType || 'Solicitação'}`,
+          message,
+        },
+        locale,
+      );
+
+      Swal.fire({
+        icon: 'success',
+        title: t('request_quote'),
+        text:
+          locale === 'pt'
+            ? 'Solicitação de cotação enviada com sucesso!'
+            : locale === 'en'
+              ? 'Quote request sent successfully!'
+              : '¡Solicitud de cotización enviada con éxito!',
+      });
+
+      e.target.reset();
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Erro',
+        text:
+          locale === 'pt'
+            ? 'Erro ao enviar solicitação. Tente novamente.'
+            : locale === 'en'
+              ? 'Error sending request. Please try again.'
+              : 'Error al enviar la solicitud. Intente nuevamente.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="tj-contact-area section-space">
       <div className="container">
@@ -50,8 +136,12 @@ const QuoteForm = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <div className="contact-form-one style-2 wow fadeInUp" data-wow-delay="0.1s" style={{ margin: '0 auto' }}>
-              <form action="#">
+            <div
+              className="contact-form-one style-2 wow fadeInUp"
+              data-wow-delay="0.1s"
+              style={{ margin: '0 auto' }}
+            >
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="form-input">
@@ -157,7 +247,19 @@ const QuoteForm = () => {
                     </div>
                   </div>
                   <div className="submit-button">
-                    <ButtonPrimary text={t('request_quote')} type="submit" />
+                    <ButtonPrimary
+                      text={
+                        isSubmitting
+                          ? locale === 'pt'
+                            ? 'Enviando...'
+                            : locale === 'en'
+                              ? 'Sending...'
+                              : 'Enviando...'
+                          : t('request_quote')
+                      }
+                      type="submit"
+                      disabled={isSubmitting}
+                    />
                   </div>
                 </div>
               </form>

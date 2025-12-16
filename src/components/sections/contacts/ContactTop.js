@@ -31,9 +31,6 @@ const ContactTop = () => {
                 <li>
                   <Link href="mailto:contato@corpfianca.com">contato@corpfianca.com</Link>
                 </li>
-                <li>
-                  <Link href="mailto:suporte@corpfianca.com">suporte@corpfianca.com</Link>
-                </li>
               </ul>
             </div>
           </div>
@@ -45,10 +42,7 @@ const ContactTop = () => {
               <h3 className="contact-title">{t('call_us')}</h3>
               <ul className="contact-list">
                 <li>
-                  <Link href="mailto:contato@corpfianca.com">contato@corpfianca.com</Link>
-                </li>
-                <li>
-                  <Link href="mailto:suporte@corpfianca.com">suporte@corpfianca.com</Link>
+                  <Link href="tel:08008800800">0800 880 0800</Link>
                 </li>
               </ul>
             </div>
@@ -70,7 +64,7 @@ const ContactTop = () => {
               <h3 className="contact-title">{t('live_chat')}</h3>
               <ul className="contact-list">
                 <li>
-                  <Link href="mailto:atendimento@corpfianca.com">atendimento@corpfianca.com</Link>
+                  <Link href="mailto:contato@corpfianca.com">contato@corpfianca.com</Link>
                 </li>
                 <li className="active">
                   <Link href={createLocalizedPath('/contact', locale)}>{t('need_help')}</Link>

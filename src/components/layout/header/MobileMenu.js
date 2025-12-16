@@ -218,16 +218,16 @@ const MobileMenu = () => {
               <div className="contact_item">
                 <span className="subtitle">{t('email')}</span>
                 <div className="text">
-                  <Link className="link" href="mailto:suporte@corpfianca.com">
-                    suporte@corpfianca.com
+                  <Link className="link" href="mailto:contato@corpfianca.com">
+                    contato@corpfianca.com
                   </Link>
                 </div>
               </div>
               <div className="contact_item">
                 <span className="subtitle">{t('phone')}</span>
                 <div className="text">
-                  <Link className="link" href="tel:000123456789">
-                    (11) 0000-0000
+                  <Link className="link" href="tel:08008800800">
+                    0800 880 0800
                   </Link>
                 </div>
               </div>

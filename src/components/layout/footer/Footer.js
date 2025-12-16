@@ -43,6 +43,9 @@ const Footer = ({ footerType, isRtl }) => {
                 <div className="infos-item">
                   <span>{t('headquarters')}</span>
                   <p>{t('address')}</p>
+                  <p>
+                    <Link href="tel:08008800800">Telefone: 0800 880 0800</Link>
+                  </p>
                   <p className="cnpj-text">{t('cnpj')}</p>
                 </div>
               </div>
@@ -67,12 +70,12 @@ const Footer = ({ footerType, isRtl }) => {
                       <Link href={createLocalizedPath('/sinistros', locale)}>{tNav('file_claim')}</Link>
                     </li>
                     <li>
-                      <Link href={createLocalizedPath('/register', locale)}>
+                      {/* <Link href={createLocalizedPath('/register', locale)}>
                         {tNav('register')}
-                      </Link>
+                      </Link> */}
                     </li>
                     <li>
-                      <Link href={createLocalizedPath('/login', locale)}>{tNav('login')}</Link>
+                      {/* <Link href={createLocalizedPath('/login', locale)}>{tNav('login')}</Link> */}
                     </li>
                     <li>
                       <Link href={createLocalizedPath('/noticias', locale)}>{tNav('blog')}</Link>
