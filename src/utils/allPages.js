@@ -43,5 +43,3 @@ const pages = [
 ];
 
 export const getAllPages = () => pages;
-
-
