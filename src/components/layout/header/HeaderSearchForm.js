@@ -1,6 +1,7 @@
 'use client';
 import getALlServices from '@/libs/getALlServices';
 import getBlogs from '@/libs/getBlogs';
+import { getAllPages } from '@/utils/allPages';
 import { createLocalizedPath } from '@/utils/pathUtils';
 import { getServiceSlug } from '@/utils/slugUtils';
 import getLocalizedServiceContent from '@/utils/serviceContent';
@@ -10,6 +11,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 
 const HeaderSearchForm = () => {
   const t = useTranslations('header');
+  const navigationT = useTranslations('navigation');
   const locale = useLocale();
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
@@ -18,6 +20,14 @@ const HeaderSearchForm = () => {
 
   const services = useMemo(() => getALlServices(), []);
   const blogs = useMemo(() => getBlogs(), []);
+  const allPages = useMemo(
+    () =>
+      getAllPages().map((page) => ({
+        ...page,
+        url: createLocalizedPath(page.path, locale),
+      })),
+    [locale],
+  );
 
   useEffect(() => {
     if (searchTimeoutRef.current) {
@@ -151,6 +161,18 @@ const HeaderSearchForm = () => {
                             ))}
                           </div>
                         )}
+                      </div>
+                      <div className="search-pages">
+                        <h5 className="title">{navigationT('pages')}</h5>
+                        <div className="search-suggestions">
+                          {allPages.map((page) => (
+                            <Link key={page.path} href={page.url} className="suggestion-item">
+                              <i className="tji-arrow-up-right"></i>
+                              <span>{page.label}</span>
+                              <span className="suggestion-type">{navigationT('pages')}</span>
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </form>
